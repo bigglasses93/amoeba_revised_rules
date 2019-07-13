@@ -1,0 +1,4 @@
+
+Run #1: seed = -1497880290 
+Found: 83 iterations 10010001010011101001
+Average #iterations = 83
