@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1562821252 source:j:\my drive\titech\amoeba\code\amoeba_revised\test_revised_rules.c
+	<stdio.h>
+	<string.h>
+	<time.h>
+
+1563000007 source:d:\amoeba_revised_c\test_revised_rules.c
+	<stdio.h>
+	<string.h>
+	<time.h>
+
