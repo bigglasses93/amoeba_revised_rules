@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1563249731 source:d:\amoeba_revised_c\test_local_rules\test_local_rules.c
+	<stdio.h>
+	"local_rules.h"
+	<string.h>
+	<time.h>
+
+1563246708 d:\amoeba_revised_c\test_local_rules\local_rules.h
+
