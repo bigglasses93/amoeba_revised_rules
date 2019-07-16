@@ -2,8 +2,8 @@
 //#include<stdlib.h>
 #include<string.h>
 #include<time.h>
-#define N_VARIABLE 4
-#define N_CLAUSE 9 //9
+#define N_VARIABLE 20
+#define N_CLAUSE 91 //9
 #define N_LITERAL 3
 const int MAX_N_STEP = 5000000;
 const int EPSILON = 687194767; //429496730;//536870912;
@@ -44,7 +44,7 @@ FILE *fp3; //contra
 FILE *fp4; //local rules
 
 int main() {
-    char filename[128]="test.cnf";
+    char filename[128]="uf20-01.cnf";
     char logfile[128];
 
     strncpy(logfile,filename,strlen(filename)-4);
@@ -617,13 +617,14 @@ void create_local_rules(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8])
 
             sprintf(s1,"\t\t\tif(unit%d_%d[i][4]==0){\n",i,j);strcat(s,s1);
             //COLLAPSE
-            sprintf(s1,"\t\t\t\t//if((X_contra01 & X_contra23)>0) L[%d][%d]=0;\n",i,1-j);strcat(s,s1);
+            //sprintf(s1,"\t\t\t\t//if((X_contra01 & X_contra23)>0) L[%d][%d]=0;\n",i,1-j);strcat(s,s1);
+            sprintf(s1,"\t\t\t\tL[%d][%d] = L[%d][%d] & (!(X_contra01 & X_contra23));\n",i,1-j,i,1-j); strcat(s,s1);
             sprintf(s1,"\t\t\t\tsatisfiable[%d][%d]=satisfiable[%d][%d] & ((x[%d] xor %d) | ",i,j,i,j,i,j);strcat(s,s1);
             sprintf(s1,"(x[ unit%d_%d[i][0] ] xor unit%d_%d[i][1]) |",i,j,i,j);strcat(s,s1);
             sprintf(s1,"(x[ unit%d_%d[i][2] ] xor unit%d_%d[i][3]));\n\t\t\t}\n",i,j,i,j);strcat(s,s1);
 
-            sprintf(s1,"\t\t\t//if((X_contra01&X_contra23&X_contra45)>0) LargeX[%d][%d] = -1;\n",i,j);strcat(s,s1);
-            //sprintf(s1,"\t\t\tif((X_contra01&X_contra23&X_contra45)>0){ L[%d][%d] = 1; L[%d][%d]=0;}\n",i,j,i,1-j);strcat(s,s1);
+            //sprintf(s1,"\t\t\t//if((X_contra01&X_contra23&X_contra45)>0) LargeX[%d][%d] = -1;\n",i,j);strcat(s,s1);
+            //sprintf(s1,"\t\t\tif((X_contra01&X_contra23&X_contra45)>0){ \n\t\t\t\tL[%d][%d] = 0; L[%d][%d]=2;}\n",i,1-j,i,j);strcat(s,s1);
 
             sprintf(s1,"\t\t}\n"); strcat(s,s1);
             sprintf(s1,"\t}\n"); strcat(s,s1);
