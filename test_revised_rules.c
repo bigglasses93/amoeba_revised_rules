@@ -2,8 +2,8 @@
 //#include<stdlib.h>
 #include<string.h>
 #include<time.h>
-#define N_VARIABLE 50
-#define N_CLAUSE 218 //9
+#define N_VARIABLE 225
+#define N_CLAUSE 960 //9
 #define N_LITERAL 3
 const int MAX_N_STEP = 5000000;
 const int EPSILON = 687194767; //429496730;//536870912;
@@ -44,7 +44,7 @@ FILE *fp3; //contra
 FILE *fp4; //local rules
 
 int main() {
-    char filename[128]="uf50-0100.cnf";
+    char filename[128]="uf225-028.cnf";
     char logfile[128];
 
     strncpy(logfile,filename,strlen(filename)-4);
@@ -277,10 +277,11 @@ void generate_inter(){
     int i;
     fp2 = fopen("inter.h", "w+");
     fp3 = fopen("inter_sign.h", "w+");
+    fp4 = fopen("f_tmp.txt", "w+");
     //fprintf(fp2, "int interP2[%d][2] = {\n", 3*N_CLAUSE);
 
     fprintf(fp2,"six_bit_t inter[N_CLAUSE][3]={\n");
-    fprintf(fp3,"one_bit_t inter_signlo[N_CLAUSE][3]={\n");
+    fprintf(fp3,"one_bit_t inter_sign[N_CLAUSE][3]={\n");
     for(i=0; i<N_CLAUSE; i++){
         //-------- generate inter set size 3x
         int interQ, interQ_abs, interP1, interP1_abs, interP2, interP2_abs;
@@ -308,10 +309,13 @@ void generate_inter(){
 
         if(i==(N_CLAUSE-1)) fprintf(fp3, "%d, %d, %d};", inter[3*i][1], inter[3*i][3], inter[3*i][5]);
         else fprintf(fp3, "%d, %d, %d,\n", inter[3*i][1], inter[3*i][3], inter[3*i][5]);
+
+        fprintf(fp4, "%d %d %d %d %d %d\n", interQ, interQ_abs, interP1, interP1_abs, interP2, interP2_abs);
     }
     //fprintf(fp2, "\};");
     fclose(fp2);
     fclose(fp3);
+    fclose(fp4);
 }
 int survey_size_contra(){
     //Survey size of contra
@@ -591,7 +595,7 @@ void create_local_rules(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8])
     fprintf(fp4,"void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], one_bit_t x[N_VARIABLE+1], one_bit_t satisfiable[N_VARIABLE+1][2]){\n");
     //fprintf(fp4,"\tone_bit_t light_on = 0; //if light_on=1, L[i][j]=1, skip other rules check\n");
     //fprintf(fp4,"\tint i;\n");
-/*
+
     for(i=1;i<=N_VARIABLE;i++){
         for(j=0;j<=1;j++){
             strcpy(s,"");
@@ -605,14 +609,14 @@ void create_local_rules(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8])
             sprintf(s1,"\t\t\tone_bit_t X_contra01;\n"); strcat(s,s1);
             sprintf(s1,"\t\t\tone_bit_t X_contra23;\n"); strcat(s,s1);
             sprintf(s1,"\t\t\tone_bit_t X_contra45;\n"); strcat(s,s1);
-            sprintf(s1,"\t\t\tone_bit_t X_contra;\n"); strcat(s,s1);
+            //sprintf(s1,"\t\t\tone_bit_t X_contra;\n"); strcat(s,s1);
             sprintf(s1,"\t\t\tX_contra01 = ( LargeX[ unit%d_%d[i][0] ][ unit%d_%d[i][1] ] >0) ? 1 : 0;\n",i,j,i,j); strcat(s,s1);
             sprintf(s1,"\t\t\tX_contra23 = ( LargeX[ unit%d_%d[i][2] ][ unit%d_%d[i][3] ] >0) ? 1 : 0;\n",i,j,i,j); strcat(s,s1);
             sprintf(s1,"\t\t\tX_contra45 = ( LargeX[ unit%d_%d[i][4] ][ unit%d_%d[i][5] ] >0) ? 1 : 0;\n",i,j,i,j); strcat(s,s1);
-            sprintf(s1,"\t\t\tX_contra = ( LargeX[%d][%d] >0) ? 1 : 0;\n",i,j); strcat(s,s1);
+            //sprintf(s1,"\t\t\tX_contra = ( LargeX[%d][%d] >0) ? 1 : 0;\n",i,j); strcat(s,s1);
             //sprintf(s1,"\t\t\tone_bit_t X_contra = X_contra01 & X_contra23 & X_contra45;\n"); strcat(s,s1);
 
-            //sprintf(s1,"\t\t\tL[%d][%d] = L[%d][%d] | (X_contra01 & X_contra23 & X_contra45);\n",i,j,i,j); strcat(s,s1); //first implementation - contra
+            sprintf(s1,"\t\t\tL[%d][%d] = L[%d][%d] | (X_contra01 & X_contra23 & X_contra45);\n",i,j,i,j); strcat(s,s1); //first implementation - contra
             //sprintf(s1,"\t\t\tL[%d][%d] = L[%d][%d] & (!(X_contra01 & X_contra23 & X_contra45));\n",i,1-j,i,1-j); strcat(s,s1);
 
             sprintf(s1,"\t\t\tif(unit%d_%d[i][4]==0){\n",i,j);strcat(s,s1);
@@ -623,7 +627,7 @@ void create_local_rules(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8])
             sprintf(s1,"(x[ unit%d_%d[i][0] ] xor unit%d_%d[i][1]) |",i,j,i,j);strcat(s,s1);
             sprintf(s1,"(x[ unit%d_%d[i][2] ] xor unit%d_%d[i][3]));\n\t\t\t}\n",i,j,i,j);strcat(s,s1);
 
-            sprintf(s1,"\t\t\tif((X_contra&X_contra01&X_contra23&X_contra45)>0) L[%d][%d] = 2;\n",i,j);strcat(s,s1);
+            //sprintf(s1,"\t\t\tif((X_contra&X_contra01&X_contra23&X_contra45)>0) L[%d][%d] = 2;\n",i,j);strcat(s,s1);
             //sprintf(s1,"\t\t\tL[%d][%d]=(X_contra>0) ? 2 : L[%d][%d];\n",i,j,i,j);strcat(s,s1);
 
             sprintf(s1,"\t\t}\n"); strcat(s,s1);
@@ -634,11 +638,11 @@ void create_local_rules(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8])
     }
     fprintf(fp4,"}");
     fclose(fp4);
-    printf("created local rules\n");*/
+    printf("created local rules\n");
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //version added hypercontra
-    for(i=1;i<=N_VARIABLE;i++){
+/*    for(i=1;i<=N_VARIABLE;i++){
         for(j=0;j<=1;j++){
             strcpy(s,"");
             sprintf(s1,"\t//Check all rules of unit[%d][%d]\n",i,j); strcat(s,s1);
@@ -681,7 +685,7 @@ void create_local_rules(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8])
     }
     fprintf(fp4,"}");
     fclose(fp4);
-    printf("created local rules\n");
+    printf("created local rules\n");*/
 
 
 }

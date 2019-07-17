@@ -1,4 +1,4 @@
 
-Run #1: seed = 2071527548 
-Found: 291 iterations 10000100100001101001
-Average #iterations = 291
+Run #1: seed = -199696210 
+Found: 325 iterations 10000100100001101001
+Average #iterations = 325
