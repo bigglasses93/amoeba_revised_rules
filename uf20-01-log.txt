@@ -1,10 +1,22 @@
 
-<<<<<<< HEAD
-Run #1: seed = 2071527548 
-Found: 291 iterations 10000100100001101001
-Average #iterations = 291
-=======
-Run #1: seed = -199696210 
-Found: 325 iterations 10000100100001101001
-Average #iterations = 325
->>>>>>> b42aa7d3e8c9a983144d1c27c845a4fbfae9e371
+Run #1: seed = 1760614929 
+Found: 55 iterations 01110001111001101111
+Run #2: seed = 15132 
+Found: 63 iterations 10010001010011101001
+Run #3: seed = 27298 
+Found: 214 iterations 01110001111001101111
+Run #4: seed = 5905 
+Found: 21 iterations 10010000010011101001
+Run #5: seed = 23471 
+Found: 80 iterations 01110001111001101111
+Run #6: seed = 32581 
+Found: 172 iterations 10010100010011101001
+Run #7: seed = 4766 
+Found: 32 iterations 10000100000011101001
+Run #8: seed = 9974 
+Found: 250 iterations 10010000010011101001
+Run #9: seed = 25788 
+Found: 251 iterations 10010001010011101001
+Run #10: seed = 18736 
+Found: 68 iterations 10010000010011101001
+Average #iterations = 120
