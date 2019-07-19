@@ -1,10 +1,9 @@
-
 #include<stdio.h>
 //#include<stdlib.h>
 #include<string.h>
 #include<time.h>
-#define N_VARIABLE 50
-#define N_CLAUSE 218 //9
+#define N_VARIABLE 250
+#define N_CLAUSE 1065 //9
 #define N_LITERAL 3
 const int MAX_N_STEP = 5000000;
 const int EPSILON = 687194767; //429496730;//536870912;
@@ -45,7 +44,7 @@ FILE *fp3; //contra
 FILE *fp4; //local rules
 
 int main() {
-    char filename[128]="uf50-0100.cnf";
+    char filename[128]="uf250-01.cnf";
     char logfile[128];
 
     strncpy(logfile,filename,strlen(filename)-4);
@@ -506,19 +505,19 @@ void update_L_contra(int size_contra, int contra[size_contra][8]){
         }*/
 
         //HyperCONTRA - set LargeX of contradicted units directly to -1
-        /*if(contra1){
+        if(contra1){
             LargeX[ contra[i][0]-1 ][ contra[i][1] ] = -1;
             LargeX[ contra[i][2]-1 ][ contra[i][3] ] = -1;
             LargeX[ contra[i][4]-1 ][ contra[i][5] ] = -1;
             LargeX[ contra[i][6]-1 ][ contra[i][7] ] = -1;
-        }*/
+        }
 
-        if(contra1){
+        /*if(contra1){
             L[ contra[i][0]-1 ][ contra[i][1] ] = 2;
             L[ contra[i][2]-1 ][ contra[i][3] ] = 2;
             L[ contra[i][4]-1 ][ contra[i][5] ] = 2;
             L[ contra[i][6]-1 ][ contra[i][7] ] = 2;
-        }
+        }*/
     }
 }
 //create local rules and local modules
