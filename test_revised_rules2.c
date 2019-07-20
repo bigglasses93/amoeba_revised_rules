@@ -7,7 +7,7 @@
 #define N_LITERAL 3
 const int MAX_N_STEP = 5000000;
 const int EPSILON = 687194767; //429496730;//536870912;
-#define MAX_CONTRA 10000
+#define MAX_CONTRA 20000
 
 int LargeX[N_VARIABLE][2];
 int Y[N_VARIABLE][2];
@@ -44,7 +44,7 @@ FILE *fp3; //contra
 FILE *fp4; //local rules
 
 int main() {
-    char filename[128]="uf250-01.cnf";
+    char filename[128]="uf250-0100.cnf";
     char logfile[128];
 
     strncpy(logfile,filename,strlen(filename)-4);
