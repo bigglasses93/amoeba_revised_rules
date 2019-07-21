@@ -2,12 +2,12 @@
 //#include<stdlib.h>
 #include<string.h>
 #include<time.h>
-#define N_VARIABLE 250
-#define N_CLAUSE 1065 //9
+#define N_VARIABLE 100
+#define N_CLAUSE 430 //9
 #define N_LITERAL 3
 const int MAX_N_STEP = 5000000;
 const int EPSILON = 687194767; //429496730;//536870912;
-#define MAX_CONTRA 10000
+#define MAX_CONTRA 100000
 
 int LargeX[N_VARIABLE][2];
 int Y[N_VARIABLE][2];
@@ -44,7 +44,7 @@ FILE *fp3; //contra
 FILE *fp4; //local rules
 
 int main() {
-    char filename[128]="uf250-01.cnf";
+    char filename[128]="uf100-0285.cnf";
     char logfile[128];
 
     strncpy(logfile,filename,strlen(filename)-4);
@@ -66,7 +66,7 @@ int main() {
     generate_contra(size_contra, contra, contra_new);
     create_local_rules(inter,contra_new);
     srand(time(NULL));
-    for(i=0;i<10;i++){
+    for(i=0;i<100;i++){
         state[0] = rand();
         init();
 
@@ -472,12 +472,12 @@ void update_L_contra(int size_contra, int contra[size_contra][8]){
                 (LargeX[ contra[i][6]-1 ][ contra[i][7] ]>0);
 
         //CONTRA - Light on CONTRA units - not good with CONFLICT only
-        /*if(contra1){
+        if(contra1){
             L[ contra[i][0]-1 ][ contra[i][1] ] = 1;
             L[ contra[i][2]-1 ][ contra[i][3] ] = 1;
             L[ contra[i][4]-1 ][ contra[i][5] ] = 1;
             L[ contra[i][6]-1 ][ contra[i][7] ] = 1;
-        }*/
+        }
         //loosen representation of CONTRA - should combine with CONFLICT, not good with hypercontra
         /*L[ contra[i][0]-1 ][ contra[i][1] ] = L[ contra[i][0]-1 ][ contra[i][1] ] |
                 ((LargeX[ contra[i][2]-1 ][ contra[i][3] ]>0) &
@@ -505,12 +505,12 @@ void update_L_contra(int size_contra, int contra[size_contra][8]){
         }*/
 
         //HyperCONTRA - set LargeX of contradicted units directly to -1
-        if(contra1){
+        /*if(contra1){
             LargeX[ contra[i][0]-1 ][ contra[i][1] ] = -1;
             LargeX[ contra[i][2]-1 ][ contra[i][3] ] = -1;
             LargeX[ contra[i][4]-1 ][ contra[i][5] ] = -1;
             LargeX[ contra[i][6]-1 ][ contra[i][7] ] = -1;
-        }
+        }*/
 
         /*if(contra1){
             L[ contra[i][0]-1 ][ contra[i][1] ] = 2;
@@ -595,7 +595,7 @@ void create_local_rules(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8])
     fprintf(fp4,"void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], one_bit_t x[N_VARIABLE+1], one_bit_t satisfiable[N_VARIABLE+1][2]){\n");
     //fprintf(fp4,"\tone_bit_t light_on = 0; //if light_on=1, L[i][j]=1, skip other rules check\n");
     //fprintf(fp4,"\tint i;\n");
-/*
+
     for(i=1;i<=N_VARIABLE;i++){
         for(j=0;j<=1;j++){
             strcpy(s,"");
@@ -638,11 +638,11 @@ void create_local_rules(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8])
     }
     fprintf(fp4,"}");
     fclose(fp4);
-    printf("created local rules\n");*/
+    printf("created local rules\n");
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //version added hypercontra
-    for(i=1;i<=N_VARIABLE;i++){
+/*    for(i=1;i<=N_VARIABLE;i++){
         for(j=0;j<=1;j++){
             strcpy(s,"");
             sprintf(s1,"\t//Check all rules of unit[%d][%d]\n",i,j); strcat(s,s1);
@@ -686,7 +686,7 @@ void create_local_rules(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8])
     }
     fprintf(fp4,"}");
     fclose(fp4);
-    printf("created local rules\n");
+    printf("created local rules\n");*/
 
 
 }
