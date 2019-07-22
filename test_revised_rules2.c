@@ -7,7 +7,7 @@
 #define N_LITERAL 3
 const int MAX_N_STEP = 5000000;
 const int EPSILON = 687194767; //429496730;//536870912;
-#define MAX_CONTRA 100000
+#define MAX_CONTRA 20000
 
 int LargeX[N_VARIABLE][2];
 int Y[N_VARIABLE][2];
