@@ -1,11 +1,11 @@
 #include "amoeba_local_rules.h"
-#include "local_rules_150.h"
+#include "local_rules_250.h"
 void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], one_bit_t x[N_VARIABLE+1], one_bit_t satisfiable[N_VARIABLE+1][2]){
 	//Check all rules of unit[1][0]
 	L[1][0] = LargeX[1][1]>0 ? 1 : 0;
 	satisfiable[1][0]=1; 
 	if(!L[1][0]){
-	for(int i=0;i<76;i++){
+	for(int i=0;i<175;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -25,7 +25,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[1][1] = LargeX[1][0]>0 ? 1 : 0;
 	satisfiable[1][1]=1; 
 	if(!L[1][1]){
-	for(int i=0;i<81;i++){
+	for(int i=0;i<90;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -45,7 +45,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[2][0] = LargeX[2][1]>0 ? 1 : 0;
 	satisfiable[2][0]=1; 
 	if(!L[2][0]){
-	for(int i=0;i<49;i++){
+	for(int i=0;i<63;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -65,7 +65,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[2][1] = LargeX[2][0]>0 ? 1 : 0;
 	satisfiable[2][1]=1; 
 	if(!L[2][1]){
-	for(int i=0;i<52;i++){
+	for(int i=0;i<87;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -85,7 +85,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[3][0] = LargeX[3][1]>0 ? 1 : 0;
 	satisfiable[3][0]=1; 
 	if(!L[3][0]){
-	for(int i=0;i<45;i++){
+	for(int i=0;i<39;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -105,7 +105,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[3][1] = LargeX[3][0]>0 ? 1 : 0;
 	satisfiable[3][1]=1; 
 	if(!L[3][1]){
-	for(int i=0;i<52;i++){
+	for(int i=0;i<76;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -125,7 +125,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[4][0] = LargeX[4][1]>0 ? 1 : 0;
 	satisfiable[4][0]=1; 
 	if(!L[4][0]){
-	for(int i=0;i<93;i++){
+	for(int i=0;i<17;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -145,7 +145,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[4][1] = LargeX[4][0]>0 ? 1 : 0;
 	satisfiable[4][1]=1; 
 	if(!L[4][1]){
-	for(int i=0;i<45;i++){
+	for(int i=0;i<130;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -165,7 +165,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[5][0] = LargeX[5][1]>0 ? 1 : 0;
 	satisfiable[5][0]=1; 
 	if(!L[5][0]){
-	for(int i=0;i<86;i++){
+	for(int i=0;i<103;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -185,7 +185,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[5][1] = LargeX[5][0]>0 ? 1 : 0;
 	satisfiable[5][1]=1; 
 	if(!L[5][1]){
-	for(int i=0;i<98;i++){
+	for(int i=0;i<112;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -205,7 +205,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[6][0] = LargeX[6][1]>0 ? 1 : 0;
 	satisfiable[6][0]=1; 
 	if(!L[6][0]){
-	for(int i=0;i<38;i++){
+	for(int i=0;i<79;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -225,7 +225,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[6][1] = LargeX[6][0]>0 ? 1 : 0;
 	satisfiable[6][1]=1; 
 	if(!L[6][1]){
-	for(int i=0;i<57;i++){
+	for(int i=0;i<151;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -245,7 +245,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[7][0] = LargeX[7][1]>0 ? 1 : 0;
 	satisfiable[7][0]=1; 
 	if(!L[7][0]){
-	for(int i=0;i<80;i++){
+	for(int i=0;i<110;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -265,7 +265,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[7][1] = LargeX[7][0]>0 ? 1 : 0;
 	satisfiable[7][1]=1; 
 	if(!L[7][1]){
-	for(int i=0;i<89;i++){
+	for(int i=0;i<59;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -285,7 +285,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[8][0] = LargeX[8][1]>0 ? 1 : 0;
 	satisfiable[8][0]=1; 
 	if(!L[8][0]){
-	for(int i=0;i<80;i++){
+	for(int i=0;i<60;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -305,7 +305,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[8][1] = LargeX[8][0]>0 ? 1 : 0;
 	satisfiable[8][1]=1; 
 	if(!L[8][1]){
-	for(int i=0;i<63;i++){
+	for(int i=0;i<57;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -325,7 +325,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[9][0] = LargeX[9][1]>0 ? 1 : 0;
 	satisfiable[9][0]=1; 
 	if(!L[9][0]){
-	for(int i=0;i<15;i++){
+	for(int i=0;i<70;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -345,7 +345,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[9][1] = LargeX[9][0]>0 ? 1 : 0;
 	satisfiable[9][1]=1; 
 	if(!L[9][1]){
-	for(int i=0;i<94;i++){
+	for(int i=0;i<33;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -365,7 +365,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[10][0] = LargeX[10][1]>0 ? 1 : 0;
 	satisfiable[10][0]=1; 
 	if(!L[10][0]){
-	for(int i=0;i<58;i++){
+	for(int i=0;i<47;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -385,7 +385,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[10][1] = LargeX[10][0]>0 ? 1 : 0;
 	satisfiable[10][1]=1; 
 	if(!L[10][1]){
-	for(int i=0;i<81;i++){
+	for(int i=0;i<11;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -405,7 +405,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[11][0] = LargeX[11][1]>0 ? 1 : 0;
 	satisfiable[11][0]=1; 
 	if(!L[11][0]){
-	for(int i=0;i<44;i++){
+	for(int i=0;i<132;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -425,7 +425,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[11][1] = LargeX[11][0]>0 ? 1 : 0;
 	satisfiable[11][1]=1; 
 	if(!L[11][1]){
-	for(int i=0;i<72;i++){
+	for(int i=0;i<68;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -445,7 +445,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[12][0] = LargeX[12][1]>0 ? 1 : 0;
 	satisfiable[12][0]=1; 
 	if(!L[12][0]){
-	for(int i=0;i<114;i++){
+	for(int i=0;i<51;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -465,7 +465,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[12][1] = LargeX[12][0]>0 ? 1 : 0;
 	satisfiable[12][1]=1; 
 	if(!L[12][1]){
-	for(int i=0;i<99;i++){
+	for(int i=0;i<148;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -485,7 +485,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[13][0] = LargeX[13][1]>0 ? 1 : 0;
 	satisfiable[13][0]=1; 
 	if(!L[13][0]){
-	for(int i=0;i<89;i++){
+	for(int i=0;i<91;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -505,7 +505,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[13][1] = LargeX[13][0]>0 ? 1 : 0;
 	satisfiable[13][1]=1; 
 	if(!L[13][1]){
-	for(int i=0;i<102;i++){
+	for(int i=0;i<94;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -525,7 +525,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[14][0] = LargeX[14][1]>0 ? 1 : 0;
 	satisfiable[14][0]=1; 
 	if(!L[14][0]){
-	for(int i=0;i<99;i++){
+	for(int i=0;i<109;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -545,7 +545,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[14][1] = LargeX[14][0]>0 ? 1 : 0;
 	satisfiable[14][1]=1; 
 	if(!L[14][1]){
-	for(int i=0;i<64;i++){
+	for(int i=0;i<81;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -565,7 +565,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[15][0] = LargeX[15][1]>0 ? 1 : 0;
 	satisfiable[15][0]=1; 
 	if(!L[15][0]){
-	for(int i=0;i<102;i++){
+	for(int i=0;i<211;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -585,7 +585,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[15][1] = LargeX[15][0]>0 ? 1 : 0;
 	satisfiable[15][1]=1; 
 	if(!L[15][1]){
-	for(int i=0;i<147;i++){
+	for(int i=0;i<89;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -605,7 +605,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[16][0] = LargeX[16][1]>0 ? 1 : 0;
 	satisfiable[16][0]=1; 
 	if(!L[16][0]){
-	for(int i=0;i<79;i++){
+	for(int i=0;i<60;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -625,7 +625,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[16][1] = LargeX[16][0]>0 ? 1 : 0;
 	satisfiable[16][1]=1; 
 	if(!L[16][1]){
-	for(int i=0;i<70;i++){
+	for(int i=0;i<80;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -645,7 +645,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[17][0] = LargeX[17][1]>0 ? 1 : 0;
 	satisfiable[17][0]=1; 
 	if(!L[17][0]){
-	for(int i=0;i<84;i++){
+	for(int i=0;i<57;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -665,7 +665,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[17][1] = LargeX[17][0]>0 ? 1 : 0;
 	satisfiable[17][1]=1; 
 	if(!L[17][1]){
-	for(int i=0;i<143;i++){
+	for(int i=0;i<35;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -685,7 +685,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[18][0] = LargeX[18][1]>0 ? 1 : 0;
 	satisfiable[18][0]=1; 
 	if(!L[18][0]){
-	for(int i=0;i<22;i++){
+	for(int i=0;i<49;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -705,7 +705,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[18][1] = LargeX[18][0]>0 ? 1 : 0;
 	satisfiable[18][1]=1; 
 	if(!L[18][1]){
-	for(int i=0;i<84;i++){
+	for(int i=0;i<101;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -725,7 +725,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[19][0] = LargeX[19][1]>0 ? 1 : 0;
 	satisfiable[19][0]=1; 
 	if(!L[19][0]){
-	for(int i=0;i<107;i++){
+	for(int i=0;i<139;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -745,7 +745,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[19][1] = LargeX[19][0]>0 ? 1 : 0;
 	satisfiable[19][1]=1; 
 	if(!L[19][1]){
-	for(int i=0;i<46;i++){
+	for(int i=0;i<67;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -765,7 +765,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[20][0] = LargeX[20][1]>0 ? 1 : 0;
 	satisfiable[20][0]=1; 
 	if(!L[20][0]){
-	for(int i=0;i<54;i++){
+	for(int i=0;i<110;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -785,7 +785,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[20][1] = LargeX[20][0]>0 ? 1 : 0;
 	satisfiable[20][1]=1; 
 	if(!L[20][1]){
-	for(int i=0;i<130;i++){
+	for(int i=0;i<114;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -805,7 +805,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[21][0] = LargeX[21][1]>0 ? 1 : 0;
 	satisfiable[21][0]=1; 
 	if(!L[21][0]){
-	for(int i=0;i<120;i++){
+	for(int i=0;i<80;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -825,7 +825,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[21][1] = LargeX[21][0]>0 ? 1 : 0;
 	satisfiable[21][1]=1; 
 	if(!L[21][1]){
-	for(int i=0;i<13;i++){
+	for(int i=0;i<194;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -845,7 +845,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[22][0] = LargeX[22][1]>0 ? 1 : 0;
 	satisfiable[22][0]=1; 
 	if(!L[22][0]){
-	for(int i=0;i<83;i++){
+	for(int i=0;i<104;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -865,7 +865,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[22][1] = LargeX[22][0]>0 ? 1 : 0;
 	satisfiable[22][1]=1; 
 	if(!L[22][1]){
-	for(int i=0;i<64;i++){
+	for(int i=0;i<113;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -885,7 +885,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[23][0] = LargeX[23][1]>0 ? 1 : 0;
 	satisfiable[23][0]=1; 
 	if(!L[23][0]){
-	for(int i=0;i<110;i++){
+	for(int i=0;i<91;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -905,7 +905,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[23][1] = LargeX[23][0]>0 ? 1 : 0;
 	satisfiable[23][1]=1; 
 	if(!L[23][1]){
-	for(int i=0;i<87;i++){
+	for(int i=0;i<74;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -925,7 +925,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[24][0] = LargeX[24][1]>0 ? 1 : 0;
 	satisfiable[24][0]=1; 
 	if(!L[24][0]){
-	for(int i=0;i<102;i++){
+	for(int i=0;i<110;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -945,7 +945,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[24][1] = LargeX[24][0]>0 ? 1 : 0;
 	satisfiable[24][1]=1; 
 	if(!L[24][1]){
-	for(int i=0;i<48;i++){
+	for(int i=0;i<53;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -965,7 +965,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[25][0] = LargeX[25][1]>0 ? 1 : 0;
 	satisfiable[25][0]=1; 
 	if(!L[25][0]){
-	for(int i=0;i<54;i++){
+	for(int i=0;i<123;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -985,7 +985,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[25][1] = LargeX[25][0]>0 ? 1 : 0;
 	satisfiable[25][1]=1; 
 	if(!L[25][1]){
-	for(int i=0;i<103;i++){
+	for(int i=0;i<124;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1005,7 +1005,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[26][0] = LargeX[26][1]>0 ? 1 : 0;
 	satisfiable[26][0]=1; 
 	if(!L[26][0]){
-	for(int i=0;i<146;i++){
+	for(int i=0;i<76;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1025,7 +1025,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[26][1] = LargeX[26][0]>0 ? 1 : 0;
 	satisfiable[26][1]=1; 
 	if(!L[26][1]){
-	for(int i=0;i<117;i++){
+	for(int i=0;i<93;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1045,7 +1045,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[27][0] = LargeX[27][1]>0 ? 1 : 0;
 	satisfiable[27][0]=1; 
 	if(!L[27][0]){
-	for(int i=0;i<69;i++){
+	for(int i=0;i<45;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1065,7 +1065,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[27][1] = LargeX[27][0]>0 ? 1 : 0;
 	satisfiable[27][1]=1; 
 	if(!L[27][1]){
-	for(int i=0;i<199;i++){
+	for(int i=0;i<121;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1085,7 +1085,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[28][0] = LargeX[28][1]>0 ? 1 : 0;
 	satisfiable[28][0]=1; 
 	if(!L[28][0]){
-	for(int i=0;i<134;i++){
+	for(int i=0;i<150;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1105,7 +1105,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[28][1] = LargeX[28][0]>0 ? 1 : 0;
 	satisfiable[28][1]=1; 
 	if(!L[28][1]){
-	for(int i=0;i<34;i++){
+	for(int i=0;i<58;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1125,7 +1125,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[29][0] = LargeX[29][1]>0 ? 1 : 0;
 	satisfiable[29][0]=1; 
 	if(!L[29][0]){
-	for(int i=0;i<167;i++){
+	for(int i=0;i<79;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1145,7 +1145,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[29][1] = LargeX[29][0]>0 ? 1 : 0;
 	satisfiable[29][1]=1; 
 	if(!L[29][1]){
-	for(int i=0;i<167;i++){
+	for(int i=0;i<72;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1165,7 +1165,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[30][0] = LargeX[30][1]>0 ? 1 : 0;
 	satisfiable[30][0]=1; 
 	if(!L[30][0]){
-	for(int i=0;i<117;i++){
+	for(int i=0;i<90;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1185,7 +1185,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[30][1] = LargeX[30][0]>0 ? 1 : 0;
 	satisfiable[30][1]=1; 
 	if(!L[30][1]){
-	for(int i=0;i<29;i++){
+	for(int i=0;i<89;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1225,7 +1225,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[31][1] = LargeX[31][0]>0 ? 1 : 0;
 	satisfiable[31][1]=1; 
 	if(!L[31][1]){
-	for(int i=0;i<44;i++){
+	for(int i=0;i<118;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1245,7 +1245,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[32][0] = LargeX[32][1]>0 ? 1 : 0;
 	satisfiable[32][0]=1; 
 	if(!L[32][0]){
-	for(int i=0;i<66;i++){
+	for(int i=0;i<90;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1265,7 +1265,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[32][1] = LargeX[32][0]>0 ? 1 : 0;
 	satisfiable[32][1]=1; 
 	if(!L[32][1]){
-	for(int i=0;i<92;i++){
+	for(int i=0;i<15;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1285,7 +1285,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[33][0] = LargeX[33][1]>0 ? 1 : 0;
 	satisfiable[33][0]=1; 
 	if(!L[33][0]){
-	for(int i=0;i<56;i++){
+	for(int i=0;i<43;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1305,7 +1305,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[33][1] = LargeX[33][0]>0 ? 1 : 0;
 	satisfiable[33][1]=1; 
 	if(!L[33][1]){
-	for(int i=0;i<158;i++){
+	for(int i=0;i<141;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1325,7 +1325,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[34][0] = LargeX[34][1]>0 ? 1 : 0;
 	satisfiable[34][0]=1; 
 	if(!L[34][0]){
-	for(int i=0;i<152;i++){
+	for(int i=0;i<31;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1345,7 +1345,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[34][1] = LargeX[34][0]>0 ? 1 : 0;
 	satisfiable[34][1]=1; 
 	if(!L[34][1]){
-	for(int i=0;i<84;i++){
+	for(int i=0;i<33;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1365,7 +1365,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[35][0] = LargeX[35][1]>0 ? 1 : 0;
 	satisfiable[35][0]=1; 
 	if(!L[35][0]){
-	for(int i=0;i<55;i++){
+	for(int i=0;i<95;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1385,7 +1385,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[35][1] = LargeX[35][0]>0 ? 1 : 0;
 	satisfiable[35][1]=1; 
 	if(!L[35][1]){
-	for(int i=0;i<81;i++){
+	for(int i=0;i<89;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1405,7 +1405,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[36][0] = LargeX[36][1]>0 ? 1 : 0;
 	satisfiable[36][0]=1; 
 	if(!L[36][0]){
-	for(int i=0;i<87;i++){
+	for(int i=0;i<62;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1425,7 +1425,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[36][1] = LargeX[36][0]>0 ? 1 : 0;
 	satisfiable[36][1]=1; 
 	if(!L[36][1]){
-	for(int i=0;i<165;i++){
+	for(int i=0;i<41;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1445,7 +1445,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[37][0] = LargeX[37][1]>0 ? 1 : 0;
 	satisfiable[37][0]=1; 
 	if(!L[37][0]){
-	for(int i=0;i<140;i++){
+	for(int i=0;i<156;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1465,7 +1465,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[37][1] = LargeX[37][0]>0 ? 1 : 0;
 	satisfiable[37][1]=1; 
 	if(!L[37][1]){
-	for(int i=0;i<107;i++){
+	for(int i=0;i<85;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1485,7 +1485,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[38][0] = LargeX[38][1]>0 ? 1 : 0;
 	satisfiable[38][0]=1; 
 	if(!L[38][0]){
-	for(int i=0;i<95;i++){
+	for(int i=0;i<32;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1505,7 +1505,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[38][1] = LargeX[38][0]>0 ? 1 : 0;
 	satisfiable[38][1]=1; 
 	if(!L[38][1]){
-	for(int i=0;i<121;i++){
+	for(int i=0;i<76;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1525,7 +1525,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[39][0] = LargeX[39][1]>0 ? 1 : 0;
 	satisfiable[39][0]=1; 
 	if(!L[39][0]){
-	for(int i=0;i<53;i++){
+	for(int i=0;i<123;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1545,7 +1545,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[39][1] = LargeX[39][0]>0 ? 1 : 0;
 	satisfiable[39][1]=1; 
 	if(!L[39][1]){
-	for(int i=0;i<128;i++){
+	for(int i=0;i<112;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1565,7 +1565,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[40][0] = LargeX[40][1]>0 ? 1 : 0;
 	satisfiable[40][0]=1; 
 	if(!L[40][0]){
-	for(int i=0;i<75;i++){
+	for(int i=0;i<115;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1585,7 +1585,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[40][1] = LargeX[40][0]>0 ? 1 : 0;
 	satisfiable[40][1]=1; 
 	if(!L[40][1]){
-	for(int i=0;i<44;i++){
+	for(int i=0;i<184;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1605,7 +1605,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[41][0] = LargeX[41][1]>0 ? 1 : 0;
 	satisfiable[41][0]=1; 
 	if(!L[41][0]){
-	for(int i=0;i<51;i++){
+	for(int i=0;i<106;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1625,7 +1625,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[41][1] = LargeX[41][0]>0 ? 1 : 0;
 	satisfiable[41][1]=1; 
 	if(!L[41][1]){
-	for(int i=0;i<47;i++){
+	for(int i=0;i<119;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1645,7 +1645,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[42][0] = LargeX[42][1]>0 ? 1 : 0;
 	satisfiable[42][0]=1; 
 	if(!L[42][0]){
-	for(int i=0;i<68;i++){
+	for(int i=0;i<101;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1665,7 +1665,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[42][1] = LargeX[42][0]>0 ? 1 : 0;
 	satisfiable[42][1]=1; 
 	if(!L[42][1]){
-	for(int i=0;i<72;i++){
+	for(int i=0;i<101;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1685,7 +1685,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[43][0] = LargeX[43][1]>0 ? 1 : 0;
 	satisfiable[43][0]=1; 
 	if(!L[43][0]){
-	for(int i=0;i<92;i++){
+	for(int i=0;i<145;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1705,7 +1705,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[43][1] = LargeX[43][0]>0 ? 1 : 0;
 	satisfiable[43][1]=1; 
 	if(!L[43][1]){
-	for(int i=0;i<74;i++){
+	for(int i=0;i<139;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1725,7 +1725,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[44][0] = LargeX[44][1]>0 ? 1 : 0;
 	satisfiable[44][0]=1; 
 	if(!L[44][0]){
-	for(int i=0;i<186;i++){
+	for(int i=0;i<68;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1745,7 +1745,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[44][1] = LargeX[44][0]>0 ? 1 : 0;
 	satisfiable[44][1]=1; 
 	if(!L[44][1]){
-	for(int i=0;i<71;i++){
+	for(int i=0;i<97;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1765,7 +1765,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[45][0] = LargeX[45][1]>0 ? 1 : 0;
 	satisfiable[45][0]=1; 
 	if(!L[45][0]){
-	for(int i=0;i<54;i++){
+	for(int i=0;i<71;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1785,7 +1785,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[45][1] = LargeX[45][0]>0 ? 1 : 0;
 	satisfiable[45][1]=1; 
 	if(!L[45][1]){
-	for(int i=0;i<44;i++){
+	for(int i=0;i<63;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1805,7 +1805,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[46][0] = LargeX[46][1]>0 ? 1 : 0;
 	satisfiable[46][0]=1; 
 	if(!L[46][0]){
-	for(int i=0;i<74;i++){
+	for(int i=0;i<128;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1825,7 +1825,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[46][1] = LargeX[46][0]>0 ? 1 : 0;
 	satisfiable[46][1]=1; 
 	if(!L[46][1]){
-	for(int i=0;i<102;i++){
+	for(int i=0;i<64;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1845,7 +1845,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[47][0] = LargeX[47][1]>0 ? 1 : 0;
 	satisfiable[47][0]=1; 
 	if(!L[47][0]){
-	for(int i=0;i<42;i++){
+	for(int i=0;i<170;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1865,7 +1865,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[47][1] = LargeX[47][0]>0 ? 1 : 0;
 	satisfiable[47][1]=1; 
 	if(!L[47][1]){
-	for(int i=0;i<69;i++){
+	for(int i=0;i<129;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1885,7 +1885,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[48][0] = LargeX[48][1]>0 ? 1 : 0;
 	satisfiable[48][0]=1; 
 	if(!L[48][0]){
-	for(int i=0;i<78;i++){
+	for(int i=0;i<74;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1905,7 +1905,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[48][1] = LargeX[48][0]>0 ? 1 : 0;
 	satisfiable[48][1]=1; 
 	if(!L[48][1]){
-	for(int i=0;i<145;i++){
+	for(int i=0;i<116;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1925,7 +1925,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[49][0] = LargeX[49][1]>0 ? 1 : 0;
 	satisfiable[49][0]=1; 
 	if(!L[49][0]){
-	for(int i=0;i<78;i++){
+	for(int i=0;i<71;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1945,7 +1945,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[49][1] = LargeX[49][0]>0 ? 1 : 0;
 	satisfiable[49][1]=1; 
 	if(!L[49][1]){
-	for(int i=0;i<70;i++){
+	for(int i=0;i<87;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1965,7 +1965,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[50][0] = LargeX[50][1]>0 ? 1 : 0;
 	satisfiable[50][0]=1; 
 	if(!L[50][0]){
-	for(int i=0;i<72;i++){
+	for(int i=0;i<108;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1985,7 +1985,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[50][1] = LargeX[50][0]>0 ? 1 : 0;
 	satisfiable[50][1]=1; 
 	if(!L[50][1]){
-	for(int i=0;i<57;i++){
+	for(int i=0;i<93;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2005,7 +2005,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[51][0] = LargeX[51][1]>0 ? 1 : 0;
 	satisfiable[51][0]=1; 
 	if(!L[51][0]){
-	for(int i=0;i<143;i++){
+	for(int i=0;i<93;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2025,7 +2025,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[51][1] = LargeX[51][0]>0 ? 1 : 0;
 	satisfiable[51][1]=1; 
 	if(!L[51][1]){
-	for(int i=0;i<105;i++){
+	for(int i=0;i<64;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2045,7 +2045,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[52][0] = LargeX[52][1]>0 ? 1 : 0;
 	satisfiable[52][0]=1; 
 	if(!L[52][0]){
-	for(int i=0;i<124;i++){
+	for(int i=0;i<59;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2065,7 +2065,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[52][1] = LargeX[52][0]>0 ? 1 : 0;
 	satisfiable[52][1]=1; 
 	if(!L[52][1]){
-	for(int i=0;i<69;i++){
+	for(int i=0;i<57;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2085,7 +2085,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[53][0] = LargeX[53][1]>0 ? 1 : 0;
 	satisfiable[53][0]=1; 
 	if(!L[53][0]){
-	for(int i=0;i<9;i++){
+	for(int i=0;i<42;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2105,7 +2105,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[53][1] = LargeX[53][0]>0 ? 1 : 0;
 	satisfiable[53][1]=1; 
 	if(!L[53][1]){
-	for(int i=0;i<109;i++){
+	for(int i=0;i<25;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2125,7 +2125,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[54][0] = LargeX[54][1]>0 ? 1 : 0;
 	satisfiable[54][0]=1; 
 	if(!L[54][0]){
-	for(int i=0;i<71;i++){
+	for(int i=0;i<43;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2145,7 +2145,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[54][1] = LargeX[54][0]>0 ? 1 : 0;
 	satisfiable[54][1]=1; 
 	if(!L[54][1]){
-	for(int i=0;i<123;i++){
+	for(int i=0;i<117;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2165,7 +2165,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[55][0] = LargeX[55][1]>0 ? 1 : 0;
 	satisfiable[55][0]=1; 
 	if(!L[55][0]){
-	for(int i=0;i<152;i++){
+	for(int i=0;i<62;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2185,7 +2185,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[55][1] = LargeX[55][0]>0 ? 1 : 0;
 	satisfiable[55][1]=1; 
 	if(!L[55][1]){
-	for(int i=0;i<60;i++){
+	for(int i=0;i<64;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2225,7 +2225,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[56][1] = LargeX[56][0]>0 ? 1 : 0;
 	satisfiable[56][1]=1; 
 	if(!L[56][1]){
-	for(int i=0;i<54;i++){
+	for(int i=0;i<80;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2245,7 +2245,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[57][0] = LargeX[57][1]>0 ? 1 : 0;
 	satisfiable[57][0]=1; 
 	if(!L[57][0]){
-	for(int i=0;i<132;i++){
+	for(int i=0;i<76;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2265,7 +2265,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[57][1] = LargeX[57][0]>0 ? 1 : 0;
 	satisfiable[57][1]=1; 
 	if(!L[57][1]){
-	for(int i=0;i<59;i++){
+	for(int i=0;i<134;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2285,7 +2285,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[58][0] = LargeX[58][1]>0 ? 1 : 0;
 	satisfiable[58][0]=1; 
 	if(!L[58][0]){
-	for(int i=0;i<59;i++){
+	for(int i=0;i<80;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2305,7 +2305,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[58][1] = LargeX[58][0]>0 ? 1 : 0;
 	satisfiable[58][1]=1; 
 	if(!L[58][1]){
-	for(int i=0;i<58;i++){
+	for(int i=0;i<122;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2325,7 +2325,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[59][0] = LargeX[59][1]>0 ? 1 : 0;
 	satisfiable[59][0]=1; 
 	if(!L[59][0]){
-	for(int i=0;i<54;i++){
+	for(int i=0;i<106;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2345,7 +2345,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[59][1] = LargeX[59][0]>0 ? 1 : 0;
 	satisfiable[59][1]=1; 
 	if(!L[59][1]){
-	for(int i=0;i<97;i++){
+	for(int i=0;i<87;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2365,7 +2365,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[60][0] = LargeX[60][1]>0 ? 1 : 0;
 	satisfiable[60][0]=1; 
 	if(!L[60][0]){
-	for(int i=0;i<130;i++){
+	for(int i=0;i<107;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2385,7 +2385,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[60][1] = LargeX[60][0]>0 ? 1 : 0;
 	satisfiable[60][1]=1; 
 	if(!L[60][1]){
-	for(int i=0;i<75;i++){
+	for(int i=0;i<26;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2405,7 +2405,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[61][0] = LargeX[61][1]>0 ? 1 : 0;
 	satisfiable[61][0]=1; 
 	if(!L[61][0]){
-	for(int i=0;i<64;i++){
+	for(int i=0;i<177;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2425,7 +2425,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[61][1] = LargeX[61][0]>0 ? 1 : 0;
 	satisfiable[61][1]=1; 
 	if(!L[61][1]){
-	for(int i=0;i<85;i++){
+	for(int i=0;i<114;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2445,7 +2445,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[62][0] = LargeX[62][1]>0 ? 1 : 0;
 	satisfiable[62][0]=1; 
 	if(!L[62][0]){
-	for(int i=0;i<57;i++){
+	for(int i=0;i<117;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2465,7 +2465,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[62][1] = LargeX[62][0]>0 ? 1 : 0;
 	satisfiable[62][1]=1; 
 	if(!L[62][1]){
-	for(int i=0;i<45;i++){
+	for(int i=0;i<63;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2485,7 +2485,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[63][0] = LargeX[63][1]>0 ? 1 : 0;
 	satisfiable[63][0]=1; 
 	if(!L[63][0]){
-	for(int i=0;i<118;i++){
+	for(int i=0;i<47;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2505,7 +2505,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[63][1] = LargeX[63][0]>0 ? 1 : 0;
 	satisfiable[63][1]=1; 
 	if(!L[63][1]){
-	for(int i=0;i<73;i++){
+	for(int i=0;i<64;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2525,7 +2525,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[64][0] = LargeX[64][1]>0 ? 1 : 0;
 	satisfiable[64][0]=1; 
 	if(!L[64][0]){
-	for(int i=0;i<63;i++){
+	for(int i=0;i<142;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2545,7 +2545,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[64][1] = LargeX[64][0]>0 ? 1 : 0;
 	satisfiable[64][1]=1; 
 	if(!L[64][1]){
-	for(int i=0;i<70;i++){
+	for(int i=0;i<59;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2565,7 +2565,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[65][0] = LargeX[65][1]>0 ? 1 : 0;
 	satisfiable[65][0]=1; 
 	if(!L[65][0]){
-	for(int i=0;i<153;i++){
+	for(int i=0;i<83;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2585,7 +2585,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[65][1] = LargeX[65][0]>0 ? 1 : 0;
 	satisfiable[65][1]=1; 
 	if(!L[65][1]){
-	for(int i=0;i<55;i++){
+	for(int i=0;i<144;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2605,7 +2605,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[66][0] = LargeX[66][1]>0 ? 1 : 0;
 	satisfiable[66][0]=1; 
 	if(!L[66][0]){
-	for(int i=0;i<58;i++){
+	for(int i=0;i<126;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2625,7 +2625,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[66][1] = LargeX[66][0]>0 ? 1 : 0;
 	satisfiable[66][1]=1; 
 	if(!L[66][1]){
-	for(int i=0;i<150;i++){
+	for(int i=0;i<37;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2645,7 +2645,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[67][0] = LargeX[67][1]>0 ? 1 : 0;
 	satisfiable[67][0]=1; 
 	if(!L[67][0]){
-	for(int i=0;i<74;i++){
+	for(int i=0;i<117;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2665,7 +2665,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[67][1] = LargeX[67][0]>0 ? 1 : 0;
 	satisfiable[67][1]=1; 
 	if(!L[67][1]){
-	for(int i=0;i<101;i++){
+	for(int i=0;i<14;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2685,7 +2685,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[68][0] = LargeX[68][1]>0 ? 1 : 0;
 	satisfiable[68][0]=1; 
 	if(!L[68][0]){
-	for(int i=0;i<44;i++){
+	for(int i=0;i<68;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2705,7 +2705,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[68][1] = LargeX[68][0]>0 ? 1 : 0;
 	satisfiable[68][1]=1; 
 	if(!L[68][1]){
-	for(int i=0;i<96;i++){
+	for(int i=0;i<59;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2725,7 +2725,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[69][0] = LargeX[69][1]>0 ? 1 : 0;
 	satisfiable[69][0]=1; 
 	if(!L[69][0]){
-	for(int i=0;i<119;i++){
+	for(int i=0;i<167;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2745,7 +2745,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[69][1] = LargeX[69][0]>0 ? 1 : 0;
 	satisfiable[69][1]=1; 
 	if(!L[69][1]){
-	for(int i=0;i<109;i++){
+	for(int i=0;i<72;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2785,7 +2785,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[70][1] = LargeX[70][0]>0 ? 1 : 0;
 	satisfiable[70][1]=1; 
 	if(!L[70][1]){
-	for(int i=0;i<150;i++){
+	for(int i=0;i<76;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2805,7 +2805,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[71][0] = LargeX[71][1]>0 ? 1 : 0;
 	satisfiable[71][0]=1; 
 	if(!L[71][0]){
-	for(int i=0;i<102;i++){
+	for(int i=0;i<70;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2845,7 +2845,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[72][0] = LargeX[72][1]>0 ? 1 : 0;
 	satisfiable[72][0]=1; 
 	if(!L[72][0]){
-	for(int i=0;i<35;i++){
+	for(int i=0;i<83;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2865,7 +2865,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[72][1] = LargeX[72][0]>0 ? 1 : 0;
 	satisfiable[72][1]=1; 
 	if(!L[72][1]){
-	for(int i=0;i<54;i++){
+	for(int i=0;i<51;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2885,7 +2885,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[73][0] = LargeX[73][1]>0 ? 1 : 0;
 	satisfiable[73][0]=1; 
 	if(!L[73][0]){
-	for(int i=0;i<115;i++){
+	for(int i=0;i<67;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2905,7 +2905,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[73][1] = LargeX[73][0]>0 ? 1 : 0;
 	satisfiable[73][1]=1; 
 	if(!L[73][1]){
-	for(int i=0;i<73;i++){
+	for(int i=0;i<155;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2945,7 +2945,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[74][1] = LargeX[74][0]>0 ? 1 : 0;
 	satisfiable[74][1]=1; 
 	if(!L[74][1]){
-	for(int i=0;i<129;i++){
+	for(int i=0;i<78;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2965,7 +2965,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[75][0] = LargeX[75][1]>0 ? 1 : 0;
 	satisfiable[75][0]=1; 
 	if(!L[75][0]){
-	for(int i=0;i<86;i++){
+	for(int i=0;i<42;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2985,7 +2985,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[75][1] = LargeX[75][0]>0 ? 1 : 0;
 	satisfiable[75][1]=1; 
 	if(!L[75][1]){
-	for(int i=0;i<54;i++){
+	for(int i=0;i<139;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3005,7 +3005,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[76][0] = LargeX[76][1]>0 ? 1 : 0;
 	satisfiable[76][0]=1; 
 	if(!L[76][0]){
-	for(int i=0;i<58;i++){
+	for(int i=0;i<81;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3025,7 +3025,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[76][1] = LargeX[76][0]>0 ? 1 : 0;
 	satisfiable[76][1]=1; 
 	if(!L[76][1]){
-	for(int i=0;i<156;i++){
+	for(int i=0;i<105;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3045,7 +3045,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[77][0] = LargeX[77][1]>0 ? 1 : 0;
 	satisfiable[77][0]=1; 
 	if(!L[77][0]){
-	for(int i=0;i<62;i++){
+	for(int i=0;i<141;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3065,7 +3065,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[77][1] = LargeX[77][0]>0 ? 1 : 0;
 	satisfiable[77][1]=1; 
 	if(!L[77][1]){
-	for(int i=0;i<166;i++){
+	for(int i=0;i<66;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3085,7 +3085,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[78][0] = LargeX[78][1]>0 ? 1 : 0;
 	satisfiable[78][0]=1; 
 	if(!L[78][0]){
-	for(int i=0;i<96;i++){
+	for(int i=0;i<26;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3105,7 +3105,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[78][1] = LargeX[78][0]>0 ? 1 : 0;
 	satisfiable[78][1]=1; 
 	if(!L[78][1]){
-	for(int i=0;i<121;i++){
+	for(int i=0;i<140;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3125,7 +3125,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[79][0] = LargeX[79][1]>0 ? 1 : 0;
 	satisfiable[79][0]=1; 
 	if(!L[79][0]){
-	for(int i=0;i<55;i++){
+	for(int i=0;i<76;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3145,7 +3145,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[79][1] = LargeX[79][0]>0 ? 1 : 0;
 	satisfiable[79][1]=1; 
 	if(!L[79][1]){
-	for(int i=0;i<72;i++){
+	for(int i=0;i<85;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3165,7 +3165,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[80][0] = LargeX[80][1]>0 ? 1 : 0;
 	satisfiable[80][0]=1; 
 	if(!L[80][0]){
-	for(int i=0;i<50;i++){
+	for(int i=0;i<164;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3185,7 +3185,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[80][1] = LargeX[80][0]>0 ? 1 : 0;
 	satisfiable[80][1]=1; 
 	if(!L[80][1]){
-	for(int i=0;i<145;i++){
+	for(int i=0;i<147;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3205,7 +3205,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[81][0] = LargeX[81][1]>0 ? 1 : 0;
 	satisfiable[81][0]=1; 
 	if(!L[81][0]){
-	for(int i=0;i<58;i++){
+	for(int i=0;i<139;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3225,7 +3225,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[81][1] = LargeX[81][0]>0 ? 1 : 0;
 	satisfiable[81][1]=1; 
 	if(!L[81][1]){
-	for(int i=0;i<74;i++){
+	for(int i=0;i<91;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3245,7 +3245,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[82][0] = LargeX[82][1]>0 ? 1 : 0;
 	satisfiable[82][0]=1; 
 	if(!L[82][0]){
-	for(int i=0;i<113;i++){
+	for(int i=0;i<57;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3265,7 +3265,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[82][1] = LargeX[82][0]>0 ? 1 : 0;
 	satisfiable[82][1]=1; 
 	if(!L[82][1]){
-	for(int i=0;i<67;i++){
+	for(int i=0;i<63;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3285,7 +3285,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[83][0] = LargeX[83][1]>0 ? 1 : 0;
 	satisfiable[83][0]=1; 
 	if(!L[83][0]){
-	for(int i=0;i<103;i++){
+	for(int i=0;i<100;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3305,7 +3305,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[83][1] = LargeX[83][0]>0 ? 1 : 0;
 	satisfiable[83][1]=1; 
 	if(!L[83][1]){
-	for(int i=0;i<79;i++){
+	for(int i=0;i<69;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3325,7 +3325,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[84][0] = LargeX[84][1]>0 ? 1 : 0;
 	satisfiable[84][0]=1; 
 	if(!L[84][0]){
-	for(int i=0;i<101;i++){
+	for(int i=0;i<30;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3345,7 +3345,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[84][1] = LargeX[84][0]>0 ? 1 : 0;
 	satisfiable[84][1]=1; 
 	if(!L[84][1]){
-	for(int i=0;i<158;i++){
+	for(int i=0;i<82;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3365,7 +3365,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[85][0] = LargeX[85][1]>0 ? 1 : 0;
 	satisfiable[85][0]=1; 
 	if(!L[85][0]){
-	for(int i=0;i<58;i++){
+	for(int i=0;i<79;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3385,7 +3385,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[85][1] = LargeX[85][0]>0 ? 1 : 0;
 	satisfiable[85][1]=1; 
 	if(!L[85][1]){
-	for(int i=0;i<88;i++){
+	for(int i=0;i<101;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3405,7 +3405,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[86][0] = LargeX[86][1]>0 ? 1 : 0;
 	satisfiable[86][0]=1; 
 	if(!L[86][0]){
-	for(int i=0;i<106;i++){
+	for(int i=0;i<67;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3425,7 +3425,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[86][1] = LargeX[86][0]>0 ? 1 : 0;
 	satisfiable[86][1]=1; 
 	if(!L[86][1]){
-	for(int i=0;i<84;i++){
+	for(int i=0;i<79;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3445,7 +3445,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[87][0] = LargeX[87][1]>0 ? 1 : 0;
 	satisfiable[87][0]=1; 
 	if(!L[87][0]){
-	for(int i=0;i<140;i++){
+	for(int i=0;i<98;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3465,7 +3465,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[87][1] = LargeX[87][0]>0 ? 1 : 0;
 	satisfiable[87][1]=1; 
 	if(!L[87][1]){
-	for(int i=0;i<59;i++){
+	for(int i=0;i<138;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3485,7 +3485,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[88][0] = LargeX[88][1]>0 ? 1 : 0;
 	satisfiable[88][0]=1; 
 	if(!L[88][0]){
-	for(int i=0;i<26;i++){
+	for(int i=0;i<119;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3505,7 +3505,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[88][1] = LargeX[88][0]>0 ? 1 : 0;
 	satisfiable[88][1]=1; 
 	if(!L[88][1]){
-	for(int i=0;i<63;i++){
+	for(int i=0;i<45;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3525,7 +3525,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[89][0] = LargeX[89][1]>0 ? 1 : 0;
 	satisfiable[89][0]=1; 
 	if(!L[89][0]){
-	for(int i=0;i<87;i++){
+	for(int i=0;i<41;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3545,7 +3545,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[89][1] = LargeX[89][0]>0 ? 1 : 0;
 	satisfiable[89][1]=1; 
 	if(!L[89][1]){
-	for(int i=0;i<59;i++){
+	for(int i=0;i<41;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3565,7 +3565,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[90][0] = LargeX[90][1]>0 ? 1 : 0;
 	satisfiable[90][0]=1; 
 	if(!L[90][0]){
-	for(int i=0;i<62;i++){
+	for(int i=0;i<99;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3585,7 +3585,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[90][1] = LargeX[90][0]>0 ? 1 : 0;
 	satisfiable[90][1]=1; 
 	if(!L[90][1]){
-	for(int i=0;i<123;i++){
+	for(int i=0;i<93;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3605,7 +3605,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[91][0] = LargeX[91][1]>0 ? 1 : 0;
 	satisfiable[91][0]=1; 
 	if(!L[91][0]){
-	for(int i=0;i<54;i++){
+	for(int i=0;i<27;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3625,7 +3625,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[91][1] = LargeX[91][0]>0 ? 1 : 0;
 	satisfiable[91][1]=1; 
 	if(!L[91][1]){
-	for(int i=0;i<69;i++){
+	for(int i=0;i<55;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3645,7 +3645,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[92][0] = LargeX[92][1]>0 ? 1 : 0;
 	satisfiable[92][0]=1; 
 	if(!L[92][0]){
-	for(int i=0;i<71;i++){
+	for(int i=0;i<78;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3665,7 +3665,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[92][1] = LargeX[92][0]>0 ? 1 : 0;
 	satisfiable[92][1]=1; 
 	if(!L[92][1]){
-	for(int i=0;i<91;i++){
+	for(int i=0;i<94;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3685,7 +3685,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[93][0] = LargeX[93][1]>0 ? 1 : 0;
 	satisfiable[93][0]=1; 
 	if(!L[93][0]){
-	for(int i=0;i<119;i++){
+	for(int i=0;i<124;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3705,7 +3705,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[93][1] = LargeX[93][0]>0 ? 1 : 0;
 	satisfiable[93][1]=1; 
 	if(!L[93][1]){
-	for(int i=0;i<92;i++){
+	for(int i=0;i<39;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3725,7 +3725,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[94][0] = LargeX[94][1]>0 ? 1 : 0;
 	satisfiable[94][0]=1; 
 	if(!L[94][0]){
-	for(int i=0;i<93;i++){
+	for(int i=0;i<92;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3745,7 +3745,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[94][1] = LargeX[94][0]>0 ? 1 : 0;
 	satisfiable[94][1]=1; 
 	if(!L[94][1]){
-	for(int i=0;i<75;i++){
+	for(int i=0;i<79;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3765,7 +3765,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[95][0] = LargeX[95][1]>0 ? 1 : 0;
 	satisfiable[95][0]=1; 
 	if(!L[95][0]){
-	for(int i=0;i<90;i++){
+	for(int i=0;i<75;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3785,7 +3785,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[95][1] = LargeX[95][0]>0 ? 1 : 0;
 	satisfiable[95][1]=1; 
 	if(!L[95][1]){
-	for(int i=0;i<104;i++){
+	for(int i=0;i<89;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3805,7 +3805,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[96][0] = LargeX[96][1]>0 ? 1 : 0;
 	satisfiable[96][0]=1; 
 	if(!L[96][0]){
-	for(int i=0;i<129;i++){
+	for(int i=0;i<95;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3825,7 +3825,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[96][1] = LargeX[96][0]>0 ? 1 : 0;
 	satisfiable[96][1]=1; 
 	if(!L[96][1]){
-	for(int i=0;i<87;i++){
+	for(int i=0;i<77;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3845,7 +3845,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[97][0] = LargeX[97][1]>0 ? 1 : 0;
 	satisfiable[97][0]=1; 
 	if(!L[97][0]){
-	for(int i=0;i<144;i++){
+	for(int i=0;i<167;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3865,7 +3865,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[97][1] = LargeX[97][0]>0 ? 1 : 0;
 	satisfiable[97][1]=1; 
 	if(!L[97][1]){
-	for(int i=0;i<32;i++){
+	for(int i=0;i<55;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3885,7 +3885,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[98][0] = LargeX[98][1]>0 ? 1 : 0;
 	satisfiable[98][0]=1; 
 	if(!L[98][0]){
-	for(int i=0;i<87;i++){
+	for(int i=0;i<72;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3905,7 +3905,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[98][1] = LargeX[98][0]>0 ? 1 : 0;
 	satisfiable[98][1]=1; 
 	if(!L[98][1]){
-	for(int i=0;i<113;i++){
+	for(int i=0;i<56;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3925,7 +3925,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[99][0] = LargeX[99][1]>0 ? 1 : 0;
 	satisfiable[99][0]=1; 
 	if(!L[99][0]){
-	for(int i=0;i<78;i++){
+	for(int i=0;i<10;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3945,7 +3945,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[99][1] = LargeX[99][0]>0 ? 1 : 0;
 	satisfiable[99][1]=1; 
 	if(!L[99][1]){
-	for(int i=0;i<94;i++){
+	for(int i=0;i<57;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3965,7 +3965,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[100][0] = LargeX[100][1]>0 ? 1 : 0;
 	satisfiable[100][0]=1; 
 	if(!L[100][0]){
-	for(int i=0;i<121;i++){
+	for(int i=0;i<50;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3985,7 +3985,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[100][1] = LargeX[100][0]>0 ? 1 : 0;
 	satisfiable[100][1]=1; 
 	if(!L[100][1]){
-	for(int i=0;i<130;i++){
+	for(int i=0;i<84;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4005,7 +4005,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[101][0] = LargeX[101][1]>0 ? 1 : 0;
 	satisfiable[101][0]=1; 
 	if(!L[101][0]){
-	for(int i=0;i<82;i++){
+	for(int i=0;i<71;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4025,7 +4025,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[101][1] = LargeX[101][0]>0 ? 1 : 0;
 	satisfiable[101][1]=1; 
 	if(!L[101][1]){
-	for(int i=0;i<97;i++){
+	for(int i=0;i<47;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4045,7 +4045,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[102][0] = LargeX[102][1]>0 ? 1 : 0;
 	satisfiable[102][0]=1; 
 	if(!L[102][0]){
-	for(int i=0;i<56;i++){
+	for(int i=0;i<83;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4065,7 +4065,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[102][1] = LargeX[102][0]>0 ? 1 : 0;
 	satisfiable[102][1]=1; 
 	if(!L[102][1]){
-	for(int i=0;i<86;i++){
+	for(int i=0;i<120;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4085,7 +4085,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[103][0] = LargeX[103][1]>0 ? 1 : 0;
 	satisfiable[103][0]=1; 
 	if(!L[103][0]){
-	for(int i=0;i<72;i++){
+	for(int i=0;i<107;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4105,7 +4105,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[103][1] = LargeX[103][0]>0 ? 1 : 0;
 	satisfiable[103][1]=1; 
 	if(!L[103][1]){
-	for(int i=0;i<94;i++){
+	for(int i=0;i<77;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4125,7 +4125,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[104][0] = LargeX[104][1]>0 ? 1 : 0;
 	satisfiable[104][0]=1; 
 	if(!L[104][0]){
-	for(int i=0;i<104;i++){
+	for(int i=0;i<66;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4145,7 +4145,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[104][1] = LargeX[104][0]>0 ? 1 : 0;
 	satisfiable[104][1]=1; 
 	if(!L[104][1]){
-	for(int i=0;i<70;i++){
+	for(int i=0;i<130;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4165,7 +4165,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[105][0] = LargeX[105][1]>0 ? 1 : 0;
 	satisfiable[105][0]=1; 
 	if(!L[105][0]){
-	for(int i=0;i<71;i++){
+	for(int i=0;i<102;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4185,7 +4185,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[105][1] = LargeX[105][0]>0 ? 1 : 0;
 	satisfiable[105][1]=1; 
 	if(!L[105][1]){
-	for(int i=0;i<33;i++){
+	for(int i=0;i<50;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4205,7 +4205,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[106][0] = LargeX[106][1]>0 ? 1 : 0;
 	satisfiable[106][0]=1; 
 	if(!L[106][0]){
-	for(int i=0;i<104;i++){
+	for(int i=0;i<102;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4225,7 +4225,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[106][1] = LargeX[106][0]>0 ? 1 : 0;
 	satisfiable[106][1]=1; 
 	if(!L[106][1]){
-	for(int i=0;i<53;i++){
+	for(int i=0;i<39;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4245,7 +4245,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[107][0] = LargeX[107][1]>0 ? 1 : 0;
 	satisfiable[107][0]=1; 
 	if(!L[107][0]){
-	for(int i=0;i<89;i++){
+	for(int i=0;i<80;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4265,7 +4265,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[107][1] = LargeX[107][0]>0 ? 1 : 0;
 	satisfiable[107][1]=1; 
 	if(!L[107][1]){
-	for(int i=0;i<75;i++){
+	for(int i=0;i<104;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4285,7 +4285,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[108][0] = LargeX[108][1]>0 ? 1 : 0;
 	satisfiable[108][0]=1; 
 	if(!L[108][0]){
-	for(int i=0;i<119;i++){
+	for(int i=0;i<77;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4305,7 +4305,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[108][1] = LargeX[108][0]>0 ? 1 : 0;
 	satisfiable[108][1]=1; 
 	if(!L[108][1]){
-	for(int i=0;i<89;i++){
+	for(int i=0;i<62;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4325,7 +4325,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[109][0] = LargeX[109][1]>0 ? 1 : 0;
 	satisfiable[109][0]=1; 
 	if(!L[109][0]){
-	for(int i=0;i<68;i++){
+	for(int i=0;i<128;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4345,7 +4345,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[109][1] = LargeX[109][0]>0 ? 1 : 0;
 	satisfiable[109][1]=1; 
 	if(!L[109][1]){
-	for(int i=0;i<197;i++){
+	for(int i=0;i<47;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4365,7 +4365,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[110][0] = LargeX[110][1]>0 ? 1 : 0;
 	satisfiable[110][0]=1; 
 	if(!L[110][0]){
-	for(int i=0;i<82;i++){
+	for(int i=0;i<70;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4385,7 +4385,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[110][1] = LargeX[110][0]>0 ? 1 : 0;
 	satisfiable[110][1]=1; 
 	if(!L[110][1]){
-	for(int i=0;i<51;i++){
+	for(int i=0;i<64;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4405,7 +4405,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[111][0] = LargeX[111][1]>0 ? 1 : 0;
 	satisfiable[111][0]=1; 
 	if(!L[111][0]){
-	for(int i=0;i<72;i++){
+	for(int i=0;i<87;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4425,7 +4425,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[111][1] = LargeX[111][0]>0 ? 1 : 0;
 	satisfiable[111][1]=1; 
 	if(!L[111][1]){
-	for(int i=0;i<150;i++){
+	for(int i=0;i<70;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4445,7 +4445,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[112][0] = LargeX[112][1]>0 ? 1 : 0;
 	satisfiable[112][0]=1; 
 	if(!L[112][0]){
-	for(int i=0;i<55;i++){
+	for(int i=0;i<84;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4465,7 +4465,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[112][1] = LargeX[112][0]>0 ? 1 : 0;
 	satisfiable[112][1]=1; 
 	if(!L[112][1]){
-	for(int i=0;i<62;i++){
+	for(int i=0;i<158;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4485,7 +4485,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[113][0] = LargeX[113][1]>0 ? 1 : 0;
 	satisfiable[113][0]=1; 
 	if(!L[113][0]){
-	for(int i=0;i<49;i++){
+	for(int i=0;i<120;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4505,7 +4505,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[113][1] = LargeX[113][0]>0 ? 1 : 0;
 	satisfiable[113][1]=1; 
 	if(!L[113][1]){
-	for(int i=0;i<174;i++){
+	for(int i=0;i<24;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4525,7 +4525,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[114][0] = LargeX[114][1]>0 ? 1 : 0;
 	satisfiable[114][0]=1; 
 	if(!L[114][0]){
-	for(int i=0;i<139;i++){
+	for(int i=0;i<67;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4545,7 +4545,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[114][1] = LargeX[114][0]>0 ? 1 : 0;
 	satisfiable[114][1]=1; 
 	if(!L[114][1]){
-	for(int i=0;i<68;i++){
+	for(int i=0;i<91;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4565,7 +4565,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[115][0] = LargeX[115][1]>0 ? 1 : 0;
 	satisfiable[115][0]=1; 
 	if(!L[115][0]){
-	for(int i=0;i<137;i++){
+	for(int i=0;i<148;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4585,7 +4585,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[115][1] = LargeX[115][0]>0 ? 1 : 0;
 	satisfiable[115][1]=1; 
 	if(!L[115][1]){
-	for(int i=0;i<108;i++){
+	for(int i=0;i<38;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4605,7 +4605,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[116][0] = LargeX[116][1]>0 ? 1 : 0;
 	satisfiable[116][0]=1; 
 	if(!L[116][0]){
-	for(int i=0;i<110;i++){
+	for(int i=0;i<55;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4625,7 +4625,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[116][1] = LargeX[116][0]>0 ? 1 : 0;
 	satisfiable[116][1]=1; 
 	if(!L[116][1]){
-	for(int i=0;i<86;i++){
+	for(int i=0;i<47;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4645,7 +4645,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[117][0] = LargeX[117][1]>0 ? 1 : 0;
 	satisfiable[117][0]=1; 
 	if(!L[117][0]){
-	for(int i=0;i<77;i++){
+	for(int i=0;i<102;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4665,7 +4665,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[117][1] = LargeX[117][0]>0 ? 1 : 0;
 	satisfiable[117][1]=1; 
 	if(!L[117][1]){
-	for(int i=0;i<117;i++){
+	for(int i=0;i<73;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4685,7 +4685,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[118][0] = LargeX[118][1]>0 ? 1 : 0;
 	satisfiable[118][0]=1; 
 	if(!L[118][0]){
-	for(int i=0;i<73;i++){
+	for(int i=0;i<66;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4705,7 +4705,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[118][1] = LargeX[118][0]>0 ? 1 : 0;
 	satisfiable[118][1]=1; 
 	if(!L[118][1]){
-	for(int i=0;i<61;i++){
+	for(int i=0;i<173;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4725,7 +4725,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[119][0] = LargeX[119][1]>0 ? 1 : 0;
 	satisfiable[119][0]=1; 
 	if(!L[119][0]){
-	for(int i=0;i<49;i++){
+	for(int i=0;i<75;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4745,7 +4745,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[119][1] = LargeX[119][0]>0 ? 1 : 0;
 	satisfiable[119][1]=1; 
 	if(!L[119][1]){
-	for(int i=0;i<47;i++){
+	for(int i=0;i<55;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4765,7 +4765,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[120][0] = LargeX[120][1]>0 ? 1 : 0;
 	satisfiable[120][0]=1; 
 	if(!L[120][0]){
-	for(int i=0;i<76;i++){
+	for(int i=0;i<73;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4785,7 +4785,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[120][1] = LargeX[120][0]>0 ? 1 : 0;
 	satisfiable[120][1]=1; 
 	if(!L[120][1]){
-	for(int i=0;i<30;i++){
+	for(int i=0;i<57;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4805,7 +4805,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[121][0] = LargeX[121][1]>0 ? 1 : 0;
 	satisfiable[121][0]=1; 
 	if(!L[121][0]){
-	for(int i=0;i<119;i++){
+	for(int i=0;i<36;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4825,7 +4825,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[121][1] = LargeX[121][0]>0 ? 1 : 0;
 	satisfiable[121][1]=1; 
 	if(!L[121][1]){
-	for(int i=0;i<72;i++){
+	for(int i=0;i<142;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4845,7 +4845,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[122][0] = LargeX[122][1]>0 ? 1 : 0;
 	satisfiable[122][0]=1; 
 	if(!L[122][0]){
-	for(int i=0;i<132;i++){
+	for(int i=0;i<92;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4865,7 +4865,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[122][1] = LargeX[122][0]>0 ? 1 : 0;
 	satisfiable[122][1]=1; 
 	if(!L[122][1]){
-	for(int i=0;i<80;i++){
+	for(int i=0;i<78;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4885,7 +4885,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[123][0] = LargeX[123][1]>0 ? 1 : 0;
 	satisfiable[123][0]=1; 
 	if(!L[123][0]){
-	for(int i=0;i<102;i++){
+	for(int i=0;i<71;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4905,7 +4905,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[123][1] = LargeX[123][0]>0 ? 1 : 0;
 	satisfiable[123][1]=1; 
 	if(!L[123][1]){
-	for(int i=0;i<39;i++){
+	for(int i=0;i<136;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4925,7 +4925,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[124][0] = LargeX[124][1]>0 ? 1 : 0;
 	satisfiable[124][0]=1; 
 	if(!L[124][0]){
-	for(int i=0;i<66;i++){
+	for(int i=0;i<81;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4945,7 +4945,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[124][1] = LargeX[124][0]>0 ? 1 : 0;
 	satisfiable[124][1]=1; 
 	if(!L[124][1]){
-	for(int i=0;i<91;i++){
+	for(int i=0;i<66;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4965,7 +4965,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[125][0] = LargeX[125][1]>0 ? 1 : 0;
 	satisfiable[125][0]=1; 
 	if(!L[125][0]){
-	for(int i=0;i<50;i++){
+	for(int i=0;i<135;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4985,7 +4985,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[125][1] = LargeX[125][0]>0 ? 1 : 0;
 	satisfiable[125][1]=1; 
 	if(!L[125][1]){
-	for(int i=0;i<105;i++){
+	for(int i=0;i<88;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5005,7 +5005,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[126][0] = LargeX[126][1]>0 ? 1 : 0;
 	satisfiable[126][0]=1; 
 	if(!L[126][0]){
-	for(int i=0;i<41;i++){
+	for(int i=0;i<109;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5025,7 +5025,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[126][1] = LargeX[126][0]>0 ? 1 : 0;
 	satisfiable[126][1]=1; 
 	if(!L[126][1]){
-	for(int i=0;i<39;i++){
+	for(int i=0;i<129;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5045,7 +5045,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[127][0] = LargeX[127][1]>0 ? 1 : 0;
 	satisfiable[127][0]=1; 
 	if(!L[127][0]){
-	for(int i=0;i<83;i++){
+	for(int i=0;i<27;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5065,7 +5065,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[127][1] = LargeX[127][0]>0 ? 1 : 0;
 	satisfiable[127][1]=1; 
 	if(!L[127][1]){
-	for(int i=0;i<14;i++){
+	for(int i=0;i<66;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5085,7 +5085,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[128][0] = LargeX[128][1]>0 ? 1 : 0;
 	satisfiable[128][0]=1; 
 	if(!L[128][0]){
-	for(int i=0;i<110;i++){
+	for(int i=0;i<132;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5105,7 +5105,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[128][1] = LargeX[128][0]>0 ? 1 : 0;
 	satisfiable[128][1]=1; 
 	if(!L[128][1]){
-	for(int i=0;i<42;i++){
+	for(int i=0;i<71;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5125,7 +5125,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[129][0] = LargeX[129][1]>0 ? 1 : 0;
 	satisfiable[129][0]=1; 
 	if(!L[129][0]){
-	for(int i=0;i<153;i++){
+	for(int i=0;i<120;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5145,7 +5145,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[129][1] = LargeX[129][0]>0 ? 1 : 0;
 	satisfiable[129][1]=1; 
 	if(!L[129][1]){
-	for(int i=0;i<129;i++){
+	for(int i=0;i<209;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5165,7 +5165,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[130][0] = LargeX[130][1]>0 ? 1 : 0;
 	satisfiable[130][0]=1; 
 	if(!L[130][0]){
-	for(int i=0;i<101;i++){
+	for(int i=0;i<22;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5185,7 +5185,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[130][1] = LargeX[130][0]>0 ? 1 : 0;
 	satisfiable[130][1]=1; 
 	if(!L[130][1]){
-	for(int i=0;i<92;i++){
+	for(int i=0;i<96;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5205,7 +5205,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[131][0] = LargeX[131][1]>0 ? 1 : 0;
 	satisfiable[131][0]=1; 
 	if(!L[131][0]){
-	for(int i=0;i<110;i++){
+	for(int i=0;i<37;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5225,7 +5225,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[131][1] = LargeX[131][0]>0 ? 1 : 0;
 	satisfiable[131][1]=1; 
 	if(!L[131][1]){
-	for(int i=0;i<55;i++){
+	for(int i=0;i<67;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5245,7 +5245,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[132][0] = LargeX[132][1]>0 ? 1 : 0;
 	satisfiable[132][0]=1; 
 	if(!L[132][0]){
-	for(int i=0;i<85;i++){
+	for(int i=0;i<94;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5265,7 +5265,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[132][1] = LargeX[132][0]>0 ? 1 : 0;
 	satisfiable[132][1]=1; 
 	if(!L[132][1]){
-	for(int i=0;i<114;i++){
+	for(int i=0;i<102;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5285,7 +5285,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[133][0] = LargeX[133][1]>0 ? 1 : 0;
 	satisfiable[133][0]=1; 
 	if(!L[133][0]){
-	for(int i=0;i<111;i++){
+	for(int i=0;i<50;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5305,7 +5305,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[133][1] = LargeX[133][0]>0 ? 1 : 0;
 	satisfiable[133][1]=1; 
 	if(!L[133][1]){
-	for(int i=0;i<147;i++){
+	for(int i=0;i<64;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5325,7 +5325,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[134][0] = LargeX[134][1]>0 ? 1 : 0;
 	satisfiable[134][0]=1; 
 	if(!L[134][0]){
-	for(int i=0;i<71;i++){
+	for(int i=0;i<105;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5345,7 +5345,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[134][1] = LargeX[134][0]>0 ? 1 : 0;
 	satisfiable[134][1]=1; 
 	if(!L[134][1]){
-	for(int i=0;i<102;i++){
+	for(int i=0;i<41;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5365,7 +5365,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[135][0] = LargeX[135][1]>0 ? 1 : 0;
 	satisfiable[135][0]=1; 
 	if(!L[135][0]){
-	for(int i=0;i<96;i++){
+	for(int i=0;i<105;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5385,7 +5385,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[135][1] = LargeX[135][0]>0 ? 1 : 0;
 	satisfiable[135][1]=1; 
 	if(!L[135][1]){
-	for(int i=0;i<166;i++){
+	for(int i=0;i<38;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5405,7 +5405,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[136][0] = LargeX[136][1]>0 ? 1 : 0;
 	satisfiable[136][0]=1; 
 	if(!L[136][0]){
-	for(int i=0;i<67;i++){
+	for(int i=0;i<72;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5425,7 +5425,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[136][1] = LargeX[136][0]>0 ? 1 : 0;
 	satisfiable[136][1]=1; 
 	if(!L[136][1]){
-	for(int i=0;i<64;i++){
+	for(int i=0;i<104;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5445,7 +5445,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[137][0] = LargeX[137][1]>0 ? 1 : 0;
 	satisfiable[137][0]=1; 
 	if(!L[137][0]){
-	for(int i=0;i<145;i++){
+	for(int i=0;i<126;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5465,7 +5465,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[137][1] = LargeX[137][0]>0 ? 1 : 0;
 	satisfiable[137][1]=1; 
 	if(!L[137][1]){
-	for(int i=0;i<90;i++){
+	for(int i=0;i<69;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5485,7 +5485,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[138][0] = LargeX[138][1]>0 ? 1 : 0;
 	satisfiable[138][0]=1; 
 	if(!L[138][0]){
-	for(int i=0;i<123;i++){
+	for(int i=0;i<121;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5505,7 +5505,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[138][1] = LargeX[138][0]>0 ? 1 : 0;
 	satisfiable[138][1]=1; 
 	if(!L[138][1]){
-	for(int i=0;i<42;i++){
+	for(int i=0;i<144;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5525,7 +5525,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[139][0] = LargeX[139][1]>0 ? 1 : 0;
 	satisfiable[139][0]=1; 
 	if(!L[139][0]){
-	for(int i=0;i<50;i++){
+	for(int i=0;i<109;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5545,7 +5545,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[139][1] = LargeX[139][0]>0 ? 1 : 0;
 	satisfiable[139][1]=1; 
 	if(!L[139][1]){
-	for(int i=0;i<121;i++){
+	for(int i=0;i<76;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5565,7 +5565,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[140][0] = LargeX[140][1]>0 ? 1 : 0;
 	satisfiable[140][0]=1; 
 	if(!L[140][0]){
-	for(int i=0;i<133;i++){
+	for(int i=0;i<75;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5585,7 +5585,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[140][1] = LargeX[140][0]>0 ? 1 : 0;
 	satisfiable[140][1]=1; 
 	if(!L[140][1]){
-	for(int i=0;i<103;i++){
+	for(int i=0;i<113;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5605,7 +5605,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[141][0] = LargeX[141][1]>0 ? 1 : 0;
 	satisfiable[141][0]=1; 
 	if(!L[141][0]){
-	for(int i=0;i<66;i++){
+	for(int i=0;i<85;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5625,7 +5625,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[141][1] = LargeX[141][0]>0 ? 1 : 0;
 	satisfiable[141][1]=1; 
 	if(!L[141][1]){
-	for(int i=0;i<132;i++){
+	for(int i=0;i<110;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5645,7 +5645,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[142][0] = LargeX[142][1]>0 ? 1 : 0;
 	satisfiable[142][0]=1; 
 	if(!L[142][0]){
-	for(int i=0;i<30;i++){
+	for(int i=0;i<121;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5665,7 +5665,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[142][1] = LargeX[142][0]>0 ? 1 : 0;
 	satisfiable[142][1]=1; 
 	if(!L[142][1]){
-	for(int i=0;i<83;i++){
+	for(int i=0;i<162;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5685,7 +5685,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[143][0] = LargeX[143][1]>0 ? 1 : 0;
 	satisfiable[143][0]=1; 
 	if(!L[143][0]){
-	for(int i=0;i<67;i++){
+	for(int i=0;i<100;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5705,7 +5705,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[143][1] = LargeX[143][0]>0 ? 1 : 0;
 	satisfiable[143][1]=1; 
 	if(!L[143][1]){
-	for(int i=0;i<77;i++){
+	for(int i=0;i<82;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5725,7 +5725,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[144][0] = LargeX[144][1]>0 ? 1 : 0;
 	satisfiable[144][0]=1; 
 	if(!L[144][0]){
-	for(int i=0;i<116;i++){
+	for(int i=0;i<80;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5745,7 +5745,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[144][1] = LargeX[144][0]>0 ? 1 : 0;
 	satisfiable[144][1]=1; 
 	if(!L[144][1]){
-	for(int i=0;i<118;i++){
+	for(int i=0;i<59;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5765,7 +5765,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[145][0] = LargeX[145][1]>0 ? 1 : 0;
 	satisfiable[145][0]=1; 
 	if(!L[145][0]){
-	for(int i=0;i<122;i++){
+	for(int i=0;i<35;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5785,7 +5785,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[145][1] = LargeX[145][0]>0 ? 1 : 0;
 	satisfiable[145][1]=1; 
 	if(!L[145][1]){
-	for(int i=0;i<100;i++){
+	for(int i=0;i<72;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5805,7 +5805,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[146][0] = LargeX[146][1]>0 ? 1 : 0;
 	satisfiable[146][0]=1; 
 	if(!L[146][0]){
-	for(int i=0;i<81;i++){
+	for(int i=0;i<117;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5825,7 +5825,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[146][1] = LargeX[146][0]>0 ? 1 : 0;
 	satisfiable[146][1]=1; 
 	if(!L[146][1]){
-	for(int i=0;i<108;i++){
+	for(int i=0;i<83;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5845,7 +5845,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[147][0] = LargeX[147][1]>0 ? 1 : 0;
 	satisfiable[147][0]=1; 
 	if(!L[147][0]){
-	for(int i=0;i<57;i++){
+	for(int i=0;i<149;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5865,7 +5865,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[147][1] = LargeX[147][0]>0 ? 1 : 0;
 	satisfiable[147][1]=1; 
 	if(!L[147][1]){
-	for(int i=0;i<43;i++){
+	for(int i=0;i<80;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5885,7 +5885,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[148][0] = LargeX[148][1]>0 ? 1 : 0;
 	satisfiable[148][0]=1; 
 	if(!L[148][0]){
-	for(int i=0;i<151;i++){
+	for(int i=0;i<72;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5905,7 +5905,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[148][1] = LargeX[148][0]>0 ? 1 : 0;
 	satisfiable[148][1]=1; 
 	if(!L[148][1]){
-	for(int i=0;i<85;i++){
+	for(int i=0;i<125;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5925,7 +5925,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[149][0] = LargeX[149][1]>0 ? 1 : 0;
 	satisfiable[149][0]=1; 
 	if(!L[149][0]){
-	for(int i=0;i<69;i++){
+	for(int i=0;i<51;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5945,7 +5945,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[149][1] = LargeX[149][0]>0 ? 1 : 0;
 	satisfiable[149][1]=1; 
 	if(!L[149][1]){
-	for(int i=0;i<101;i++){
+	for(int i=0;i<83;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5965,7 +5965,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[150][0] = LargeX[150][1]>0 ? 1 : 0;
 	satisfiable[150][0]=1; 
 	if(!L[150][0]){
-	for(int i=0;i<117;i++){
+	for(int i=0;i<133;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5985,7 +5985,7 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	L[150][1] = LargeX[150][0]>0 ? 1 : 0;
 	satisfiable[150][1]=1; 
 	if(!L[150][1]){
-	for(int i=0;i<39;i++){
+	for(int i=0;i<75;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5999,6 +5999,4006 @@ void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 			satisfiable[150][1]=satisfiable[150][1] & ((x[150] ^ 1) | (x[ unit150_1[i][0] ] ^ unit150_1[i][1]) |(x[ unit150_1[i][2] ] ^ unit150_1[i][3]));
 			}
 		if(X_contra>0) L[150][1]=2;
+		}
+	}
+	//Check all rules of unit[151][0]
+	L[151][0] = LargeX[151][1]>0 ? 1 : 0;
+	satisfiable[151][0]=1; 
+	if(!L[151][0]){
+	for(int i=0;i<51;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit151_0[i][0] ][ unit151_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit151_0[i][2] ][ unit151_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit151_0[i][4] ][ unit151_0[i][5] ] >0);
+		X_contra = ( LargeX[151][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit151_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[151][0]=1;
+			satisfiable[151][0]=satisfiable[151][0] & ((x[151] ^ 0) | (x[ unit151_0[i][0] ] ^ unit151_0[i][1]) |(x[ unit151_0[i][2] ] ^ unit151_0[i][3]));
+			}
+		if(X_contra>0) L[151][0]=2;
+		}
+	}
+	//Check all rules of unit[151][1]
+	L[151][1] = LargeX[151][0]>0 ? 1 : 0;
+	satisfiable[151][1]=1; 
+	if(!L[151][1]){
+	for(int i=0;i<77;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit151_1[i][0] ][ unit151_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit151_1[i][2] ][ unit151_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit151_1[i][4] ][ unit151_1[i][5] ] >0);
+		X_contra = ( LargeX[151][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit151_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[151][1]=1;
+			satisfiable[151][1]=satisfiable[151][1] & ((x[151] ^ 1) | (x[ unit151_1[i][0] ] ^ unit151_1[i][1]) |(x[ unit151_1[i][2] ] ^ unit151_1[i][3]));
+			}
+		if(X_contra>0) L[151][1]=2;
+		}
+	}
+	//Check all rules of unit[152][0]
+	L[152][0] = LargeX[152][1]>0 ? 1 : 0;
+	satisfiable[152][0]=1; 
+	if(!L[152][0]){
+	for(int i=0;i<90;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit152_0[i][0] ][ unit152_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit152_0[i][2] ][ unit152_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit152_0[i][4] ][ unit152_0[i][5] ] >0);
+		X_contra = ( LargeX[152][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit152_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[152][0]=1;
+			satisfiable[152][0]=satisfiable[152][0] & ((x[152] ^ 0) | (x[ unit152_0[i][0] ] ^ unit152_0[i][1]) |(x[ unit152_0[i][2] ] ^ unit152_0[i][3]));
+			}
+		if(X_contra>0) L[152][0]=2;
+		}
+	}
+	//Check all rules of unit[152][1]
+	L[152][1] = LargeX[152][0]>0 ? 1 : 0;
+	satisfiable[152][1]=1; 
+	if(!L[152][1]){
+	for(int i=0;i<99;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit152_1[i][0] ][ unit152_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit152_1[i][2] ][ unit152_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit152_1[i][4] ][ unit152_1[i][5] ] >0);
+		X_contra = ( LargeX[152][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit152_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[152][1]=1;
+			satisfiable[152][1]=satisfiable[152][1] & ((x[152] ^ 1) | (x[ unit152_1[i][0] ] ^ unit152_1[i][1]) |(x[ unit152_1[i][2] ] ^ unit152_1[i][3]));
+			}
+		if(X_contra>0) L[152][1]=2;
+		}
+	}
+	//Check all rules of unit[153][0]
+	L[153][0] = LargeX[153][1]>0 ? 1 : 0;
+	satisfiable[153][0]=1; 
+	if(!L[153][0]){
+	for(int i=0;i<104;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit153_0[i][0] ][ unit153_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit153_0[i][2] ][ unit153_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit153_0[i][4] ][ unit153_0[i][5] ] >0);
+		X_contra = ( LargeX[153][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit153_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[153][0]=1;
+			satisfiable[153][0]=satisfiable[153][0] & ((x[153] ^ 0) | (x[ unit153_0[i][0] ] ^ unit153_0[i][1]) |(x[ unit153_0[i][2] ] ^ unit153_0[i][3]));
+			}
+		if(X_contra>0) L[153][0]=2;
+		}
+	}
+	//Check all rules of unit[153][1]
+	L[153][1] = LargeX[153][0]>0 ? 1 : 0;
+	satisfiable[153][1]=1; 
+	if(!L[153][1]){
+	for(int i=0;i<160;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit153_1[i][0] ][ unit153_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit153_1[i][2] ][ unit153_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit153_1[i][4] ][ unit153_1[i][5] ] >0);
+		X_contra = ( LargeX[153][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit153_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[153][1]=1;
+			satisfiable[153][1]=satisfiable[153][1] & ((x[153] ^ 1) | (x[ unit153_1[i][0] ] ^ unit153_1[i][1]) |(x[ unit153_1[i][2] ] ^ unit153_1[i][3]));
+			}
+		if(X_contra>0) L[153][1]=2;
+		}
+	}
+	//Check all rules of unit[154][0]
+	L[154][0] = LargeX[154][1]>0 ? 1 : 0;
+	satisfiable[154][0]=1; 
+	if(!L[154][0]){
+	for(int i=0;i<88;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit154_0[i][0] ][ unit154_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit154_0[i][2] ][ unit154_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit154_0[i][4] ][ unit154_0[i][5] ] >0);
+		X_contra = ( LargeX[154][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit154_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[154][0]=1;
+			satisfiable[154][0]=satisfiable[154][0] & ((x[154] ^ 0) | (x[ unit154_0[i][0] ] ^ unit154_0[i][1]) |(x[ unit154_0[i][2] ] ^ unit154_0[i][3]));
+			}
+		if(X_contra>0) L[154][0]=2;
+		}
+	}
+	//Check all rules of unit[154][1]
+	L[154][1] = LargeX[154][0]>0 ? 1 : 0;
+	satisfiable[154][1]=1; 
+	if(!L[154][1]){
+	for(int i=0;i<97;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit154_1[i][0] ][ unit154_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit154_1[i][2] ][ unit154_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit154_1[i][4] ][ unit154_1[i][5] ] >0);
+		X_contra = ( LargeX[154][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit154_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[154][1]=1;
+			satisfiable[154][1]=satisfiable[154][1] & ((x[154] ^ 1) | (x[ unit154_1[i][0] ] ^ unit154_1[i][1]) |(x[ unit154_1[i][2] ] ^ unit154_1[i][3]));
+			}
+		if(X_contra>0) L[154][1]=2;
+		}
+	}
+	//Check all rules of unit[155][0]
+	L[155][0] = LargeX[155][1]>0 ? 1 : 0;
+	satisfiable[155][0]=1; 
+	if(!L[155][0]){
+	for(int i=0;i<147;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit155_0[i][0] ][ unit155_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit155_0[i][2] ][ unit155_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit155_0[i][4] ][ unit155_0[i][5] ] >0);
+		X_contra = ( LargeX[155][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit155_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[155][0]=1;
+			satisfiable[155][0]=satisfiable[155][0] & ((x[155] ^ 0) | (x[ unit155_0[i][0] ] ^ unit155_0[i][1]) |(x[ unit155_0[i][2] ] ^ unit155_0[i][3]));
+			}
+		if(X_contra>0) L[155][0]=2;
+		}
+	}
+	//Check all rules of unit[155][1]
+	L[155][1] = LargeX[155][0]>0 ? 1 : 0;
+	satisfiable[155][1]=1; 
+	if(!L[155][1]){
+	for(int i=0;i<37;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit155_1[i][0] ][ unit155_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit155_1[i][2] ][ unit155_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit155_1[i][4] ][ unit155_1[i][5] ] >0);
+		X_contra = ( LargeX[155][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit155_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[155][1]=1;
+			satisfiable[155][1]=satisfiable[155][1] & ((x[155] ^ 1) | (x[ unit155_1[i][0] ] ^ unit155_1[i][1]) |(x[ unit155_1[i][2] ] ^ unit155_1[i][3]));
+			}
+		if(X_contra>0) L[155][1]=2;
+		}
+	}
+	//Check all rules of unit[156][0]
+	L[156][0] = LargeX[156][1]>0 ? 1 : 0;
+	satisfiable[156][0]=1; 
+	if(!L[156][0]){
+	for(int i=0;i<85;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit156_0[i][0] ][ unit156_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit156_0[i][2] ][ unit156_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit156_0[i][4] ][ unit156_0[i][5] ] >0);
+		X_contra = ( LargeX[156][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit156_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[156][0]=1;
+			satisfiable[156][0]=satisfiable[156][0] & ((x[156] ^ 0) | (x[ unit156_0[i][0] ] ^ unit156_0[i][1]) |(x[ unit156_0[i][2] ] ^ unit156_0[i][3]));
+			}
+		if(X_contra>0) L[156][0]=2;
+		}
+	}
+	//Check all rules of unit[156][1]
+	L[156][1] = LargeX[156][0]>0 ? 1 : 0;
+	satisfiable[156][1]=1; 
+	if(!L[156][1]){
+	for(int i=0;i<50;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit156_1[i][0] ][ unit156_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit156_1[i][2] ][ unit156_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit156_1[i][4] ][ unit156_1[i][5] ] >0);
+		X_contra = ( LargeX[156][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit156_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[156][1]=1;
+			satisfiable[156][1]=satisfiable[156][1] & ((x[156] ^ 1) | (x[ unit156_1[i][0] ] ^ unit156_1[i][1]) |(x[ unit156_1[i][2] ] ^ unit156_1[i][3]));
+			}
+		if(X_contra>0) L[156][1]=2;
+		}
+	}
+	//Check all rules of unit[157][0]
+	L[157][0] = LargeX[157][1]>0 ? 1 : 0;
+	satisfiable[157][0]=1; 
+	if(!L[157][0]){
+	for(int i=0;i<131;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit157_0[i][0] ][ unit157_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit157_0[i][2] ][ unit157_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit157_0[i][4] ][ unit157_0[i][5] ] >0);
+		X_contra = ( LargeX[157][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit157_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[157][0]=1;
+			satisfiable[157][0]=satisfiable[157][0] & ((x[157] ^ 0) | (x[ unit157_0[i][0] ] ^ unit157_0[i][1]) |(x[ unit157_0[i][2] ] ^ unit157_0[i][3]));
+			}
+		if(X_contra>0) L[157][0]=2;
+		}
+	}
+	//Check all rules of unit[157][1]
+	L[157][1] = LargeX[157][0]>0 ? 1 : 0;
+	satisfiable[157][1]=1; 
+	if(!L[157][1]){
+	for(int i=0;i<67;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit157_1[i][0] ][ unit157_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit157_1[i][2] ][ unit157_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit157_1[i][4] ][ unit157_1[i][5] ] >0);
+		X_contra = ( LargeX[157][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit157_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[157][1]=1;
+			satisfiable[157][1]=satisfiable[157][1] & ((x[157] ^ 1) | (x[ unit157_1[i][0] ] ^ unit157_1[i][1]) |(x[ unit157_1[i][2] ] ^ unit157_1[i][3]));
+			}
+		if(X_contra>0) L[157][1]=2;
+		}
+	}
+	//Check all rules of unit[158][0]
+	L[158][0] = LargeX[158][1]>0 ? 1 : 0;
+	satisfiable[158][0]=1; 
+	if(!L[158][0]){
+	for(int i=0;i<67;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit158_0[i][0] ][ unit158_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit158_0[i][2] ][ unit158_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit158_0[i][4] ][ unit158_0[i][5] ] >0);
+		X_contra = ( LargeX[158][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit158_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[158][0]=1;
+			satisfiable[158][0]=satisfiable[158][0] & ((x[158] ^ 0) | (x[ unit158_0[i][0] ] ^ unit158_0[i][1]) |(x[ unit158_0[i][2] ] ^ unit158_0[i][3]));
+			}
+		if(X_contra>0) L[158][0]=2;
+		}
+	}
+	//Check all rules of unit[158][1]
+	L[158][1] = LargeX[158][0]>0 ? 1 : 0;
+	satisfiable[158][1]=1; 
+	if(!L[158][1]){
+	for(int i=0;i<40;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit158_1[i][0] ][ unit158_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit158_1[i][2] ][ unit158_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit158_1[i][4] ][ unit158_1[i][5] ] >0);
+		X_contra = ( LargeX[158][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit158_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[158][1]=1;
+			satisfiable[158][1]=satisfiable[158][1] & ((x[158] ^ 1) | (x[ unit158_1[i][0] ] ^ unit158_1[i][1]) |(x[ unit158_1[i][2] ] ^ unit158_1[i][3]));
+			}
+		if(X_contra>0) L[158][1]=2;
+		}
+	}
+	//Check all rules of unit[159][0]
+	L[159][0] = LargeX[159][1]>0 ? 1 : 0;
+	satisfiable[159][0]=1; 
+	if(!L[159][0]){
+	for(int i=0;i<78;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit159_0[i][0] ][ unit159_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit159_0[i][2] ][ unit159_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit159_0[i][4] ][ unit159_0[i][5] ] >0);
+		X_contra = ( LargeX[159][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit159_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[159][0]=1;
+			satisfiable[159][0]=satisfiable[159][0] & ((x[159] ^ 0) | (x[ unit159_0[i][0] ] ^ unit159_0[i][1]) |(x[ unit159_0[i][2] ] ^ unit159_0[i][3]));
+			}
+		if(X_contra>0) L[159][0]=2;
+		}
+	}
+	//Check all rules of unit[159][1]
+	L[159][1] = LargeX[159][0]>0 ? 1 : 0;
+	satisfiable[159][1]=1; 
+	if(!L[159][1]){
+	for(int i=0;i<112;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit159_1[i][0] ][ unit159_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit159_1[i][2] ][ unit159_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit159_1[i][4] ][ unit159_1[i][5] ] >0);
+		X_contra = ( LargeX[159][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit159_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[159][1]=1;
+			satisfiable[159][1]=satisfiable[159][1] & ((x[159] ^ 1) | (x[ unit159_1[i][0] ] ^ unit159_1[i][1]) |(x[ unit159_1[i][2] ] ^ unit159_1[i][3]));
+			}
+		if(X_contra>0) L[159][1]=2;
+		}
+	}
+	//Check all rules of unit[160][0]
+	L[160][0] = LargeX[160][1]>0 ? 1 : 0;
+	satisfiable[160][0]=1; 
+	if(!L[160][0]){
+	for(int i=0;i<40;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit160_0[i][0] ][ unit160_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit160_0[i][2] ][ unit160_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit160_0[i][4] ][ unit160_0[i][5] ] >0);
+		X_contra = ( LargeX[160][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit160_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[160][0]=1;
+			satisfiable[160][0]=satisfiable[160][0] & ((x[160] ^ 0) | (x[ unit160_0[i][0] ] ^ unit160_0[i][1]) |(x[ unit160_0[i][2] ] ^ unit160_0[i][3]));
+			}
+		if(X_contra>0) L[160][0]=2;
+		}
+	}
+	//Check all rules of unit[160][1]
+	L[160][1] = LargeX[160][0]>0 ? 1 : 0;
+	satisfiable[160][1]=1; 
+	if(!L[160][1]){
+	for(int i=0;i<76;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit160_1[i][0] ][ unit160_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit160_1[i][2] ][ unit160_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit160_1[i][4] ][ unit160_1[i][5] ] >0);
+		X_contra = ( LargeX[160][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit160_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[160][1]=1;
+			satisfiable[160][1]=satisfiable[160][1] & ((x[160] ^ 1) | (x[ unit160_1[i][0] ] ^ unit160_1[i][1]) |(x[ unit160_1[i][2] ] ^ unit160_1[i][3]));
+			}
+		if(X_contra>0) L[160][1]=2;
+		}
+	}
+	//Check all rules of unit[161][0]
+	L[161][0] = LargeX[161][1]>0 ? 1 : 0;
+	satisfiable[161][0]=1; 
+	if(!L[161][0]){
+	for(int i=0;i<90;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit161_0[i][0] ][ unit161_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit161_0[i][2] ][ unit161_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit161_0[i][4] ][ unit161_0[i][5] ] >0);
+		X_contra = ( LargeX[161][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit161_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[161][0]=1;
+			satisfiable[161][0]=satisfiable[161][0] & ((x[161] ^ 0) | (x[ unit161_0[i][0] ] ^ unit161_0[i][1]) |(x[ unit161_0[i][2] ] ^ unit161_0[i][3]));
+			}
+		if(X_contra>0) L[161][0]=2;
+		}
+	}
+	//Check all rules of unit[161][1]
+	L[161][1] = LargeX[161][0]>0 ? 1 : 0;
+	satisfiable[161][1]=1; 
+	if(!L[161][1]){
+	for(int i=0;i<103;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit161_1[i][0] ][ unit161_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit161_1[i][2] ][ unit161_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit161_1[i][4] ][ unit161_1[i][5] ] >0);
+		X_contra = ( LargeX[161][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit161_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[161][1]=1;
+			satisfiable[161][1]=satisfiable[161][1] & ((x[161] ^ 1) | (x[ unit161_1[i][0] ] ^ unit161_1[i][1]) |(x[ unit161_1[i][2] ] ^ unit161_1[i][3]));
+			}
+		if(X_contra>0) L[161][1]=2;
+		}
+	}
+	//Check all rules of unit[162][0]
+	L[162][0] = LargeX[162][1]>0 ? 1 : 0;
+	satisfiable[162][0]=1; 
+	if(!L[162][0]){
+	for(int i=0;i<22;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit162_0[i][0] ][ unit162_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit162_0[i][2] ][ unit162_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit162_0[i][4] ][ unit162_0[i][5] ] >0);
+		X_contra = ( LargeX[162][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit162_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[162][0]=1;
+			satisfiable[162][0]=satisfiable[162][0] & ((x[162] ^ 0) | (x[ unit162_0[i][0] ] ^ unit162_0[i][1]) |(x[ unit162_0[i][2] ] ^ unit162_0[i][3]));
+			}
+		if(X_contra>0) L[162][0]=2;
+		}
+	}
+	//Check all rules of unit[162][1]
+	L[162][1] = LargeX[162][0]>0 ? 1 : 0;
+	satisfiable[162][1]=1; 
+	if(!L[162][1]){
+	for(int i=0;i<136;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit162_1[i][0] ][ unit162_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit162_1[i][2] ][ unit162_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit162_1[i][4] ][ unit162_1[i][5] ] >0);
+		X_contra = ( LargeX[162][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit162_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[162][1]=1;
+			satisfiable[162][1]=satisfiable[162][1] & ((x[162] ^ 1) | (x[ unit162_1[i][0] ] ^ unit162_1[i][1]) |(x[ unit162_1[i][2] ] ^ unit162_1[i][3]));
+			}
+		if(X_contra>0) L[162][1]=2;
+		}
+	}
+	//Check all rules of unit[163][0]
+	L[163][0] = LargeX[163][1]>0 ? 1 : 0;
+	satisfiable[163][0]=1; 
+	if(!L[163][0]){
+	for(int i=0;i<78;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit163_0[i][0] ][ unit163_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit163_0[i][2] ][ unit163_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit163_0[i][4] ][ unit163_0[i][5] ] >0);
+		X_contra = ( LargeX[163][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit163_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[163][0]=1;
+			satisfiable[163][0]=satisfiable[163][0] & ((x[163] ^ 0) | (x[ unit163_0[i][0] ] ^ unit163_0[i][1]) |(x[ unit163_0[i][2] ] ^ unit163_0[i][3]));
+			}
+		if(X_contra>0) L[163][0]=2;
+		}
+	}
+	//Check all rules of unit[163][1]
+	L[163][1] = LargeX[163][0]>0 ? 1 : 0;
+	satisfiable[163][1]=1; 
+	if(!L[163][1]){
+	for(int i=0;i<67;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit163_1[i][0] ][ unit163_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit163_1[i][2] ][ unit163_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit163_1[i][4] ][ unit163_1[i][5] ] >0);
+		X_contra = ( LargeX[163][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit163_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[163][1]=1;
+			satisfiable[163][1]=satisfiable[163][1] & ((x[163] ^ 1) | (x[ unit163_1[i][0] ] ^ unit163_1[i][1]) |(x[ unit163_1[i][2] ] ^ unit163_1[i][3]));
+			}
+		if(X_contra>0) L[163][1]=2;
+		}
+	}
+	//Check all rules of unit[164][0]
+	L[164][0] = LargeX[164][1]>0 ? 1 : 0;
+	satisfiable[164][0]=1; 
+	if(!L[164][0]){
+	for(int i=0;i<123;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit164_0[i][0] ][ unit164_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit164_0[i][2] ][ unit164_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit164_0[i][4] ][ unit164_0[i][5] ] >0);
+		X_contra = ( LargeX[164][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit164_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[164][0]=1;
+			satisfiable[164][0]=satisfiable[164][0] & ((x[164] ^ 0) | (x[ unit164_0[i][0] ] ^ unit164_0[i][1]) |(x[ unit164_0[i][2] ] ^ unit164_0[i][3]));
+			}
+		if(X_contra>0) L[164][0]=2;
+		}
+	}
+	//Check all rules of unit[164][1]
+	L[164][1] = LargeX[164][0]>0 ? 1 : 0;
+	satisfiable[164][1]=1; 
+	if(!L[164][1]){
+	for(int i=0;i<29;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit164_1[i][0] ][ unit164_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit164_1[i][2] ][ unit164_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit164_1[i][4] ][ unit164_1[i][5] ] >0);
+		X_contra = ( LargeX[164][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit164_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[164][1]=1;
+			satisfiable[164][1]=satisfiable[164][1] & ((x[164] ^ 1) | (x[ unit164_1[i][0] ] ^ unit164_1[i][1]) |(x[ unit164_1[i][2] ] ^ unit164_1[i][3]));
+			}
+		if(X_contra>0) L[164][1]=2;
+		}
+	}
+	//Check all rules of unit[165][0]
+	L[165][0] = LargeX[165][1]>0 ? 1 : 0;
+	satisfiable[165][0]=1; 
+	if(!L[165][0]){
+	for(int i=0;i<70;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit165_0[i][0] ][ unit165_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit165_0[i][2] ][ unit165_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit165_0[i][4] ][ unit165_0[i][5] ] >0);
+		X_contra = ( LargeX[165][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit165_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[165][0]=1;
+			satisfiable[165][0]=satisfiable[165][0] & ((x[165] ^ 0) | (x[ unit165_0[i][0] ] ^ unit165_0[i][1]) |(x[ unit165_0[i][2] ] ^ unit165_0[i][3]));
+			}
+		if(X_contra>0) L[165][0]=2;
+		}
+	}
+	//Check all rules of unit[165][1]
+	L[165][1] = LargeX[165][0]>0 ? 1 : 0;
+	satisfiable[165][1]=1; 
+	if(!L[165][1]){
+	for(int i=0;i<49;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit165_1[i][0] ][ unit165_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit165_1[i][2] ][ unit165_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit165_1[i][4] ][ unit165_1[i][5] ] >0);
+		X_contra = ( LargeX[165][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit165_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[165][1]=1;
+			satisfiable[165][1]=satisfiable[165][1] & ((x[165] ^ 1) | (x[ unit165_1[i][0] ] ^ unit165_1[i][1]) |(x[ unit165_1[i][2] ] ^ unit165_1[i][3]));
+			}
+		if(X_contra>0) L[165][1]=2;
+		}
+	}
+	//Check all rules of unit[166][0]
+	L[166][0] = LargeX[166][1]>0 ? 1 : 0;
+	satisfiable[166][0]=1; 
+	if(!L[166][0]){
+	for(int i=0;i<102;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit166_0[i][0] ][ unit166_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit166_0[i][2] ][ unit166_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit166_0[i][4] ][ unit166_0[i][5] ] >0);
+		X_contra = ( LargeX[166][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit166_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[166][0]=1;
+			satisfiable[166][0]=satisfiable[166][0] & ((x[166] ^ 0) | (x[ unit166_0[i][0] ] ^ unit166_0[i][1]) |(x[ unit166_0[i][2] ] ^ unit166_0[i][3]));
+			}
+		if(X_contra>0) L[166][0]=2;
+		}
+	}
+	//Check all rules of unit[166][1]
+	L[166][1] = LargeX[166][0]>0 ? 1 : 0;
+	satisfiable[166][1]=1; 
+	if(!L[166][1]){
+	for(int i=0;i<79;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit166_1[i][0] ][ unit166_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit166_1[i][2] ][ unit166_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit166_1[i][4] ][ unit166_1[i][5] ] >0);
+		X_contra = ( LargeX[166][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit166_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[166][1]=1;
+			satisfiable[166][1]=satisfiable[166][1] & ((x[166] ^ 1) | (x[ unit166_1[i][0] ] ^ unit166_1[i][1]) |(x[ unit166_1[i][2] ] ^ unit166_1[i][3]));
+			}
+		if(X_contra>0) L[166][1]=2;
+		}
+	}
+	//Check all rules of unit[167][0]
+	L[167][0] = LargeX[167][1]>0 ? 1 : 0;
+	satisfiable[167][0]=1; 
+	if(!L[167][0]){
+	for(int i=0;i<63;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit167_0[i][0] ][ unit167_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit167_0[i][2] ][ unit167_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit167_0[i][4] ][ unit167_0[i][5] ] >0);
+		X_contra = ( LargeX[167][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit167_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[167][0]=1;
+			satisfiable[167][0]=satisfiable[167][0] & ((x[167] ^ 0) | (x[ unit167_0[i][0] ] ^ unit167_0[i][1]) |(x[ unit167_0[i][2] ] ^ unit167_0[i][3]));
+			}
+		if(X_contra>0) L[167][0]=2;
+		}
+	}
+	//Check all rules of unit[167][1]
+	L[167][1] = LargeX[167][0]>0 ? 1 : 0;
+	satisfiable[167][1]=1; 
+	if(!L[167][1]){
+	for(int i=0;i<95;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit167_1[i][0] ][ unit167_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit167_1[i][2] ][ unit167_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit167_1[i][4] ][ unit167_1[i][5] ] >0);
+		X_contra = ( LargeX[167][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit167_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[167][1]=1;
+			satisfiable[167][1]=satisfiable[167][1] & ((x[167] ^ 1) | (x[ unit167_1[i][0] ] ^ unit167_1[i][1]) |(x[ unit167_1[i][2] ] ^ unit167_1[i][3]));
+			}
+		if(X_contra>0) L[167][1]=2;
+		}
+	}
+	//Check all rules of unit[168][0]
+	L[168][0] = LargeX[168][1]>0 ? 1 : 0;
+	satisfiable[168][0]=1; 
+	if(!L[168][0]){
+	for(int i=0;i<86;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit168_0[i][0] ][ unit168_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit168_0[i][2] ][ unit168_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit168_0[i][4] ][ unit168_0[i][5] ] >0);
+		X_contra = ( LargeX[168][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit168_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[168][0]=1;
+			satisfiable[168][0]=satisfiable[168][0] & ((x[168] ^ 0) | (x[ unit168_0[i][0] ] ^ unit168_0[i][1]) |(x[ unit168_0[i][2] ] ^ unit168_0[i][3]));
+			}
+		if(X_contra>0) L[168][0]=2;
+		}
+	}
+	//Check all rules of unit[168][1]
+	L[168][1] = LargeX[168][0]>0 ? 1 : 0;
+	satisfiable[168][1]=1; 
+	if(!L[168][1]){
+	for(int i=0;i<78;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit168_1[i][0] ][ unit168_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit168_1[i][2] ][ unit168_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit168_1[i][4] ][ unit168_1[i][5] ] >0);
+		X_contra = ( LargeX[168][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit168_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[168][1]=1;
+			satisfiable[168][1]=satisfiable[168][1] & ((x[168] ^ 1) | (x[ unit168_1[i][0] ] ^ unit168_1[i][1]) |(x[ unit168_1[i][2] ] ^ unit168_1[i][3]));
+			}
+		if(X_contra>0) L[168][1]=2;
+		}
+	}
+	//Check all rules of unit[169][0]
+	L[169][0] = LargeX[169][1]>0 ? 1 : 0;
+	satisfiable[169][0]=1; 
+	if(!L[169][0]){
+	for(int i=0;i<110;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit169_0[i][0] ][ unit169_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit169_0[i][2] ][ unit169_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit169_0[i][4] ][ unit169_0[i][5] ] >0);
+		X_contra = ( LargeX[169][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit169_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[169][0]=1;
+			satisfiable[169][0]=satisfiable[169][0] & ((x[169] ^ 0) | (x[ unit169_0[i][0] ] ^ unit169_0[i][1]) |(x[ unit169_0[i][2] ] ^ unit169_0[i][3]));
+			}
+		if(X_contra>0) L[169][0]=2;
+		}
+	}
+	//Check all rules of unit[169][1]
+	L[169][1] = LargeX[169][0]>0 ? 1 : 0;
+	satisfiable[169][1]=1; 
+	if(!L[169][1]){
+	for(int i=0;i<131;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit169_1[i][0] ][ unit169_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit169_1[i][2] ][ unit169_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit169_1[i][4] ][ unit169_1[i][5] ] >0);
+		X_contra = ( LargeX[169][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit169_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[169][1]=1;
+			satisfiable[169][1]=satisfiable[169][1] & ((x[169] ^ 1) | (x[ unit169_1[i][0] ] ^ unit169_1[i][1]) |(x[ unit169_1[i][2] ] ^ unit169_1[i][3]));
+			}
+		if(X_contra>0) L[169][1]=2;
+		}
+	}
+	//Check all rules of unit[170][0]
+	L[170][0] = LargeX[170][1]>0 ? 1 : 0;
+	satisfiable[170][0]=1; 
+	if(!L[170][0]){
+	for(int i=0;i<61;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit170_0[i][0] ][ unit170_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit170_0[i][2] ][ unit170_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit170_0[i][4] ][ unit170_0[i][5] ] >0);
+		X_contra = ( LargeX[170][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit170_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[170][0]=1;
+			satisfiable[170][0]=satisfiable[170][0] & ((x[170] ^ 0) | (x[ unit170_0[i][0] ] ^ unit170_0[i][1]) |(x[ unit170_0[i][2] ] ^ unit170_0[i][3]));
+			}
+		if(X_contra>0) L[170][0]=2;
+		}
+	}
+	//Check all rules of unit[170][1]
+	L[170][1] = LargeX[170][0]>0 ? 1 : 0;
+	satisfiable[170][1]=1; 
+	if(!L[170][1]){
+	for(int i=0;i<62;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit170_1[i][0] ][ unit170_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit170_1[i][2] ][ unit170_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit170_1[i][4] ][ unit170_1[i][5] ] >0);
+		X_contra = ( LargeX[170][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit170_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[170][1]=1;
+			satisfiable[170][1]=satisfiable[170][1] & ((x[170] ^ 1) | (x[ unit170_1[i][0] ] ^ unit170_1[i][1]) |(x[ unit170_1[i][2] ] ^ unit170_1[i][3]));
+			}
+		if(X_contra>0) L[170][1]=2;
+		}
+	}
+	//Check all rules of unit[171][0]
+	L[171][0] = LargeX[171][1]>0 ? 1 : 0;
+	satisfiable[171][0]=1; 
+	if(!L[171][0]){
+	for(int i=0;i<187;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit171_0[i][0] ][ unit171_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit171_0[i][2] ][ unit171_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit171_0[i][4] ][ unit171_0[i][5] ] >0);
+		X_contra = ( LargeX[171][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit171_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[171][0]=1;
+			satisfiable[171][0]=satisfiable[171][0] & ((x[171] ^ 0) | (x[ unit171_0[i][0] ] ^ unit171_0[i][1]) |(x[ unit171_0[i][2] ] ^ unit171_0[i][3]));
+			}
+		if(X_contra>0) L[171][0]=2;
+		}
+	}
+	//Check all rules of unit[171][1]
+	L[171][1] = LargeX[171][0]>0 ? 1 : 0;
+	satisfiable[171][1]=1; 
+	if(!L[171][1]){
+	for(int i=0;i<37;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit171_1[i][0] ][ unit171_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit171_1[i][2] ][ unit171_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit171_1[i][4] ][ unit171_1[i][5] ] >0);
+		X_contra = ( LargeX[171][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit171_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[171][1]=1;
+			satisfiable[171][1]=satisfiable[171][1] & ((x[171] ^ 1) | (x[ unit171_1[i][0] ] ^ unit171_1[i][1]) |(x[ unit171_1[i][2] ] ^ unit171_1[i][3]));
+			}
+		if(X_contra>0) L[171][1]=2;
+		}
+	}
+	//Check all rules of unit[172][0]
+	L[172][0] = LargeX[172][1]>0 ? 1 : 0;
+	satisfiable[172][0]=1; 
+	if(!L[172][0]){
+	for(int i=0;i<121;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit172_0[i][0] ][ unit172_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit172_0[i][2] ][ unit172_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit172_0[i][4] ][ unit172_0[i][5] ] >0);
+		X_contra = ( LargeX[172][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit172_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[172][0]=1;
+			satisfiable[172][0]=satisfiable[172][0] & ((x[172] ^ 0) | (x[ unit172_0[i][0] ] ^ unit172_0[i][1]) |(x[ unit172_0[i][2] ] ^ unit172_0[i][3]));
+			}
+		if(X_contra>0) L[172][0]=2;
+		}
+	}
+	//Check all rules of unit[172][1]
+	L[172][1] = LargeX[172][0]>0 ? 1 : 0;
+	satisfiable[172][1]=1; 
+	if(!L[172][1]){
+	for(int i=0;i<123;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit172_1[i][0] ][ unit172_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit172_1[i][2] ][ unit172_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit172_1[i][4] ][ unit172_1[i][5] ] >0);
+		X_contra = ( LargeX[172][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit172_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[172][1]=1;
+			satisfiable[172][1]=satisfiable[172][1] & ((x[172] ^ 1) | (x[ unit172_1[i][0] ] ^ unit172_1[i][1]) |(x[ unit172_1[i][2] ] ^ unit172_1[i][3]));
+			}
+		if(X_contra>0) L[172][1]=2;
+		}
+	}
+	//Check all rules of unit[173][0]
+	L[173][0] = LargeX[173][1]>0 ? 1 : 0;
+	satisfiable[173][0]=1; 
+	if(!L[173][0]){
+	for(int i=0;i<63;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit173_0[i][0] ][ unit173_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit173_0[i][2] ][ unit173_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit173_0[i][4] ][ unit173_0[i][5] ] >0);
+		X_contra = ( LargeX[173][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit173_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[173][0]=1;
+			satisfiable[173][0]=satisfiable[173][0] & ((x[173] ^ 0) | (x[ unit173_0[i][0] ] ^ unit173_0[i][1]) |(x[ unit173_0[i][2] ] ^ unit173_0[i][3]));
+			}
+		if(X_contra>0) L[173][0]=2;
+		}
+	}
+	//Check all rules of unit[173][1]
+	L[173][1] = LargeX[173][0]>0 ? 1 : 0;
+	satisfiable[173][1]=1; 
+	if(!L[173][1]){
+	for(int i=0;i<64;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit173_1[i][0] ][ unit173_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit173_1[i][2] ][ unit173_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit173_1[i][4] ][ unit173_1[i][5] ] >0);
+		X_contra = ( LargeX[173][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit173_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[173][1]=1;
+			satisfiable[173][1]=satisfiable[173][1] & ((x[173] ^ 1) | (x[ unit173_1[i][0] ] ^ unit173_1[i][1]) |(x[ unit173_1[i][2] ] ^ unit173_1[i][3]));
+			}
+		if(X_contra>0) L[173][1]=2;
+		}
+	}
+	//Check all rules of unit[174][0]
+	L[174][0] = LargeX[174][1]>0 ? 1 : 0;
+	satisfiable[174][0]=1; 
+	if(!L[174][0]){
+	for(int i=0;i<114;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit174_0[i][0] ][ unit174_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit174_0[i][2] ][ unit174_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit174_0[i][4] ][ unit174_0[i][5] ] >0);
+		X_contra = ( LargeX[174][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit174_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[174][0]=1;
+			satisfiable[174][0]=satisfiable[174][0] & ((x[174] ^ 0) | (x[ unit174_0[i][0] ] ^ unit174_0[i][1]) |(x[ unit174_0[i][2] ] ^ unit174_0[i][3]));
+			}
+		if(X_contra>0) L[174][0]=2;
+		}
+	}
+	//Check all rules of unit[174][1]
+	L[174][1] = LargeX[174][0]>0 ? 1 : 0;
+	satisfiable[174][1]=1; 
+	if(!L[174][1]){
+	for(int i=0;i<103;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit174_1[i][0] ][ unit174_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit174_1[i][2] ][ unit174_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit174_1[i][4] ][ unit174_1[i][5] ] >0);
+		X_contra = ( LargeX[174][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit174_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[174][1]=1;
+			satisfiable[174][1]=satisfiable[174][1] & ((x[174] ^ 1) | (x[ unit174_1[i][0] ] ^ unit174_1[i][1]) |(x[ unit174_1[i][2] ] ^ unit174_1[i][3]));
+			}
+		if(X_contra>0) L[174][1]=2;
+		}
+	}
+	//Check all rules of unit[175][0]
+	L[175][0] = LargeX[175][1]>0 ? 1 : 0;
+	satisfiable[175][0]=1; 
+	if(!L[175][0]){
+	for(int i=0;i<63;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit175_0[i][0] ][ unit175_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit175_0[i][2] ][ unit175_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit175_0[i][4] ][ unit175_0[i][5] ] >0);
+		X_contra = ( LargeX[175][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit175_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[175][0]=1;
+			satisfiable[175][0]=satisfiable[175][0] & ((x[175] ^ 0) | (x[ unit175_0[i][0] ] ^ unit175_0[i][1]) |(x[ unit175_0[i][2] ] ^ unit175_0[i][3]));
+			}
+		if(X_contra>0) L[175][0]=2;
+		}
+	}
+	//Check all rules of unit[175][1]
+	L[175][1] = LargeX[175][0]>0 ? 1 : 0;
+	satisfiable[175][1]=1; 
+	if(!L[175][1]){
+	for(int i=0;i<151;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit175_1[i][0] ][ unit175_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit175_1[i][2] ][ unit175_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit175_1[i][4] ][ unit175_1[i][5] ] >0);
+		X_contra = ( LargeX[175][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit175_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[175][1]=1;
+			satisfiable[175][1]=satisfiable[175][1] & ((x[175] ^ 1) | (x[ unit175_1[i][0] ] ^ unit175_1[i][1]) |(x[ unit175_1[i][2] ] ^ unit175_1[i][3]));
+			}
+		if(X_contra>0) L[175][1]=2;
+		}
+	}
+	//Check all rules of unit[176][0]
+	L[176][0] = LargeX[176][1]>0 ? 1 : 0;
+	satisfiable[176][0]=1; 
+	if(!L[176][0]){
+	for(int i=0;i<120;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit176_0[i][0] ][ unit176_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit176_0[i][2] ][ unit176_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit176_0[i][4] ][ unit176_0[i][5] ] >0);
+		X_contra = ( LargeX[176][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit176_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[176][0]=1;
+			satisfiable[176][0]=satisfiable[176][0] & ((x[176] ^ 0) | (x[ unit176_0[i][0] ] ^ unit176_0[i][1]) |(x[ unit176_0[i][2] ] ^ unit176_0[i][3]));
+			}
+		if(X_contra>0) L[176][0]=2;
+		}
+	}
+	//Check all rules of unit[176][1]
+	L[176][1] = LargeX[176][0]>0 ? 1 : 0;
+	satisfiable[176][1]=1; 
+	if(!L[176][1]){
+	for(int i=0;i<42;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit176_1[i][0] ][ unit176_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit176_1[i][2] ][ unit176_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit176_1[i][4] ][ unit176_1[i][5] ] >0);
+		X_contra = ( LargeX[176][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit176_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[176][1]=1;
+			satisfiable[176][1]=satisfiable[176][1] & ((x[176] ^ 1) | (x[ unit176_1[i][0] ] ^ unit176_1[i][1]) |(x[ unit176_1[i][2] ] ^ unit176_1[i][3]));
+			}
+		if(X_contra>0) L[176][1]=2;
+		}
+	}
+	//Check all rules of unit[177][0]
+	L[177][0] = LargeX[177][1]>0 ? 1 : 0;
+	satisfiable[177][0]=1; 
+	if(!L[177][0]){
+	for(int i=0;i<94;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit177_0[i][0] ][ unit177_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit177_0[i][2] ][ unit177_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit177_0[i][4] ][ unit177_0[i][5] ] >0);
+		X_contra = ( LargeX[177][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit177_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[177][0]=1;
+			satisfiable[177][0]=satisfiable[177][0] & ((x[177] ^ 0) | (x[ unit177_0[i][0] ] ^ unit177_0[i][1]) |(x[ unit177_0[i][2] ] ^ unit177_0[i][3]));
+			}
+		if(X_contra>0) L[177][0]=2;
+		}
+	}
+	//Check all rules of unit[177][1]
+	L[177][1] = LargeX[177][0]>0 ? 1 : 0;
+	satisfiable[177][1]=1; 
+	if(!L[177][1]){
+	for(int i=0;i<117;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit177_1[i][0] ][ unit177_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit177_1[i][2] ][ unit177_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit177_1[i][4] ][ unit177_1[i][5] ] >0);
+		X_contra = ( LargeX[177][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit177_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[177][1]=1;
+			satisfiable[177][1]=satisfiable[177][1] & ((x[177] ^ 1) | (x[ unit177_1[i][0] ] ^ unit177_1[i][1]) |(x[ unit177_1[i][2] ] ^ unit177_1[i][3]));
+			}
+		if(X_contra>0) L[177][1]=2;
+		}
+	}
+	//Check all rules of unit[178][0]
+	L[178][0] = LargeX[178][1]>0 ? 1 : 0;
+	satisfiable[178][0]=1; 
+	if(!L[178][0]){
+	for(int i=0;i<98;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit178_0[i][0] ][ unit178_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit178_0[i][2] ][ unit178_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit178_0[i][4] ][ unit178_0[i][5] ] >0);
+		X_contra = ( LargeX[178][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit178_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[178][0]=1;
+			satisfiable[178][0]=satisfiable[178][0] & ((x[178] ^ 0) | (x[ unit178_0[i][0] ] ^ unit178_0[i][1]) |(x[ unit178_0[i][2] ] ^ unit178_0[i][3]));
+			}
+		if(X_contra>0) L[178][0]=2;
+		}
+	}
+	//Check all rules of unit[178][1]
+	L[178][1] = LargeX[178][0]>0 ? 1 : 0;
+	satisfiable[178][1]=1; 
+	if(!L[178][1]){
+	for(int i=0;i<151;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit178_1[i][0] ][ unit178_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit178_1[i][2] ][ unit178_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit178_1[i][4] ][ unit178_1[i][5] ] >0);
+		X_contra = ( LargeX[178][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit178_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[178][1]=1;
+			satisfiable[178][1]=satisfiable[178][1] & ((x[178] ^ 1) | (x[ unit178_1[i][0] ] ^ unit178_1[i][1]) |(x[ unit178_1[i][2] ] ^ unit178_1[i][3]));
+			}
+		if(X_contra>0) L[178][1]=2;
+		}
+	}
+	//Check all rules of unit[179][0]
+	L[179][0] = LargeX[179][1]>0 ? 1 : 0;
+	satisfiable[179][0]=1; 
+	if(!L[179][0]){
+	for(int i=0;i<90;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit179_0[i][0] ][ unit179_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit179_0[i][2] ][ unit179_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit179_0[i][4] ][ unit179_0[i][5] ] >0);
+		X_contra = ( LargeX[179][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit179_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[179][0]=1;
+			satisfiable[179][0]=satisfiable[179][0] & ((x[179] ^ 0) | (x[ unit179_0[i][0] ] ^ unit179_0[i][1]) |(x[ unit179_0[i][2] ] ^ unit179_0[i][3]));
+			}
+		if(X_contra>0) L[179][0]=2;
+		}
+	}
+	//Check all rules of unit[179][1]
+	L[179][1] = LargeX[179][0]>0 ? 1 : 0;
+	satisfiable[179][1]=1; 
+	if(!L[179][1]){
+	for(int i=0;i<31;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit179_1[i][0] ][ unit179_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit179_1[i][2] ][ unit179_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit179_1[i][4] ][ unit179_1[i][5] ] >0);
+		X_contra = ( LargeX[179][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit179_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[179][1]=1;
+			satisfiable[179][1]=satisfiable[179][1] & ((x[179] ^ 1) | (x[ unit179_1[i][0] ] ^ unit179_1[i][1]) |(x[ unit179_1[i][2] ] ^ unit179_1[i][3]));
+			}
+		if(X_contra>0) L[179][1]=2;
+		}
+	}
+	//Check all rules of unit[180][0]
+	L[180][0] = LargeX[180][1]>0 ? 1 : 0;
+	satisfiable[180][0]=1; 
+	if(!L[180][0]){
+	for(int i=0;i<133;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit180_0[i][0] ][ unit180_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit180_0[i][2] ][ unit180_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit180_0[i][4] ][ unit180_0[i][5] ] >0);
+		X_contra = ( LargeX[180][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit180_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[180][0]=1;
+			satisfiable[180][0]=satisfiable[180][0] & ((x[180] ^ 0) | (x[ unit180_0[i][0] ] ^ unit180_0[i][1]) |(x[ unit180_0[i][2] ] ^ unit180_0[i][3]));
+			}
+		if(X_contra>0) L[180][0]=2;
+		}
+	}
+	//Check all rules of unit[180][1]
+	L[180][1] = LargeX[180][0]>0 ? 1 : 0;
+	satisfiable[180][1]=1; 
+	if(!L[180][1]){
+	for(int i=0;i<83;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit180_1[i][0] ][ unit180_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit180_1[i][2] ][ unit180_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit180_1[i][4] ][ unit180_1[i][5] ] >0);
+		X_contra = ( LargeX[180][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit180_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[180][1]=1;
+			satisfiable[180][1]=satisfiable[180][1] & ((x[180] ^ 1) | (x[ unit180_1[i][0] ] ^ unit180_1[i][1]) |(x[ unit180_1[i][2] ] ^ unit180_1[i][3]));
+			}
+		if(X_contra>0) L[180][1]=2;
+		}
+	}
+	//Check all rules of unit[181][0]
+	L[181][0] = LargeX[181][1]>0 ? 1 : 0;
+	satisfiable[181][0]=1; 
+	if(!L[181][0]){
+	for(int i=0;i<110;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit181_0[i][0] ][ unit181_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit181_0[i][2] ][ unit181_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit181_0[i][4] ][ unit181_0[i][5] ] >0);
+		X_contra = ( LargeX[181][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit181_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[181][0]=1;
+			satisfiable[181][0]=satisfiable[181][0] & ((x[181] ^ 0) | (x[ unit181_0[i][0] ] ^ unit181_0[i][1]) |(x[ unit181_0[i][2] ] ^ unit181_0[i][3]));
+			}
+		if(X_contra>0) L[181][0]=2;
+		}
+	}
+	//Check all rules of unit[181][1]
+	L[181][1] = LargeX[181][0]>0 ? 1 : 0;
+	satisfiable[181][1]=1; 
+	if(!L[181][1]){
+	for(int i=0;i<79;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit181_1[i][0] ][ unit181_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit181_1[i][2] ][ unit181_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit181_1[i][4] ][ unit181_1[i][5] ] >0);
+		X_contra = ( LargeX[181][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit181_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[181][1]=1;
+			satisfiable[181][1]=satisfiable[181][1] & ((x[181] ^ 1) | (x[ unit181_1[i][0] ] ^ unit181_1[i][1]) |(x[ unit181_1[i][2] ] ^ unit181_1[i][3]));
+			}
+		if(X_contra>0) L[181][1]=2;
+		}
+	}
+	//Check all rules of unit[182][0]
+	L[182][0] = LargeX[182][1]>0 ? 1 : 0;
+	satisfiable[182][0]=1; 
+	if(!L[182][0]){
+	for(int i=0;i<62;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit182_0[i][0] ][ unit182_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit182_0[i][2] ][ unit182_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit182_0[i][4] ][ unit182_0[i][5] ] >0);
+		X_contra = ( LargeX[182][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit182_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[182][0]=1;
+			satisfiable[182][0]=satisfiable[182][0] & ((x[182] ^ 0) | (x[ unit182_0[i][0] ] ^ unit182_0[i][1]) |(x[ unit182_0[i][2] ] ^ unit182_0[i][3]));
+			}
+		if(X_contra>0) L[182][0]=2;
+		}
+	}
+	//Check all rules of unit[182][1]
+	L[182][1] = LargeX[182][0]>0 ? 1 : 0;
+	satisfiable[182][1]=1; 
+	if(!L[182][1]){
+	for(int i=0;i<115;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit182_1[i][0] ][ unit182_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit182_1[i][2] ][ unit182_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit182_1[i][4] ][ unit182_1[i][5] ] >0);
+		X_contra = ( LargeX[182][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit182_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[182][1]=1;
+			satisfiable[182][1]=satisfiable[182][1] & ((x[182] ^ 1) | (x[ unit182_1[i][0] ] ^ unit182_1[i][1]) |(x[ unit182_1[i][2] ] ^ unit182_1[i][3]));
+			}
+		if(X_contra>0) L[182][1]=2;
+		}
+	}
+	//Check all rules of unit[183][0]
+	L[183][0] = LargeX[183][1]>0 ? 1 : 0;
+	satisfiable[183][0]=1; 
+	if(!L[183][0]){
+	for(int i=0;i<159;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit183_0[i][0] ][ unit183_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit183_0[i][2] ][ unit183_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit183_0[i][4] ][ unit183_0[i][5] ] >0);
+		X_contra = ( LargeX[183][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit183_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[183][0]=1;
+			satisfiable[183][0]=satisfiable[183][0] & ((x[183] ^ 0) | (x[ unit183_0[i][0] ] ^ unit183_0[i][1]) |(x[ unit183_0[i][2] ] ^ unit183_0[i][3]));
+			}
+		if(X_contra>0) L[183][0]=2;
+		}
+	}
+	//Check all rules of unit[183][1]
+	L[183][1] = LargeX[183][0]>0 ? 1 : 0;
+	satisfiable[183][1]=1; 
+	if(!L[183][1]){
+	for(int i=0;i<72;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit183_1[i][0] ][ unit183_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit183_1[i][2] ][ unit183_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit183_1[i][4] ][ unit183_1[i][5] ] >0);
+		X_contra = ( LargeX[183][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit183_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[183][1]=1;
+			satisfiable[183][1]=satisfiable[183][1] & ((x[183] ^ 1) | (x[ unit183_1[i][0] ] ^ unit183_1[i][1]) |(x[ unit183_1[i][2] ] ^ unit183_1[i][3]));
+			}
+		if(X_contra>0) L[183][1]=2;
+		}
+	}
+	//Check all rules of unit[184][0]
+	L[184][0] = LargeX[184][1]>0 ? 1 : 0;
+	satisfiable[184][0]=1; 
+	if(!L[184][0]){
+	for(int i=0;i<95;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit184_0[i][0] ][ unit184_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit184_0[i][2] ][ unit184_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit184_0[i][4] ][ unit184_0[i][5] ] >0);
+		X_contra = ( LargeX[184][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit184_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[184][0]=1;
+			satisfiable[184][0]=satisfiable[184][0] & ((x[184] ^ 0) | (x[ unit184_0[i][0] ] ^ unit184_0[i][1]) |(x[ unit184_0[i][2] ] ^ unit184_0[i][3]));
+			}
+		if(X_contra>0) L[184][0]=2;
+		}
+	}
+	//Check all rules of unit[184][1]
+	L[184][1] = LargeX[184][0]>0 ? 1 : 0;
+	satisfiable[184][1]=1; 
+	if(!L[184][1]){
+	for(int i=0;i<80;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit184_1[i][0] ][ unit184_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit184_1[i][2] ][ unit184_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit184_1[i][4] ][ unit184_1[i][5] ] >0);
+		X_contra = ( LargeX[184][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit184_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[184][1]=1;
+			satisfiable[184][1]=satisfiable[184][1] & ((x[184] ^ 1) | (x[ unit184_1[i][0] ] ^ unit184_1[i][1]) |(x[ unit184_1[i][2] ] ^ unit184_1[i][3]));
+			}
+		if(X_contra>0) L[184][1]=2;
+		}
+	}
+	//Check all rules of unit[185][0]
+	L[185][0] = LargeX[185][1]>0 ? 1 : 0;
+	satisfiable[185][0]=1; 
+	if(!L[185][0]){
+	for(int i=0;i<64;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit185_0[i][0] ][ unit185_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit185_0[i][2] ][ unit185_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit185_0[i][4] ][ unit185_0[i][5] ] >0);
+		X_contra = ( LargeX[185][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit185_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[185][0]=1;
+			satisfiable[185][0]=satisfiable[185][0] & ((x[185] ^ 0) | (x[ unit185_0[i][0] ] ^ unit185_0[i][1]) |(x[ unit185_0[i][2] ] ^ unit185_0[i][3]));
+			}
+		if(X_contra>0) L[185][0]=2;
+		}
+	}
+	//Check all rules of unit[185][1]
+	L[185][1] = LargeX[185][0]>0 ? 1 : 0;
+	satisfiable[185][1]=1; 
+	if(!L[185][1]){
+	for(int i=0;i<131;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit185_1[i][0] ][ unit185_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit185_1[i][2] ][ unit185_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit185_1[i][4] ][ unit185_1[i][5] ] >0);
+		X_contra = ( LargeX[185][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit185_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[185][1]=1;
+			satisfiable[185][1]=satisfiable[185][1] & ((x[185] ^ 1) | (x[ unit185_1[i][0] ] ^ unit185_1[i][1]) |(x[ unit185_1[i][2] ] ^ unit185_1[i][3]));
+			}
+		if(X_contra>0) L[185][1]=2;
+		}
+	}
+	//Check all rules of unit[186][0]
+	L[186][0] = LargeX[186][1]>0 ? 1 : 0;
+	satisfiable[186][0]=1; 
+	if(!L[186][0]){
+	for(int i=0;i<93;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit186_0[i][0] ][ unit186_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit186_0[i][2] ][ unit186_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit186_0[i][4] ][ unit186_0[i][5] ] >0);
+		X_contra = ( LargeX[186][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit186_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[186][0]=1;
+			satisfiable[186][0]=satisfiable[186][0] & ((x[186] ^ 0) | (x[ unit186_0[i][0] ] ^ unit186_0[i][1]) |(x[ unit186_0[i][2] ] ^ unit186_0[i][3]));
+			}
+		if(X_contra>0) L[186][0]=2;
+		}
+	}
+	//Check all rules of unit[186][1]
+	L[186][1] = LargeX[186][0]>0 ? 1 : 0;
+	satisfiable[186][1]=1; 
+	if(!L[186][1]){
+	for(int i=0;i<39;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit186_1[i][0] ][ unit186_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit186_1[i][2] ][ unit186_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit186_1[i][4] ][ unit186_1[i][5] ] >0);
+		X_contra = ( LargeX[186][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit186_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[186][1]=1;
+			satisfiable[186][1]=satisfiable[186][1] & ((x[186] ^ 1) | (x[ unit186_1[i][0] ] ^ unit186_1[i][1]) |(x[ unit186_1[i][2] ] ^ unit186_1[i][3]));
+			}
+		if(X_contra>0) L[186][1]=2;
+		}
+	}
+	//Check all rules of unit[187][0]
+	L[187][0] = LargeX[187][1]>0 ? 1 : 0;
+	satisfiable[187][0]=1; 
+	if(!L[187][0]){
+	for(int i=0;i<55;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit187_0[i][0] ][ unit187_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit187_0[i][2] ][ unit187_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit187_0[i][4] ][ unit187_0[i][5] ] >0);
+		X_contra = ( LargeX[187][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit187_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[187][0]=1;
+			satisfiable[187][0]=satisfiable[187][0] & ((x[187] ^ 0) | (x[ unit187_0[i][0] ] ^ unit187_0[i][1]) |(x[ unit187_0[i][2] ] ^ unit187_0[i][3]));
+			}
+		if(X_contra>0) L[187][0]=2;
+		}
+	}
+	//Check all rules of unit[187][1]
+	L[187][1] = LargeX[187][0]>0 ? 1 : 0;
+	satisfiable[187][1]=1; 
+	if(!L[187][1]){
+	for(int i=0;i<80;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit187_1[i][0] ][ unit187_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit187_1[i][2] ][ unit187_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit187_1[i][4] ][ unit187_1[i][5] ] >0);
+		X_contra = ( LargeX[187][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit187_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[187][1]=1;
+			satisfiable[187][1]=satisfiable[187][1] & ((x[187] ^ 1) | (x[ unit187_1[i][0] ] ^ unit187_1[i][1]) |(x[ unit187_1[i][2] ] ^ unit187_1[i][3]));
+			}
+		if(X_contra>0) L[187][1]=2;
+		}
+	}
+	//Check all rules of unit[188][0]
+	L[188][0] = LargeX[188][1]>0 ? 1 : 0;
+	satisfiable[188][0]=1; 
+	if(!L[188][0]){
+	for(int i=0;i<61;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit188_0[i][0] ][ unit188_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit188_0[i][2] ][ unit188_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit188_0[i][4] ][ unit188_0[i][5] ] >0);
+		X_contra = ( LargeX[188][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit188_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[188][0]=1;
+			satisfiable[188][0]=satisfiable[188][0] & ((x[188] ^ 0) | (x[ unit188_0[i][0] ] ^ unit188_0[i][1]) |(x[ unit188_0[i][2] ] ^ unit188_0[i][3]));
+			}
+		if(X_contra>0) L[188][0]=2;
+		}
+	}
+	//Check all rules of unit[188][1]
+	L[188][1] = LargeX[188][0]>0 ? 1 : 0;
+	satisfiable[188][1]=1; 
+	if(!L[188][1]){
+	for(int i=0;i<65;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit188_1[i][0] ][ unit188_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit188_1[i][2] ][ unit188_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit188_1[i][4] ][ unit188_1[i][5] ] >0);
+		X_contra = ( LargeX[188][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit188_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[188][1]=1;
+			satisfiable[188][1]=satisfiable[188][1] & ((x[188] ^ 1) | (x[ unit188_1[i][0] ] ^ unit188_1[i][1]) |(x[ unit188_1[i][2] ] ^ unit188_1[i][3]));
+			}
+		if(X_contra>0) L[188][1]=2;
+		}
+	}
+	//Check all rules of unit[189][0]
+	L[189][0] = LargeX[189][1]>0 ? 1 : 0;
+	satisfiable[189][0]=1; 
+	if(!L[189][0]){
+	for(int i=0;i<189;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit189_0[i][0] ][ unit189_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit189_0[i][2] ][ unit189_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit189_0[i][4] ][ unit189_0[i][5] ] >0);
+		X_contra = ( LargeX[189][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit189_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[189][0]=1;
+			satisfiable[189][0]=satisfiable[189][0] & ((x[189] ^ 0) | (x[ unit189_0[i][0] ] ^ unit189_0[i][1]) |(x[ unit189_0[i][2] ] ^ unit189_0[i][3]));
+			}
+		if(X_contra>0) L[189][0]=2;
+		}
+	}
+	//Check all rules of unit[189][1]
+	L[189][1] = LargeX[189][0]>0 ? 1 : 0;
+	satisfiable[189][1]=1; 
+	if(!L[189][1]){
+	for(int i=0;i<89;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit189_1[i][0] ][ unit189_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit189_1[i][2] ][ unit189_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit189_1[i][4] ][ unit189_1[i][5] ] >0);
+		X_contra = ( LargeX[189][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit189_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[189][1]=1;
+			satisfiable[189][1]=satisfiable[189][1] & ((x[189] ^ 1) | (x[ unit189_1[i][0] ] ^ unit189_1[i][1]) |(x[ unit189_1[i][2] ] ^ unit189_1[i][3]));
+			}
+		if(X_contra>0) L[189][1]=2;
+		}
+	}
+	//Check all rules of unit[190][0]
+	L[190][0] = LargeX[190][1]>0 ? 1 : 0;
+	satisfiable[190][0]=1; 
+	if(!L[190][0]){
+	for(int i=0;i<57;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit190_0[i][0] ][ unit190_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit190_0[i][2] ][ unit190_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit190_0[i][4] ][ unit190_0[i][5] ] >0);
+		X_contra = ( LargeX[190][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit190_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[190][0]=1;
+			satisfiable[190][0]=satisfiable[190][0] & ((x[190] ^ 0) | (x[ unit190_0[i][0] ] ^ unit190_0[i][1]) |(x[ unit190_0[i][2] ] ^ unit190_0[i][3]));
+			}
+		if(X_contra>0) L[190][0]=2;
+		}
+	}
+	//Check all rules of unit[190][1]
+	L[190][1] = LargeX[190][0]>0 ? 1 : 0;
+	satisfiable[190][1]=1; 
+	if(!L[190][1]){
+	for(int i=0;i<147;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit190_1[i][0] ][ unit190_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit190_1[i][2] ][ unit190_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit190_1[i][4] ][ unit190_1[i][5] ] >0);
+		X_contra = ( LargeX[190][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit190_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[190][1]=1;
+			satisfiable[190][1]=satisfiable[190][1] & ((x[190] ^ 1) | (x[ unit190_1[i][0] ] ^ unit190_1[i][1]) |(x[ unit190_1[i][2] ] ^ unit190_1[i][3]));
+			}
+		if(X_contra>0) L[190][1]=2;
+		}
+	}
+	//Check all rules of unit[191][0]
+	L[191][0] = LargeX[191][1]>0 ? 1 : 0;
+	satisfiable[191][0]=1; 
+	if(!L[191][0]){
+	for(int i=0;i<113;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit191_0[i][0] ][ unit191_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit191_0[i][2] ][ unit191_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit191_0[i][4] ][ unit191_0[i][5] ] >0);
+		X_contra = ( LargeX[191][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit191_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[191][0]=1;
+			satisfiable[191][0]=satisfiable[191][0] & ((x[191] ^ 0) | (x[ unit191_0[i][0] ] ^ unit191_0[i][1]) |(x[ unit191_0[i][2] ] ^ unit191_0[i][3]));
+			}
+		if(X_contra>0) L[191][0]=2;
+		}
+	}
+	//Check all rules of unit[191][1]
+	L[191][1] = LargeX[191][0]>0 ? 1 : 0;
+	satisfiable[191][1]=1; 
+	if(!L[191][1]){
+	for(int i=0;i<120;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit191_1[i][0] ][ unit191_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit191_1[i][2] ][ unit191_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit191_1[i][4] ][ unit191_1[i][5] ] >0);
+		X_contra = ( LargeX[191][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit191_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[191][1]=1;
+			satisfiable[191][1]=satisfiable[191][1] & ((x[191] ^ 1) | (x[ unit191_1[i][0] ] ^ unit191_1[i][1]) |(x[ unit191_1[i][2] ] ^ unit191_1[i][3]));
+			}
+		if(X_contra>0) L[191][1]=2;
+		}
+	}
+	//Check all rules of unit[192][0]
+	L[192][0] = LargeX[192][1]>0 ? 1 : 0;
+	satisfiable[192][0]=1; 
+	if(!L[192][0]){
+	for(int i=0;i<93;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit192_0[i][0] ][ unit192_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit192_0[i][2] ][ unit192_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit192_0[i][4] ][ unit192_0[i][5] ] >0);
+		X_contra = ( LargeX[192][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit192_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[192][0]=1;
+			satisfiable[192][0]=satisfiable[192][0] & ((x[192] ^ 0) | (x[ unit192_0[i][0] ] ^ unit192_0[i][1]) |(x[ unit192_0[i][2] ] ^ unit192_0[i][3]));
+			}
+		if(X_contra>0) L[192][0]=2;
+		}
+	}
+	//Check all rules of unit[192][1]
+	L[192][1] = LargeX[192][0]>0 ? 1 : 0;
+	satisfiable[192][1]=1; 
+	if(!L[192][1]){
+	for(int i=0;i<80;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit192_1[i][0] ][ unit192_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit192_1[i][2] ][ unit192_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit192_1[i][4] ][ unit192_1[i][5] ] >0);
+		X_contra = ( LargeX[192][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit192_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[192][1]=1;
+			satisfiable[192][1]=satisfiable[192][1] & ((x[192] ^ 1) | (x[ unit192_1[i][0] ] ^ unit192_1[i][1]) |(x[ unit192_1[i][2] ] ^ unit192_1[i][3]));
+			}
+		if(X_contra>0) L[192][1]=2;
+		}
+	}
+	//Check all rules of unit[193][0]
+	L[193][0] = LargeX[193][1]>0 ? 1 : 0;
+	satisfiable[193][0]=1; 
+	if(!L[193][0]){
+	for(int i=0;i<126;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit193_0[i][0] ][ unit193_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit193_0[i][2] ][ unit193_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit193_0[i][4] ][ unit193_0[i][5] ] >0);
+		X_contra = ( LargeX[193][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit193_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[193][0]=1;
+			satisfiable[193][0]=satisfiable[193][0] & ((x[193] ^ 0) | (x[ unit193_0[i][0] ] ^ unit193_0[i][1]) |(x[ unit193_0[i][2] ] ^ unit193_0[i][3]));
+			}
+		if(X_contra>0) L[193][0]=2;
+		}
+	}
+	//Check all rules of unit[193][1]
+	L[193][1] = LargeX[193][0]>0 ? 1 : 0;
+	satisfiable[193][1]=1; 
+	if(!L[193][1]){
+	for(int i=0;i<102;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit193_1[i][0] ][ unit193_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit193_1[i][2] ][ unit193_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit193_1[i][4] ][ unit193_1[i][5] ] >0);
+		X_contra = ( LargeX[193][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit193_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[193][1]=1;
+			satisfiable[193][1]=satisfiable[193][1] & ((x[193] ^ 1) | (x[ unit193_1[i][0] ] ^ unit193_1[i][1]) |(x[ unit193_1[i][2] ] ^ unit193_1[i][3]));
+			}
+		if(X_contra>0) L[193][1]=2;
+		}
+	}
+	//Check all rules of unit[194][0]
+	L[194][0] = LargeX[194][1]>0 ? 1 : 0;
+	satisfiable[194][0]=1; 
+	if(!L[194][0]){
+	for(int i=0;i<84;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit194_0[i][0] ][ unit194_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit194_0[i][2] ][ unit194_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit194_0[i][4] ][ unit194_0[i][5] ] >0);
+		X_contra = ( LargeX[194][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit194_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[194][0]=1;
+			satisfiable[194][0]=satisfiable[194][0] & ((x[194] ^ 0) | (x[ unit194_0[i][0] ] ^ unit194_0[i][1]) |(x[ unit194_0[i][2] ] ^ unit194_0[i][3]));
+			}
+		if(X_contra>0) L[194][0]=2;
+		}
+	}
+	//Check all rules of unit[194][1]
+	L[194][1] = LargeX[194][0]>0 ? 1 : 0;
+	satisfiable[194][1]=1; 
+	if(!L[194][1]){
+	for(int i=0;i<58;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit194_1[i][0] ][ unit194_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit194_1[i][2] ][ unit194_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit194_1[i][4] ][ unit194_1[i][5] ] >0);
+		X_contra = ( LargeX[194][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit194_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[194][1]=1;
+			satisfiable[194][1]=satisfiable[194][1] & ((x[194] ^ 1) | (x[ unit194_1[i][0] ] ^ unit194_1[i][1]) |(x[ unit194_1[i][2] ] ^ unit194_1[i][3]));
+			}
+		if(X_contra>0) L[194][1]=2;
+		}
+	}
+	//Check all rules of unit[195][0]
+	L[195][0] = LargeX[195][1]>0 ? 1 : 0;
+	satisfiable[195][0]=1; 
+	if(!L[195][0]){
+	for(int i=0;i<83;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit195_0[i][0] ][ unit195_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit195_0[i][2] ][ unit195_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit195_0[i][4] ][ unit195_0[i][5] ] >0);
+		X_contra = ( LargeX[195][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit195_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[195][0]=1;
+			satisfiable[195][0]=satisfiable[195][0] & ((x[195] ^ 0) | (x[ unit195_0[i][0] ] ^ unit195_0[i][1]) |(x[ unit195_0[i][2] ] ^ unit195_0[i][3]));
+			}
+		if(X_contra>0) L[195][0]=2;
+		}
+	}
+	//Check all rules of unit[195][1]
+	L[195][1] = LargeX[195][0]>0 ? 1 : 0;
+	satisfiable[195][1]=1; 
+	if(!L[195][1]){
+	for(int i=0;i<111;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit195_1[i][0] ][ unit195_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit195_1[i][2] ][ unit195_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit195_1[i][4] ][ unit195_1[i][5] ] >0);
+		X_contra = ( LargeX[195][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit195_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[195][1]=1;
+			satisfiable[195][1]=satisfiable[195][1] & ((x[195] ^ 1) | (x[ unit195_1[i][0] ] ^ unit195_1[i][1]) |(x[ unit195_1[i][2] ] ^ unit195_1[i][3]));
+			}
+		if(X_contra>0) L[195][1]=2;
+		}
+	}
+	//Check all rules of unit[196][0]
+	L[196][0] = LargeX[196][1]>0 ? 1 : 0;
+	satisfiable[196][0]=1; 
+	if(!L[196][0]){
+	for(int i=0;i<134;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit196_0[i][0] ][ unit196_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit196_0[i][2] ][ unit196_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit196_0[i][4] ][ unit196_0[i][5] ] >0);
+		X_contra = ( LargeX[196][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit196_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[196][0]=1;
+			satisfiable[196][0]=satisfiable[196][0] & ((x[196] ^ 0) | (x[ unit196_0[i][0] ] ^ unit196_0[i][1]) |(x[ unit196_0[i][2] ] ^ unit196_0[i][3]));
+			}
+		if(X_contra>0) L[196][0]=2;
+		}
+	}
+	//Check all rules of unit[196][1]
+	L[196][1] = LargeX[196][0]>0 ? 1 : 0;
+	satisfiable[196][1]=1; 
+	if(!L[196][1]){
+	for(int i=0;i<57;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit196_1[i][0] ][ unit196_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit196_1[i][2] ][ unit196_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit196_1[i][4] ][ unit196_1[i][5] ] >0);
+		X_contra = ( LargeX[196][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit196_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[196][1]=1;
+			satisfiable[196][1]=satisfiable[196][1] & ((x[196] ^ 1) | (x[ unit196_1[i][0] ] ^ unit196_1[i][1]) |(x[ unit196_1[i][2] ] ^ unit196_1[i][3]));
+			}
+		if(X_contra>0) L[196][1]=2;
+		}
+	}
+	//Check all rules of unit[197][0]
+	L[197][0] = LargeX[197][1]>0 ? 1 : 0;
+	satisfiable[197][0]=1; 
+	if(!L[197][0]){
+	for(int i=0;i<91;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit197_0[i][0] ][ unit197_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit197_0[i][2] ][ unit197_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit197_0[i][4] ][ unit197_0[i][5] ] >0);
+		X_contra = ( LargeX[197][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit197_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[197][0]=1;
+			satisfiable[197][0]=satisfiable[197][0] & ((x[197] ^ 0) | (x[ unit197_0[i][0] ] ^ unit197_0[i][1]) |(x[ unit197_0[i][2] ] ^ unit197_0[i][3]));
+			}
+		if(X_contra>0) L[197][0]=2;
+		}
+	}
+	//Check all rules of unit[197][1]
+	L[197][1] = LargeX[197][0]>0 ? 1 : 0;
+	satisfiable[197][1]=1; 
+	if(!L[197][1]){
+	for(int i=0;i<75;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit197_1[i][0] ][ unit197_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit197_1[i][2] ][ unit197_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit197_1[i][4] ][ unit197_1[i][5] ] >0);
+		X_contra = ( LargeX[197][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit197_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[197][1]=1;
+			satisfiable[197][1]=satisfiable[197][1] & ((x[197] ^ 1) | (x[ unit197_1[i][0] ] ^ unit197_1[i][1]) |(x[ unit197_1[i][2] ] ^ unit197_1[i][3]));
+			}
+		if(X_contra>0) L[197][1]=2;
+		}
+	}
+	//Check all rules of unit[198][0]
+	L[198][0] = LargeX[198][1]>0 ? 1 : 0;
+	satisfiable[198][0]=1; 
+	if(!L[198][0]){
+	for(int i=0;i<56;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit198_0[i][0] ][ unit198_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit198_0[i][2] ][ unit198_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit198_0[i][4] ][ unit198_0[i][5] ] >0);
+		X_contra = ( LargeX[198][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit198_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[198][0]=1;
+			satisfiable[198][0]=satisfiable[198][0] & ((x[198] ^ 0) | (x[ unit198_0[i][0] ] ^ unit198_0[i][1]) |(x[ unit198_0[i][2] ] ^ unit198_0[i][3]));
+			}
+		if(X_contra>0) L[198][0]=2;
+		}
+	}
+	//Check all rules of unit[198][1]
+	L[198][1] = LargeX[198][0]>0 ? 1 : 0;
+	satisfiable[198][1]=1; 
+	if(!L[198][1]){
+	for(int i=0;i<75;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit198_1[i][0] ][ unit198_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit198_1[i][2] ][ unit198_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit198_1[i][4] ][ unit198_1[i][5] ] >0);
+		X_contra = ( LargeX[198][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit198_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[198][1]=1;
+			satisfiable[198][1]=satisfiable[198][1] & ((x[198] ^ 1) | (x[ unit198_1[i][0] ] ^ unit198_1[i][1]) |(x[ unit198_1[i][2] ] ^ unit198_1[i][3]));
+			}
+		if(X_contra>0) L[198][1]=2;
+		}
+	}
+	//Check all rules of unit[199][0]
+	L[199][0] = LargeX[199][1]>0 ? 1 : 0;
+	satisfiable[199][0]=1; 
+	if(!L[199][0]){
+	for(int i=0;i<60;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit199_0[i][0] ][ unit199_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit199_0[i][2] ][ unit199_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit199_0[i][4] ][ unit199_0[i][5] ] >0);
+		X_contra = ( LargeX[199][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit199_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[199][0]=1;
+			satisfiable[199][0]=satisfiable[199][0] & ((x[199] ^ 0) | (x[ unit199_0[i][0] ] ^ unit199_0[i][1]) |(x[ unit199_0[i][2] ] ^ unit199_0[i][3]));
+			}
+		if(X_contra>0) L[199][0]=2;
+		}
+	}
+	//Check all rules of unit[199][1]
+	L[199][1] = LargeX[199][0]>0 ? 1 : 0;
+	satisfiable[199][1]=1; 
+	if(!L[199][1]){
+	for(int i=0;i<147;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit199_1[i][0] ][ unit199_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit199_1[i][2] ][ unit199_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit199_1[i][4] ][ unit199_1[i][5] ] >0);
+		X_contra = ( LargeX[199][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit199_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[199][1]=1;
+			satisfiable[199][1]=satisfiable[199][1] & ((x[199] ^ 1) | (x[ unit199_1[i][0] ] ^ unit199_1[i][1]) |(x[ unit199_1[i][2] ] ^ unit199_1[i][3]));
+			}
+		if(X_contra>0) L[199][1]=2;
+		}
+	}
+	//Check all rules of unit[200][0]
+	L[200][0] = LargeX[200][1]>0 ? 1 : 0;
+	satisfiable[200][0]=1; 
+	if(!L[200][0]){
+	for(int i=0;i<96;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit200_0[i][0] ][ unit200_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit200_0[i][2] ][ unit200_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit200_0[i][4] ][ unit200_0[i][5] ] >0);
+		X_contra = ( LargeX[200][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit200_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[200][0]=1;
+			satisfiable[200][0]=satisfiable[200][0] & ((x[200] ^ 0) | (x[ unit200_0[i][0] ] ^ unit200_0[i][1]) |(x[ unit200_0[i][2] ] ^ unit200_0[i][3]));
+			}
+		if(X_contra>0) L[200][0]=2;
+		}
+	}
+	//Check all rules of unit[200][1]
+	L[200][1] = LargeX[200][0]>0 ? 1 : 0;
+	satisfiable[200][1]=1; 
+	if(!L[200][1]){
+	for(int i=0;i<63;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit200_1[i][0] ][ unit200_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit200_1[i][2] ][ unit200_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit200_1[i][4] ][ unit200_1[i][5] ] >0);
+		X_contra = ( LargeX[200][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit200_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[200][1]=1;
+			satisfiable[200][1]=satisfiable[200][1] & ((x[200] ^ 1) | (x[ unit200_1[i][0] ] ^ unit200_1[i][1]) |(x[ unit200_1[i][2] ] ^ unit200_1[i][3]));
+			}
+		if(X_contra>0) L[200][1]=2;
+		}
+	}
+	//Check all rules of unit[201][0]
+	L[201][0] = LargeX[201][1]>0 ? 1 : 0;
+	satisfiable[201][0]=1; 
+	if(!L[201][0]){
+	for(int i=0;i<75;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit201_0[i][0] ][ unit201_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit201_0[i][2] ][ unit201_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit201_0[i][4] ][ unit201_0[i][5] ] >0);
+		X_contra = ( LargeX[201][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit201_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[201][0]=1;
+			satisfiable[201][0]=satisfiable[201][0] & ((x[201] ^ 0) | (x[ unit201_0[i][0] ] ^ unit201_0[i][1]) |(x[ unit201_0[i][2] ] ^ unit201_0[i][3]));
+			}
+		if(X_contra>0) L[201][0]=2;
+		}
+	}
+	//Check all rules of unit[201][1]
+	L[201][1] = LargeX[201][0]>0 ? 1 : 0;
+	satisfiable[201][1]=1; 
+	if(!L[201][1]){
+	for(int i=0;i<97;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit201_1[i][0] ][ unit201_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit201_1[i][2] ][ unit201_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit201_1[i][4] ][ unit201_1[i][5] ] >0);
+		X_contra = ( LargeX[201][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit201_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[201][1]=1;
+			satisfiable[201][1]=satisfiable[201][1] & ((x[201] ^ 1) | (x[ unit201_1[i][0] ] ^ unit201_1[i][1]) |(x[ unit201_1[i][2] ] ^ unit201_1[i][3]));
+			}
+		if(X_contra>0) L[201][1]=2;
+		}
+	}
+	//Check all rules of unit[202][0]
+	L[202][0] = LargeX[202][1]>0 ? 1 : 0;
+	satisfiable[202][0]=1; 
+	if(!L[202][0]){
+	for(int i=0;i<77;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit202_0[i][0] ][ unit202_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit202_0[i][2] ][ unit202_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit202_0[i][4] ][ unit202_0[i][5] ] >0);
+		X_contra = ( LargeX[202][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit202_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[202][0]=1;
+			satisfiable[202][0]=satisfiable[202][0] & ((x[202] ^ 0) | (x[ unit202_0[i][0] ] ^ unit202_0[i][1]) |(x[ unit202_0[i][2] ] ^ unit202_0[i][3]));
+			}
+		if(X_contra>0) L[202][0]=2;
+		}
+	}
+	//Check all rules of unit[202][1]
+	L[202][1] = LargeX[202][0]>0 ? 1 : 0;
+	satisfiable[202][1]=1; 
+	if(!L[202][1]){
+	for(int i=0;i<107;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit202_1[i][0] ][ unit202_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit202_1[i][2] ][ unit202_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit202_1[i][4] ][ unit202_1[i][5] ] >0);
+		X_contra = ( LargeX[202][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit202_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[202][1]=1;
+			satisfiable[202][1]=satisfiable[202][1] & ((x[202] ^ 1) | (x[ unit202_1[i][0] ] ^ unit202_1[i][1]) |(x[ unit202_1[i][2] ] ^ unit202_1[i][3]));
+			}
+		if(X_contra>0) L[202][1]=2;
+		}
+	}
+	//Check all rules of unit[203][0]
+	L[203][0] = LargeX[203][1]>0 ? 1 : 0;
+	satisfiable[203][0]=1; 
+	if(!L[203][0]){
+	for(int i=0;i<108;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit203_0[i][0] ][ unit203_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit203_0[i][2] ][ unit203_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit203_0[i][4] ][ unit203_0[i][5] ] >0);
+		X_contra = ( LargeX[203][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit203_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[203][0]=1;
+			satisfiable[203][0]=satisfiable[203][0] & ((x[203] ^ 0) | (x[ unit203_0[i][0] ] ^ unit203_0[i][1]) |(x[ unit203_0[i][2] ] ^ unit203_0[i][3]));
+			}
+		if(X_contra>0) L[203][0]=2;
+		}
+	}
+	//Check all rules of unit[203][1]
+	L[203][1] = LargeX[203][0]>0 ? 1 : 0;
+	satisfiable[203][1]=1; 
+	if(!L[203][1]){
+	for(int i=0;i<76;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit203_1[i][0] ][ unit203_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit203_1[i][2] ][ unit203_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit203_1[i][4] ][ unit203_1[i][5] ] >0);
+		X_contra = ( LargeX[203][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit203_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[203][1]=1;
+			satisfiable[203][1]=satisfiable[203][1] & ((x[203] ^ 1) | (x[ unit203_1[i][0] ] ^ unit203_1[i][1]) |(x[ unit203_1[i][2] ] ^ unit203_1[i][3]));
+			}
+		if(X_contra>0) L[203][1]=2;
+		}
+	}
+	//Check all rules of unit[204][0]
+	L[204][0] = LargeX[204][1]>0 ? 1 : 0;
+	satisfiable[204][0]=1; 
+	if(!L[204][0]){
+	for(int i=0;i<87;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit204_0[i][0] ][ unit204_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit204_0[i][2] ][ unit204_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit204_0[i][4] ][ unit204_0[i][5] ] >0);
+		X_contra = ( LargeX[204][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit204_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[204][0]=1;
+			satisfiable[204][0]=satisfiable[204][0] & ((x[204] ^ 0) | (x[ unit204_0[i][0] ] ^ unit204_0[i][1]) |(x[ unit204_0[i][2] ] ^ unit204_0[i][3]));
+			}
+		if(X_contra>0) L[204][0]=2;
+		}
+	}
+	//Check all rules of unit[204][1]
+	L[204][1] = LargeX[204][0]>0 ? 1 : 0;
+	satisfiable[204][1]=1; 
+	if(!L[204][1]){
+	for(int i=0;i<41;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit204_1[i][0] ][ unit204_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit204_1[i][2] ][ unit204_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit204_1[i][4] ][ unit204_1[i][5] ] >0);
+		X_contra = ( LargeX[204][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit204_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[204][1]=1;
+			satisfiable[204][1]=satisfiable[204][1] & ((x[204] ^ 1) | (x[ unit204_1[i][0] ] ^ unit204_1[i][1]) |(x[ unit204_1[i][2] ] ^ unit204_1[i][3]));
+			}
+		if(X_contra>0) L[204][1]=2;
+		}
+	}
+	//Check all rules of unit[205][0]
+	L[205][0] = LargeX[205][1]>0 ? 1 : 0;
+	satisfiable[205][0]=1; 
+	if(!L[205][0]){
+	for(int i=0;i<106;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit205_0[i][0] ][ unit205_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit205_0[i][2] ][ unit205_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit205_0[i][4] ][ unit205_0[i][5] ] >0);
+		X_contra = ( LargeX[205][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit205_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[205][0]=1;
+			satisfiable[205][0]=satisfiable[205][0] & ((x[205] ^ 0) | (x[ unit205_0[i][0] ] ^ unit205_0[i][1]) |(x[ unit205_0[i][2] ] ^ unit205_0[i][3]));
+			}
+		if(X_contra>0) L[205][0]=2;
+		}
+	}
+	//Check all rules of unit[205][1]
+	L[205][1] = LargeX[205][0]>0 ? 1 : 0;
+	satisfiable[205][1]=1; 
+	if(!L[205][1]){
+	for(int i=0;i<107;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit205_1[i][0] ][ unit205_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit205_1[i][2] ][ unit205_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit205_1[i][4] ][ unit205_1[i][5] ] >0);
+		X_contra = ( LargeX[205][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit205_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[205][1]=1;
+			satisfiable[205][1]=satisfiable[205][1] & ((x[205] ^ 1) | (x[ unit205_1[i][0] ] ^ unit205_1[i][1]) |(x[ unit205_1[i][2] ] ^ unit205_1[i][3]));
+			}
+		if(X_contra>0) L[205][1]=2;
+		}
+	}
+	//Check all rules of unit[206][0]
+	L[206][0] = LargeX[206][1]>0 ? 1 : 0;
+	satisfiable[206][0]=1; 
+	if(!L[206][0]){
+	for(int i=0;i<72;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit206_0[i][0] ][ unit206_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit206_0[i][2] ][ unit206_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit206_0[i][4] ][ unit206_0[i][5] ] >0);
+		X_contra = ( LargeX[206][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit206_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[206][0]=1;
+			satisfiable[206][0]=satisfiable[206][0] & ((x[206] ^ 0) | (x[ unit206_0[i][0] ] ^ unit206_0[i][1]) |(x[ unit206_0[i][2] ] ^ unit206_0[i][3]));
+			}
+		if(X_contra>0) L[206][0]=2;
+		}
+	}
+	//Check all rules of unit[206][1]
+	L[206][1] = LargeX[206][0]>0 ? 1 : 0;
+	satisfiable[206][1]=1; 
+	if(!L[206][1]){
+	for(int i=0;i<52;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit206_1[i][0] ][ unit206_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit206_1[i][2] ][ unit206_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit206_1[i][4] ][ unit206_1[i][5] ] >0);
+		X_contra = ( LargeX[206][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit206_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[206][1]=1;
+			satisfiable[206][1]=satisfiable[206][1] & ((x[206] ^ 1) | (x[ unit206_1[i][0] ] ^ unit206_1[i][1]) |(x[ unit206_1[i][2] ] ^ unit206_1[i][3]));
+			}
+		if(X_contra>0) L[206][1]=2;
+		}
+	}
+	//Check all rules of unit[207][0]
+	L[207][0] = LargeX[207][1]>0 ? 1 : 0;
+	satisfiable[207][0]=1; 
+	if(!L[207][0]){
+	for(int i=0;i<71;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit207_0[i][0] ][ unit207_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit207_0[i][2] ][ unit207_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit207_0[i][4] ][ unit207_0[i][5] ] >0);
+		X_contra = ( LargeX[207][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit207_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[207][0]=1;
+			satisfiable[207][0]=satisfiable[207][0] & ((x[207] ^ 0) | (x[ unit207_0[i][0] ] ^ unit207_0[i][1]) |(x[ unit207_0[i][2] ] ^ unit207_0[i][3]));
+			}
+		if(X_contra>0) L[207][0]=2;
+		}
+	}
+	//Check all rules of unit[207][1]
+	L[207][1] = LargeX[207][0]>0 ? 1 : 0;
+	satisfiable[207][1]=1; 
+	if(!L[207][1]){
+	for(int i=0;i<82;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit207_1[i][0] ][ unit207_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit207_1[i][2] ][ unit207_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit207_1[i][4] ][ unit207_1[i][5] ] >0);
+		X_contra = ( LargeX[207][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit207_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[207][1]=1;
+			satisfiable[207][1]=satisfiable[207][1] & ((x[207] ^ 1) | (x[ unit207_1[i][0] ] ^ unit207_1[i][1]) |(x[ unit207_1[i][2] ] ^ unit207_1[i][3]));
+			}
+		if(X_contra>0) L[207][1]=2;
+		}
+	}
+	//Check all rules of unit[208][0]
+	L[208][0] = LargeX[208][1]>0 ? 1 : 0;
+	satisfiable[208][0]=1; 
+	if(!L[208][0]){
+	for(int i=0;i<102;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit208_0[i][0] ][ unit208_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit208_0[i][2] ][ unit208_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit208_0[i][4] ][ unit208_0[i][5] ] >0);
+		X_contra = ( LargeX[208][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit208_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[208][0]=1;
+			satisfiable[208][0]=satisfiable[208][0] & ((x[208] ^ 0) | (x[ unit208_0[i][0] ] ^ unit208_0[i][1]) |(x[ unit208_0[i][2] ] ^ unit208_0[i][3]));
+			}
+		if(X_contra>0) L[208][0]=2;
+		}
+	}
+	//Check all rules of unit[208][1]
+	L[208][1] = LargeX[208][0]>0 ? 1 : 0;
+	satisfiable[208][1]=1; 
+	if(!L[208][1]){
+	for(int i=0;i<52;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit208_1[i][0] ][ unit208_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit208_1[i][2] ][ unit208_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit208_1[i][4] ][ unit208_1[i][5] ] >0);
+		X_contra = ( LargeX[208][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit208_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[208][1]=1;
+			satisfiable[208][1]=satisfiable[208][1] & ((x[208] ^ 1) | (x[ unit208_1[i][0] ] ^ unit208_1[i][1]) |(x[ unit208_1[i][2] ] ^ unit208_1[i][3]));
+			}
+		if(X_contra>0) L[208][1]=2;
+		}
+	}
+	//Check all rules of unit[209][0]
+	L[209][0] = LargeX[209][1]>0 ? 1 : 0;
+	satisfiable[209][0]=1; 
+	if(!L[209][0]){
+	for(int i=0;i<48;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit209_0[i][0] ][ unit209_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit209_0[i][2] ][ unit209_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit209_0[i][4] ][ unit209_0[i][5] ] >0);
+		X_contra = ( LargeX[209][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit209_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[209][0]=1;
+			satisfiable[209][0]=satisfiable[209][0] & ((x[209] ^ 0) | (x[ unit209_0[i][0] ] ^ unit209_0[i][1]) |(x[ unit209_0[i][2] ] ^ unit209_0[i][3]));
+			}
+		if(X_contra>0) L[209][0]=2;
+		}
+	}
+	//Check all rules of unit[209][1]
+	L[209][1] = LargeX[209][0]>0 ? 1 : 0;
+	satisfiable[209][1]=1; 
+	if(!L[209][1]){
+	for(int i=0;i<81;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit209_1[i][0] ][ unit209_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit209_1[i][2] ][ unit209_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit209_1[i][4] ][ unit209_1[i][5] ] >0);
+		X_contra = ( LargeX[209][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit209_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[209][1]=1;
+			satisfiable[209][1]=satisfiable[209][1] & ((x[209] ^ 1) | (x[ unit209_1[i][0] ] ^ unit209_1[i][1]) |(x[ unit209_1[i][2] ] ^ unit209_1[i][3]));
+			}
+		if(X_contra>0) L[209][1]=2;
+		}
+	}
+	//Check all rules of unit[210][0]
+	L[210][0] = LargeX[210][1]>0 ? 1 : 0;
+	satisfiable[210][0]=1; 
+	if(!L[210][0]){
+	for(int i=0;i<69;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit210_0[i][0] ][ unit210_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit210_0[i][2] ][ unit210_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit210_0[i][4] ][ unit210_0[i][5] ] >0);
+		X_contra = ( LargeX[210][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit210_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[210][0]=1;
+			satisfiable[210][0]=satisfiable[210][0] & ((x[210] ^ 0) | (x[ unit210_0[i][0] ] ^ unit210_0[i][1]) |(x[ unit210_0[i][2] ] ^ unit210_0[i][3]));
+			}
+		if(X_contra>0) L[210][0]=2;
+		}
+	}
+	//Check all rules of unit[210][1]
+	L[210][1] = LargeX[210][0]>0 ? 1 : 0;
+	satisfiable[210][1]=1; 
+	if(!L[210][1]){
+	for(int i=0;i<74;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit210_1[i][0] ][ unit210_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit210_1[i][2] ][ unit210_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit210_1[i][4] ][ unit210_1[i][5] ] >0);
+		X_contra = ( LargeX[210][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit210_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[210][1]=1;
+			satisfiable[210][1]=satisfiable[210][1] & ((x[210] ^ 1) | (x[ unit210_1[i][0] ] ^ unit210_1[i][1]) |(x[ unit210_1[i][2] ] ^ unit210_1[i][3]));
+			}
+		if(X_contra>0) L[210][1]=2;
+		}
+	}
+	//Check all rules of unit[211][0]
+	L[211][0] = LargeX[211][1]>0 ? 1 : 0;
+	satisfiable[211][0]=1; 
+	if(!L[211][0]){
+	for(int i=0;i<91;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit211_0[i][0] ][ unit211_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit211_0[i][2] ][ unit211_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit211_0[i][4] ][ unit211_0[i][5] ] >0);
+		X_contra = ( LargeX[211][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit211_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[211][0]=1;
+			satisfiable[211][0]=satisfiable[211][0] & ((x[211] ^ 0) | (x[ unit211_0[i][0] ] ^ unit211_0[i][1]) |(x[ unit211_0[i][2] ] ^ unit211_0[i][3]));
+			}
+		if(X_contra>0) L[211][0]=2;
+		}
+	}
+	//Check all rules of unit[211][1]
+	L[211][1] = LargeX[211][0]>0 ? 1 : 0;
+	satisfiable[211][1]=1; 
+	if(!L[211][1]){
+	for(int i=0;i<94;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit211_1[i][0] ][ unit211_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit211_1[i][2] ][ unit211_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit211_1[i][4] ][ unit211_1[i][5] ] >0);
+		X_contra = ( LargeX[211][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit211_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[211][1]=1;
+			satisfiable[211][1]=satisfiable[211][1] & ((x[211] ^ 1) | (x[ unit211_1[i][0] ] ^ unit211_1[i][1]) |(x[ unit211_1[i][2] ] ^ unit211_1[i][3]));
+			}
+		if(X_contra>0) L[211][1]=2;
+		}
+	}
+	//Check all rules of unit[212][0]
+	L[212][0] = LargeX[212][1]>0 ? 1 : 0;
+	satisfiable[212][0]=1; 
+	if(!L[212][0]){
+	for(int i=0;i<71;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit212_0[i][0] ][ unit212_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit212_0[i][2] ][ unit212_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit212_0[i][4] ][ unit212_0[i][5] ] >0);
+		X_contra = ( LargeX[212][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit212_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[212][0]=1;
+			satisfiable[212][0]=satisfiable[212][0] & ((x[212] ^ 0) | (x[ unit212_0[i][0] ] ^ unit212_0[i][1]) |(x[ unit212_0[i][2] ] ^ unit212_0[i][3]));
+			}
+		if(X_contra>0) L[212][0]=2;
+		}
+	}
+	//Check all rules of unit[212][1]
+	L[212][1] = LargeX[212][0]>0 ? 1 : 0;
+	satisfiable[212][1]=1; 
+	if(!L[212][1]){
+	for(int i=0;i<96;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit212_1[i][0] ][ unit212_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit212_1[i][2] ][ unit212_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit212_1[i][4] ][ unit212_1[i][5] ] >0);
+		X_contra = ( LargeX[212][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit212_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[212][1]=1;
+			satisfiable[212][1]=satisfiable[212][1] & ((x[212] ^ 1) | (x[ unit212_1[i][0] ] ^ unit212_1[i][1]) |(x[ unit212_1[i][2] ] ^ unit212_1[i][3]));
+			}
+		if(X_contra>0) L[212][1]=2;
+		}
+	}
+	//Check all rules of unit[213][0]
+	L[213][0] = LargeX[213][1]>0 ? 1 : 0;
+	satisfiable[213][0]=1; 
+	if(!L[213][0]){
+	for(int i=0;i<77;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit213_0[i][0] ][ unit213_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit213_0[i][2] ][ unit213_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit213_0[i][4] ][ unit213_0[i][5] ] >0);
+		X_contra = ( LargeX[213][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit213_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[213][0]=1;
+			satisfiable[213][0]=satisfiable[213][0] & ((x[213] ^ 0) | (x[ unit213_0[i][0] ] ^ unit213_0[i][1]) |(x[ unit213_0[i][2] ] ^ unit213_0[i][3]));
+			}
+		if(X_contra>0) L[213][0]=2;
+		}
+	}
+	//Check all rules of unit[213][1]
+	L[213][1] = LargeX[213][0]>0 ? 1 : 0;
+	satisfiable[213][1]=1; 
+	if(!L[213][1]){
+	for(int i=0;i<108;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit213_1[i][0] ][ unit213_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit213_1[i][2] ][ unit213_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit213_1[i][4] ][ unit213_1[i][5] ] >0);
+		X_contra = ( LargeX[213][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit213_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[213][1]=1;
+			satisfiable[213][1]=satisfiable[213][1] & ((x[213] ^ 1) | (x[ unit213_1[i][0] ] ^ unit213_1[i][1]) |(x[ unit213_1[i][2] ] ^ unit213_1[i][3]));
+			}
+		if(X_contra>0) L[213][1]=2;
+		}
+	}
+	//Check all rules of unit[214][0]
+	L[214][0] = LargeX[214][1]>0 ? 1 : 0;
+	satisfiable[214][0]=1; 
+	if(!L[214][0]){
+	for(int i=0;i<97;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit214_0[i][0] ][ unit214_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit214_0[i][2] ][ unit214_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit214_0[i][4] ][ unit214_0[i][5] ] >0);
+		X_contra = ( LargeX[214][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit214_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[214][0]=1;
+			satisfiable[214][0]=satisfiable[214][0] & ((x[214] ^ 0) | (x[ unit214_0[i][0] ] ^ unit214_0[i][1]) |(x[ unit214_0[i][2] ] ^ unit214_0[i][3]));
+			}
+		if(X_contra>0) L[214][0]=2;
+		}
+	}
+	//Check all rules of unit[214][1]
+	L[214][1] = LargeX[214][0]>0 ? 1 : 0;
+	satisfiable[214][1]=1; 
+	if(!L[214][1]){
+	for(int i=0;i<31;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit214_1[i][0] ][ unit214_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit214_1[i][2] ][ unit214_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit214_1[i][4] ][ unit214_1[i][5] ] >0);
+		X_contra = ( LargeX[214][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit214_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[214][1]=1;
+			satisfiable[214][1]=satisfiable[214][1] & ((x[214] ^ 1) | (x[ unit214_1[i][0] ] ^ unit214_1[i][1]) |(x[ unit214_1[i][2] ] ^ unit214_1[i][3]));
+			}
+		if(X_contra>0) L[214][1]=2;
+		}
+	}
+	//Check all rules of unit[215][0]
+	L[215][0] = LargeX[215][1]>0 ? 1 : 0;
+	satisfiable[215][0]=1; 
+	if(!L[215][0]){
+	for(int i=0;i<129;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit215_0[i][0] ][ unit215_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit215_0[i][2] ][ unit215_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit215_0[i][4] ][ unit215_0[i][5] ] >0);
+		X_contra = ( LargeX[215][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit215_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[215][0]=1;
+			satisfiable[215][0]=satisfiable[215][0] & ((x[215] ^ 0) | (x[ unit215_0[i][0] ] ^ unit215_0[i][1]) |(x[ unit215_0[i][2] ] ^ unit215_0[i][3]));
+			}
+		if(X_contra>0) L[215][0]=2;
+		}
+	}
+	//Check all rules of unit[215][1]
+	L[215][1] = LargeX[215][0]>0 ? 1 : 0;
+	satisfiable[215][1]=1; 
+	if(!L[215][1]){
+	for(int i=0;i<84;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit215_1[i][0] ][ unit215_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit215_1[i][2] ][ unit215_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit215_1[i][4] ][ unit215_1[i][5] ] >0);
+		X_contra = ( LargeX[215][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit215_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[215][1]=1;
+			satisfiable[215][1]=satisfiable[215][1] & ((x[215] ^ 1) | (x[ unit215_1[i][0] ] ^ unit215_1[i][1]) |(x[ unit215_1[i][2] ] ^ unit215_1[i][3]));
+			}
+		if(X_contra>0) L[215][1]=2;
+		}
+	}
+	//Check all rules of unit[216][0]
+	L[216][0] = LargeX[216][1]>0 ? 1 : 0;
+	satisfiable[216][0]=1; 
+	if(!L[216][0]){
+	for(int i=0;i<57;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit216_0[i][0] ][ unit216_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit216_0[i][2] ][ unit216_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit216_0[i][4] ][ unit216_0[i][5] ] >0);
+		X_contra = ( LargeX[216][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit216_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[216][0]=1;
+			satisfiable[216][0]=satisfiable[216][0] & ((x[216] ^ 0) | (x[ unit216_0[i][0] ] ^ unit216_0[i][1]) |(x[ unit216_0[i][2] ] ^ unit216_0[i][3]));
+			}
+		if(X_contra>0) L[216][0]=2;
+		}
+	}
+	//Check all rules of unit[216][1]
+	L[216][1] = LargeX[216][0]>0 ? 1 : 0;
+	satisfiable[216][1]=1; 
+	if(!L[216][1]){
+	for(int i=0;i<69;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit216_1[i][0] ][ unit216_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit216_1[i][2] ][ unit216_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit216_1[i][4] ][ unit216_1[i][5] ] >0);
+		X_contra = ( LargeX[216][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit216_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[216][1]=1;
+			satisfiable[216][1]=satisfiable[216][1] & ((x[216] ^ 1) | (x[ unit216_1[i][0] ] ^ unit216_1[i][1]) |(x[ unit216_1[i][2] ] ^ unit216_1[i][3]));
+			}
+		if(X_contra>0) L[216][1]=2;
+		}
+	}
+	//Check all rules of unit[217][0]
+	L[217][0] = LargeX[217][1]>0 ? 1 : 0;
+	satisfiable[217][0]=1; 
+	if(!L[217][0]){
+	for(int i=0;i<144;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit217_0[i][0] ][ unit217_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit217_0[i][2] ][ unit217_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit217_0[i][4] ][ unit217_0[i][5] ] >0);
+		X_contra = ( LargeX[217][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit217_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[217][0]=1;
+			satisfiable[217][0]=satisfiable[217][0] & ((x[217] ^ 0) | (x[ unit217_0[i][0] ] ^ unit217_0[i][1]) |(x[ unit217_0[i][2] ] ^ unit217_0[i][3]));
+			}
+		if(X_contra>0) L[217][0]=2;
+		}
+	}
+	//Check all rules of unit[217][1]
+	L[217][1] = LargeX[217][0]>0 ? 1 : 0;
+	satisfiable[217][1]=1; 
+	if(!L[217][1]){
+	for(int i=0;i<37;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit217_1[i][0] ][ unit217_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit217_1[i][2] ][ unit217_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit217_1[i][4] ][ unit217_1[i][5] ] >0);
+		X_contra = ( LargeX[217][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit217_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[217][1]=1;
+			satisfiable[217][1]=satisfiable[217][1] & ((x[217] ^ 1) | (x[ unit217_1[i][0] ] ^ unit217_1[i][1]) |(x[ unit217_1[i][2] ] ^ unit217_1[i][3]));
+			}
+		if(X_contra>0) L[217][1]=2;
+		}
+	}
+	//Check all rules of unit[218][0]
+	L[218][0] = LargeX[218][1]>0 ? 1 : 0;
+	satisfiable[218][0]=1; 
+	if(!L[218][0]){
+	for(int i=0;i<84;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit218_0[i][0] ][ unit218_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit218_0[i][2] ][ unit218_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit218_0[i][4] ][ unit218_0[i][5] ] >0);
+		X_contra = ( LargeX[218][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit218_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[218][0]=1;
+			satisfiable[218][0]=satisfiable[218][0] & ((x[218] ^ 0) | (x[ unit218_0[i][0] ] ^ unit218_0[i][1]) |(x[ unit218_0[i][2] ] ^ unit218_0[i][3]));
+			}
+		if(X_contra>0) L[218][0]=2;
+		}
+	}
+	//Check all rules of unit[218][1]
+	L[218][1] = LargeX[218][0]>0 ? 1 : 0;
+	satisfiable[218][1]=1; 
+	if(!L[218][1]){
+	for(int i=0;i<109;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit218_1[i][0] ][ unit218_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit218_1[i][2] ][ unit218_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit218_1[i][4] ][ unit218_1[i][5] ] >0);
+		X_contra = ( LargeX[218][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit218_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[218][1]=1;
+			satisfiable[218][1]=satisfiable[218][1] & ((x[218] ^ 1) | (x[ unit218_1[i][0] ] ^ unit218_1[i][1]) |(x[ unit218_1[i][2] ] ^ unit218_1[i][3]));
+			}
+		if(X_contra>0) L[218][1]=2;
+		}
+	}
+	//Check all rules of unit[219][0]
+	L[219][0] = LargeX[219][1]>0 ? 1 : 0;
+	satisfiable[219][0]=1; 
+	if(!L[219][0]){
+	for(int i=0;i<60;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit219_0[i][0] ][ unit219_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit219_0[i][2] ][ unit219_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit219_0[i][4] ][ unit219_0[i][5] ] >0);
+		X_contra = ( LargeX[219][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit219_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[219][0]=1;
+			satisfiable[219][0]=satisfiable[219][0] & ((x[219] ^ 0) | (x[ unit219_0[i][0] ] ^ unit219_0[i][1]) |(x[ unit219_0[i][2] ] ^ unit219_0[i][3]));
+			}
+		if(X_contra>0) L[219][0]=2;
+		}
+	}
+	//Check all rules of unit[219][1]
+	L[219][1] = LargeX[219][0]>0 ? 1 : 0;
+	satisfiable[219][1]=1; 
+	if(!L[219][1]){
+	for(int i=0;i<60;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit219_1[i][0] ][ unit219_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit219_1[i][2] ][ unit219_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit219_1[i][4] ][ unit219_1[i][5] ] >0);
+		X_contra = ( LargeX[219][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit219_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[219][1]=1;
+			satisfiable[219][1]=satisfiable[219][1] & ((x[219] ^ 1) | (x[ unit219_1[i][0] ] ^ unit219_1[i][1]) |(x[ unit219_1[i][2] ] ^ unit219_1[i][3]));
+			}
+		if(X_contra>0) L[219][1]=2;
+		}
+	}
+	//Check all rules of unit[220][0]
+	L[220][0] = LargeX[220][1]>0 ? 1 : 0;
+	satisfiable[220][0]=1; 
+	if(!L[220][0]){
+	for(int i=0;i<73;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit220_0[i][0] ][ unit220_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit220_0[i][2] ][ unit220_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit220_0[i][4] ][ unit220_0[i][5] ] >0);
+		X_contra = ( LargeX[220][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit220_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[220][0]=1;
+			satisfiable[220][0]=satisfiable[220][0] & ((x[220] ^ 0) | (x[ unit220_0[i][0] ] ^ unit220_0[i][1]) |(x[ unit220_0[i][2] ] ^ unit220_0[i][3]));
+			}
+		if(X_contra>0) L[220][0]=2;
+		}
+	}
+	//Check all rules of unit[220][1]
+	L[220][1] = LargeX[220][0]>0 ? 1 : 0;
+	satisfiable[220][1]=1; 
+	if(!L[220][1]){
+	for(int i=0;i<131;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit220_1[i][0] ][ unit220_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit220_1[i][2] ][ unit220_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit220_1[i][4] ][ unit220_1[i][5] ] >0);
+		X_contra = ( LargeX[220][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit220_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[220][1]=1;
+			satisfiable[220][1]=satisfiable[220][1] & ((x[220] ^ 1) | (x[ unit220_1[i][0] ] ^ unit220_1[i][1]) |(x[ unit220_1[i][2] ] ^ unit220_1[i][3]));
+			}
+		if(X_contra>0) L[220][1]=2;
+		}
+	}
+	//Check all rules of unit[221][0]
+	L[221][0] = LargeX[221][1]>0 ? 1 : 0;
+	satisfiable[221][0]=1; 
+	if(!L[221][0]){
+	for(int i=0;i<48;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit221_0[i][0] ][ unit221_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit221_0[i][2] ][ unit221_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit221_0[i][4] ][ unit221_0[i][5] ] >0);
+		X_contra = ( LargeX[221][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit221_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[221][0]=1;
+			satisfiable[221][0]=satisfiable[221][0] & ((x[221] ^ 0) | (x[ unit221_0[i][0] ] ^ unit221_0[i][1]) |(x[ unit221_0[i][2] ] ^ unit221_0[i][3]));
+			}
+		if(X_contra>0) L[221][0]=2;
+		}
+	}
+	//Check all rules of unit[221][1]
+	L[221][1] = LargeX[221][0]>0 ? 1 : 0;
+	satisfiable[221][1]=1; 
+	if(!L[221][1]){
+	for(int i=0;i<86;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit221_1[i][0] ][ unit221_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit221_1[i][2] ][ unit221_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit221_1[i][4] ][ unit221_1[i][5] ] >0);
+		X_contra = ( LargeX[221][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit221_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[221][1]=1;
+			satisfiable[221][1]=satisfiable[221][1] & ((x[221] ^ 1) | (x[ unit221_1[i][0] ] ^ unit221_1[i][1]) |(x[ unit221_1[i][2] ] ^ unit221_1[i][3]));
+			}
+		if(X_contra>0) L[221][1]=2;
+		}
+	}
+	//Check all rules of unit[222][0]
+	L[222][0] = LargeX[222][1]>0 ? 1 : 0;
+	satisfiable[222][0]=1; 
+	if(!L[222][0]){
+	for(int i=0;i<115;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit222_0[i][0] ][ unit222_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit222_0[i][2] ][ unit222_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit222_0[i][4] ][ unit222_0[i][5] ] >0);
+		X_contra = ( LargeX[222][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit222_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[222][0]=1;
+			satisfiable[222][0]=satisfiable[222][0] & ((x[222] ^ 0) | (x[ unit222_0[i][0] ] ^ unit222_0[i][1]) |(x[ unit222_0[i][2] ] ^ unit222_0[i][3]));
+			}
+		if(X_contra>0) L[222][0]=2;
+		}
+	}
+	//Check all rules of unit[222][1]
+	L[222][1] = LargeX[222][0]>0 ? 1 : 0;
+	satisfiable[222][1]=1; 
+	if(!L[222][1]){
+	for(int i=0;i<118;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit222_1[i][0] ][ unit222_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit222_1[i][2] ][ unit222_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit222_1[i][4] ][ unit222_1[i][5] ] >0);
+		X_contra = ( LargeX[222][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit222_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[222][1]=1;
+			satisfiable[222][1]=satisfiable[222][1] & ((x[222] ^ 1) | (x[ unit222_1[i][0] ] ^ unit222_1[i][1]) |(x[ unit222_1[i][2] ] ^ unit222_1[i][3]));
+			}
+		if(X_contra>0) L[222][1]=2;
+		}
+	}
+	//Check all rules of unit[223][0]
+	L[223][0] = LargeX[223][1]>0 ? 1 : 0;
+	satisfiable[223][0]=1; 
+	if(!L[223][0]){
+	for(int i=0;i<76;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit223_0[i][0] ][ unit223_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit223_0[i][2] ][ unit223_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit223_0[i][4] ][ unit223_0[i][5] ] >0);
+		X_contra = ( LargeX[223][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit223_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[223][0]=1;
+			satisfiable[223][0]=satisfiable[223][0] & ((x[223] ^ 0) | (x[ unit223_0[i][0] ] ^ unit223_0[i][1]) |(x[ unit223_0[i][2] ] ^ unit223_0[i][3]));
+			}
+		if(X_contra>0) L[223][0]=2;
+		}
+	}
+	//Check all rules of unit[223][1]
+	L[223][1] = LargeX[223][0]>0 ? 1 : 0;
+	satisfiable[223][1]=1; 
+	if(!L[223][1]){
+	for(int i=0;i<133;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit223_1[i][0] ][ unit223_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit223_1[i][2] ][ unit223_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit223_1[i][4] ][ unit223_1[i][5] ] >0);
+		X_contra = ( LargeX[223][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit223_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[223][1]=1;
+			satisfiable[223][1]=satisfiable[223][1] & ((x[223] ^ 1) | (x[ unit223_1[i][0] ] ^ unit223_1[i][1]) |(x[ unit223_1[i][2] ] ^ unit223_1[i][3]));
+			}
+		if(X_contra>0) L[223][1]=2;
+		}
+	}
+	//Check all rules of unit[224][0]
+	L[224][0] = LargeX[224][1]>0 ? 1 : 0;
+	satisfiable[224][0]=1; 
+	if(!L[224][0]){
+	for(int i=0;i<57;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit224_0[i][0] ][ unit224_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit224_0[i][2] ][ unit224_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit224_0[i][4] ][ unit224_0[i][5] ] >0);
+		X_contra = ( LargeX[224][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit224_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[224][0]=1;
+			satisfiable[224][0]=satisfiable[224][0] & ((x[224] ^ 0) | (x[ unit224_0[i][0] ] ^ unit224_0[i][1]) |(x[ unit224_0[i][2] ] ^ unit224_0[i][3]));
+			}
+		if(X_contra>0) L[224][0]=2;
+		}
+	}
+	//Check all rules of unit[224][1]
+	L[224][1] = LargeX[224][0]>0 ? 1 : 0;
+	satisfiable[224][1]=1; 
+	if(!L[224][1]){
+	for(int i=0;i<59;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit224_1[i][0] ][ unit224_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit224_1[i][2] ][ unit224_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit224_1[i][4] ][ unit224_1[i][5] ] >0);
+		X_contra = ( LargeX[224][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit224_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[224][1]=1;
+			satisfiable[224][1]=satisfiable[224][1] & ((x[224] ^ 1) | (x[ unit224_1[i][0] ] ^ unit224_1[i][1]) |(x[ unit224_1[i][2] ] ^ unit224_1[i][3]));
+			}
+		if(X_contra>0) L[224][1]=2;
+		}
+	}
+	//Check all rules of unit[225][0]
+	L[225][0] = LargeX[225][1]>0 ? 1 : 0;
+	satisfiable[225][0]=1; 
+	if(!L[225][0]){
+	for(int i=0;i<51;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit225_0[i][0] ][ unit225_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit225_0[i][2] ][ unit225_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit225_0[i][4] ][ unit225_0[i][5] ] >0);
+		X_contra = ( LargeX[225][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit225_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[225][0]=1;
+			satisfiable[225][0]=satisfiable[225][0] & ((x[225] ^ 0) | (x[ unit225_0[i][0] ] ^ unit225_0[i][1]) |(x[ unit225_0[i][2] ] ^ unit225_0[i][3]));
+			}
+		if(X_contra>0) L[225][0]=2;
+		}
+	}
+	//Check all rules of unit[225][1]
+	L[225][1] = LargeX[225][0]>0 ? 1 : 0;
+	satisfiable[225][1]=1; 
+	if(!L[225][1]){
+	for(int i=0;i<128;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit225_1[i][0] ][ unit225_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit225_1[i][2] ][ unit225_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit225_1[i][4] ][ unit225_1[i][5] ] >0);
+		X_contra = ( LargeX[225][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit225_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[225][1]=1;
+			satisfiable[225][1]=satisfiable[225][1] & ((x[225] ^ 1) | (x[ unit225_1[i][0] ] ^ unit225_1[i][1]) |(x[ unit225_1[i][2] ] ^ unit225_1[i][3]));
+			}
+		if(X_contra>0) L[225][1]=2;
+		}
+	}
+	//Check all rules of unit[226][0]
+	L[226][0] = LargeX[226][1]>0 ? 1 : 0;
+	satisfiable[226][0]=1; 
+	if(!L[226][0]){
+	for(int i=0;i<108;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit226_0[i][0] ][ unit226_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit226_0[i][2] ][ unit226_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit226_0[i][4] ][ unit226_0[i][5] ] >0);
+		X_contra = ( LargeX[226][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit226_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[226][0]=1;
+			satisfiable[226][0]=satisfiable[226][0] & ((x[226] ^ 0) | (x[ unit226_0[i][0] ] ^ unit226_0[i][1]) |(x[ unit226_0[i][2] ] ^ unit226_0[i][3]));
+			}
+		if(X_contra>0) L[226][0]=2;
+		}
+	}
+	//Check all rules of unit[226][1]
+	L[226][1] = LargeX[226][0]>0 ? 1 : 0;
+	satisfiable[226][1]=1; 
+	if(!L[226][1]){
+	for(int i=0;i<55;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit226_1[i][0] ][ unit226_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit226_1[i][2] ][ unit226_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit226_1[i][4] ][ unit226_1[i][5] ] >0);
+		X_contra = ( LargeX[226][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit226_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[226][1]=1;
+			satisfiable[226][1]=satisfiable[226][1] & ((x[226] ^ 1) | (x[ unit226_1[i][0] ] ^ unit226_1[i][1]) |(x[ unit226_1[i][2] ] ^ unit226_1[i][3]));
+			}
+		if(X_contra>0) L[226][1]=2;
+		}
+	}
+	//Check all rules of unit[227][0]
+	L[227][0] = LargeX[227][1]>0 ? 1 : 0;
+	satisfiable[227][0]=1; 
+	if(!L[227][0]){
+	for(int i=0;i<60;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit227_0[i][0] ][ unit227_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit227_0[i][2] ][ unit227_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit227_0[i][4] ][ unit227_0[i][5] ] >0);
+		X_contra = ( LargeX[227][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit227_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[227][0]=1;
+			satisfiable[227][0]=satisfiable[227][0] & ((x[227] ^ 0) | (x[ unit227_0[i][0] ] ^ unit227_0[i][1]) |(x[ unit227_0[i][2] ] ^ unit227_0[i][3]));
+			}
+		if(X_contra>0) L[227][0]=2;
+		}
+	}
+	//Check all rules of unit[227][1]
+	L[227][1] = LargeX[227][0]>0 ? 1 : 0;
+	satisfiable[227][1]=1; 
+	if(!L[227][1]){
+	for(int i=0;i<64;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit227_1[i][0] ][ unit227_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit227_1[i][2] ][ unit227_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit227_1[i][4] ][ unit227_1[i][5] ] >0);
+		X_contra = ( LargeX[227][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit227_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[227][1]=1;
+			satisfiable[227][1]=satisfiable[227][1] & ((x[227] ^ 1) | (x[ unit227_1[i][0] ] ^ unit227_1[i][1]) |(x[ unit227_1[i][2] ] ^ unit227_1[i][3]));
+			}
+		if(X_contra>0) L[227][1]=2;
+		}
+	}
+	//Check all rules of unit[228][0]
+	L[228][0] = LargeX[228][1]>0 ? 1 : 0;
+	satisfiable[228][0]=1; 
+	if(!L[228][0]){
+	for(int i=0;i<45;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit228_0[i][0] ][ unit228_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit228_0[i][2] ][ unit228_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit228_0[i][4] ][ unit228_0[i][5] ] >0);
+		X_contra = ( LargeX[228][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit228_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[228][0]=1;
+			satisfiable[228][0]=satisfiable[228][0] & ((x[228] ^ 0) | (x[ unit228_0[i][0] ] ^ unit228_0[i][1]) |(x[ unit228_0[i][2] ] ^ unit228_0[i][3]));
+			}
+		if(X_contra>0) L[228][0]=2;
+		}
+	}
+	//Check all rules of unit[228][1]
+	L[228][1] = LargeX[228][0]>0 ? 1 : 0;
+	satisfiable[228][1]=1; 
+	if(!L[228][1]){
+	for(int i=0;i<107;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit228_1[i][0] ][ unit228_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit228_1[i][2] ][ unit228_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit228_1[i][4] ][ unit228_1[i][5] ] >0);
+		X_contra = ( LargeX[228][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit228_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[228][1]=1;
+			satisfiable[228][1]=satisfiable[228][1] & ((x[228] ^ 1) | (x[ unit228_1[i][0] ] ^ unit228_1[i][1]) |(x[ unit228_1[i][2] ] ^ unit228_1[i][3]));
+			}
+		if(X_contra>0) L[228][1]=2;
+		}
+	}
+	//Check all rules of unit[229][0]
+	L[229][0] = LargeX[229][1]>0 ? 1 : 0;
+	satisfiable[229][0]=1; 
+	if(!L[229][0]){
+	for(int i=0;i<41;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit229_0[i][0] ][ unit229_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit229_0[i][2] ][ unit229_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit229_0[i][4] ][ unit229_0[i][5] ] >0);
+		X_contra = ( LargeX[229][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit229_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[229][0]=1;
+			satisfiable[229][0]=satisfiable[229][0] & ((x[229] ^ 0) | (x[ unit229_0[i][0] ] ^ unit229_0[i][1]) |(x[ unit229_0[i][2] ] ^ unit229_0[i][3]));
+			}
+		if(X_contra>0) L[229][0]=2;
+		}
+	}
+	//Check all rules of unit[229][1]
+	L[229][1] = LargeX[229][0]>0 ? 1 : 0;
+	satisfiable[229][1]=1; 
+	if(!L[229][1]){
+	for(int i=0;i<56;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit229_1[i][0] ][ unit229_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit229_1[i][2] ][ unit229_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit229_1[i][4] ][ unit229_1[i][5] ] >0);
+		X_contra = ( LargeX[229][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit229_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[229][1]=1;
+			satisfiable[229][1]=satisfiable[229][1] & ((x[229] ^ 1) | (x[ unit229_1[i][0] ] ^ unit229_1[i][1]) |(x[ unit229_1[i][2] ] ^ unit229_1[i][3]));
+			}
+		if(X_contra>0) L[229][1]=2;
+		}
+	}
+	//Check all rules of unit[230][0]
+	L[230][0] = LargeX[230][1]>0 ? 1 : 0;
+	satisfiable[230][0]=1; 
+	if(!L[230][0]){
+	for(int i=0;i<45;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit230_0[i][0] ][ unit230_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit230_0[i][2] ][ unit230_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit230_0[i][4] ][ unit230_0[i][5] ] >0);
+		X_contra = ( LargeX[230][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit230_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[230][0]=1;
+			satisfiable[230][0]=satisfiable[230][0] & ((x[230] ^ 0) | (x[ unit230_0[i][0] ] ^ unit230_0[i][1]) |(x[ unit230_0[i][2] ] ^ unit230_0[i][3]));
+			}
+		if(X_contra>0) L[230][0]=2;
+		}
+	}
+	//Check all rules of unit[230][1]
+	L[230][1] = LargeX[230][0]>0 ? 1 : 0;
+	satisfiable[230][1]=1; 
+	if(!L[230][1]){
+	for(int i=0;i<106;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit230_1[i][0] ][ unit230_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit230_1[i][2] ][ unit230_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit230_1[i][4] ][ unit230_1[i][5] ] >0);
+		X_contra = ( LargeX[230][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit230_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[230][1]=1;
+			satisfiable[230][1]=satisfiable[230][1] & ((x[230] ^ 1) | (x[ unit230_1[i][0] ] ^ unit230_1[i][1]) |(x[ unit230_1[i][2] ] ^ unit230_1[i][3]));
+			}
+		if(X_contra>0) L[230][1]=2;
+		}
+	}
+	//Check all rules of unit[231][0]
+	L[231][0] = LargeX[231][1]>0 ? 1 : 0;
+	satisfiable[231][0]=1; 
+	if(!L[231][0]){
+	for(int i=0;i<17;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit231_0[i][0] ][ unit231_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit231_0[i][2] ][ unit231_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit231_0[i][4] ][ unit231_0[i][5] ] >0);
+		X_contra = ( LargeX[231][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit231_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[231][0]=1;
+			satisfiable[231][0]=satisfiable[231][0] & ((x[231] ^ 0) | (x[ unit231_0[i][0] ] ^ unit231_0[i][1]) |(x[ unit231_0[i][2] ] ^ unit231_0[i][3]));
+			}
+		if(X_contra>0) L[231][0]=2;
+		}
+	}
+	//Check all rules of unit[231][1]
+	L[231][1] = LargeX[231][0]>0 ? 1 : 0;
+	satisfiable[231][1]=1; 
+	if(!L[231][1]){
+	for(int i=0;i<90;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit231_1[i][0] ][ unit231_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit231_1[i][2] ][ unit231_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit231_1[i][4] ][ unit231_1[i][5] ] >0);
+		X_contra = ( LargeX[231][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit231_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[231][1]=1;
+			satisfiable[231][1]=satisfiable[231][1] & ((x[231] ^ 1) | (x[ unit231_1[i][0] ] ^ unit231_1[i][1]) |(x[ unit231_1[i][2] ] ^ unit231_1[i][3]));
+			}
+		if(X_contra>0) L[231][1]=2;
+		}
+	}
+	//Check all rules of unit[232][0]
+	L[232][0] = LargeX[232][1]>0 ? 1 : 0;
+	satisfiable[232][0]=1; 
+	if(!L[232][0]){
+	for(int i=0;i<95;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit232_0[i][0] ][ unit232_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit232_0[i][2] ][ unit232_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit232_0[i][4] ][ unit232_0[i][5] ] >0);
+		X_contra = ( LargeX[232][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit232_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[232][0]=1;
+			satisfiable[232][0]=satisfiable[232][0] & ((x[232] ^ 0) | (x[ unit232_0[i][0] ] ^ unit232_0[i][1]) |(x[ unit232_0[i][2] ] ^ unit232_0[i][3]));
+			}
+		if(X_contra>0) L[232][0]=2;
+		}
+	}
+	//Check all rules of unit[232][1]
+	L[232][1] = LargeX[232][0]>0 ? 1 : 0;
+	satisfiable[232][1]=1; 
+	if(!L[232][1]){
+	for(int i=0;i<67;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit232_1[i][0] ][ unit232_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit232_1[i][2] ][ unit232_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit232_1[i][4] ][ unit232_1[i][5] ] >0);
+		X_contra = ( LargeX[232][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit232_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[232][1]=1;
+			satisfiable[232][1]=satisfiable[232][1] & ((x[232] ^ 1) | (x[ unit232_1[i][0] ] ^ unit232_1[i][1]) |(x[ unit232_1[i][2] ] ^ unit232_1[i][3]));
+			}
+		if(X_contra>0) L[232][1]=2;
+		}
+	}
+	//Check all rules of unit[233][0]
+	L[233][0] = LargeX[233][1]>0 ? 1 : 0;
+	satisfiable[233][0]=1; 
+	if(!L[233][0]){
+	for(int i=0;i<32;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit233_0[i][0] ][ unit233_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit233_0[i][2] ][ unit233_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit233_0[i][4] ][ unit233_0[i][5] ] >0);
+		X_contra = ( LargeX[233][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit233_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[233][0]=1;
+			satisfiable[233][0]=satisfiable[233][0] & ((x[233] ^ 0) | (x[ unit233_0[i][0] ] ^ unit233_0[i][1]) |(x[ unit233_0[i][2] ] ^ unit233_0[i][3]));
+			}
+		if(X_contra>0) L[233][0]=2;
+		}
+	}
+	//Check all rules of unit[233][1]
+	L[233][1] = LargeX[233][0]>0 ? 1 : 0;
+	satisfiable[233][1]=1; 
+	if(!L[233][1]){
+	for(int i=0;i<61;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit233_1[i][0] ][ unit233_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit233_1[i][2] ][ unit233_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit233_1[i][4] ][ unit233_1[i][5] ] >0);
+		X_contra = ( LargeX[233][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit233_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[233][1]=1;
+			satisfiable[233][1]=satisfiable[233][1] & ((x[233] ^ 1) | (x[ unit233_1[i][0] ] ^ unit233_1[i][1]) |(x[ unit233_1[i][2] ] ^ unit233_1[i][3]));
+			}
+		if(X_contra>0) L[233][1]=2;
+		}
+	}
+	//Check all rules of unit[234][0]
+	L[234][0] = LargeX[234][1]>0 ? 1 : 0;
+	satisfiable[234][0]=1; 
+	if(!L[234][0]){
+	for(int i=0;i<71;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit234_0[i][0] ][ unit234_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit234_0[i][2] ][ unit234_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit234_0[i][4] ][ unit234_0[i][5] ] >0);
+		X_contra = ( LargeX[234][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit234_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[234][0]=1;
+			satisfiable[234][0]=satisfiable[234][0] & ((x[234] ^ 0) | (x[ unit234_0[i][0] ] ^ unit234_0[i][1]) |(x[ unit234_0[i][2] ] ^ unit234_0[i][3]));
+			}
+		if(X_contra>0) L[234][0]=2;
+		}
+	}
+	//Check all rules of unit[234][1]
+	L[234][1] = LargeX[234][0]>0 ? 1 : 0;
+	satisfiable[234][1]=1; 
+	if(!L[234][1]){
+	for(int i=0;i<66;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit234_1[i][0] ][ unit234_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit234_1[i][2] ][ unit234_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit234_1[i][4] ][ unit234_1[i][5] ] >0);
+		X_contra = ( LargeX[234][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit234_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[234][1]=1;
+			satisfiable[234][1]=satisfiable[234][1] & ((x[234] ^ 1) | (x[ unit234_1[i][0] ] ^ unit234_1[i][1]) |(x[ unit234_1[i][2] ] ^ unit234_1[i][3]));
+			}
+		if(X_contra>0) L[234][1]=2;
+		}
+	}
+	//Check all rules of unit[235][0]
+	L[235][0] = LargeX[235][1]>0 ? 1 : 0;
+	satisfiable[235][0]=1; 
+	if(!L[235][0]){
+	for(int i=0;i<67;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit235_0[i][0] ][ unit235_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit235_0[i][2] ][ unit235_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit235_0[i][4] ][ unit235_0[i][5] ] >0);
+		X_contra = ( LargeX[235][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit235_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[235][0]=1;
+			satisfiable[235][0]=satisfiable[235][0] & ((x[235] ^ 0) | (x[ unit235_0[i][0] ] ^ unit235_0[i][1]) |(x[ unit235_0[i][2] ] ^ unit235_0[i][3]));
+			}
+		if(X_contra>0) L[235][0]=2;
+		}
+	}
+	//Check all rules of unit[235][1]
+	L[235][1] = LargeX[235][0]>0 ? 1 : 0;
+	satisfiable[235][1]=1; 
+	if(!L[235][1]){
+	for(int i=0;i<88;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit235_1[i][0] ][ unit235_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit235_1[i][2] ][ unit235_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit235_1[i][4] ][ unit235_1[i][5] ] >0);
+		X_contra = ( LargeX[235][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit235_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[235][1]=1;
+			satisfiable[235][1]=satisfiable[235][1] & ((x[235] ^ 1) | (x[ unit235_1[i][0] ] ^ unit235_1[i][1]) |(x[ unit235_1[i][2] ] ^ unit235_1[i][3]));
+			}
+		if(X_contra>0) L[235][1]=2;
+		}
+	}
+	//Check all rules of unit[236][0]
+	L[236][0] = LargeX[236][1]>0 ? 1 : 0;
+	satisfiable[236][0]=1; 
+	if(!L[236][0]){
+	for(int i=0;i<118;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit236_0[i][0] ][ unit236_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit236_0[i][2] ][ unit236_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit236_0[i][4] ][ unit236_0[i][5] ] >0);
+		X_contra = ( LargeX[236][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit236_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[236][0]=1;
+			satisfiable[236][0]=satisfiable[236][0] & ((x[236] ^ 0) | (x[ unit236_0[i][0] ] ^ unit236_0[i][1]) |(x[ unit236_0[i][2] ] ^ unit236_0[i][3]));
+			}
+		if(X_contra>0) L[236][0]=2;
+		}
+	}
+	//Check all rules of unit[236][1]
+	L[236][1] = LargeX[236][0]>0 ? 1 : 0;
+	satisfiable[236][1]=1; 
+	if(!L[236][1]){
+	for(int i=0;i<110;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit236_1[i][0] ][ unit236_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit236_1[i][2] ][ unit236_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit236_1[i][4] ][ unit236_1[i][5] ] >0);
+		X_contra = ( LargeX[236][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit236_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[236][1]=1;
+			satisfiable[236][1]=satisfiable[236][1] & ((x[236] ^ 1) | (x[ unit236_1[i][0] ] ^ unit236_1[i][1]) |(x[ unit236_1[i][2] ] ^ unit236_1[i][3]));
+			}
+		if(X_contra>0) L[236][1]=2;
+		}
+	}
+	//Check all rules of unit[237][0]
+	L[237][0] = LargeX[237][1]>0 ? 1 : 0;
+	satisfiable[237][0]=1; 
+	if(!L[237][0]){
+	for(int i=0;i<84;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit237_0[i][0] ][ unit237_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit237_0[i][2] ][ unit237_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit237_0[i][4] ][ unit237_0[i][5] ] >0);
+		X_contra = ( LargeX[237][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit237_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[237][0]=1;
+			satisfiable[237][0]=satisfiable[237][0] & ((x[237] ^ 0) | (x[ unit237_0[i][0] ] ^ unit237_0[i][1]) |(x[ unit237_0[i][2] ] ^ unit237_0[i][3]));
+			}
+		if(X_contra>0) L[237][0]=2;
+		}
+	}
+	//Check all rules of unit[237][1]
+	L[237][1] = LargeX[237][0]>0 ? 1 : 0;
+	satisfiable[237][1]=1; 
+	if(!L[237][1]){
+	for(int i=0;i<131;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit237_1[i][0] ][ unit237_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit237_1[i][2] ][ unit237_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit237_1[i][4] ][ unit237_1[i][5] ] >0);
+		X_contra = ( LargeX[237][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit237_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[237][1]=1;
+			satisfiable[237][1]=satisfiable[237][1] & ((x[237] ^ 1) | (x[ unit237_1[i][0] ] ^ unit237_1[i][1]) |(x[ unit237_1[i][2] ] ^ unit237_1[i][3]));
+			}
+		if(X_contra>0) L[237][1]=2;
+		}
+	}
+	//Check all rules of unit[238][0]
+	L[238][0] = LargeX[238][1]>0 ? 1 : 0;
+	satisfiable[238][0]=1; 
+	if(!L[238][0]){
+	for(int i=0;i<106;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit238_0[i][0] ][ unit238_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit238_0[i][2] ][ unit238_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit238_0[i][4] ][ unit238_0[i][5] ] >0);
+		X_contra = ( LargeX[238][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit238_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[238][0]=1;
+			satisfiable[238][0]=satisfiable[238][0] & ((x[238] ^ 0) | (x[ unit238_0[i][0] ] ^ unit238_0[i][1]) |(x[ unit238_0[i][2] ] ^ unit238_0[i][3]));
+			}
+		if(X_contra>0) L[238][0]=2;
+		}
+	}
+	//Check all rules of unit[238][1]
+	L[238][1] = LargeX[238][0]>0 ? 1 : 0;
+	satisfiable[238][1]=1; 
+	if(!L[238][1]){
+	for(int i=0;i<81;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit238_1[i][0] ][ unit238_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit238_1[i][2] ][ unit238_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit238_1[i][4] ][ unit238_1[i][5] ] >0);
+		X_contra = ( LargeX[238][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit238_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[238][1]=1;
+			satisfiable[238][1]=satisfiable[238][1] & ((x[238] ^ 1) | (x[ unit238_1[i][0] ] ^ unit238_1[i][1]) |(x[ unit238_1[i][2] ] ^ unit238_1[i][3]));
+			}
+		if(X_contra>0) L[238][1]=2;
+		}
+	}
+	//Check all rules of unit[239][0]
+	L[239][0] = LargeX[239][1]>0 ? 1 : 0;
+	satisfiable[239][0]=1; 
+	if(!L[239][0]){
+	for(int i=0;i<84;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit239_0[i][0] ][ unit239_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit239_0[i][2] ][ unit239_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit239_0[i][4] ][ unit239_0[i][5] ] >0);
+		X_contra = ( LargeX[239][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit239_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[239][0]=1;
+			satisfiable[239][0]=satisfiable[239][0] & ((x[239] ^ 0) | (x[ unit239_0[i][0] ] ^ unit239_0[i][1]) |(x[ unit239_0[i][2] ] ^ unit239_0[i][3]));
+			}
+		if(X_contra>0) L[239][0]=2;
+		}
+	}
+	//Check all rules of unit[239][1]
+	L[239][1] = LargeX[239][0]>0 ? 1 : 0;
+	satisfiable[239][1]=1; 
+	if(!L[239][1]){
+	for(int i=0;i<100;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit239_1[i][0] ][ unit239_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit239_1[i][2] ][ unit239_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit239_1[i][4] ][ unit239_1[i][5] ] >0);
+		X_contra = ( LargeX[239][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit239_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[239][1]=1;
+			satisfiable[239][1]=satisfiable[239][1] & ((x[239] ^ 1) | (x[ unit239_1[i][0] ] ^ unit239_1[i][1]) |(x[ unit239_1[i][2] ] ^ unit239_1[i][3]));
+			}
+		if(X_contra>0) L[239][1]=2;
+		}
+	}
+	//Check all rules of unit[240][0]
+	L[240][0] = LargeX[240][1]>0 ? 1 : 0;
+	satisfiable[240][0]=1; 
+	if(!L[240][0]){
+	for(int i=0;i<153;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit240_0[i][0] ][ unit240_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit240_0[i][2] ][ unit240_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit240_0[i][4] ][ unit240_0[i][5] ] >0);
+		X_contra = ( LargeX[240][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit240_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[240][0]=1;
+			satisfiable[240][0]=satisfiable[240][0] & ((x[240] ^ 0) | (x[ unit240_0[i][0] ] ^ unit240_0[i][1]) |(x[ unit240_0[i][2] ] ^ unit240_0[i][3]));
+			}
+		if(X_contra>0) L[240][0]=2;
+		}
+	}
+	//Check all rules of unit[240][1]
+	L[240][1] = LargeX[240][0]>0 ? 1 : 0;
+	satisfiable[240][1]=1; 
+	if(!L[240][1]){
+	for(int i=0;i<62;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit240_1[i][0] ][ unit240_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit240_1[i][2] ][ unit240_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit240_1[i][4] ][ unit240_1[i][5] ] >0);
+		X_contra = ( LargeX[240][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit240_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[240][1]=1;
+			satisfiable[240][1]=satisfiable[240][1] & ((x[240] ^ 1) | (x[ unit240_1[i][0] ] ^ unit240_1[i][1]) |(x[ unit240_1[i][2] ] ^ unit240_1[i][3]));
+			}
+		if(X_contra>0) L[240][1]=2;
+		}
+	}
+	//Check all rules of unit[241][0]
+	L[241][0] = LargeX[241][1]>0 ? 1 : 0;
+	satisfiable[241][0]=1; 
+	if(!L[241][0]){
+	for(int i=0;i<180;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit241_0[i][0] ][ unit241_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit241_0[i][2] ][ unit241_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit241_0[i][4] ][ unit241_0[i][5] ] >0);
+		X_contra = ( LargeX[241][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit241_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[241][0]=1;
+			satisfiable[241][0]=satisfiable[241][0] & ((x[241] ^ 0) | (x[ unit241_0[i][0] ] ^ unit241_0[i][1]) |(x[ unit241_0[i][2] ] ^ unit241_0[i][3]));
+			}
+		if(X_contra>0) L[241][0]=2;
+		}
+	}
+	//Check all rules of unit[241][1]
+	L[241][1] = LargeX[241][0]>0 ? 1 : 0;
+	satisfiable[241][1]=1; 
+	if(!L[241][1]){
+	for(int i=0;i<110;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit241_1[i][0] ][ unit241_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit241_1[i][2] ][ unit241_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit241_1[i][4] ][ unit241_1[i][5] ] >0);
+		X_contra = ( LargeX[241][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit241_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[241][1]=1;
+			satisfiable[241][1]=satisfiable[241][1] & ((x[241] ^ 1) | (x[ unit241_1[i][0] ] ^ unit241_1[i][1]) |(x[ unit241_1[i][2] ] ^ unit241_1[i][3]));
+			}
+		if(X_contra>0) L[241][1]=2;
+		}
+	}
+	//Check all rules of unit[242][0]
+	L[242][0] = LargeX[242][1]>0 ? 1 : 0;
+	satisfiable[242][0]=1; 
+	if(!L[242][0]){
+	for(int i=0;i<70;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit242_0[i][0] ][ unit242_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit242_0[i][2] ][ unit242_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit242_0[i][4] ][ unit242_0[i][5] ] >0);
+		X_contra = ( LargeX[242][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit242_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[242][0]=1;
+			satisfiable[242][0]=satisfiable[242][0] & ((x[242] ^ 0) | (x[ unit242_0[i][0] ] ^ unit242_0[i][1]) |(x[ unit242_0[i][2] ] ^ unit242_0[i][3]));
+			}
+		if(X_contra>0) L[242][0]=2;
+		}
+	}
+	//Check all rules of unit[242][1]
+	L[242][1] = LargeX[242][0]>0 ? 1 : 0;
+	satisfiable[242][1]=1; 
+	if(!L[242][1]){
+	for(int i=0;i<48;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit242_1[i][0] ][ unit242_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit242_1[i][2] ][ unit242_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit242_1[i][4] ][ unit242_1[i][5] ] >0);
+		X_contra = ( LargeX[242][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit242_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[242][1]=1;
+			satisfiable[242][1]=satisfiable[242][1] & ((x[242] ^ 1) | (x[ unit242_1[i][0] ] ^ unit242_1[i][1]) |(x[ unit242_1[i][2] ] ^ unit242_1[i][3]));
+			}
+		if(X_contra>0) L[242][1]=2;
+		}
+	}
+	//Check all rules of unit[243][0]
+	L[243][0] = LargeX[243][1]>0 ? 1 : 0;
+	satisfiable[243][0]=1; 
+	if(!L[243][0]){
+	for(int i=0;i<145;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit243_0[i][0] ][ unit243_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit243_0[i][2] ][ unit243_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit243_0[i][4] ][ unit243_0[i][5] ] >0);
+		X_contra = ( LargeX[243][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit243_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[243][0]=1;
+			satisfiable[243][0]=satisfiable[243][0] & ((x[243] ^ 0) | (x[ unit243_0[i][0] ] ^ unit243_0[i][1]) |(x[ unit243_0[i][2] ] ^ unit243_0[i][3]));
+			}
+		if(X_contra>0) L[243][0]=2;
+		}
+	}
+	//Check all rules of unit[243][1]
+	L[243][1] = LargeX[243][0]>0 ? 1 : 0;
+	satisfiable[243][1]=1; 
+	if(!L[243][1]){
+	for(int i=0;i<117;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit243_1[i][0] ][ unit243_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit243_1[i][2] ][ unit243_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit243_1[i][4] ][ unit243_1[i][5] ] >0);
+		X_contra = ( LargeX[243][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit243_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[243][1]=1;
+			satisfiable[243][1]=satisfiable[243][1] & ((x[243] ^ 1) | (x[ unit243_1[i][0] ] ^ unit243_1[i][1]) |(x[ unit243_1[i][2] ] ^ unit243_1[i][3]));
+			}
+		if(X_contra>0) L[243][1]=2;
+		}
+	}
+	//Check all rules of unit[244][0]
+	L[244][0] = LargeX[244][1]>0 ? 1 : 0;
+	satisfiable[244][0]=1; 
+	if(!L[244][0]){
+	for(int i=0;i<54;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit244_0[i][0] ][ unit244_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit244_0[i][2] ][ unit244_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit244_0[i][4] ][ unit244_0[i][5] ] >0);
+		X_contra = ( LargeX[244][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit244_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[244][0]=1;
+			satisfiable[244][0]=satisfiable[244][0] & ((x[244] ^ 0) | (x[ unit244_0[i][0] ] ^ unit244_0[i][1]) |(x[ unit244_0[i][2] ] ^ unit244_0[i][3]));
+			}
+		if(X_contra>0) L[244][0]=2;
+		}
+	}
+	//Check all rules of unit[244][1]
+	L[244][1] = LargeX[244][0]>0 ? 1 : 0;
+	satisfiable[244][1]=1; 
+	if(!L[244][1]){
+	for(int i=0;i<124;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit244_1[i][0] ][ unit244_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit244_1[i][2] ][ unit244_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit244_1[i][4] ][ unit244_1[i][5] ] >0);
+		X_contra = ( LargeX[244][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit244_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[244][1]=1;
+			satisfiable[244][1]=satisfiable[244][1] & ((x[244] ^ 1) | (x[ unit244_1[i][0] ] ^ unit244_1[i][1]) |(x[ unit244_1[i][2] ] ^ unit244_1[i][3]));
+			}
+		if(X_contra>0) L[244][1]=2;
+		}
+	}
+	//Check all rules of unit[245][0]
+	L[245][0] = LargeX[245][1]>0 ? 1 : 0;
+	satisfiable[245][0]=1; 
+	if(!L[245][0]){
+	for(int i=0;i<86;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit245_0[i][0] ][ unit245_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit245_0[i][2] ][ unit245_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit245_0[i][4] ][ unit245_0[i][5] ] >0);
+		X_contra = ( LargeX[245][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit245_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[245][0]=1;
+			satisfiable[245][0]=satisfiable[245][0] & ((x[245] ^ 0) | (x[ unit245_0[i][0] ] ^ unit245_0[i][1]) |(x[ unit245_0[i][2] ] ^ unit245_0[i][3]));
+			}
+		if(X_contra>0) L[245][0]=2;
+		}
+	}
+	//Check all rules of unit[245][1]
+	L[245][1] = LargeX[245][0]>0 ? 1 : 0;
+	satisfiable[245][1]=1; 
+	if(!L[245][1]){
+	for(int i=0;i<120;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit245_1[i][0] ][ unit245_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit245_1[i][2] ][ unit245_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit245_1[i][4] ][ unit245_1[i][5] ] >0);
+		X_contra = ( LargeX[245][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit245_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[245][1]=1;
+			satisfiable[245][1]=satisfiable[245][1] & ((x[245] ^ 1) | (x[ unit245_1[i][0] ] ^ unit245_1[i][1]) |(x[ unit245_1[i][2] ] ^ unit245_1[i][3]));
+			}
+		if(X_contra>0) L[245][1]=2;
+		}
+	}
+	//Check all rules of unit[246][0]
+	L[246][0] = LargeX[246][1]>0 ? 1 : 0;
+	satisfiable[246][0]=1; 
+	if(!L[246][0]){
+	for(int i=0;i<65;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit246_0[i][0] ][ unit246_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit246_0[i][2] ][ unit246_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit246_0[i][4] ][ unit246_0[i][5] ] >0);
+		X_contra = ( LargeX[246][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit246_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[246][0]=1;
+			satisfiable[246][0]=satisfiable[246][0] & ((x[246] ^ 0) | (x[ unit246_0[i][0] ] ^ unit246_0[i][1]) |(x[ unit246_0[i][2] ] ^ unit246_0[i][3]));
+			}
+		if(X_contra>0) L[246][0]=2;
+		}
+	}
+	//Check all rules of unit[246][1]
+	L[246][1] = LargeX[246][0]>0 ? 1 : 0;
+	satisfiable[246][1]=1; 
+	if(!L[246][1]){
+	for(int i=0;i<89;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit246_1[i][0] ][ unit246_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit246_1[i][2] ][ unit246_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit246_1[i][4] ][ unit246_1[i][5] ] >0);
+		X_contra = ( LargeX[246][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit246_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[246][1]=1;
+			satisfiable[246][1]=satisfiable[246][1] & ((x[246] ^ 1) | (x[ unit246_1[i][0] ] ^ unit246_1[i][1]) |(x[ unit246_1[i][2] ] ^ unit246_1[i][3]));
+			}
+		if(X_contra>0) L[246][1]=2;
+		}
+	}
+	//Check all rules of unit[247][0]
+	L[247][0] = LargeX[247][1]>0 ? 1 : 0;
+	satisfiable[247][0]=1; 
+	if(!L[247][0]){
+	for(int i=0;i<87;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit247_0[i][0] ][ unit247_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit247_0[i][2] ][ unit247_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit247_0[i][4] ][ unit247_0[i][5] ] >0);
+		X_contra = ( LargeX[247][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit247_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[247][0]=1;
+			satisfiable[247][0]=satisfiable[247][0] & ((x[247] ^ 0) | (x[ unit247_0[i][0] ] ^ unit247_0[i][1]) |(x[ unit247_0[i][2] ] ^ unit247_0[i][3]));
+			}
+		if(X_contra>0) L[247][0]=2;
+		}
+	}
+	//Check all rules of unit[247][1]
+	L[247][1] = LargeX[247][0]>0 ? 1 : 0;
+	satisfiable[247][1]=1; 
+	if(!L[247][1]){
+	for(int i=0;i<129;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit247_1[i][0] ][ unit247_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit247_1[i][2] ][ unit247_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit247_1[i][4] ][ unit247_1[i][5] ] >0);
+		X_contra = ( LargeX[247][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit247_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[247][1]=1;
+			satisfiable[247][1]=satisfiable[247][1] & ((x[247] ^ 1) | (x[ unit247_1[i][0] ] ^ unit247_1[i][1]) |(x[ unit247_1[i][2] ] ^ unit247_1[i][3]));
+			}
+		if(X_contra>0) L[247][1]=2;
+		}
+	}
+	//Check all rules of unit[248][0]
+	L[248][0] = LargeX[248][1]>0 ? 1 : 0;
+	satisfiable[248][0]=1; 
+	if(!L[248][0]){
+	for(int i=0;i<76;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit248_0[i][0] ][ unit248_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit248_0[i][2] ][ unit248_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit248_0[i][4] ][ unit248_0[i][5] ] >0);
+		X_contra = ( LargeX[248][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit248_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[248][0]=1;
+			satisfiable[248][0]=satisfiable[248][0] & ((x[248] ^ 0) | (x[ unit248_0[i][0] ] ^ unit248_0[i][1]) |(x[ unit248_0[i][2] ] ^ unit248_0[i][3]));
+			}
+		if(X_contra>0) L[248][0]=2;
+		}
+	}
+	//Check all rules of unit[248][1]
+	L[248][1] = LargeX[248][0]>0 ? 1 : 0;
+	satisfiable[248][1]=1; 
+	if(!L[248][1]){
+	for(int i=0;i<35;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit248_1[i][0] ][ unit248_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit248_1[i][2] ][ unit248_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit248_1[i][4] ][ unit248_1[i][5] ] >0);
+		X_contra = ( LargeX[248][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit248_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[248][1]=1;
+			satisfiable[248][1]=satisfiable[248][1] & ((x[248] ^ 1) | (x[ unit248_1[i][0] ] ^ unit248_1[i][1]) |(x[ unit248_1[i][2] ] ^ unit248_1[i][3]));
+			}
+		if(X_contra>0) L[248][1]=2;
+		}
+	}
+	//Check all rules of unit[249][0]
+	L[249][0] = LargeX[249][1]>0 ? 1 : 0;
+	satisfiable[249][0]=1; 
+	if(!L[249][0]){
+	for(int i=0;i<60;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit249_0[i][0] ][ unit249_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit249_0[i][2] ][ unit249_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit249_0[i][4] ][ unit249_0[i][5] ] >0);
+		X_contra = ( LargeX[249][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit249_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[249][0]=1;
+			satisfiable[249][0]=satisfiable[249][0] & ((x[249] ^ 0) | (x[ unit249_0[i][0] ] ^ unit249_0[i][1]) |(x[ unit249_0[i][2] ] ^ unit249_0[i][3]));
+			}
+		if(X_contra>0) L[249][0]=2;
+		}
+	}
+	//Check all rules of unit[249][1]
+	L[249][1] = LargeX[249][0]>0 ? 1 : 0;
+	satisfiable[249][1]=1; 
+	if(!L[249][1]){
+	for(int i=0;i<103;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit249_1[i][0] ][ unit249_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit249_1[i][2] ][ unit249_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit249_1[i][4] ][ unit249_1[i][5] ] >0);
+		X_contra = ( LargeX[249][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit249_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[249][1]=1;
+			satisfiable[249][1]=satisfiable[249][1] & ((x[249] ^ 1) | (x[ unit249_1[i][0] ] ^ unit249_1[i][1]) |(x[ unit249_1[i][2] ] ^ unit249_1[i][3]));
+			}
+		if(X_contra>0) L[249][1]=2;
+		}
+	}
+	//Check all rules of unit[250][0]
+	L[250][0] = LargeX[250][1]>0 ? 1 : 0;
+	satisfiable[250][0]=1; 
+	if(!L[250][0]){
+	for(int i=0;i<60;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit250_0[i][0] ][ unit250_0[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit250_0[i][2] ][ unit250_0[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit250_0[i][4] ][ unit250_0[i][5] ] >0);
+		X_contra = ( LargeX[250][0] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit250_0[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[250][0]=1;
+			satisfiable[250][0]=satisfiable[250][0] & ((x[250] ^ 0) | (x[ unit250_0[i][0] ] ^ unit250_0[i][1]) |(x[ unit250_0[i][2] ] ^ unit250_0[i][3]));
+			}
+		if(X_contra>0) L[250][0]=2;
+		}
+	}
+	//Check all rules of unit[250][1]
+	L[250][1] = LargeX[250][0]>0 ? 1 : 0;
+	satisfiable[250][1]=1; 
+	if(!L[250][1]){
+	for(int i=0;i<76;i++){
+		one_bit_t X_contra01;
+		one_bit_t X_contra23;
+		one_bit_t X_contra45;
+		one_bit_t X_contra;
+		X_contra01 = ( LargeX[ unit250_1[i][0] ][ unit250_1[i][1] ] >0);
+		X_contra23 = ( LargeX[ unit250_1[i][2] ][ unit250_1[i][3] ] >0);
+		X_contra45 = ( LargeX[ unit250_1[i][4] ][ unit250_1[i][5] ] >0);
+		X_contra = ( LargeX[250][1] >0) & X_contra01 & X_contra23 & X_contra45;
+		if(unit250_1[i][4]==0){
+				if((X_contra01 & X_contra23)>0) L[250][1]=1;
+			satisfiable[250][1]=satisfiable[250][1] & ((x[250] ^ 1) | (x[ unit250_1[i][0] ] ^ unit250_1[i][1]) |(x[ unit250_1[i][2] ] ^ unit250_1[i][3]));
+			}
+		if(X_contra>0) L[250][1]=2;
 		}
 	}
 }
