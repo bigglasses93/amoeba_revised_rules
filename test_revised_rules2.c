@@ -622,7 +622,7 @@ void create_local_rules(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8])
             sprintf(s1,"\t\t\tif(unit%d_%d[i][4]==0){\n",i,j);strcat(s,s1);
             //COLLAPSE
             //sprintf(s1,"\t\t\t\t//if((X_contra01 & X_contra23)>0) L[%d][%d]=0;\n",i,1-j);strcat(s,s1);
-            //sprintf(s1,"\t\t\t\tL[%d][%d] = L[%d][%d] & (!(X_contra01 & X_contra23));\n",i,1-j,i,1-j); strcat(s,s1);
+            sprintf(s1,"\t\t\t\tL[%d][%d] = L[%d][%d] & (!(X_contra01 & X_contra23));\n",i,1-j,i,1-j); strcat(s,s1);
             sprintf(s1,"\t\t\t\tsatisfiable[%d][%d]=satisfiable[%d][%d] & ((x[%d] ^ %d) | ",i,j,i,j,i,j);strcat(s,s1);
             sprintf(s1,"(x[ unit%d_%d[i][0] ] ^ unit%d_%d[i][1]) |",i,j,i,j);strcat(s,s1);
             sprintf(s1,"(x[ unit%d_%d[i][2] ] ^ unit%d_%d[i][3]));\n\t\t\t}\n",i,j,i,j);strcat(s,s1);
