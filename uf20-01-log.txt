@@ -1,22 +1,24 @@
 
-Run #1: seed = 1760614929 
-Found: 55 iterations 01110001111001101111
-Run #2: seed = 15132 
-Found: 63 iterations 10010001010011101001
-Run #3: seed = 27298 
-Found: 214 iterations 01110001111001101111
-Run #4: seed = 5905 
-Found: 21 iterations 10010000010011101001
-Run #5: seed = 23471 
-Found: 80 iterations 01110001111001101111
-Run #6: seed = 32581 
-Found: 172 iterations 10010100010011101001
-Run #7: seed = 4766 
-Found: 32 iterations 10000100000011101001
-Run #8: seed = 9974 
-Found: 250 iterations 10010000010011101001
-Run #9: seed = 25788 
-Found: 251 iterations 10010001010011101001
-Run #10: seed = 18736 
-Found: 68 iterations 10010000010011101001
-Average #iterations = 120
+Run #1: seed = 854258091 
+Found: 46 iterations 10010100010011101001
+Run #2: seed = 31885 
+Found: 117 iterations 10010100000011101001
+Run #3: seed = 22512 
+Found: 190 iterations 10000100100001101001
+Run #4: seed = 4929 
+Found: 273 iterations 01110001111001101111
+Run #5: seed = 4051 
+Found: 186 iterations 10010000010011101001
+Run #6: seed = 2493 
+Found: 65 iterations 10010100010011101001
+Run #7: seed = 7053 
+Found: 52 iterations 10010001010011101001
+Run #8: seed = 15397 
+Found: 96 iterations 01110001111001101111
+Run #9: seed = 6710 
+Found: 43 iterations 10010100000011101001
+Run #10: seed = 15015 
+Found: 47 iterations 10010001010011101001
+Average #iterations = 111
+Average #flips = 83
+Max flips in 1 iteration = 7
