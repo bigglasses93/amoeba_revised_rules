@@ -595,7 +595,7 @@ void create_local_rules(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8])
     fprintf(fp4,"void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], one_bit_t x[N_VARIABLE+1], one_bit_t satisfiable[N_VARIABLE+1][2]){\n");
     //fprintf(fp4,"\tone_bit_t light_on = 0; //if light_on=1, L[i][j]=1, skip other rules check\n");
     //fprintf(fp4,"\tint i;\n");
-
+/*
     for(i=1;i<=N_VARIABLE;i++){
         for(j=0;j<=1;j++){
             strcpy(s,"");
@@ -622,7 +622,7 @@ void create_local_rules(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8])
             sprintf(s1,"\t\t\tif(unit%d_%d[i][4]==0){\n",i,j);strcat(s,s1);
             //COLLAPSE
             //sprintf(s1,"\t\t\t\t//if((X_contra01 & X_contra23)>0) L[%d][%d]=0;\n",i,1-j);strcat(s,s1);
-            sprintf(s1,"\t\t\t\tL[%d][%d] = L[%d][%d] & (!(X_contra01 & X_contra23));\n",i,1-j,i,1-j); strcat(s,s1);
+            //sprintf(s1,"\t\t\t\tL[%d][%d] = L[%d][%d] & (!(X_contra01 & X_contra23));\n",i,1-j,i,1-j); strcat(s,s1);
             sprintf(s1,"\t\t\t\tsatisfiable[%d][%d]=satisfiable[%d][%d] & ((x[%d] ^ %d) | ",i,j,i,j,i,j);strcat(s,s1);
             sprintf(s1,"(x[ unit%d_%d[i][0] ] ^ unit%d_%d[i][1]) |",i,j,i,j);strcat(s,s1);
             sprintf(s1,"(x[ unit%d_%d[i][2] ] ^ unit%d_%d[i][3]));\n\t\t\t}\n",i,j,i,j);strcat(s,s1);
@@ -638,11 +638,11 @@ void create_local_rules(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8])
     }
     fprintf(fp4,"}");
     fclose(fp4);
-    printf("created local rules\n");
+    printf("created local rules\n");*/
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //version added hypercontra
-/*    for(i=1;i<=N_VARIABLE;i++){
+    for(i=1;i<=N_VARIABLE;i++){
         for(j=0;j<=1;j++){
             strcpy(s,"");
             sprintf(s1,"\t//Check all rules of unit[%d][%d]\n",i,j); strcat(s,s1);
@@ -670,7 +670,7 @@ void create_local_rules(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8])
             //COLLAPSE
             //sprintf(s1,"\t\t\t\t//if((X_contra01 & X_contra23)>0) L[%d][%d]=0;\n",i,1-j);strcat(s,s1);
             sprintf(s1,"\t\t\tL[%d][%d] = L[%d][%d] | (X_contra01 & X_contra23);\n",i,j,i,j); strcat(s,s1);
-            sprintf(s1,"\t\t\tL[%d][%d] = L[%d][%d] & (!(X_contra01 & X_contra23));\n",i,1-j,i,1-j); strcat(s,s1);
+            //sprintf(s1,"\t\t\tL[%d][%d] = L[%d][%d] & (!(X_contra01 & X_contra23));\n",i,1-j,i,1-j); strcat(s,s1);
             sprintf(s1,"\t\t\tsatisfiable[%d][%d]=satisfiable[%d][%d] & ((x[%d] ^ %d) | ",i,j,i,j,i,j);strcat(s,s1);
             sprintf(s1,"(x[ unit%d_%d[i][0] ] ^ unit%d_%d[i][1]) |",i,j,i,j);strcat(s,s1);
             sprintf(s1,"(x[ unit%d_%d[i][2] ] ^ unit%d_%d[i][3]));\n\t\t\t}\n",i,j,i,j);strcat(s,s1);
@@ -686,7 +686,7 @@ void create_local_rules(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8])
     }
     fprintf(fp4,"}");
     fclose(fp4);
-    printf("created local rules\n");*/
+    printf("created local rules\n");
 
 
 }
