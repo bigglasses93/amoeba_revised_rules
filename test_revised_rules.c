@@ -2,12 +2,12 @@
 //#include<stdlib.h>
 #include<string.h>
 #include<time.h>
-#define N_VARIABLE 50
-#define N_CLAUSE 218 //9
+#define N_VARIABLE 225
+#define N_CLAUSE 960 //9
 #define N_LITERAL 3
 const int MAX_N_STEP = 5000000;
 const int EPSILON = 687194767; //429496730;//536870912;
-#define MAX_CONTRA 10000
+#define MAX_CONTRA 20000
 
 int LargeX[N_VARIABLE][2];
 int Y[N_VARIABLE][2];
@@ -44,7 +44,7 @@ FILE *fp3; //contra
 FILE *fp4; //local rules
 
 int main() {
-    char filename[128]="uf100-0285.cnf";
+    char filename[128]="uf225-028.cnf";
     char logfile[128];
 
     strncpy(logfile,filename,strlen(filename)-4);
@@ -445,22 +445,13 @@ void update_L_inter(int inter[3*N_CLAUSE][6]){
     int i;
     for(i=0;i<3*N_CLAUSE;i++){
         int inter1 = (LargeX[ inter[i][2]-1 ][ inter[i][3] ] >0) & (LargeX[ inter[i][0]-1 ][ inter[i][1] ] >0);
-        //L[ inter[i][4]-1 ][ inter[i][5] ] = L[ inter[i][4]-1 ][ inter[i][5] ] | inter1;
-        /*if(inter1){
-            //INTER
-            L[ inter[i][4]-1 ][ inter[i][5] ] = 1;
-            //COLLAPSE - Light off counterparts of INTER
-            L[ inter[i][4]-1 ][ 1-inter[i][5] ] = 0;
-
-            //Hyper INTER -> not good
-            //LargeX[ inter[i][4]-1 ][ inter[i][5] ]=-1;
-        }*/
         //INTER
         L[ inter[i][4]-1 ][ inter[i][5] ] = L[ inter[i][4]-1 ][ inter[i][5] ] | inter1;
         //COLLAPSE
         L[ inter[i][4]-1 ][ 1-inter[i][5] ] = L[ inter[i][4]-1 ][ 1-inter[i][5] ] & (!inter1);
         //printf("ok %d ", L[ inter[i][0]-1 ][ inter[i][1] ]);
     }
+
 }
 void update_L_contra(int size_contra, int contra[size_contra][8]){
     int i, j;
@@ -505,19 +496,19 @@ void update_L_contra(int size_contra, int contra[size_contra][8]){
         }*/
 
         //HyperCONTRA - set LargeX of contradicted units directly to -1
-        /*if(contra1){
+        if(contra1){
             LargeX[ contra[i][0]-1 ][ contra[i][1] ] = -1;
             LargeX[ contra[i][2]-1 ][ contra[i][3] ] = -1;
             LargeX[ contra[i][4]-1 ][ contra[i][5] ] = -1;
             LargeX[ contra[i][6]-1 ][ contra[i][7] ] = -1;
-        }*/
+        }
 
-        if(contra1){
+        /*if(contra1){
             L[ contra[i][0]-1 ][ contra[i][1] ] = 2;
             L[ contra[i][2]-1 ][ contra[i][3] ] = 2;
             L[ contra[i][4]-1 ][ contra[i][5] ] = 2;
             L[ contra[i][6]-1 ][ contra[i][7] ] = 2;
-        }
+        }*/
     }
 }
 //create local rules and local modules

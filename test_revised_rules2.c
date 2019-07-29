@@ -2,8 +2,8 @@
 //#include<stdlib.h>
 #include<string.h>
 #include<time.h>
-#define N_VARIABLE 250
-#define N_CLAUSE 1065
+#define N_VARIABLE 225
+#define N_CLAUSE 960
 #define N_LITERAL 3
 const int MAX_N_STEP = 5000000;
 const int EPSILON = 687194767; //429496730;//536870912;
@@ -19,6 +19,7 @@ int inter[3*N_CLAUSE][6];
 int size_contra;
 int contra_new[MAX_CONTRA][8];
 int total_flips;
+int Nflip;
 unsigned max_flip[1];
 
 unsigned state[1];
@@ -44,9 +45,10 @@ FILE *fp1; //z
 FILE *fp2; //inter
 FILE *fp3; //contra
 FILE *fp4; //local rules
+FILE *fp5;
 
 int main() {
-    char filename[128]="uf250-0100.cnf";
+    char filename[128]="uf225-028.cnf";
     char logfile[128];
 
     strncpy(logfile,filename,strlen(filename)-4);
@@ -59,6 +61,7 @@ int main() {
     int i;
     int flips_avg=0;
     max_flip[0] = 0;
+    Nflip = 0;
 
     if (!loadformula(filename)) {
         return 1;
@@ -134,6 +137,8 @@ int amoebasat(char s[N_VARIABLE+100]){
     char tmp[N_VARIABLE+100];
     int NStep;
     total_flips=0;
+    FILE *flips_count;
+    flips_count = fopen("flips.txt","w+");
     for(NStep=1;NStep<MAX_N_STEP;NStep++){
         update_L_intra();
 
@@ -144,7 +149,7 @@ int amoebasat(char s[N_VARIABLE+100]){
         //update_Y();
         update_LargeX();
         update_x(max_flip);
-
+        fprintf(flips_count,"%d\n",Nflip);
         if(update_f()){
             sprintf(s,"\nFound: %d iterations ", NStep);
             //for(i=0;i<N_VARIABLE;i++) printf("%d",x[i]);
@@ -158,6 +163,7 @@ int amoebasat(char s[N_VARIABLE+100]){
         }
     }
     printf("\nNot found.");
+    fclose(flips_count);
 
     return NStep;
 }
@@ -221,8 +227,9 @@ void update_x(unsigned max_flip[1]){
         if(x_old!=x[i]) flips++;
     }
     total_flips+=flips;
+    Nflip = flips;
     if(flips>max_flip[0]) max_flip[0] = flips;
-    //printf("\nflips = %d", flips);
+
 }
 void update_Y(){
     int i, j;
@@ -293,11 +300,14 @@ void generate_inter(){
     int i;
     fp2 = fopen("inter.h", "w+");
     fp3 = fopen("inter_sign.h", "w+");
-    fp4 = fopen("f_tmp.txt", "w+");
+    fp4 = fopen("f.h", "w+");
+    fp5 = fopen("f_sign.h", "w+");
     //fprintf(fp2, "int interP2[%d][2] = {\n", 3*N_CLAUSE);
 
     fprintf(fp2,"six_bit_t inter[N_CLAUSE][3]={\n");
     fprintf(fp3,"one_bit_t inter_sign[N_CLAUSE][3]={\n");
+    fprintf(fp4,"int f[N_CLAUSE][3]={\n");
+    fprintf(fp4,"int f_sign[N_CLAUSE][3]={\n");
     for(i=0; i<N_CLAUSE; i++){
         //-------- generate inter set size 3x
         int interQ, interQ_abs, interP1, interP1_abs, interP2, interP2_abs;
@@ -326,12 +336,17 @@ void generate_inter(){
         if(i==(N_CLAUSE-1)) fprintf(fp3, "%d, %d, %d};", inter[3*i][1], inter[3*i][3], inter[3*i][5]);
         else fprintf(fp3, "%d, %d, %d,\n", inter[3*i][1], inter[3*i][3], inter[3*i][5]);
 
-        fprintf(fp4, "%d %d %d %d %d %d\n", interQ, interQ_abs, interP1, interP1_abs, interP2, interP2_abs);
+        if(i==(N_CLAUSE-1)) fprintf(fp4, "%d, %d, %d};", interQ, interP1, interP2);
+        else fprintf(fp4, "%d, %d, %d,\n", interQ, interP1, interP2);
+
+        if(i==(N_CLAUSE-1)) fprintf(fp5, "%d, %d, %d};", interQ_abs, interP1_abs, interP2_abs);
+        else fprintf(fp5, "%d, %d, %d,\n", interQ_abs, interP1_abs, interP2_abs);
     }
     //fprintf(fp2, "\};");
     fclose(fp2);
     fclose(fp3);
     fclose(fp4);
+    fclose(fp5);
 }
 int survey_size_contra(){
     //Survey size of contra
