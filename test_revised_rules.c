@@ -418,17 +418,21 @@ void generate_contra(int size_contra, int contra[size_contra][8], int contra_new
 
     fp2 = fopen("contra.h", "w+");
     fp3 = fopen("contra_sign.h", "w+");
+    fp4 = fopen("contra_tmp.h","w+");
     fprintf(fp2, "six_bit_t contra[%d][4] = {\n", size_contra);
     fprintf(fp3, "one_bit_t contra_sign[%d][4] = {\n", size_contra);
+    fprintf(fp4, "int contra[%d][8] = {\n", size_contra);
     for(i=0;i<counter_new;i++){
         //fprintf(fp3, "%d %d %d %d %d %d %d %d\n", contra_new[i][0], contra_new[i][1], contra_new[i][2], contra_new[i][3], contra_new[i][4], contra_new[i][5], contra_new[i][6], contra_new[i][7]);
         if(i!=(counter_new-1)){
             fprintf(fp2, "%d, %d, %d, %d,\n", contra_new[i][0], contra_new[i][2], contra_new[i][4], contra_new[i][6]);
             fprintf(fp3, "%d, %d, %d, %d,\n", contra_new[i][1], contra_new[i][3], contra_new[i][5], contra_new[i][7]);
+            fprintf(fp4, "%d, %d, %d, %d, %d, %d, %d, %d,\n", contra_new[i][0], contra_new[i][1], contra_new[i][2], contra_new[i][3], contra_new[i][4], contra_new[i][5], contra_new[i][6], contra_new[i][7]);
         }
         else {
             fprintf(fp2, "%d, %d, %d, %d};", contra_new[i][0], contra_new[i][2], contra_new[i][4], contra_new[i][6]);
             fprintf(fp3, "%d, %d, %d, %d};", contra_new[i][1], contra_new[i][3], contra_new[i][5], contra_new[i][7]);
+            fprintf(fp4, "%d, %d, %d, %d, %d, %d, %d, %d};", contra_new[i][0], contra_new[i][1], contra_new[i][2], contra_new[i][3], contra_new[i][4], contra_new[i][5], contra_new[i][6], contra_new[i][7]);
         }
     }
     fclose(fp2);
