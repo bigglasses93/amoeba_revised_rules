@@ -2,8 +2,8 @@
 //#include<stdlib.h>
 #include<string.h>
 #include<time.h>
-#define N_VARIABLE 225
-#define N_CLAUSE 960 //9
+#define N_VARIABLE 100
+#define N_CLAUSE 430 //9
 #define N_LITERAL 3
 const int MAX_N_STEP = 5000000;
 const int EPSILON = 687194767; //429496730;//536870912;
@@ -44,7 +44,7 @@ FILE *fp3; //contra
 FILE *fp4; //local rules
 
 int main() {
-    char filename[128]="uf225-028.cnf";
+    char filename[128]="uf100-0285.cnf";
     char logfile[128];
 
     strncpy(logfile,filename,strlen(filename)-4);
@@ -277,11 +277,12 @@ void generate_inter(){
     int i;
     fp2 = fopen("inter.h", "w+");
     fp3 = fopen("inter_sign.h", "w+");
-    fp4 = fopen("f_tmp.txt", "w+");
+    fp4 = fopen("inter_tmp.txt", "w+");
     //fprintf(fp2, "int interP2[%d][2] = {\n", 3*N_CLAUSE);
 
     fprintf(fp2,"six_bit_t inter[N_CLAUSE][3]={\n");
     fprintf(fp3,"one_bit_t inter_sign[N_CLAUSE][3]={\n");
+    fprintf(fp2,"int inter[N_CLAUSE][6]={\n");
     for(i=0; i<N_CLAUSE; i++){
         //-------- generate inter set size 3x
         int interQ, interQ_abs, interP1, interP1_abs, interP2, interP2_abs;
@@ -310,7 +311,7 @@ void generate_inter(){
         if(i==(N_CLAUSE-1)) fprintf(fp3, "%d, %d, %d};", inter[3*i][1], inter[3*i][3], inter[3*i][5]);
         else fprintf(fp3, "%d, %d, %d,\n", inter[3*i][1], inter[3*i][3], inter[3*i][5]);
 
-        fprintf(fp4, "%d %d %d %d %d %d\n", interQ, interQ_abs, interP1, interP1_abs, interP2, interP2_abs);
+        fprintf(fp4, "%d, %d, %d, %d, %d, %d,\n", interQ, interQ_abs, interP1, interP1_abs, interP2, interP2_abs);
     }
     //fprintf(fp2, "\};");
     fclose(fp2);
