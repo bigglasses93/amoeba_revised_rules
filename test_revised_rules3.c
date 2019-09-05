@@ -5,7 +5,7 @@
 #define N_VARIABLE 93
 #define N_CLAUSE 306 //9
 #define N_LITERAL 3
-const int MAX_N_STEP = 5000;
+const int MAX_N_STEP = 10000;
 const int EPSILON = 687194767; //429496730;//536870912;
 #define MAX_CONTRA 20000
 
@@ -67,7 +67,7 @@ int main() {
     generate_contra(size_contra, contra, contra_new);
     //create_local_rules(inter,contra_new);
     srand(time(NULL));
-    for(i=0;i<1;i++){
+    for(i=0;i<100;i++){
         state[0] = rand();
         init();
 
@@ -79,7 +79,7 @@ int main() {
     }
     printf("\nAverage #iterations = %d\n", NStep_avg/i);
     fprintf(fp1,"\nAverage #iterations = %d", NStep_avg/i);
-    for(i=1;i<=N_VARIABLE;i++) printf("%d", x[i]);
+    //for(i=1;i<=N_VARIABLE;i++) printf("%d", x[i]);
     fclose(fp1);
     return 0;
 }
@@ -120,10 +120,10 @@ int loadformula(char *filename) {
                         int xi_sign = sign_x(f[clause_id][0]);
                         x[xi] = 1-xi_sign;
                         x_fixed[xi]=1;
-                        printf("x%d fixed = %d \n", xi, x[xi]);
+                        //printf("x%d fixed = %d \n", xi, x[xi]);
                     }
                 }
-                printf("Clause%d:\t%d\t%d\t%d\n",clause_id,f[clause_id][0],f[clause_id][1],f[clause_id][2]);
+                printf("\nClause%d:\t%d\t%d\t%d",clause_id,f[clause_id][0],f[clause_id][1],f[clause_id][2]);
                 clause_id++;
             }
         }
@@ -148,7 +148,7 @@ int amoebasat(char s[N_VARIABLE+100]){
         if(update_f()){
             sprintf(s,"\nFound: %d iterations ", NStep);
             //for(i=0;i<N_VARIABLE;i++) printf("%d",x[i]);
-            for(i=0;i<N_VARIABLE;i++) {
+            for(i=1;i<=N_VARIABLE;i++) {
                 sprintf(tmp,"%d",x[i]);
                 strcat(s,tmp);
             }
@@ -280,7 +280,7 @@ int update_f(){
 
         f_val = f_val && (c1 || c2 || c3);
         if (f_val==0) {
-            printf("unsat clause id = %d: %d %d %d \n",clause_id, id1, id2, id3);
+            //printf("unsat clause id = %d: %d %d %d \n",clause_id, id1, id2, id3);
             return f_val;
         }
     }
@@ -458,7 +458,18 @@ void update_L_inter(int inter[3*N_CLAUSE][6]){
     int i;
     for(i=0;i<3*N_CLAUSE;i++){
         //if(inter[i][0]==0 && inter[i][2]==0) continue;
-        int inter1 = (LargeX[ inter[i][2] ][ inter[i][3] ] >0) & (LargeX[ inter[i][0] ][ inter[i][1] ] >0);
+        int id1 = inter[i][0];
+        int id2 = inter[i][2];
+        int inter1;
+        if(id1>0 && id2>0){
+            inter1 = (LargeX[ inter[i][2] ][ inter[i][3] ] >0) & (LargeX[ inter[i][0] ][ inter[i][1] ] >0);
+        }else if(id1==0){
+            inter1 = (LargeX[ inter[i][2] ][ inter[i][3] ] >0);
+        }else if(id2==0){
+            inter1 = (LargeX[ inter[i][0] ][ inter[i][1] ] >0);
+        }else if(id1==0 && id2==0){
+            inter1 = 0;
+        }
         //L[ inter[i][4]-1 ][ inter[i][5] ] = L[ inter[i][4]-1 ][ inter[i][5] ] | inter1;
         /*if(inter1){
             //INTER
@@ -480,10 +491,22 @@ void update_L_contra(int size_contra, int contra[size_contra][8]){
     int i, j;
     for(i=0;i<size_contra;i++){
         int contra1;
-        contra1 = (LargeX[ contra[i][0] ][ contra[i][1] ]>0) &
+        //int id1 = contra[i][0];
+        int id2 = contra[i][2];
+        //int id3 = contra[i][4];
+        int id4 = contra[i][6];
+        if(id2==0 && id4==0){
+            contra1 = (LargeX[ contra[i][0] ][ contra[i][1] ]>0) & (LargeX[ contra[i][4] ][ contra[i][5] ]>0);
+        }else if(id2==0){
+            contra1 = (LargeX[ contra[i][0] ][ contra[i][1] ]>0) & (LargeX[ contra[i][4] ][ contra[i][5] ]>0) & (LargeX[ contra[i][6] ][ contra[i][7] ]>0);
+        }else if(id4==0){
+            contra1 = (LargeX[ contra[i][0] ][ contra[i][1] ]>0) & (LargeX[ contra[i][2] ][ contra[i][3] ]>0) & (LargeX[ contra[i][4] ][ contra[i][5] ]>0);
+        }else{
+            contra1 = (LargeX[ contra[i][0] ][ contra[i][1] ]>0) &
                 (LargeX[ contra[i][2] ][ contra[i][3] ]>0) &
                 (LargeX[ contra[i][4] ][ contra[i][5] ]>0) &
                 (LargeX[ contra[i][6] ][ contra[i][7] ]>0);
+        }
 
         //CONTRA - Light on CONTRA units - not good with CONFLICT only
         /*if(contra1){
