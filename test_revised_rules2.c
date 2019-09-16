@@ -2,12 +2,12 @@
 //#include<stdlib.h>
 #include<string.h>
 #include<time.h>
-#define N_VARIABLE 250
-#define N_CLAUSE 1065 //9
+#define N_VARIABLE 600
+#define N_CLAUSE 2550 //9
 #define N_LITERAL 3
 const int MAX_N_STEP = 5000000;
 const int EPSILON = 687194767; //429496730;//536870912;
-#define MAX_CONTRA 20000
+#define MAX_CONTRA 50000
 
 int LargeX[N_VARIABLE][2];
 int Y[N_VARIABLE][2];
@@ -44,7 +44,7 @@ FILE *fp3; //contra
 FILE *fp4; //local rules
 
 int main() {
-    char filename[128]="uf250-0100.cnf";
+    char filename[128]="benchmarks/f/f600.cnf";
     char logfile[128];
 
     strncpy(logfile,filename,strlen(filename)-4);
@@ -328,7 +328,7 @@ int survey_size_contra(){
             if(inter[i+2][4]==inter[j][4] && inter[i+2][5 ]!=inter[j][5]) size_contra++;
         }
     }
-    //printf("Size contra = %d\n", size_contra);
+    printf("Size contra = %d\n", size_contra);
     return size_contra;
 }
 void generate_contra(int size_contra, int contra[size_contra][8], int contra_new[MAX_CONTRA][8]){
