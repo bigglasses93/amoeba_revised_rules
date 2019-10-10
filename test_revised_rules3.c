@@ -2,12 +2,12 @@
 //#include<stdlib.h>
 #include<string.h>
 #include<time.h>
-#define N_VARIABLE 103
-#define N_CLAUSE 972 //9
+#define N_VARIABLE 50
+#define N_CLAUSE 218 //9
 #define N_LITERAL 3
-const int MAX_N_STEP = 5000000;
+const int MAX_N_STEP = 15000000;
 const int EPSILON = 687194767; //429496730;//536870912;
-#define MAX_CONTRA 60000
+#define MAX_CONTRA 150000
 
 int LargeX[N_VARIABLE+1][2];
 int Y[N_VARIABLE+1][2];
@@ -46,7 +46,7 @@ FILE *fp3; //contra
 FILE *fp4; //local rules
 
 int main() {
-    char filename[128]="benchmarks/medium_out2.cnf";
+    char filename[128]="uf50-0100.cnf";
     char logfile[128];
 
     strncpy(logfile,filename,strlen(filename)-4);
@@ -547,7 +547,7 @@ void update_L_contra(int size_contra, int contra[size_contra][8]){
         }*/
 
         //HyperCONTRA - set LargeX of contradicted units directly to -1
-        if(contra1){
+        /*if(contra1){
             LargeX[ contra[i][0] ][ contra[i][1] ] = -1;
             LargeX[ contra[i][2] ][ contra[i][3] ] = -1;
             LargeX[ contra[i][4] ][ contra[i][5] ] = -1;
@@ -685,7 +685,7 @@ void create_local_rules(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8])
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //version added hypercontra
-    for(i=1;i<=N_VARIABLE;i++){
+/*    for(i=1;i<=N_VARIABLE;i++){
         if(x_fixed[i]==1) continue;
         for(j=0;j<=1;j++){
             strcpy(s,"");
@@ -729,7 +729,16 @@ void create_local_rules(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8])
     }
     fprintf(fp4,"}");
     fclose(fp4);
-    printf("created local rules\n");
+    printf("created local rules\n");*/
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //version plain
+    for(i=0;i<N_CLAUSE;i++){
+
+    }
+
+    fclose(fp4);
+    printf("created update rules\n");
 
 }
 
