@@ -2,8 +2,8 @@
 //#include<stdlib.h>
 #include<string.h>
 #include<time.h>
-#define N_VARIABLE 50
-#define N_CLAUSE 218 //9
+#define N_VARIABLE 486
+#define N_CLAUSE 504 //9
 #define N_LITERAL 3
 const int MAX_N_STEP = 15000000;
 const int EPSILON = 687194767; //429496730;//536870912;
@@ -46,7 +46,7 @@ FILE *fp3; //contra
 FILE *fp4; //local rules
 
 int main() {
-    char filename[128]="uf50-0100.cnf";
+    char filename[128]="test33_6_9_6_out.cnf";
     char logfile[128];
 
     strncpy(logfile,filename,strlen(filename)-4);
@@ -66,7 +66,7 @@ int main() {
     size_contra = survey_size_contra();
     int contra[size_contra][8];
     generate_contra(size_contra, contra, contra_new);
-    //create_local_rules(inter,contra_new);
+    create_local_rules(inter,contra_new);
     srand(time(NULL));
     for(i=0;i<100;i++){
         state[0] = rand();
@@ -138,7 +138,7 @@ int amoebasat(char s[N_VARIABLE+100]){
     for(NStep=1;NStep<MAX_N_STEP;NStep++){
         update_L_intra();
 
-        update_L_contra(size_contra, contra_new);
+        //update_L_contra(size_contra, contra_new);
         update_L_inter(inter);
         int i,j;
         update_Z();//printf("\n");
@@ -223,13 +223,8 @@ void update_Y(){
     int i, j;
     for(i=1;i<=N_VARIABLE;i++){
         for(j=0; j<2; j++){
-            if(L[i][j]==1){
-                Y[i][j] = 0;
-            }
-            else if(L[i][j]==0){
-                int sub = 2147483647 - EPSILON - Z[i][j] + 1;
-                Y[i][j] = sign_x(-sub);
-            }
+			int sub = 2147483647 - EPSILON - Z[i][j] +1;
+			Y[i][j] = (!L[i][j]) & (sub>0);
             //printf("Y[%d][%d]=%d\t ",i,j,Y[i][j]);
         }
     }
@@ -277,8 +272,17 @@ int update_f(){
         id3 = f[clause_id][2];
         c1 = sign_x(id1) ^ x[abs(id1)];
         c2 = sign_x(id2) ^ x[abs(id2)];
-        c3 = sign_x(id3) ^ x[abs(id3)];
+        if(id3==0){
+            c3 = 0;
+        }else{
+            c3 = sign_x(id3) ^ x[abs(id3)];
+        }
 
+/*        if(id3==0){
+            f_val = f_val && (c1 || c2);
+        }else{
+            f_val = f_val && (c1 || c2 || c3);
+        }*/
         f_val = f_val && (c1 || c2 || c3);
         if (f_val==0) {
             //printf("unsat clause id = %d: %d %d %d \n",clause_id, id1, id2, id3);
@@ -475,21 +479,31 @@ void update_L_inter(int inter[3*N_CLAUSE][6]){
         }else if(id1==0 && id2==0){
             inter1 = 0;
         }
-        //L[ inter[i][4]-1 ][ inter[i][5] ] = L[ inter[i][4]-1 ][ inter[i][5] ] | inter1;
-        /*if(inter1){
-            //INTER
-            L[ inter[i][4]-1 ][ inter[i][5] ] = 1;
-            //COLLAPSE - Light off counterparts of INTER
-            L[ inter[i][4]-1 ][ 1-inter[i][5] ] = 0;
-
-            //Hyper INTER -> not good
-            //LargeX[ inter[i][4]-1 ][ inter[i][5] ]=-1;
-        }*/
         //INTER
         L[ inter[i][4] ][ inter[i][5] ] = L[ inter[i][4] ][ inter[i][5] ] | inter1;
         //COLLAPSE
-        L[ inter[i][4] ][ 1-inter[i][5] ] = L[ inter[i][4] ][ 1-inter[i][5] ] & (!inter1);
+        //L[ inter[i][4] ][ 1-inter[i][5] ] = L[ inter[i][4] ][ 1-inter[i][5] ] & (!inter1);
         //printf("ok %d ", L[ inter[i][0]-1 ][ inter[i][1] ]);
+
+
+
+/*        int id0 = inter[i][0];
+    	int id1 = inter[i][1];
+    	int id2 = inter[i][2];
+    	int inter1;
+    	if(id1>0){
+    		inter1 = (LargeX[ inter[i][0] ][ inter[i][1] ] >0) & (LargeX[ inter[i][2] ][ inter[i][3] ] >0) & (LargeX[ inter[i][4] ][ inter[i][5] ] >0);
+    	}else{
+    		inter1 = (LargeX[ inter[i][0] ][ inter[i][1] ] >0)& (LargeX[ inter[i][4] ][ inter[i][5] ] >0);
+    	}
+    	//cout << "X[" << inter[i][0]-1 << "]["<< inter[i][1] <<"]="<<X_inter01 << "\n";
+
+       L[ inter[i][0] ][ inter[i][1] ] = L[ inter[i][0] ][ inter[i][1] ] | inter1;
+       //cout << "L[" <<inter[i][0]-1 <<"]["<< inter[i][1] <<"]="<<L[ inter[i][0]-1 ][ inter[i][1] ] << "\n";
+       L[ inter[i][2] ][ inter[i][3] ] = L[ inter[i][2] ][ inter[i][3] ] | inter1;
+       L[ inter[i][4] ][ inter[i][5] ] = L[ inter[i][4] ][ inter[i][5] ] | inter1;*/
+
+
     }
 }
 void update_L_contra(int size_contra, int contra[size_contra][8]){
@@ -632,7 +646,7 @@ void create_local_rules(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8])
     }
     fclose(fp4);
 
-    fp4 = fopen("local_rules_update.c", "w+");
+/*    fp4 = fopen("local_rules_update.c", "w+");
     fprintf(fp4,"#include \"amoeba_local_rules.h\"\n");
     fprintf(fp4,"#include \"local_rules_%d.h\"\n",N_VARIABLE);
     fprintf(fp4,"void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], one_bit_t x[N_VARIABLE+1], one_bit_t satisfiable[N_VARIABLE+1][2]){\n");
@@ -733,12 +747,26 @@ void create_local_rules(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8])
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //version plain
+    fp4 = fopen("rules_update.c", "w+");
+    fprintf(fp4,"#include \n");
+    fprintf(fp4,"void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], one_bit_t satisfiable[N_CLAUSE]){\n");
+    fprintf(fp4,"\t//Check INTER rules of all units\n");
+//    fprintf(fp4,"#include \"amoeba_local_rules.h\"\n");
     for(i=0;i<N_CLAUSE;i++){
-
+        strcpy(s,"");
+        sprintf(s1,"\tone_bit_t inter%d = (LargeX[%d][%d]>0)&(LargeX[%d][%d]>0)&(LargeX[%d][%d]>0);\n",i,inter[3*i][0],inter[3*i][1],inter[3*i][2],inter[3*i][3],inter[3*i][4],inter[3*i][5]);
+        strcat(s,s1);
+        sprintf(s1,"\tL[%d][%d] = L[%d][%d] | inter%d;\n",inter[3*i][0],inter[3*i][1],inter[3*i][0],inter[3*i][1],i); strcat(s,s1);
+        if(inter[3*i][2]>0){
+                sprintf(s1,"\tL[%d][%d] = L[%d][%d] | inter%d;\n",inter[3*i][2],inter[3*i][3],inter[3*i][2],inter[3*i][3],i); strcat(s,s1);
+        }
+        sprintf(s1,"\tL[%d][%d] = L[%d][%d] | inter%d;\n",inter[3*i][4],inter[3*i][5],inter[3*i][4],inter[3*i][5],i); strcat(s,s1);
+        //sprintf(s1,"\tsatisfiable[%d]=!inter%d;\n",i,i);strcat(s,s1);
+        fprintf(fp4,s);
     }
-
+    fprintf(fp4,"}");
     fclose(fp4);
-    printf("created update rules\n");
+    printf("created update rules L.\n");
 
 }
 
