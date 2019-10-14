@@ -333,6 +333,22 @@ void generate_inter(){
 
         fprintf(fp4, "%d %d %d %d %d %d\n", interQ, interQ_abs, interP1, interP1_abs, interP2, interP2_abs);
     }
+    //print init values
+    fprintf(fp2, "\none_bit_t Y[N_VARIABLE+1][2]={");
+    for(i=0;i<2*(N_VARIABLE+1);i++){
+        if(i!=(2*N_VARIABLE+1))fprintf(fp2, "0,");
+        else fprintf(fp2,"0};");
+    }
+    fprintf(fp2, "\none_bit_t L[N_VARIABLE+1][2]={");
+    for(i=0;i<2*(N_VARIABLE+1);i++){
+        if(i!=(2*N_VARIABLE+1))fprintf(fp2, "0,");
+        else fprintf(fp2,"0};");
+    }
+    fprintf(fp2, "\nlargeX_t LargeX[N_VARIABLE+1][2]={1,");
+    for(i=0;i<2*(N_VARIABLE+1)-1;i++){
+        if(i!=(2*N_VARIABLE))fprintf(fp2, "0,");
+        else fprintf(fp2,"0};");
+    }
     //fprintf(fp2, "\};");
     printf("size inter = %d\n", size_inter);
     fclose(fp2);
@@ -754,16 +770,30 @@ void create_local_rules(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8])
 //    fprintf(fp4,"#include \"amoeba_local_rules.h\"\n");
     for(i=0;i<N_CLAUSE;i++){
         strcpy(s,"");
-        sprintf(s1,"\tone_bit_t inter%d = (LargeX[%d][%d]>0)&(LargeX[%d][%d]>0)&(LargeX[%d][%d]>0);\n",i,inter[3*i][0],inter[3*i][1],inter[3*i][2],inter[3*i][3],inter[3*i][4],inter[3*i][5]);
-        strcat(s,s1);
-        sprintf(s1,"\tL[%d][%d] = L[%d][%d] | inter%d;\n",inter[3*i][0],inter[3*i][1],inter[3*i][0],inter[3*i][1],i); strcat(s,s1);
-        if(inter[3*i][2]>0){
-                sprintf(s1,"\tL[%d][%d] = L[%d][%d] | inter%d;\n",inter[3*i][2],inter[3*i][3],inter[3*i][2],inter[3*i][3],i); strcat(s,s1);
+        if(inter[3*i][2]==0){
+            sprintf(s1,"\tone_bit_t inter%d_0=LargeX[%d][%d]>0;\n",i,inter[3*i][4],inter[3*i][5]); strcat(s,s1);
+            sprintf(s1,"\tone_bit_t inter%d_2=LargeX[%d][%d]>0;\n",i,inter[3*i][0],inter[3*i][1]); strcat(s,s1);
+            sprintf(s1,"\tL[%d][%d] = L[%d][%d] | inter%d_0;\n",inter[3*i][0],inter[3*i][1],inter[3*i][0],inter[3*i][1],i); strcat(s,s1);
+            sprintf(s1,"\tL[%d][%d] = L[%d][%d] | inter%d_2;\n",inter[3*i][4],inter[3*i][5],inter[3*i][4],inter[3*i][5],i); strcat(s,s1);
+            //COLLAPSE
+            sprintf(s1,"\tL[%d][%d] = L[%d][%d] & (!inter%d_0);\n",inter[3*i][0],1-inter[3*i][1],inter[3*i][0],1-inter[3*i][1],i); strcat(s,s1);
+            sprintf(s1,"\tL[%d][%d] = L[%d][%d] & (!inter%d_2);\n",inter[3*i][4],1-inter[3*i][5],inter[3*i][4],1-inter[3*i][5],i); strcat(s,s1);
+        }else{
+            sprintf(s1,"\tone_bit_t inter%d_0 = (LargeX[%d][%d]>0)&(LargeX[%d][%d]>0);\n",i,inter[3*i][2],inter[3*i][3],inter[3*i][4],inter[3*i][5]); strcat(s,s1);
+            sprintf(s1,"\tone_bit_t inter%d_1 = (LargeX[%d][%d]>0)&(LargeX[%d][%d]>0);\n",i,inter[3*i][0],inter[3*i][1],inter[3*i][4],inter[3*i][5]); strcat(s,s1);
+            sprintf(s1,"\tone_bit_t inter%d_2 = (LargeX[%d][%d]>0)&(LargeX[%d][%d]>0);\n",i,inter[3*i][0],inter[3*i][1],inter[3*i][2],inter[3*i][3]); strcat(s,s1);
+            sprintf(s1,"\tL[%d][%d] = L[%d][%d] | inter%d_0;\n",inter[3*i][0],inter[3*i][1],inter[3*i][0],inter[3*i][1],i); strcat(s,s1);
+            sprintf(s1,"\tL[%d][%d] = L[%d][%d] | inter%d_1;\n",inter[3*i][2],inter[3*i][3],inter[3*i][2],inter[3*i][3],i); strcat(s,s1);
+            sprintf(s1,"\tL[%d][%d] = L[%d][%d] | inter%d_2;\n",inter[3*i][4],inter[3*i][5],inter[3*i][4],inter[3*i][5],i); strcat(s,s1);
+            //COLLAPSE
+            sprintf(s1,"\tL[%d][%d] = L[%d][%d] & (!inter%d_0);\n",inter[3*i][0],1-inter[3*i][1],inter[3*i][0],1-inter[3*i][1],i); strcat(s,s1);
+            sprintf(s1,"\tL[%d][%d] = L[%d][%d] & (!inter%d_1);\n",inter[3*i][2],1-inter[3*i][3],inter[3*i][2],1-inter[3*i][3],i); strcat(s,s1);
+            sprintf(s1,"\tL[%d][%d] = L[%d][%d] & (!inter%d_2);\n",inter[3*i][4],1-inter[3*i][5],inter[3*i][4],1-inter[3*i][5],i); strcat(s,s1);
         }
-        sprintf(s1,"\tL[%d][%d] = L[%d][%d] | inter%d;\n",inter[3*i][4],inter[3*i][5],inter[3*i][4],inter[3*i][5],i); strcat(s,s1);
-        //sprintf(s1,"\tsatisfiable[%d]=!inter%d;\n",i,i);strcat(s,s1);
+
         fprintf(fp4,s);
     }
+
     fprintf(fp4,"}");
     fclose(fp4);
     printf("created update rules L.\n");
