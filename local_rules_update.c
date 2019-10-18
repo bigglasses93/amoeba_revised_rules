@@ -4,7 +4,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[1][0]
 	L[1][0] = LargeX[1][1]>0 ? 1 : 0;
 	satisfiable[1][0]=1; 
-	for(int i=0;i<102;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -22,7 +22,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[1][1]
 	L[1][1] = LargeX[1][0]>0 ? 1 : 0;
 	satisfiable[1][1]=1; 
-	for(int i=0;i<198;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -40,7 +40,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[2][0]
 	L[2][0] = LargeX[2][1]>0 ? 1 : 0;
 	satisfiable[2][0]=1; 
-	for(int i=0;i<38;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -58,7 +58,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[2][1]
 	L[2][1] = LargeX[2][0]>0 ? 1 : 0;
 	satisfiable[2][1]=1; 
-	for(int i=0;i<8;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -76,7 +76,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[3][0]
 	L[3][0] = LargeX[3][1]>0 ? 1 : 0;
 	satisfiable[3][0]=1; 
-	for(int i=0;i<59;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -94,7 +94,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[3][1]
 	L[3][1] = LargeX[3][0]>0 ? 1 : 0;
 	satisfiable[3][1]=1; 
-	for(int i=0;i<137;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -112,7 +112,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[4][0]
 	L[4][0] = LargeX[4][1]>0 ? 1 : 0;
 	satisfiable[4][0]=1; 
-	for(int i=0;i<68;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -130,7 +130,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[4][1]
 	L[4][1] = LargeX[4][0]>0 ? 1 : 0;
 	satisfiable[4][1]=1; 
-	for(int i=0;i<27;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -148,7 +148,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[5][0]
 	L[5][0] = LargeX[5][1]>0 ? 1 : 0;
 	satisfiable[5][0]=1; 
-	for(int i=0;i<56;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -166,7 +166,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[5][1]
 	L[5][1] = LargeX[5][0]>0 ? 1 : 0;
 	satisfiable[5][1]=1; 
-	for(int i=0;i<60;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -184,7 +184,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[6][0]
 	L[6][0] = LargeX[6][1]>0 ? 1 : 0;
 	satisfiable[6][0]=1; 
-	for(int i=0;i<17;i++){
+	for(int i=0;i<7;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -202,7 +202,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[6][1]
 	L[6][1] = LargeX[6][0]>0 ? 1 : 0;
 	satisfiable[6][1]=1; 
-	for(int i=0;i<72;i++){
+	for(int i=0;i<6;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -220,7 +220,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[7][0]
 	L[7][0] = LargeX[7][1]>0 ? 1 : 0;
 	satisfiable[7][0]=1; 
-	for(int i=0;i<116;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -238,7 +238,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[7][1]
 	L[7][1] = LargeX[7][0]>0 ? 1 : 0;
 	satisfiable[7][1]=1; 
-	for(int i=0;i<109;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -256,7 +256,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[8][0]
 	L[8][0] = LargeX[8][1]>0 ? 1 : 0;
 	satisfiable[8][0]=1; 
-	for(int i=0;i<91;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -274,7 +274,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[8][1]
 	L[8][1] = LargeX[8][0]>0 ? 1 : 0;
 	satisfiable[8][1]=1; 
-	for(int i=0;i<84;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -292,7 +292,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[9][0]
 	L[9][0] = LargeX[9][1]>0 ? 1 : 0;
 	satisfiable[9][0]=1; 
-	for(int i=0;i<75;i++){
+	for(int i=0;i<7;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -310,7 +310,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[9][1]
 	L[9][1] = LargeX[9][0]>0 ? 1 : 0;
 	satisfiable[9][1]=1; 
-	for(int i=0;i<59;i++){
+	for(int i=0;i<6;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -328,7 +328,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[10][0]
 	L[10][0] = LargeX[10][1]>0 ? 1 : 0;
 	satisfiable[10][0]=1; 
-	for(int i=0;i<116;i++){
+	for(int i=0;i<5;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -346,7 +346,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[10][1]
 	L[10][1] = LargeX[10][0]>0 ? 1 : 0;
 	satisfiable[10][1]=1; 
-	for(int i=0;i<50;i++){
+	for(int i=0;i<10;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -364,7 +364,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[11][0]
 	L[11][0] = LargeX[11][1]>0 ? 1 : 0;
 	satisfiable[11][0]=1; 
-	for(int i=0;i<78;i++){
+	for(int i=0;i<8;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -382,7 +382,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[11][1]
 	L[11][1] = LargeX[11][0]>0 ? 1 : 0;
 	satisfiable[11][1]=1; 
-	for(int i=0;i<28;i++){
+	for(int i=0;i<13;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -400,7 +400,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[12][0]
 	L[12][0] = LargeX[12][1]>0 ? 1 : 0;
 	satisfiable[12][0]=1; 
-	for(int i=0;i<128;i++){
+	for(int i=0;i<8;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -418,7 +418,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[12][1]
 	L[12][1] = LargeX[12][0]>0 ? 1 : 0;
 	satisfiable[12][1]=1; 
-	for(int i=0;i<55;i++){
+	for(int i=0;i<13;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -436,7 +436,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[13][0]
 	L[13][0] = LargeX[13][1]>0 ? 1 : 0;
 	satisfiable[13][0]=1; 
-	for(int i=0;i<85;i++){
+	for(int i=0;i<8;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -454,7 +454,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[13][1]
 	L[13][1] = LargeX[13][0]>0 ? 1 : 0;
 	satisfiable[13][1]=1; 
-	for(int i=0;i<131;i++){
+	for(int i=0;i<17;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -472,7 +472,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[14][0]
 	L[14][0] = LargeX[14][1]>0 ? 1 : 0;
 	satisfiable[14][0]=1; 
-	for(int i=0;i<68;i++){
+	for(int i=0;i<10;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -490,7 +490,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[14][1]
 	L[14][1] = LargeX[14][0]>0 ? 1 : 0;
 	satisfiable[14][1]=1; 
-	for(int i=0;i<53;i++){
+	for(int i=0;i<13;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -508,7 +508,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[15][0]
 	L[15][0] = LargeX[15][1]>0 ? 1 : 0;
 	satisfiable[15][0]=1; 
-	for(int i=0;i<69;i++){
+	for(int i=0;i<3;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -526,7 +526,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[15][1]
 	L[15][1] = LargeX[15][0]>0 ? 1 : 0;
 	satisfiable[15][1]=1; 
-	for(int i=0;i<152;i++){
+	for(int i=0;i<18;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -544,7 +544,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[16][0]
 	L[16][0] = LargeX[16][1]>0 ? 1 : 0;
 	satisfiable[16][0]=1; 
-	for(int i=0;i<103;i++){
+	for(int i=0;i<8;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -562,7 +562,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[16][1]
 	L[16][1] = LargeX[16][0]>0 ? 1 : 0;
 	satisfiable[16][1]=1; 
-	for(int i=0;i<57;i++){
+	for(int i=0;i<17;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -580,7 +580,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[17][0]
 	L[17][0] = LargeX[17][1]>0 ? 1 : 0;
 	satisfiable[17][0]=1; 
-	for(int i=0;i<82;i++){
+	for(int i=0;i<10;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -598,7 +598,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[17][1]
 	L[17][1] = LargeX[17][0]>0 ? 1 : 0;
 	satisfiable[17][1]=1; 
-	for(int i=0;i<136;i++){
+	for(int i=0;i<13;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -616,7 +616,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[18][0]
 	L[18][0] = LargeX[18][1]>0 ? 1 : 0;
 	satisfiable[18][0]=1; 
-	for(int i=0;i<97;i++){
+	for(int i=0;i<9;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -634,7 +634,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[18][1]
 	L[18][1] = LargeX[18][0]>0 ? 1 : 0;
 	satisfiable[18][1]=1; 
-	for(int i=0;i<113;i++){
+	for(int i=0;i<15;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -652,7 +652,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[19][0]
 	L[19][0] = LargeX[19][1]>0 ? 1 : 0;
 	satisfiable[19][0]=1; 
-	for(int i=0;i<67;i++){
+	for(int i=0;i<9;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -670,7 +670,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[19][1]
 	L[19][1] = LargeX[19][0]>0 ? 1 : 0;
 	satisfiable[19][1]=1; 
-	for(int i=0;i<48;i++){
+	for(int i=0;i<15;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -688,7 +688,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[20][0]
 	L[20][0] = LargeX[20][1]>0 ? 1 : 0;
 	satisfiable[20][0]=1; 
-	for(int i=0;i<92;i++){
+	for(int i=0;i<3;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -706,7 +706,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[20][1]
 	L[20][1] = LargeX[20][0]>0 ? 1 : 0;
 	satisfiable[20][1]=1; 
-	for(int i=0;i<105;i++){
+	for(int i=0;i<16;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -724,7 +724,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[21][0]
 	L[21][0] = LargeX[21][1]>0 ? 1 : 0;
 	satisfiable[21][0]=1; 
-	for(int i=0;i<64;i++){
+	for(int i=0;i<6;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -742,7 +742,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[21][1]
 	L[21][1] = LargeX[21][0]>0 ? 1 : 0;
 	satisfiable[21][1]=1; 
-	for(int i=0;i<146;i++){
+	for(int i=0;i<11;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -760,7 +760,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[22][0]
 	L[22][0] = LargeX[22][1]>0 ? 1 : 0;
 	satisfiable[22][0]=1; 
-	for(int i=0;i<57;i++){
+	for(int i=0;i<7;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -778,7 +778,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[22][1]
 	L[22][1] = LargeX[22][0]>0 ? 1 : 0;
 	satisfiable[22][1]=1; 
-	for(int i=0;i<64;i++){
+	for(int i=0;i<9;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -796,7 +796,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[23][0]
 	L[23][0] = LargeX[23][1]>0 ? 1 : 0;
 	satisfiable[23][0]=1; 
-	for(int i=0;i<150;i++){
+	for(int i=0;i<5;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -814,7 +814,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[23][1]
 	L[23][1] = LargeX[23][0]>0 ? 1 : 0;
 	satisfiable[23][1]=1; 
-	for(int i=0;i<84;i++){
+	for(int i=0;i<11;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -832,7 +832,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[24][0]
 	L[24][0] = LargeX[24][1]>0 ? 1 : 0;
 	satisfiable[24][0]=1; 
-	for(int i=0;i<104;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -850,7 +850,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[24][1]
 	L[24][1] = LargeX[24][0]>0 ? 1 : 0;
 	satisfiable[24][1]=1; 
-	for(int i=0;i<73;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -868,7 +868,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[25][0]
 	L[25][0] = LargeX[25][1]>0 ? 1 : 0;
 	satisfiable[25][0]=1; 
-	for(int i=0;i<62;i++){
+	for(int i=0;i<7;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -886,7 +886,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[25][1]
 	L[25][1] = LargeX[25][0]>0 ? 1 : 0;
 	satisfiable[25][1]=1; 
-	for(int i=0;i<90;i++){
+	for(int i=0;i<7;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -904,7 +904,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[26][0]
 	L[26][0] = LargeX[26][1]>0 ? 1 : 0;
 	satisfiable[26][0]=1; 
-	for(int i=0;i<111;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -922,7 +922,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[26][1]
 	L[26][1] = LargeX[26][0]>0 ? 1 : 0;
 	satisfiable[26][1]=1; 
-	for(int i=0;i<59;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -940,7 +940,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[27][0]
 	L[27][0] = LargeX[27][1]>0 ? 1 : 0;
 	satisfiable[27][0]=1; 
-	for(int i=0;i<45;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -958,7 +958,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[27][1]
 	L[27][1] = LargeX[27][0]>0 ? 1 : 0;
 	satisfiable[27][1]=1; 
-	for(int i=0;i<89;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -976,7 +976,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[28][0]
 	L[28][0] = LargeX[28][1]>0 ? 1 : 0;
 	satisfiable[28][0]=1; 
-	for(int i=0;i<103;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -994,7 +994,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[28][1]
 	L[28][1] = LargeX[28][0]>0 ? 1 : 0;
 	satisfiable[28][1]=1; 
-	for(int i=0;i<120;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1012,7 +1012,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[29][0]
 	L[29][0] = LargeX[29][1]>0 ? 1 : 0;
 	satisfiable[29][0]=1; 
-	for(int i=0;i<66;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1030,7 +1030,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[29][1]
 	L[29][1] = LargeX[29][0]>0 ? 1 : 0;
 	satisfiable[29][1]=1; 
-	for(int i=0;i<74;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1048,7 +1048,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[30][0]
 	L[30][0] = LargeX[30][1]>0 ? 1 : 0;
 	satisfiable[30][0]=1; 
-	for(int i=0;i<42;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1066,7 +1066,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[30][1]
 	L[30][1] = LargeX[30][0]>0 ? 1 : 0;
 	satisfiable[30][1]=1; 
-	for(int i=0;i<116;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1084,7 +1084,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[31][0]
 	L[31][0] = LargeX[31][1]>0 ? 1 : 0;
 	satisfiable[31][0]=1; 
-	for(int i=0;i<55;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1102,7 +1102,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[31][1]
 	L[31][1] = LargeX[31][0]>0 ? 1 : 0;
 	satisfiable[31][1]=1; 
-	for(int i=0;i<36;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1120,7 +1120,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[32][0]
 	L[32][0] = LargeX[32][1]>0 ? 1 : 0;
 	satisfiable[32][0]=1; 
-	for(int i=0;i<95;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1138,7 +1138,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[32][1]
 	L[32][1] = LargeX[32][0]>0 ? 1 : 0;
 	satisfiable[32][1]=1; 
-	for(int i=0;i<132;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1156,7 +1156,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[33][0]
 	L[33][0] = LargeX[33][1]>0 ? 1 : 0;
 	satisfiable[33][0]=1; 
-	for(int i=0;i<108;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1174,7 +1174,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[33][1]
 	L[33][1] = LargeX[33][0]>0 ? 1 : 0;
 	satisfiable[33][1]=1; 
-	for(int i=0;i<81;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1192,7 +1192,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[34][0]
 	L[34][0] = LargeX[34][1]>0 ? 1 : 0;
 	satisfiable[34][0]=1; 
-	for(int i=0;i<124;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1210,7 +1210,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[34][1]
 	L[34][1] = LargeX[34][0]>0 ? 1 : 0;
 	satisfiable[34][1]=1; 
-	for(int i=0;i<174;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1228,7 +1228,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[35][0]
 	L[35][0] = LargeX[35][1]>0 ? 1 : 0;
 	satisfiable[35][0]=1; 
-	for(int i=0;i<63;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1246,7 +1246,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[35][1]
 	L[35][1] = LargeX[35][0]>0 ? 1 : 0;
 	satisfiable[35][1]=1; 
-	for(int i=0;i<54;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1264,7 +1264,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[36][0]
 	L[36][0] = LargeX[36][1]>0 ? 1 : 0;
 	satisfiable[36][0]=1; 
-	for(int i=0;i<60;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1282,7 +1282,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[36][1]
 	L[36][1] = LargeX[36][0]>0 ? 1 : 0;
 	satisfiable[36][1]=1; 
-	for(int i=0;i<71;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1300,7 +1300,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[37][0]
 	L[37][0] = LargeX[37][1]>0 ? 1 : 0;
 	satisfiable[37][0]=1; 
-	for(int i=0;i<67;i++){
+	for(int i=0;i<6;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1318,7 +1318,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[37][1]
 	L[37][1] = LargeX[37][0]>0 ? 1 : 0;
 	satisfiable[37][1]=1; 
-	for(int i=0;i<74;i++){
+	for(int i=0;i<7;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1336,7 +1336,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[38][0]
 	L[38][0] = LargeX[38][1]>0 ? 1 : 0;
 	satisfiable[38][0]=1; 
-	for(int i=0;i<71;i++){
+	for(int i=0;i<5;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1354,7 +1354,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[38][1]
 	L[38][1] = LargeX[38][0]>0 ? 1 : 0;
 	satisfiable[38][1]=1; 
-	for(int i=0;i<154;i++){
+	for(int i=0;i<9;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1372,7 +1372,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[39][0]
 	L[39][0] = LargeX[39][1]>0 ? 1 : 0;
 	satisfiable[39][0]=1; 
-	for(int i=0;i<90;i++){
+	for(int i=0;i<8;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1390,7 +1390,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[39][1]
 	L[39][1] = LargeX[39][0]>0 ? 1 : 0;
 	satisfiable[39][1]=1; 
-	for(int i=0;i<45;i++){
+	for(int i=0;i<9;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1408,7 +1408,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[40][0]
 	L[40][0] = LargeX[40][1]>0 ? 1 : 0;
 	satisfiable[40][0]=1; 
-	for(int i=0;i<24;i++){
+	for(int i=0;i<6;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1426,7 +1426,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[40][1]
 	L[40][1] = LargeX[40][0]>0 ? 1 : 0;
 	satisfiable[40][1]=1; 
-	for(int i=0;i<75;i++){
+	for(int i=0;i<13;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1444,7 +1444,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[41][0]
 	L[41][0] = LargeX[41][1]>0 ? 1 : 0;
 	satisfiable[41][0]=1; 
-	for(int i=0;i<91;i++){
+	for(int i=0;i<7;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1462,7 +1462,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[41][1]
 	L[41][1] = LargeX[41][0]>0 ? 1 : 0;
 	satisfiable[41][1]=1; 
-	for(int i=0;i<86;i++){
+	for(int i=0;i<17;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1480,7 +1480,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[42][0]
 	L[42][0] = LargeX[42][1]>0 ? 1 : 0;
 	satisfiable[42][0]=1; 
-	for(int i=0;i<37;i++){
+	for(int i=0;i<10;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1498,7 +1498,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[42][1]
 	L[42][1] = LargeX[42][0]>0 ? 1 : 0;
 	satisfiable[42][1]=1; 
-	for(int i=0;i<121;i++){
+	for(int i=0;i<11;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1516,7 +1516,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[43][0]
 	L[43][0] = LargeX[43][1]>0 ? 1 : 0;
 	satisfiable[43][0]=1; 
-	for(int i=0;i<69;i++){
+	for(int i=0;i<9;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1534,7 +1534,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[43][1]
 	L[43][1] = LargeX[43][0]>0 ? 1 : 0;
 	satisfiable[43][1]=1; 
-	for(int i=0;i<41;i++){
+	for(int i=0;i<15;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1552,7 +1552,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[44][0]
 	L[44][0] = LargeX[44][1]>0 ? 1 : 0;
 	satisfiable[44][0]=1; 
-	for(int i=0;i<27;i++){
+	for(int i=0;i<9;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1570,7 +1570,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[44][1]
 	L[44][1] = LargeX[44][0]>0 ? 1 : 0;
 	satisfiable[44][1]=1; 
-	for(int i=0;i<91;i++){
+	for(int i=0;i<15;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1588,7 +1588,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[45][0]
 	L[45][0] = LargeX[45][1]>0 ? 1 : 0;
 	satisfiable[45][0]=1; 
-	for(int i=0;i<98;i++){
+	for(int i=0;i<3;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1606,7 +1606,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[45][1]
 	L[45][1] = LargeX[45][0]>0 ? 1 : 0;
 	satisfiable[45][1]=1; 
-	for(int i=0;i<62;i++){
+	for(int i=0;i<18;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1624,7 +1624,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[46][0]
 	L[46][0] = LargeX[46][1]>0 ? 1 : 0;
 	satisfiable[46][0]=1; 
-	for(int i=0;i<42;i++){
+	for(int i=0;i<8;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1642,7 +1642,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[46][1]
 	L[46][1] = LargeX[46][0]>0 ? 1 : 0;
 	satisfiable[46][1]=1; 
-	for(int i=0;i<98;i++){
+	for(int i=0;i<17;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1660,7 +1660,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[47][0]
 	L[47][0] = LargeX[47][1]>0 ? 1 : 0;
 	satisfiable[47][0]=1; 
-	for(int i=0;i<33;i++){
+	for(int i=0;i<10;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1678,7 +1678,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[47][1]
 	L[47][1] = LargeX[47][0]>0 ? 1 : 0;
 	satisfiable[47][1]=1; 
-	for(int i=0;i<127;i++){
+	for(int i=0;i<13;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1696,7 +1696,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[48][0]
 	L[48][0] = LargeX[48][1]>0 ? 1 : 0;
 	satisfiable[48][0]=1; 
-	for(int i=0;i<174;i++){
+	for(int i=0;i<9;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1714,7 +1714,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[48][1]
 	L[48][1] = LargeX[48][0]>0 ? 1 : 0;
 	satisfiable[48][1]=1; 
-	for(int i=0;i<90;i++){
+	for(int i=0;i<15;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1732,7 +1732,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[49][0]
 	L[49][0] = LargeX[49][1]>0 ? 1 : 0;
 	satisfiable[49][0]=1; 
-	for(int i=0;i<88;i++){
+	for(int i=0;i<9;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1750,7 +1750,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[49][1]
 	L[49][1] = LargeX[49][0]>0 ? 1 : 0;
 	satisfiable[49][1]=1; 
-	for(int i=0;i<85;i++){
+	for(int i=0;i<15;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1768,7 +1768,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[50][0]
 	L[50][0] = LargeX[50][1]>0 ? 1 : 0;
 	satisfiable[50][0]=1; 
-	for(int i=0;i<63;i++){
+	for(int i=0;i<3;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1786,7 +1786,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[50][1]
 	L[50][1] = LargeX[50][0]>0 ? 1 : 0;
 	satisfiable[50][1]=1; 
-	for(int i=0;i<85;i++){
+	for(int i=0;i<16;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1804,7 +1804,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[51][0]
 	L[51][0] = LargeX[51][1]>0 ? 1 : 0;
 	satisfiable[51][0]=1; 
-	for(int i=0;i<139;i++){
+	for(int i=0;i<6;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1822,7 +1822,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[51][1]
 	L[51][1] = LargeX[51][0]>0 ? 1 : 0;
 	satisfiable[51][1]=1; 
-	for(int i=0;i<104;i++){
+	for(int i=0;i<11;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1840,7 +1840,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[52][0]
 	L[52][0] = LargeX[52][1]>0 ? 1 : 0;
 	satisfiable[52][0]=1; 
-	for(int i=0;i<70;i++){
+	for(int i=0;i<7;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1858,7 +1858,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[52][1]
 	L[52][1] = LargeX[52][0]>0 ? 1 : 0;
 	satisfiable[52][1]=1; 
-	for(int i=0;i<99;i++){
+	for(int i=0;i<9;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1876,7 +1876,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[53][0]
 	L[53][0] = LargeX[53][1]>0 ? 1 : 0;
 	satisfiable[53][0]=1; 
-	for(int i=0;i<74;i++){
+	for(int i=0;i<5;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1894,7 +1894,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[53][1]
 	L[53][1] = LargeX[53][0]>0 ? 1 : 0;
 	satisfiable[53][1]=1; 
-	for(int i=0;i<91;i++){
+	for(int i=0;i<11;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1912,7 +1912,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[54][0]
 	L[54][0] = LargeX[54][1]>0 ? 1 : 0;
 	satisfiable[54][0]=1; 
-	for(int i=0;i<159;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1930,7 +1930,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[54][1]
 	L[54][1] = LargeX[54][0]>0 ? 1 : 0;
 	satisfiable[54][1]=1; 
-	for(int i=0;i<97;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1948,7 +1948,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[55][0]
 	L[55][0] = LargeX[55][1]>0 ? 1 : 0;
 	satisfiable[55][0]=1; 
-	for(int i=0;i<33;i++){
+	for(int i=0;i<7;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1966,7 +1966,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[55][1]
 	L[55][1] = LargeX[55][0]>0 ? 1 : 0;
 	satisfiable[55][1]=1; 
-	for(int i=0;i<99;i++){
+	for(int i=0;i<7;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -1984,7 +1984,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[56][0]
 	L[56][0] = LargeX[56][1]>0 ? 1 : 0;
 	satisfiable[56][0]=1; 
-	for(int i=0;i<61;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2002,7 +2002,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[56][1]
 	L[56][1] = LargeX[56][0]>0 ? 1 : 0;
 	satisfiable[56][1]=1; 
-	for(int i=0;i<22;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2020,7 +2020,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[57][0]
 	L[57][0] = LargeX[57][1]>0 ? 1 : 0;
 	satisfiable[57][0]=1; 
-	for(int i=0;i<116;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2038,7 +2038,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[57][1]
 	L[57][1] = LargeX[57][0]>0 ? 1 : 0;
 	satisfiable[57][1]=1; 
-	for(int i=0;i<25;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2056,7 +2056,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[58][0]
 	L[58][0] = LargeX[58][1]>0 ? 1 : 0;
 	satisfiable[58][0]=1; 
-	for(int i=0;i<74;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2074,7 +2074,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[58][1]
 	L[58][1] = LargeX[58][0]>0 ? 1 : 0;
 	satisfiable[58][1]=1; 
-	for(int i=0;i<75;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2092,7 +2092,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[59][0]
 	L[59][0] = LargeX[59][1]>0 ? 1 : 0;
 	satisfiable[59][0]=1; 
-	for(int i=0;i<53;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2110,7 +2110,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[59][1]
 	L[59][1] = LargeX[59][0]>0 ? 1 : 0;
 	satisfiable[59][1]=1; 
-	for(int i=0;i<43;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2128,7 +2128,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[60][0]
 	L[60][0] = LargeX[60][1]>0 ? 1 : 0;
 	satisfiable[60][0]=1; 
-	for(int i=0;i<48;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2146,7 +2146,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[60][1]
 	L[60][1] = LargeX[60][0]>0 ? 1 : 0;
 	satisfiable[60][1]=1; 
-	for(int i=0;i<152;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2164,7 +2164,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[61][0]
 	L[61][0] = LargeX[61][1]>0 ? 1 : 0;
 	satisfiable[61][0]=1; 
-	for(int i=0;i<145;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2182,7 +2182,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[61][1]
 	L[61][1] = LargeX[61][0]>0 ? 1 : 0;
 	satisfiable[61][1]=1; 
-	for(int i=0;i<43;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2200,7 +2200,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[62][0]
 	L[62][0] = LargeX[62][1]>0 ? 1 : 0;
 	satisfiable[62][0]=1; 
-	for(int i=0;i<37;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2218,7 +2218,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[62][1]
 	L[62][1] = LargeX[62][0]>0 ? 1 : 0;
 	satisfiable[62][1]=1; 
-	for(int i=0;i<88;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2236,7 +2236,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[63][0]
 	L[63][0] = LargeX[63][1]>0 ? 1 : 0;
 	satisfiable[63][0]=1; 
-	for(int i=0;i<62;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2254,7 +2254,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[63][1]
 	L[63][1] = LargeX[63][0]>0 ? 1 : 0;
 	satisfiable[63][1]=1; 
-	for(int i=0;i<102;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2272,7 +2272,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[64][0]
 	L[64][0] = LargeX[64][1]>0 ? 1 : 0;
 	satisfiable[64][0]=1; 
-	for(int i=0;i<93;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2290,7 +2290,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[64][1]
 	L[64][1] = LargeX[64][0]>0 ? 1 : 0;
 	satisfiable[64][1]=1; 
-	for(int i=0;i<63;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2308,7 +2308,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[65][0]
 	L[65][0] = LargeX[65][1]>0 ? 1 : 0;
 	satisfiable[65][0]=1; 
-	for(int i=0;i<109;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2326,7 +2326,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[65][1]
 	L[65][1] = LargeX[65][0]>0 ? 1 : 0;
 	satisfiable[65][1]=1; 
-	for(int i=0;i<138;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2344,7 +2344,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[66][0]
 	L[66][0] = LargeX[66][1]>0 ? 1 : 0;
 	satisfiable[66][0]=1; 
-	for(int i=0;i<50;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2362,7 +2362,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[66][1]
 	L[66][1] = LargeX[66][0]>0 ? 1 : 0;
 	satisfiable[66][1]=1; 
-	for(int i=0;i<117;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2380,7 +2380,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[67][0]
 	L[67][0] = LargeX[67][1]>0 ? 1 : 0;
 	satisfiable[67][0]=1; 
-	for(int i=0;i<54;i++){
+	for(int i=0;i<7;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2398,7 +2398,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[67][1]
 	L[67][1] = LargeX[67][0]>0 ? 1 : 0;
 	satisfiable[67][1]=1; 
-	for(int i=0;i<111;i++){
+	for(int i=0;i<4;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2416,7 +2416,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[68][0]
 	L[68][0] = LargeX[68][1]>0 ? 1 : 0;
 	satisfiable[68][0]=1; 
-	for(int i=0;i<213;i++){
+	for(int i=0;i<6;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2434,7 +2434,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[68][1]
 	L[68][1] = LargeX[68][0]>0 ? 1 : 0;
 	satisfiable[68][1]=1; 
-	for(int i=0;i<40;i++){
+	for(int i=0;i<6;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2452,7 +2452,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[69][0]
 	L[69][0] = LargeX[69][1]>0 ? 1 : 0;
 	satisfiable[69][0]=1; 
-	for(int i=0;i<50;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2470,7 +2470,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[69][1]
 	L[69][1] = LargeX[69][0]>0 ? 1 : 0;
 	satisfiable[69][1]=1; 
-	for(int i=0;i<134;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2488,7 +2488,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[70][0]
 	L[70][0] = LargeX[70][1]>0 ? 1 : 0;
 	satisfiable[70][0]=1; 
-	for(int i=0;i<61;i++){
+	for(int i=0;i<4;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2506,7 +2506,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[70][1]
 	L[70][1] = LargeX[70][0]>0 ? 1 : 0;
 	satisfiable[70][1]=1; 
-	for(int i=0;i<84;i++){
+	for(int i=0;i<10;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2524,7 +2524,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[71][0]
 	L[71][0] = LargeX[71][1]>0 ? 1 : 0;
 	satisfiable[71][0]=1; 
-	for(int i=0;i<88;i++){
+	for(int i=0;i<7;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2542,7 +2542,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[71][1]
 	L[71][1] = LargeX[71][0]>0 ? 1 : 0;
 	satisfiable[71][1]=1; 
-	for(int i=0;i<75;i++){
+	for(int i=0;i<17;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2560,7 +2560,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[72][0]
 	L[72][0] = LargeX[72][1]>0 ? 1 : 0;
 	satisfiable[72][0]=1; 
-	for(int i=0;i<133;i++){
+	for(int i=0;i<10;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2578,7 +2578,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[72][1]
 	L[72][1] = LargeX[72][0]>0 ? 1 : 0;
 	satisfiable[72][1]=1; 
-	for(int i=0;i<112;i++){
+	for(int i=0;i<11;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2596,7 +2596,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[73][0]
 	L[73][0] = LargeX[73][1]>0 ? 1 : 0;
 	satisfiable[73][0]=1; 
-	for(int i=0;i<116;i++){
+	for(int i=0;i<9;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2614,7 +2614,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[73][1]
 	L[73][1] = LargeX[73][0]>0 ? 1 : 0;
 	satisfiable[73][1]=1; 
-	for(int i=0;i<76;i++){
+	for(int i=0;i<13;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2632,7 +2632,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[74][0]
 	L[74][0] = LargeX[74][1]>0 ? 1 : 0;
 	satisfiable[74][0]=1; 
-	for(int i=0;i<94;i++){
+	for(int i=0;i<8;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2650,7 +2650,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[74][1]
 	L[74][1] = LargeX[74][0]>0 ? 1 : 0;
 	satisfiable[74][1]=1; 
-	for(int i=0;i<119;i++){
+	for(int i=0;i<15;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2668,7 +2668,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[75][0]
 	L[75][0] = LargeX[75][1]>0 ? 1 : 0;
 	satisfiable[75][0]=1; 
-	for(int i=0;i<134;i++){
+	for(int i=0;i<3;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2686,7 +2686,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[75][1]
 	L[75][1] = LargeX[75][0]>0 ? 1 : 0;
 	satisfiable[75][1]=1; 
-	for(int i=0;i<61;i++){
+	for(int i=0;i<16;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2704,7 +2704,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[76][0]
 	L[76][0] = LargeX[76][1]>0 ? 1 : 0;
 	satisfiable[76][0]=1; 
-	for(int i=0;i<65;i++){
+	for(int i=0;i<8;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2722,7 +2722,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[76][1]
 	L[76][1] = LargeX[76][0]>0 ? 1 : 0;
 	satisfiable[76][1]=1; 
-	for(int i=0;i<65;i++){
+	for(int i=0;i<17;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2740,7 +2740,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[77][0]
 	L[77][0] = LargeX[77][1]>0 ? 1 : 0;
 	satisfiable[77][0]=1; 
-	for(int i=0;i<70;i++){
+	for(int i=0;i<10;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2758,7 +2758,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[77][1]
 	L[77][1] = LargeX[77][0]>0 ? 1 : 0;
 	satisfiable[77][1]=1; 
-	for(int i=0;i<97;i++){
+	for(int i=0;i<13;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2776,7 +2776,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[78][0]
 	L[78][0] = LargeX[78][1]>0 ? 1 : 0;
 	satisfiable[78][0]=1; 
-	for(int i=0;i<116;i++){
+	for(int i=0;i<9;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2794,7 +2794,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[78][1]
 	L[78][1] = LargeX[78][0]>0 ? 1 : 0;
 	satisfiable[78][1]=1; 
-	for(int i=0;i<59;i++){
+	for(int i=0;i<15;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2812,7 +2812,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[79][0]
 	L[79][0] = LargeX[79][1]>0 ? 1 : 0;
 	satisfiable[79][0]=1; 
-	for(int i=0;i<139;i++){
+	for(int i=0;i<9;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2830,7 +2830,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[79][1]
 	L[79][1] = LargeX[79][0]>0 ? 1 : 0;
 	satisfiable[79][1]=1; 
-	for(int i=0;i<153;i++){
+	for(int i=0;i<15;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2848,7 +2848,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[80][0]
 	L[80][0] = LargeX[80][1]>0 ? 1 : 0;
 	satisfiable[80][0]=1; 
-	for(int i=0;i<202;i++){
+	for(int i=0;i<3;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2866,7 +2866,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[80][1]
 	L[80][1] = LargeX[80][0]>0 ? 1 : 0;
 	satisfiable[80][1]=1; 
-	for(int i=0;i<82;i++){
+	for(int i=0;i<16;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2884,7 +2884,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[81][0]
 	L[81][0] = LargeX[81][1]>0 ? 1 : 0;
 	satisfiable[81][0]=1; 
-	for(int i=0;i<87;i++){
+	for(int i=0;i<6;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2902,7 +2902,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[81][1]
 	L[81][1] = LargeX[81][0]>0 ? 1 : 0;
 	satisfiable[81][1]=1; 
-	for(int i=0;i<133;i++){
+	for(int i=0;i<11;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2920,7 +2920,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[82][0]
 	L[82][0] = LargeX[82][1]>0 ? 1 : 0;
 	satisfiable[82][0]=1; 
-	for(int i=0;i<88;i++){
+	for(int i=0;i<7;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2938,7 +2938,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[82][1]
 	L[82][1] = LargeX[82][0]>0 ? 1 : 0;
 	satisfiable[82][1]=1; 
-	for(int i=0;i<78;i++){
+	for(int i=0;i<9;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2956,7 +2956,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[83][0]
 	L[83][0] = LargeX[83][1]>0 ? 1 : 0;
 	satisfiable[83][0]=1; 
-	for(int i=0;i<55;i++){
+	for(int i=0;i<5;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2974,7 +2974,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[83][1]
 	L[83][1] = LargeX[83][0]>0 ? 1 : 0;
 	satisfiable[83][1]=1; 
-	for(int i=0;i<75;i++){
+	for(int i=0;i<11;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -2992,7 +2992,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[84][0]
 	L[84][0] = LargeX[84][1]>0 ? 1 : 0;
 	satisfiable[84][0]=1; 
-	for(int i=0;i<89;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3010,7 +3010,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[84][1]
 	L[84][1] = LargeX[84][0]>0 ? 1 : 0;
 	satisfiable[84][1]=1; 
-	for(int i=0;i<69;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3028,7 +3028,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[85][0]
 	L[85][0] = LargeX[85][1]>0 ? 1 : 0;
 	satisfiable[85][0]=1; 
-	for(int i=0;i<97;i++){
+	for(int i=0;i<7;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3046,7 +3046,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[85][1]
 	L[85][1] = LargeX[85][0]>0 ? 1 : 0;
 	satisfiable[85][1]=1; 
-	for(int i=0;i<66;i++){
+	for(int i=0;i<7;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3064,7 +3064,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[86][0]
 	L[86][0] = LargeX[86][1]>0 ? 1 : 0;
 	satisfiable[86][0]=1; 
-	for(int i=0;i<64;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3082,7 +3082,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[86][1]
 	L[86][1] = LargeX[86][0]>0 ? 1 : 0;
 	satisfiable[86][1]=1; 
-	for(int i=0;i<45;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3100,7 +3100,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[87][0]
 	L[87][0] = LargeX[87][1]>0 ? 1 : 0;
 	satisfiable[87][0]=1; 
-	for(int i=0;i<98;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3118,7 +3118,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[87][1]
 	L[87][1] = LargeX[87][0]>0 ? 1 : 0;
 	satisfiable[87][1]=1; 
-	for(int i=0;i<97;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3136,7 +3136,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[88][0]
 	L[88][0] = LargeX[88][1]>0 ? 1 : 0;
 	satisfiable[88][0]=1; 
-	for(int i=0;i<98;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3154,7 +3154,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[88][1]
 	L[88][1] = LargeX[88][0]>0 ? 1 : 0;
 	satisfiable[88][1]=1; 
-	for(int i=0;i<72;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3172,7 +3172,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[89][0]
 	L[89][0] = LargeX[89][1]>0 ? 1 : 0;
 	satisfiable[89][0]=1; 
-	for(int i=0;i<108;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3190,7 +3190,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[89][1]
 	L[89][1] = LargeX[89][0]>0 ? 1 : 0;
 	satisfiable[89][1]=1; 
-	for(int i=0;i<59;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3208,7 +3208,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[90][0]
 	L[90][0] = LargeX[90][1]>0 ? 1 : 0;
 	satisfiable[90][0]=1; 
-	for(int i=0;i<36;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3226,7 +3226,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[90][1]
 	L[90][1] = LargeX[90][0]>0 ? 1 : 0;
 	satisfiable[90][1]=1; 
-	for(int i=0;i<129;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3244,7 +3244,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[91][0]
 	L[91][0] = LargeX[91][1]>0 ? 1 : 0;
 	satisfiable[91][0]=1; 
-	for(int i=0;i<68;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3262,7 +3262,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[91][1]
 	L[91][1] = LargeX[91][0]>0 ? 1 : 0;
 	satisfiable[91][1]=1; 
-	for(int i=0;i<70;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3280,7 +3280,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[92][0]
 	L[92][0] = LargeX[92][1]>0 ? 1 : 0;
 	satisfiable[92][0]=1; 
-	for(int i=0;i<46;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3298,7 +3298,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[92][1]
 	L[92][1] = LargeX[92][0]>0 ? 1 : 0;
 	satisfiable[92][1]=1; 
-	for(int i=0;i<145;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3316,7 +3316,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[93][0]
 	L[93][0] = LargeX[93][1]>0 ? 1 : 0;
 	satisfiable[93][0]=1; 
-	for(int i=0;i<139;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3334,7 +3334,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[93][1]
 	L[93][1] = LargeX[93][0]>0 ? 1 : 0;
 	satisfiable[93][1]=1; 
-	for(int i=0;i<60;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3352,7 +3352,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[94][0]
 	L[94][0] = LargeX[94][1]>0 ? 1 : 0;
 	satisfiable[94][0]=1; 
-	for(int i=0;i<91;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3370,7 +3370,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[94][1]
 	L[94][1] = LargeX[94][0]>0 ? 1 : 0;
 	satisfiable[94][1]=1; 
-	for(int i=0;i<91;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3388,7 +3388,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[95][0]
 	L[95][0] = LargeX[95][1]>0 ? 1 : 0;
 	satisfiable[95][0]=1; 
-	for(int i=0;i<107;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3406,7 +3406,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[95][1]
 	L[95][1] = LargeX[95][0]>0 ? 1 : 0;
 	satisfiable[95][1]=1; 
-	for(int i=0;i<126;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3424,7 +3424,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[96][0]
 	L[96][0] = LargeX[96][1]>0 ? 1 : 0;
 	satisfiable[96][0]=1; 
-	for(int i=0;i<76;i++){
+	for(int i=0;i<4;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3442,7 +3442,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[96][1]
 	L[96][1] = LargeX[96][0]>0 ? 1 : 0;
 	satisfiable[96][1]=1; 
-	for(int i=0;i<73;i++){
+	for(int i=0;i<6;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3460,7 +3460,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[97][0]
 	L[97][0] = LargeX[97][1]>0 ? 1 : 0;
 	satisfiable[97][0]=1; 
-	for(int i=0;i<108;i++){
+	for(int i=0;i<5;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3478,7 +3478,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[97][1]
 	L[97][1] = LargeX[97][0]>0 ? 1 : 0;
 	satisfiable[97][1]=1; 
-	for(int i=0;i<119;i++){
+	for(int i=0;i<4;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3496,7 +3496,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[98][0]
 	L[98][0] = LargeX[98][1]>0 ? 1 : 0;
 	satisfiable[98][0]=1; 
-	for(int i=0;i<81;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3514,7 +3514,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[98][1]
 	L[98][1] = LargeX[98][0]>0 ? 1 : 0;
 	satisfiable[98][1]=1; 
-	for(int i=0;i<55;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3532,7 +3532,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[99][0]
 	L[99][0] = LargeX[99][1]>0 ? 1 : 0;
 	satisfiable[99][0]=1; 
-	for(int i=0;i<109;i++){
+	for(int i=0;i<4;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3550,7 +3550,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[99][1]
 	L[99][1] = LargeX[99][0]>0 ? 1 : 0;
 	satisfiable[99][1]=1; 
-	for(int i=0;i<76;i++){
+	for(int i=0;i<6;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3568,7 +3568,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[100][0]
 	L[100][0] = LargeX[100][1]>0 ? 1 : 0;
 	satisfiable[100][0]=1; 
-	for(int i=0;i<164;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3586,7 +3586,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[100][1]
 	L[100][1] = LargeX[100][0]>0 ? 1 : 0;
 	satisfiable[100][1]=1; 
-	for(int i=0;i<43;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3604,7 +3604,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[101][0]
 	L[101][0] = LargeX[101][1]>0 ? 1 : 0;
 	satisfiable[101][0]=1; 
-	for(int i=0;i<101;i++){
+	for(int i=0;i<7;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3622,7 +3622,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[101][1]
 	L[101][1] = LargeX[101][0]>0 ? 1 : 0;
 	satisfiable[101][1]=1; 
-	for(int i=0;i<83;i++){
+	for(int i=0;i<13;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3640,7 +3640,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[102][0]
 	L[102][0] = LargeX[102][1]>0 ? 1 : 0;
 	satisfiable[102][0]=1; 
-	for(int i=0;i<113;i++){
+	for(int i=0;i<8;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3658,7 +3658,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[102][1]
 	L[102][1] = LargeX[102][0]>0 ? 1 : 0;
 	satisfiable[102][1]=1; 
-	for(int i=0;i<50;i++){
+	for(int i=0;i<11;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3676,7 +3676,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[103][0]
 	L[103][0] = LargeX[103][1]>0 ? 1 : 0;
 	satisfiable[103][0]=1; 
-	for(int i=0;i<87;i++){
+	for(int i=0;i<7;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3694,7 +3694,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[103][1]
 	L[103][1] = LargeX[103][0]>0 ? 1 : 0;
 	satisfiable[103][1]=1; 
-	for(int i=0;i<111;i++){
+	for(int i=0;i<15;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3712,7 +3712,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[104][0]
 	L[104][0] = LargeX[104][1]>0 ? 1 : 0;
 	satisfiable[104][0]=1; 
-	for(int i=0;i<130;i++){
+	for(int i=0;i<9;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3730,7 +3730,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[104][1]
 	L[104][1] = LargeX[104][0]>0 ? 1 : 0;
 	satisfiable[104][1]=1; 
-	for(int i=0;i<86;i++){
+	for(int i=0;i<11;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3748,7 +3748,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[105][0]
 	L[105][0] = LargeX[105][1]>0 ? 1 : 0;
 	satisfiable[105][0]=1; 
-	for(int i=0;i<75;i++){
+	for(int i=0;i<3;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3766,7 +3766,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[105][1]
 	L[105][1] = LargeX[105][0]>0 ? 1 : 0;
 	satisfiable[105][1]=1; 
-	for(int i=0;i<63;i++){
+	for(int i=0;i<18;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3784,7 +3784,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[106][0]
 	L[106][0] = LargeX[106][1]>0 ? 1 : 0;
 	satisfiable[106][0]=1; 
-	for(int i=0;i<53;i++){
+	for(int i=0;i<8;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3802,7 +3802,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[106][1]
 	L[106][1] = LargeX[106][0]>0 ? 1 : 0;
 	satisfiable[106][1]=1; 
-	for(int i=0;i<70;i++){
+	for(int i=0;i<17;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3820,7 +3820,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[107][0]
 	L[107][0] = LargeX[107][1]>0 ? 1 : 0;
 	satisfiable[107][0]=1; 
-	for(int i=0;i<58;i++){
+	for(int i=0;i<10;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3838,7 +3838,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[107][1]
 	L[107][1] = LargeX[107][0]>0 ? 1 : 0;
 	satisfiable[107][1]=1; 
-	for(int i=0;i<57;i++){
+	for(int i=0;i<13;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3856,7 +3856,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[108][0]
 	L[108][0] = LargeX[108][1]>0 ? 1 : 0;
 	satisfiable[108][0]=1; 
-	for(int i=0;i<114;i++){
+	for(int i=0;i<9;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3874,7 +3874,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[108][1]
 	L[108][1] = LargeX[108][0]>0 ? 1 : 0;
 	satisfiable[108][1]=1; 
-	for(int i=0;i<42;i++){
+	for(int i=0;i<15;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3892,7 +3892,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[109][0]
 	L[109][0] = LargeX[109][1]>0 ? 1 : 0;
 	satisfiable[109][0]=1; 
-	for(int i=0;i<104;i++){
+	for(int i=0;i<9;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3910,7 +3910,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[109][1]
 	L[109][1] = LargeX[109][0]>0 ? 1 : 0;
 	satisfiable[109][1]=1; 
-	for(int i=0;i<94;i++){
+	for(int i=0;i<15;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3928,7 +3928,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[110][0]
 	L[110][0] = LargeX[110][1]>0 ? 1 : 0;
 	satisfiable[110][0]=1; 
-	for(int i=0;i<107;i++){
+	for(int i=0;i<3;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3946,7 +3946,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[110][1]
 	L[110][1] = LargeX[110][0]>0 ? 1 : 0;
 	satisfiable[110][1]=1; 
-	for(int i=0;i<145;i++){
+	for(int i=0;i<16;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3964,7 +3964,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[111][0]
 	L[111][0] = LargeX[111][1]>0 ? 1 : 0;
 	satisfiable[111][0]=1; 
-	for(int i=0;i<112;i++){
+	for(int i=0;i<6;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -3982,7 +3982,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[111][1]
 	L[111][1] = LargeX[111][0]>0 ? 1 : 0;
 	satisfiable[111][1]=1; 
-	for(int i=0;i<125;i++){
+	for(int i=0;i<11;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4000,7 +4000,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[112][0]
 	L[112][0] = LargeX[112][1]>0 ? 1 : 0;
 	satisfiable[112][0]=1; 
-	for(int i=0;i<43;i++){
+	for(int i=0;i<7;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4018,7 +4018,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[112][1]
 	L[112][1] = LargeX[112][0]>0 ? 1 : 0;
 	satisfiable[112][1]=1; 
-	for(int i=0;i<67;i++){
+	for(int i=0;i<9;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4036,7 +4036,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[113][0]
 	L[113][0] = LargeX[113][1]>0 ? 1 : 0;
 	satisfiable[113][0]=1; 
-	for(int i=0;i<139;i++){
+	for(int i=0;i<5;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4054,7 +4054,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[113][1]
 	L[113][1] = LargeX[113][0]>0 ? 1 : 0;
 	satisfiable[113][1]=1; 
-	for(int i=0;i<82;i++){
+	for(int i=0;i<11;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4072,7 +4072,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[114][0]
 	L[114][0] = LargeX[114][1]>0 ? 1 : 0;
 	satisfiable[114][0]=1; 
-	for(int i=0;i<89;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4090,7 +4090,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[114][1]
 	L[114][1] = LargeX[114][0]>0 ? 1 : 0;
 	satisfiable[114][1]=1; 
-	for(int i=0;i<95;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4108,7 +4108,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[115][0]
 	L[115][0] = LargeX[115][1]>0 ? 1 : 0;
 	satisfiable[115][0]=1; 
-	for(int i=0;i<125;i++){
+	for(int i=0;i<7;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4126,7 +4126,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[115][1]
 	L[115][1] = LargeX[115][0]>0 ? 1 : 0;
 	satisfiable[115][1]=1; 
-	for(int i=0;i<48;i++){
+	for(int i=0;i<7;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4144,7 +4144,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[116][0]
 	L[116][0] = LargeX[116][1]>0 ? 1 : 0;
 	satisfiable[116][0]=1; 
-	for(int i=0;i<118;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4162,7 +4162,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[116][1]
 	L[116][1] = LargeX[116][0]>0 ? 1 : 0;
 	satisfiable[116][1]=1; 
-	for(int i=0;i<89;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4180,7 +4180,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[117][0]
 	L[117][0] = LargeX[117][1]>0 ? 1 : 0;
 	satisfiable[117][0]=1; 
-	for(int i=0;i<107;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4198,7 +4198,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[117][1]
 	L[117][1] = LargeX[117][0]>0 ? 1 : 0;
 	satisfiable[117][1]=1; 
-	for(int i=0;i<66;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4216,7 +4216,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[118][0]
 	L[118][0] = LargeX[118][1]>0 ? 1 : 0;
 	satisfiable[118][0]=1; 
-	for(int i=0;i<87;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4234,7 +4234,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[118][1]
 	L[118][1] = LargeX[118][0]>0 ? 1 : 0;
 	satisfiable[118][1]=1; 
-	for(int i=0;i<97;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4252,7 +4252,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[119][0]
 	L[119][0] = LargeX[119][1]>0 ? 1 : 0;
 	satisfiable[119][0]=1; 
-	for(int i=0;i<78;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4270,7 +4270,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[119][1]
 	L[119][1] = LargeX[119][0]>0 ? 1 : 0;
 	satisfiable[119][1]=1; 
-	for(int i=0;i<83;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4288,7 +4288,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[120][0]
 	L[120][0] = LargeX[120][1]>0 ? 1 : 0;
 	satisfiable[120][0]=1; 
-	for(int i=0;i<56;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4306,7 +4306,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[120][1]
 	L[120][1] = LargeX[120][0]>0 ? 1 : 0;
 	satisfiable[120][1]=1; 
-	for(int i=0;i<114;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4324,7 +4324,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[121][0]
 	L[121][0] = LargeX[121][1]>0 ? 1 : 0;
 	satisfiable[121][0]=1; 
-	for(int i=0;i<89;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4342,7 +4342,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[121][1]
 	L[121][1] = LargeX[121][0]>0 ? 1 : 0;
 	satisfiable[121][1]=1; 
-	for(int i=0;i<92;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4360,7 +4360,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[122][0]
 	L[122][0] = LargeX[122][1]>0 ? 1 : 0;
 	satisfiable[122][0]=1; 
-	for(int i=0;i<135;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4378,7 +4378,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[122][1]
 	L[122][1] = LargeX[122][0]>0 ? 1 : 0;
 	satisfiable[122][1]=1; 
-	for(int i=0;i<108;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4396,7 +4396,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[123][0]
 	L[123][0] = LargeX[123][1]>0 ? 1 : 0;
 	satisfiable[123][0]=1; 
-	for(int i=0;i<84;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4414,7 +4414,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[123][1]
 	L[123][1] = LargeX[123][0]>0 ? 1 : 0;
 	satisfiable[123][1]=1; 
-	for(int i=0;i<87;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4432,7 +4432,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[124][0]
 	L[124][0] = LargeX[124][1]>0 ? 1 : 0;
 	satisfiable[124][0]=1; 
-	for(int i=0;i<87;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4450,7 +4450,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[124][1]
 	L[124][1] = LargeX[124][0]>0 ? 1 : 0;
 	satisfiable[124][1]=1; 
-	for(int i=0;i<85;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4468,7 +4468,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[125][0]
 	L[125][0] = LargeX[125][1]>0 ? 1 : 0;
 	satisfiable[125][0]=1; 
-	for(int i=0;i<32;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4486,7 +4486,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[125][1]
 	L[125][1] = LargeX[125][0]>0 ? 1 : 0;
 	satisfiable[125][1]=1; 
-	for(int i=0;i<90;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4504,7 +4504,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[126][0]
 	L[126][0] = LargeX[126][1]>0 ? 1 : 0;
 	satisfiable[126][0]=1; 
-	for(int i=0;i<58;i++){
+	for(int i=0;i<7;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4522,7 +4522,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[126][1]
 	L[126][1] = LargeX[126][0]>0 ? 1 : 0;
 	satisfiable[126][1]=1; 
-	for(int i=0;i<116;i++){
+	for(int i=0;i<6;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4540,7 +4540,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[127][0]
 	L[127][0] = LargeX[127][1]>0 ? 1 : 0;
 	satisfiable[127][0]=1; 
-	for(int i=0;i<171;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4558,7 +4558,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[127][1]
 	L[127][1] = LargeX[127][0]>0 ? 1 : 0;
 	satisfiable[127][1]=1; 
-	for(int i=0;i<60;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4576,7 +4576,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[128][0]
 	L[128][0] = LargeX[128][1]>0 ? 1 : 0;
 	satisfiable[128][0]=1; 
-	for(int i=0;i<93;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4594,7 +4594,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[128][1]
 	L[128][1] = LargeX[128][0]>0 ? 1 : 0;
 	satisfiable[128][1]=1; 
-	for(int i=0;i<56;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4612,7 +4612,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[129][0]
 	L[129][0] = LargeX[129][1]>0 ? 1 : 0;
 	satisfiable[129][0]=1; 
-	for(int i=0;i<109;i++){
+	for(int i=0;i<7;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4630,7 +4630,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[129][1]
 	L[129][1] = LargeX[129][0]>0 ? 1 : 0;
 	satisfiable[129][1]=1; 
-	for(int i=0;i<111;i++){
+	for(int i=0;i<6;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4648,7 +4648,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[130][0]
 	L[130][0] = LargeX[130][1]>0 ? 1 : 0;
 	satisfiable[130][0]=1; 
-	for(int i=0;i<125;i++){
+	for(int i=0;i<5;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4666,7 +4666,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[130][1]
 	L[130][1] = LargeX[130][0]>0 ? 1 : 0;
 	satisfiable[130][1]=1; 
-	for(int i=0;i<29;i++){
+	for(int i=0;i<10;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4684,7 +4684,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[131][0]
 	L[131][0] = LargeX[131][1]>0 ? 1 : 0;
 	satisfiable[131][0]=1; 
-	for(int i=0;i<77;i++){
+	for(int i=0;i<8;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4702,7 +4702,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[131][1]
 	L[131][1] = LargeX[131][0]>0 ? 1 : 0;
 	satisfiable[131][1]=1; 
-	for(int i=0;i<128;i++){
+	for(int i=0;i<13;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4720,7 +4720,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[132][0]
 	L[132][0] = LargeX[132][1]>0 ? 1 : 0;
 	satisfiable[132][0]=1; 
-	for(int i=0;i<155;i++){
+	for(int i=0;i<8;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4738,7 +4738,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[132][1]
 	L[132][1] = LargeX[132][0]>0 ? 1 : 0;
 	satisfiable[132][1]=1; 
-	for(int i=0;i<78;i++){
+	for(int i=0;i<13;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4756,7 +4756,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[133][0]
 	L[133][0] = LargeX[133][1]>0 ? 1 : 0;
 	satisfiable[133][0]=1; 
-	for(int i=0;i<88;i++){
+	for(int i=0;i<8;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4774,7 +4774,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[133][1]
 	L[133][1] = LargeX[133][0]>0 ? 1 : 0;
 	satisfiable[133][1]=1; 
-	for(int i=0;i<108;i++){
+	for(int i=0;i<17;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4792,7 +4792,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[134][0]
 	L[134][0] = LargeX[134][1]>0 ? 1 : 0;
 	satisfiable[134][0]=1; 
-	for(int i=0;i<68;i++){
+	for(int i=0;i<10;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4810,7 +4810,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[134][1]
 	L[134][1] = LargeX[134][0]>0 ? 1 : 0;
 	satisfiable[134][1]=1; 
-	for(int i=0;i<49;i++){
+	for(int i=0;i<13;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4828,7 +4828,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[135][0]
 	L[135][0] = LargeX[135][1]>0 ? 1 : 0;
 	satisfiable[135][0]=1; 
-	for(int i=0;i<100;i++){
+	for(int i=0;i<3;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4846,7 +4846,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[135][1]
 	L[135][1] = LargeX[135][0]>0 ? 1 : 0;
 	satisfiable[135][1]=1; 
-	for(int i=0;i<31;i++){
+	for(int i=0;i<18;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4864,7 +4864,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[136][0]
 	L[136][0] = LargeX[136][1]>0 ? 1 : 0;
 	satisfiable[136][0]=1; 
-	for(int i=0;i<115;i++){
+	for(int i=0;i<8;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4882,7 +4882,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[136][1]
 	L[136][1] = LargeX[136][0]>0 ? 1 : 0;
 	satisfiable[136][1]=1; 
-	for(int i=0;i<36;i++){
+	for(int i=0;i<17;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4900,7 +4900,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[137][0]
 	L[137][0] = LargeX[137][1]>0 ? 1 : 0;
 	satisfiable[137][0]=1; 
-	for(int i=0;i<100;i++){
+	for(int i=0;i<10;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4918,7 +4918,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[137][1]
 	L[137][1] = LargeX[137][0]>0 ? 1 : 0;
 	satisfiable[137][1]=1; 
-	for(int i=0;i<115;i++){
+	for(int i=0;i<13;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4936,7 +4936,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[138][0]
 	L[138][0] = LargeX[138][1]>0 ? 1 : 0;
 	satisfiable[138][0]=1; 
-	for(int i=0;i<96;i++){
+	for(int i=0;i<9;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4954,7 +4954,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[138][1]
 	L[138][1] = LargeX[138][0]>0 ? 1 : 0;
 	satisfiable[138][1]=1; 
-	for(int i=0;i<32;i++){
+	for(int i=0;i<15;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4972,7 +4972,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[139][0]
 	L[139][0] = LargeX[139][1]>0 ? 1 : 0;
 	satisfiable[139][0]=1; 
-	for(int i=0;i<71;i++){
+	for(int i=0;i<9;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -4990,7 +4990,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[139][1]
 	L[139][1] = LargeX[139][0]>0 ? 1 : 0;
 	satisfiable[139][1]=1; 
-	for(int i=0;i<78;i++){
+	for(int i=0;i<15;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5008,7 +5008,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[140][0]
 	L[140][0] = LargeX[140][1]>0 ? 1 : 0;
 	satisfiable[140][0]=1; 
-	for(int i=0;i<98;i++){
+	for(int i=0;i<3;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5026,7 +5026,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[140][1]
 	L[140][1] = LargeX[140][0]>0 ? 1 : 0;
 	satisfiable[140][1]=1; 
-	for(int i=0;i<103;i++){
+	for(int i=0;i<16;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5044,7 +5044,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[141][0]
 	L[141][0] = LargeX[141][1]>0 ? 1 : 0;
 	satisfiable[141][0]=1; 
-	for(int i=0;i<52;i++){
+	for(int i=0;i<6;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5062,7 +5062,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[141][1]
 	L[141][1] = LargeX[141][0]>0 ? 1 : 0;
 	satisfiable[141][1]=1; 
-	for(int i=0;i<139;i++){
+	for(int i=0;i<11;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5080,7 +5080,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[142][0]
 	L[142][0] = LargeX[142][1]>0 ? 1 : 0;
 	satisfiable[142][0]=1; 
-	for(int i=0;i<129;i++){
+	for(int i=0;i<7;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5098,7 +5098,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[142][1]
 	L[142][1] = LargeX[142][0]>0 ? 1 : 0;
 	satisfiable[142][1]=1; 
-	for(int i=0;i<112;i++){
+	for(int i=0;i<9;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5116,7 +5116,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[143][0]
 	L[143][0] = LargeX[143][1]>0 ? 1 : 0;
 	satisfiable[143][0]=1; 
-	for(int i=0;i<102;i++){
+	for(int i=0;i<5;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5134,7 +5134,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[143][1]
 	L[143][1] = LargeX[143][0]>0 ? 1 : 0;
 	satisfiable[143][1]=1; 
-	for(int i=0;i<124;i++){
+	for(int i=0;i<11;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5152,7 +5152,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[144][0]
 	L[144][0] = LargeX[144][1]>0 ? 1 : 0;
 	satisfiable[144][0]=1; 
-	for(int i=0;i<155;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5170,7 +5170,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[144][1]
 	L[144][1] = LargeX[144][0]>0 ? 1 : 0;
 	satisfiable[144][1]=1; 
-	for(int i=0;i<43;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5188,7 +5188,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[145][0]
 	L[145][0] = LargeX[145][1]>0 ? 1 : 0;
 	satisfiable[145][0]=1; 
-	for(int i=0;i<102;i++){
+	for(int i=0;i<7;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5206,7 +5206,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[145][1]
 	L[145][1] = LargeX[145][0]>0 ? 1 : 0;
 	satisfiable[145][1]=1; 
-	for(int i=0;i<51;i++){
+	for(int i=0;i<7;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5224,7 +5224,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[146][0]
 	L[146][0] = LargeX[146][1]>0 ? 1 : 0;
 	satisfiable[146][0]=1; 
-	for(int i=0;i<106;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5242,7 +5242,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[146][1]
 	L[146][1] = LargeX[146][0]>0 ? 1 : 0;
 	satisfiable[146][1]=1; 
-	for(int i=0;i<137;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5260,7 +5260,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[147][0]
 	L[147][0] = LargeX[147][1]>0 ? 1 : 0;
 	satisfiable[147][0]=1; 
-	for(int i=0;i<122;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5278,7 +5278,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[147][1]
 	L[147][1] = LargeX[147][0]>0 ? 1 : 0;
 	satisfiable[147][1]=1; 
-	for(int i=0;i<48;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5296,7 +5296,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[148][0]
 	L[148][0] = LargeX[148][1]>0 ? 1 : 0;
 	satisfiable[148][0]=1; 
-	for(int i=0;i<23;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5314,7 +5314,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[148][1]
 	L[148][1] = LargeX[148][0]>0 ? 1 : 0;
 	satisfiable[148][1]=1; 
-	for(int i=0;i<138;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5332,7 +5332,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[149][0]
 	L[149][0] = LargeX[149][1]>0 ? 1 : 0;
 	satisfiable[149][0]=1; 
-	for(int i=0;i<59;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5350,7 +5350,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[149][1]
 	L[149][1] = LargeX[149][0]>0 ? 1 : 0;
 	satisfiable[149][1]=1; 
-	for(int i=0;i<103;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5368,7 +5368,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[150][0]
 	L[150][0] = LargeX[150][1]>0 ? 1 : 0;
 	satisfiable[150][0]=1; 
-	for(int i=0;i<115;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5386,7 +5386,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[150][1]
 	L[150][1] = LargeX[150][0]>0 ? 1 : 0;
 	satisfiable[150][1]=1; 
-	for(int i=0;i<51;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5404,7 +5404,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[151][0]
 	L[151][0] = LargeX[151][1]>0 ? 1 : 0;
 	satisfiable[151][0]=1; 
-	for(int i=0;i<86;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5422,7 +5422,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[151][1]
 	L[151][1] = LargeX[151][0]>0 ? 1 : 0;
 	satisfiable[151][1]=1; 
-	for(int i=0;i<70;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5440,7 +5440,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[152][0]
 	L[152][0] = LargeX[152][1]>0 ? 1 : 0;
 	satisfiable[152][0]=1; 
-	for(int i=0;i<144;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5458,7 +5458,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[152][1]
 	L[152][1] = LargeX[152][0]>0 ? 1 : 0;
 	satisfiable[152][1]=1; 
-	for(int i=0;i<100;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5476,7 +5476,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[153][0]
 	L[153][0] = LargeX[153][1]>0 ? 1 : 0;
 	satisfiable[153][0]=1; 
-	for(int i=0;i<46;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5494,7 +5494,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[153][1]
 	L[153][1] = LargeX[153][0]>0 ? 1 : 0;
 	satisfiable[153][1]=1; 
-	for(int i=0;i<90;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5512,7 +5512,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[154][0]
 	L[154][0] = LargeX[154][1]>0 ? 1 : 0;
 	satisfiable[154][0]=1; 
-	for(int i=0;i<76;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5530,7 +5530,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[154][1]
 	L[154][1] = LargeX[154][0]>0 ? 1 : 0;
 	satisfiable[154][1]=1; 
-	for(int i=0;i<39;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5548,7 +5548,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[155][0]
 	L[155][0] = LargeX[155][1]>0 ? 1 : 0;
 	satisfiable[155][0]=1; 
-	for(int i=0;i<98;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5566,7 +5566,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[155][1]
 	L[155][1] = LargeX[155][0]>0 ? 1 : 0;
 	satisfiable[155][1]=1; 
-	for(int i=0;i<40;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5584,7 +5584,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[156][0]
 	L[156][0] = LargeX[156][1]>0 ? 1 : 0;
 	satisfiable[156][0]=1; 
-	for(int i=0;i<24;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5602,7 +5602,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[156][1]
 	L[156][1] = LargeX[156][0]>0 ? 1 : 0;
 	satisfiable[156][1]=1; 
-	for(int i=0;i<98;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5620,7 +5620,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[157][0]
 	L[157][0] = LargeX[157][1]>0 ? 1 : 0;
 	satisfiable[157][0]=1; 
-	for(int i=0;i<64;i++){
+	for(int i=0;i<6;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5638,7 +5638,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[157][1]
 	L[157][1] = LargeX[157][0]>0 ? 1 : 0;
 	satisfiable[157][1]=1; 
-	for(int i=0;i<61;i++){
+	for(int i=0;i<7;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5656,7 +5656,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[158][0]
 	L[158][0] = LargeX[158][1]>0 ? 1 : 0;
 	satisfiable[158][0]=1; 
-	for(int i=0;i<65;i++){
+	for(int i=0;i<5;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5674,7 +5674,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[158][1]
 	L[158][1] = LargeX[158][0]>0 ? 1 : 0;
 	satisfiable[158][1]=1; 
-	for(int i=0;i<34;i++){
+	for(int i=0;i<9;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5692,7 +5692,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[159][0]
 	L[159][0] = LargeX[159][1]>0 ? 1 : 0;
 	satisfiable[159][0]=1; 
-	for(int i=0;i<128;i++){
+	for(int i=0;i<8;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5710,7 +5710,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[159][1]
 	L[159][1] = LargeX[159][0]>0 ? 1 : 0;
 	satisfiable[159][1]=1; 
-	for(int i=0;i<23;i++){
+	for(int i=0;i<9;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5728,7 +5728,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[160][0]
 	L[160][0] = LargeX[160][1]>0 ? 1 : 0;
 	satisfiable[160][0]=1; 
-	for(int i=0;i<134;i++){
+	for(int i=0;i<6;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5746,7 +5746,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[160][1]
 	L[160][1] = LargeX[160][0]>0 ? 1 : 0;
 	satisfiable[160][1]=1; 
-	for(int i=0;i<69;i++){
+	for(int i=0;i<13;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5764,7 +5764,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[161][0]
 	L[161][0] = LargeX[161][1]>0 ? 1 : 0;
 	satisfiable[161][0]=1; 
-	for(int i=0;i<39;i++){
+	for(int i=0;i<7;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5782,7 +5782,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[161][1]
 	L[161][1] = LargeX[161][0]>0 ? 1 : 0;
 	satisfiable[161][1]=1; 
-	for(int i=0;i<85;i++){
+	for(int i=0;i<17;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5800,7 +5800,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[162][0]
 	L[162][0] = LargeX[162][1]>0 ? 1 : 0;
 	satisfiable[162][0]=1; 
-	for(int i=0;i<48;i++){
+	for(int i=0;i<10;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5818,7 +5818,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[162][1]
 	L[162][1] = LargeX[162][0]>0 ? 1 : 0;
 	satisfiable[162][1]=1; 
-	for(int i=0;i<85;i++){
+	for(int i=0;i<11;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5836,7 +5836,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[163][0]
 	L[163][0] = LargeX[163][1]>0 ? 1 : 0;
 	satisfiable[163][0]=1; 
-	for(int i=0;i<98;i++){
+	for(int i=0;i<9;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5854,7 +5854,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[163][1]
 	L[163][1] = LargeX[163][0]>0 ? 1 : 0;
 	satisfiable[163][1]=1; 
-	for(int i=0;i<77;i++){
+	for(int i=0;i<15;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5872,7 +5872,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[164][0]
 	L[164][0] = LargeX[164][1]>0 ? 1 : 0;
 	satisfiable[164][0]=1; 
-	for(int i=0;i<141;i++){
+	for(int i=0;i<9;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5890,7 +5890,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[164][1]
 	L[164][1] = LargeX[164][0]>0 ? 1 : 0;
 	satisfiable[164][1]=1; 
-	for(int i=0;i<93;i++){
+	for(int i=0;i<15;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5908,7 +5908,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[165][0]
 	L[165][0] = LargeX[165][1]>0 ? 1 : 0;
 	satisfiable[165][0]=1; 
-	for(int i=0;i<103;i++){
+	for(int i=0;i<3;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5926,7 +5926,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[165][1]
 	L[165][1] = LargeX[165][0]>0 ? 1 : 0;
 	satisfiable[165][1]=1; 
-	for(int i=0;i<83;i++){
+	for(int i=0;i<18;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5944,7 +5944,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[166][0]
 	L[166][0] = LargeX[166][1]>0 ? 1 : 0;
 	satisfiable[166][0]=1; 
-	for(int i=0;i<75;i++){
+	for(int i=0;i<8;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5962,7 +5962,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[166][1]
 	L[166][1] = LargeX[166][0]>0 ? 1 : 0;
 	satisfiable[166][1]=1; 
-	for(int i=0;i<127;i++){
+	for(int i=0;i<17;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5980,7 +5980,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[167][0]
 	L[167][0] = LargeX[167][1]>0 ? 1 : 0;
 	satisfiable[167][0]=1; 
-	for(int i=0;i<172;i++){
+	for(int i=0;i<10;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -5998,7 +5998,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[167][1]
 	L[167][1] = LargeX[167][0]>0 ? 1 : 0;
 	satisfiable[167][1]=1; 
-	for(int i=0;i<60;i++){
+	for(int i=0;i<13;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6016,7 +6016,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[168][0]
 	L[168][0] = LargeX[168][1]>0 ? 1 : 0;
 	satisfiable[168][0]=1; 
-	for(int i=0;i<107;i++){
+	for(int i=0;i<9;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6034,7 +6034,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[168][1]
 	L[168][1] = LargeX[168][0]>0 ? 1 : 0;
 	satisfiable[168][1]=1; 
-	for(int i=0;i<74;i++){
+	for(int i=0;i<15;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6052,7 +6052,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[169][0]
 	L[169][0] = LargeX[169][1]>0 ? 1 : 0;
 	satisfiable[169][0]=1; 
-	for(int i=0;i<116;i++){
+	for(int i=0;i<9;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6070,7 +6070,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[169][1]
 	L[169][1] = LargeX[169][0]>0 ? 1 : 0;
 	satisfiable[169][1]=1; 
-	for(int i=0;i<65;i++){
+	for(int i=0;i<15;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6088,7 +6088,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[170][0]
 	L[170][0] = LargeX[170][1]>0 ? 1 : 0;
 	satisfiable[170][0]=1; 
-	for(int i=0;i<136;i++){
+	for(int i=0;i<3;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6106,7 +6106,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[170][1]
 	L[170][1] = LargeX[170][0]>0 ? 1 : 0;
 	satisfiable[170][1]=1; 
-	for(int i=0;i<64;i++){
+	for(int i=0;i<16;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6124,7 +6124,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[171][0]
 	L[171][0] = LargeX[171][1]>0 ? 1 : 0;
 	satisfiable[171][0]=1; 
-	for(int i=0;i<38;i++){
+	for(int i=0;i<6;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6142,7 +6142,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[171][1]
 	L[171][1] = LargeX[171][0]>0 ? 1 : 0;
 	satisfiable[171][1]=1; 
-	for(int i=0;i<69;i++){
+	for(int i=0;i<11;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6160,7 +6160,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[172][0]
 	L[172][0] = LargeX[172][1]>0 ? 1 : 0;
 	satisfiable[172][0]=1; 
-	for(int i=0;i<143;i++){
+	for(int i=0;i<7;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6178,7 +6178,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[172][1]
 	L[172][1] = LargeX[172][0]>0 ? 1 : 0;
 	satisfiable[172][1]=1; 
-	for(int i=0;i<26;i++){
+	for(int i=0;i<9;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6196,7 +6196,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[173][0]
 	L[173][0] = LargeX[173][1]>0 ? 1 : 0;
 	satisfiable[173][0]=1; 
-	for(int i=0;i<53;i++){
+	for(int i=0;i<5;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6214,7 +6214,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[173][1]
 	L[173][1] = LargeX[173][0]>0 ? 1 : 0;
 	satisfiable[173][1]=1; 
-	for(int i=0;i<124;i++){
+	for(int i=0;i<11;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6232,7 +6232,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[174][0]
 	L[174][0] = LargeX[174][1]>0 ? 1 : 0;
 	satisfiable[174][0]=1; 
-	for(int i=0;i<118;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6250,7 +6250,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[174][1]
 	L[174][1] = LargeX[174][0]>0 ? 1 : 0;
 	satisfiable[174][1]=1; 
-	for(int i=0;i<80;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6268,7 +6268,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[175][0]
 	L[175][0] = LargeX[175][1]>0 ? 1 : 0;
 	satisfiable[175][0]=1; 
-	for(int i=0;i<127;i++){
+	for(int i=0;i<7;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6286,7 +6286,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[175][1]
 	L[175][1] = LargeX[175][0]>0 ? 1 : 0;
 	satisfiable[175][1]=1; 
-	for(int i=0;i<12;i++){
+	for(int i=0;i<7;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6304,7 +6304,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[176][0]
 	L[176][0] = LargeX[176][1]>0 ? 1 : 0;
 	satisfiable[176][0]=1; 
-	for(int i=0;i<29;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6322,7 +6322,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[176][1]
 	L[176][1] = LargeX[176][0]>0 ? 1 : 0;
 	satisfiable[176][1]=1; 
-	for(int i=0;i<129;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6340,7 +6340,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[177][0]
 	L[177][0] = LargeX[177][1]>0 ? 1 : 0;
 	satisfiable[177][0]=1; 
-	for(int i=0;i<79;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6358,7 +6358,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[177][1]
 	L[177][1] = LargeX[177][0]>0 ? 1 : 0;
 	satisfiable[177][1]=1; 
-	for(int i=0;i<29;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6376,7 +6376,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[178][0]
 	L[178][0] = LargeX[178][1]>0 ? 1 : 0;
 	satisfiable[178][0]=1; 
-	for(int i=0;i<98;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6394,7 +6394,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[178][1]
 	L[178][1] = LargeX[178][0]>0 ? 1 : 0;
 	satisfiable[178][1]=1; 
-	for(int i=0;i<80;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6412,7 +6412,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[179][0]
 	L[179][0] = LargeX[179][1]>0 ? 1 : 0;
 	satisfiable[179][0]=1; 
-	for(int i=0;i<145;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6430,7 +6430,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[179][1]
 	L[179][1] = LargeX[179][0]>0 ? 1 : 0;
 	satisfiable[179][1]=1; 
-	for(int i=0;i<57;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6448,7 +6448,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[180][0]
 	L[180][0] = LargeX[180][1]>0 ? 1 : 0;
 	satisfiable[180][0]=1; 
-	for(int i=0;i<90;i++){
+	for(int i=0;i<1;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6466,7 +6466,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[180][1]
 	L[180][1] = LargeX[180][0]>0 ? 1 : 0;
 	satisfiable[180][1]=1; 
-	for(int i=0;i<107;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6484,7 +6484,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[181][0]
 	L[181][0] = LargeX[181][1]>0 ? 1 : 0;
 	satisfiable[181][0]=1; 
-	for(int i=0;i<26;i++){
+	for(int i=0;i<13;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6502,7 +6502,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[181][1]
 	L[181][1] = LargeX[181][0]>0 ? 1 : 0;
 	satisfiable[181][1]=1; 
-	for(int i=0;i<123;i++){
+	for(int i=0;i<11;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6520,7 +6520,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[182][0]
 	L[182][0] = LargeX[182][1]>0 ? 1 : 0;
 	satisfiable[182][0]=1; 
-	for(int i=0;i<66;i++){
+	for(int i=0;i<15;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6538,7 +6538,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[182][1]
 	L[182][1] = LargeX[182][0]>0 ? 1 : 0;
 	satisfiable[182][1]=1; 
-	for(int i=0;i<31;i++){
+	for(int i=0;i<11;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6556,7 +6556,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[183][0]
 	L[183][0] = LargeX[183][1]>0 ? 1 : 0;
 	satisfiable[183][0]=1; 
-	for(int i=0;i<77;i++){
+	for(int i=0;i<15;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6574,7 +6574,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[183][1]
 	L[183][1] = LargeX[183][0]>0 ? 1 : 0;
 	satisfiable[183][1]=1; 
-	for(int i=0;i<24;i++){
+	for(int i=0;i<10;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6592,7 +6592,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[184][0]
 	L[184][0] = LargeX[184][1]>0 ? 1 : 0;
 	satisfiable[184][0]=1; 
-	for(int i=0;i<70;i++){
+	for(int i=0;i<15;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6610,7 +6610,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[184][1]
 	L[184][1] = LargeX[184][0]>0 ? 1 : 0;
 	satisfiable[184][1]=1; 
-	for(int i=0;i<119;i++){
+	for(int i=0;i<10;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6628,7 +6628,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[185][0]
 	L[185][0] = LargeX[185][1]>0 ? 1 : 0;
 	satisfiable[185][0]=1; 
-	for(int i=0;i<160;i++){
+	for(int i=0;i<10;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6646,7 +6646,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[185][1]
 	L[185][1] = LargeX[185][0]>0 ? 1 : 0;
 	satisfiable[185][1]=1; 
-	for(int i=0;i<77;i++){
+	for(int i=0;i<9;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6664,7 +6664,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[186][0]
 	L[186][0] = LargeX[186][1]>0 ? 1 : 0;
 	satisfiable[186][0]=1; 
-	for(int i=0;i<96;i++){
+	for(int i=0;i<8;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6682,7 +6682,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[186][1]
 	L[186][1] = LargeX[186][0]>0 ? 1 : 0;
 	satisfiable[186][1]=1; 
-	for(int i=0;i<34;i++){
+	for(int i=0;i<11;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6700,7 +6700,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[187][0]
 	L[187][0] = LargeX[187][1]>0 ? 1 : 0;
 	satisfiable[187][0]=1; 
-	for(int i=0;i<118;i++){
+	for(int i=0;i<14;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6718,7 +6718,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[187][1]
 	L[187][1] = LargeX[187][0]>0 ? 1 : 0;
 	satisfiable[187][1]=1; 
-	for(int i=0;i<93;i++){
+	for(int i=0;i<11;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6736,7 +6736,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[188][0]
 	L[188][0] = LargeX[188][1]>0 ? 1 : 0;
 	satisfiable[188][0]=1; 
-	for(int i=0;i<39;i++){
+	for(int i=0;i<15;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6754,7 +6754,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[188][1]
 	L[188][1] = LargeX[188][0]>0 ? 1 : 0;
 	satisfiable[188][1]=1; 
-	for(int i=0;i<47;i++){
+	for(int i=0;i<11;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6772,7 +6772,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[189][0]
 	L[189][0] = LargeX[189][1]>0 ? 1 : 0;
 	satisfiable[189][0]=1; 
-	for(int i=0;i<101;i++){
+	for(int i=0;i<15;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6790,7 +6790,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[189][1]
 	L[189][1] = LargeX[189][0]>0 ? 1 : 0;
 	satisfiable[189][1]=1; 
-	for(int i=0;i<67;i++){
+	for(int i=0;i<10;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6808,7 +6808,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[190][0]
 	L[190][0] = LargeX[190][1]>0 ? 1 : 0;
 	satisfiable[190][0]=1; 
-	for(int i=0;i<109;i++){
+	for(int i=0;i<15;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6826,7 +6826,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[190][1]
 	L[190][1] = LargeX[190][0]>0 ? 1 : 0;
 	satisfiable[190][1]=1; 
-	for(int i=0;i<131;i++){
+	for(int i=0;i<10;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6844,7 +6844,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[191][0]
 	L[191][0] = LargeX[191][1]>0 ? 1 : 0;
 	satisfiable[191][0]=1; 
-	for(int i=0;i<52;i++){
+	for(int i=0;i<10;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6862,7 +6862,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[191][1]
 	L[191][1] = LargeX[191][0]>0 ? 1 : 0;
 	satisfiable[191][1]=1; 
-	for(int i=0;i<96;i++){
+	for(int i=0;i<9;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6880,7 +6880,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[192][0]
 	L[192][0] = LargeX[192][1]>0 ? 1 : 0;
 	satisfiable[192][0]=1; 
-	for(int i=0;i<0;i++){
+	for(int i=0;i<14;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6898,7 +6898,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[192][1]
 	L[192][1] = LargeX[192][0]>0 ? 1 : 0;
 	satisfiable[192][1]=1; 
-	for(int i=0;i<108;i++){
+	for(int i=0;i<10;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6916,7 +6916,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[193][0]
 	L[193][0] = LargeX[193][1]>0 ? 1 : 0;
 	satisfiable[193][0]=1; 
-	for(int i=0;i<72;i++){
+	for(int i=0;i<14;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6934,7 +6934,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[193][1]
 	L[193][1] = LargeX[193][0]>0 ? 1 : 0;
 	satisfiable[193][1]=1; 
-	for(int i=0;i<79;i++){
+	for(int i=0;i<10;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6952,7 +6952,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[194][0]
 	L[194][0] = LargeX[194][1]>0 ? 1 : 0;
 	satisfiable[194][0]=1; 
-	for(int i=0;i<85;i++){
+	for(int i=0;i<15;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6970,7 +6970,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[194][1]
 	L[194][1] = LargeX[194][0]>0 ? 1 : 0;
 	satisfiable[194][1]=1; 
-	for(int i=0;i<47;i++){
+	for(int i=0;i<10;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -6988,7 +6988,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[195][0]
 	L[195][0] = LargeX[195][1]>0 ? 1 : 0;
 	satisfiable[195][0]=1; 
-	for(int i=0;i<68;i++){
+	for(int i=0;i<15;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7006,7 +7006,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[195][1]
 	L[195][1] = LargeX[195][0]>0 ? 1 : 0;
 	satisfiable[195][1]=1; 
-	for(int i=0;i<28;i++){
+	for(int i=0;i<10;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7024,7 +7024,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[196][0]
 	L[196][0] = LargeX[196][1]>0 ? 1 : 0;
 	satisfiable[196][0]=1; 
-	for(int i=0;i<122;i++){
+	for(int i=0;i<10;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7042,7 +7042,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[196][1]
 	L[196][1] = LargeX[196][0]>0 ? 1 : 0;
 	satisfiable[196][1]=1; 
-	for(int i=0;i<124;i++){
+	for(int i=0;i<9;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7060,7 +7060,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[197][0]
 	L[197][0] = LargeX[197][1]>0 ? 1 : 0;
 	satisfiable[197][0]=1; 
-	for(int i=0;i<107;i++){
+	for(int i=0;i<12;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7078,7 +7078,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[197][1]
 	L[197][1] = LargeX[197][0]>0 ? 1 : 0;
 	satisfiable[197][1]=1; 
-	for(int i=0;i<89;i++){
+	for(int i=0;i<11;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7096,7 +7096,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[198][0]
 	L[198][0] = LargeX[198][1]>0 ? 1 : 0;
 	satisfiable[198][0]=1; 
-	for(int i=0;i<98;i++){
+	for(int i=0;i<13;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7114,7 +7114,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[198][1]
 	L[198][1] = LargeX[198][0]>0 ? 1 : 0;
 	satisfiable[198][1]=1; 
-	for(int i=0;i<47;i++){
+	for(int i=0;i<11;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7132,7 +7132,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[199][0]
 	L[199][0] = LargeX[199][1]>0 ? 1 : 0;
 	satisfiable[199][0]=1; 
-	for(int i=0;i<77;i++){
+	for(int i=0;i<15;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7150,7 +7150,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[199][1]
 	L[199][1] = LargeX[199][0]>0 ? 1 : 0;
 	satisfiable[199][1]=1; 
-	for(int i=0;i<87;i++){
+	for(int i=0;i<10;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7168,7 +7168,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[200][0]
 	L[200][0] = LargeX[200][1]>0 ? 1 : 0;
 	satisfiable[200][0]=1; 
-	for(int i=0;i<86;i++){
+	for(int i=0;i<15;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7186,7 +7186,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[200][1]
 	L[200][1] = LargeX[200][0]>0 ? 1 : 0;
 	satisfiable[200][1]=1; 
-	for(int i=0;i<87;i++){
+	for(int i=0;i<10;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7204,7 +7204,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[201][0]
 	L[201][0] = LargeX[201][1]>0 ? 1 : 0;
 	satisfiable[201][0]=1; 
-	for(int i=0;i<96;i++){
+	for(int i=0;i<10;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7222,7 +7222,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[201][1]
 	L[201][1] = LargeX[201][0]>0 ? 1 : 0;
 	satisfiable[201][1]=1; 
-	for(int i=0;i<55;i++){
+	for(int i=0;i<9;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7240,7 +7240,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[202][0]
 	L[202][0] = LargeX[202][1]>0 ? 1 : 0;
 	satisfiable[202][0]=1; 
-	for(int i=0;i<39;i++){
+	for(int i=0;i<13;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7258,7 +7258,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[202][1]
 	L[202][1] = LargeX[202][0]>0 ? 1 : 0;
 	satisfiable[202][1]=1; 
-	for(int i=0;i<98;i++){
+	for(int i=0;i<11;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7276,7 +7276,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[203][0]
 	L[203][0] = LargeX[203][1]>0 ? 1 : 0;
 	satisfiable[203][0]=1; 
-	for(int i=0;i<51;i++){
+	for(int i=0;i<15;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7294,7 +7294,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[203][1]
 	L[203][1] = LargeX[203][0]>0 ? 1 : 0;
 	satisfiable[203][1]=1; 
-	for(int i=0;i<84;i++){
+	for(int i=0;i<11;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7312,7 +7312,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[204][0]
 	L[204][0] = LargeX[204][1]>0 ? 1 : 0;
 	satisfiable[204][0]=1; 
-	for(int i=0;i<119;i++){
+	for(int i=0;i<15;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7330,7 +7330,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[204][1]
 	L[204][1] = LargeX[204][0]>0 ? 1 : 0;
 	satisfiable[204][1]=1; 
-	for(int i=0;i<92;i++){
+	for(int i=0;i<10;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7348,7 +7348,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[205][0]
 	L[205][0] = LargeX[205][1]>0 ? 1 : 0;
 	satisfiable[205][0]=1; 
-	for(int i=0;i<85;i++){
+	for(int i=0;i<15;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7366,7 +7366,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[205][1]
 	L[205][1] = LargeX[205][0]>0 ? 1 : 0;
 	satisfiable[205][1]=1; 
-	for(int i=0;i<73;i++){
+	for(int i=0;i<10;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7384,7 +7384,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[206][0]
 	L[206][0] = LargeX[206][1]>0 ? 1 : 0;
 	satisfiable[206][0]=1; 
-	for(int i=0;i<60;i++){
+	for(int i=0;i<10;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7402,7 +7402,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[206][1]
 	L[206][1] = LargeX[206][0]>0 ? 1 : 0;
 	satisfiable[206][1]=1; 
-	for(int i=0;i<38;i++){
+	for(int i=0;i<9;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7420,7 +7420,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[207][0]
 	L[207][0] = LargeX[207][1]>0 ? 1 : 0;
 	satisfiable[207][0]=1; 
-	for(int i=0;i<30;i++){
+	for(int i=0;i<8;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7438,7 +7438,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[207][1]
 	L[207][1] = LargeX[207][0]>0 ? 1 : 0;
 	satisfiable[207][1]=1; 
-	for(int i=0;i<89;i++){
+	for(int i=0;i<11;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7456,7 +7456,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[208][0]
 	L[208][0] = LargeX[208][1]>0 ? 1 : 0;
 	satisfiable[208][0]=1; 
-	for(int i=0;i<36;i++){
+	for(int i=0;i<14;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7474,7 +7474,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[208][1]
 	L[208][1] = LargeX[208][0]>0 ? 1 : 0;
 	satisfiable[208][1]=1; 
-	for(int i=0;i<85;i++){
+	for(int i=0;i<11;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7492,7 +7492,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[209][0]
 	L[209][0] = LargeX[209][1]>0 ? 1 : 0;
 	satisfiable[209][0]=1; 
-	for(int i=0;i<89;i++){
+	for(int i=0;i<15;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7510,7 +7510,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[209][1]
 	L[209][1] = LargeX[209][0]>0 ? 1 : 0;
 	satisfiable[209][1]=1; 
-	for(int i=0;i<103;i++){
+	for(int i=0;i<11;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7528,7 +7528,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[210][0]
 	L[210][0] = LargeX[210][1]>0 ? 1 : 0;
 	satisfiable[210][0]=1; 
-	for(int i=0;i<80;i++){
+	for(int i=0;i<15;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7546,7 +7546,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[210][1]
 	L[210][1] = LargeX[210][0]>0 ? 1 : 0;
 	satisfiable[210][1]=1; 
-	for(int i=0;i<86;i++){
+	for(int i=0;i<10;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7564,7 +7564,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[211][0]
 	L[211][0] = LargeX[211][1]>0 ? 1 : 0;
 	satisfiable[211][0]=1; 
-	for(int i=0;i<55;i++){
+	for(int i=0;i<15;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7582,7 +7582,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[211][1]
 	L[211][1] = LargeX[211][0]>0 ? 1 : 0;
 	satisfiable[211][1]=1; 
-	for(int i=0;i<143;i++){
+	for(int i=0;i<10;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7600,7 +7600,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[212][0]
 	L[212][0] = LargeX[212][1]>0 ? 1 : 0;
 	satisfiable[212][0]=1; 
-	for(int i=0;i<134;i++){
+	for(int i=0;i<10;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7618,7 +7618,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[212][1]
 	L[212][1] = LargeX[212][0]>0 ? 1 : 0;
 	satisfiable[212][1]=1; 
-	for(int i=0;i<67;i++){
+	for(int i=0;i<9;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7636,7 +7636,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[213][0]
 	L[213][0] = LargeX[213][1]>0 ? 1 : 0;
 	satisfiable[213][0]=1; 
-	for(int i=0;i<79;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7654,7 +7654,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[213][1]
 	L[213][1] = LargeX[213][0]>0 ? 1 : 0;
 	satisfiable[213][1]=1; 
-	for(int i=0;i<123;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7672,7 +7672,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[214][0]
 	L[214][0] = LargeX[214][1]>0 ? 1 : 0;
 	satisfiable[214][0]=1; 
-	for(int i=0;i<33;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7690,7 +7690,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[214][1]
 	L[214][1] = LargeX[214][0]>0 ? 1 : 0;
 	satisfiable[214][1]=1; 
-	for(int i=0;i<64;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7708,7 +7708,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[215][0]
 	L[215][0] = LargeX[215][1]>0 ? 1 : 0;
 	satisfiable[215][0]=1; 
-	for(int i=0;i<103;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7726,7 +7726,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[215][1]
 	L[215][1] = LargeX[215][0]>0 ? 1 : 0;
 	satisfiable[215][1]=1; 
-	for(int i=0;i<44;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7744,7 +7744,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[216][0]
 	L[216][0] = LargeX[216][1]>0 ? 1 : 0;
 	satisfiable[216][0]=1; 
-	for(int i=0;i<59;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7762,7 +7762,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[216][1]
 	L[216][1] = LargeX[216][0]>0 ? 1 : 0;
 	satisfiable[216][1]=1; 
-	for(int i=0;i<90;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7780,7 +7780,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[217][0]
 	L[217][0] = LargeX[217][1]>0 ? 1 : 0;
 	satisfiable[217][0]=1; 
-	for(int i=0;i<147;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7798,7 +7798,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[217][1]
 	L[217][1] = LargeX[217][0]>0 ? 1 : 0;
 	satisfiable[217][1]=1; 
-	for(int i=0;i<137;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7816,7 +7816,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[218][0]
 	L[218][0] = LargeX[218][1]>0 ? 1 : 0;
 	satisfiable[218][0]=1; 
-	for(int i=0;i<123;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7834,7 +7834,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[218][1]
 	L[218][1] = LargeX[218][0]>0 ? 1 : 0;
 	satisfiable[218][1]=1; 
-	for(int i=0;i<67;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7852,7 +7852,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[219][0]
 	L[219][0] = LargeX[219][1]>0 ? 1 : 0;
 	satisfiable[219][0]=1; 
-	for(int i=0;i<97;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7870,7 +7870,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[219][1]
 	L[219][1] = LargeX[219][0]>0 ? 1 : 0;
 	satisfiable[219][1]=1; 
-	for(int i=0;i<41;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7888,7 +7888,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[220][0]
 	L[220][0] = LargeX[220][1]>0 ? 1 : 0;
 	satisfiable[220][0]=1; 
-	for(int i=0;i<12;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7906,7 +7906,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[220][1]
 	L[220][1] = LargeX[220][0]>0 ? 1 : 0;
 	satisfiable[220][1]=1; 
-	for(int i=0;i<96;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7924,7 +7924,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[221][0]
 	L[221][0] = LargeX[221][1]>0 ? 1 : 0;
 	satisfiable[221][0]=1; 
-	for(int i=0;i<84;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7942,7 +7942,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[221][1]
 	L[221][1] = LargeX[221][0]>0 ? 1 : 0;
 	satisfiable[221][1]=1; 
-	for(int i=0;i<98;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7960,7 +7960,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[222][0]
 	L[222][0] = LargeX[222][1]>0 ? 1 : 0;
 	satisfiable[222][0]=1; 
-	for(int i=0;i<86;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7978,7 +7978,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[222][1]
 	L[222][1] = LargeX[222][0]>0 ? 1 : 0;
 	satisfiable[222][1]=1; 
-	for(int i=0;i<78;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -7996,7 +7996,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[223][0]
 	L[223][0] = LargeX[223][1]>0 ? 1 : 0;
 	satisfiable[223][0]=1; 
-	for(int i=0;i<97;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8014,7 +8014,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[223][1]
 	L[223][1] = LargeX[223][0]>0 ? 1 : 0;
 	satisfiable[223][1]=1; 
-	for(int i=0;i<113;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8032,7 +8032,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[224][0]
 	L[224][0] = LargeX[224][1]>0 ? 1 : 0;
 	satisfiable[224][0]=1; 
-	for(int i=0;i<71;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8050,7 +8050,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[224][1]
 	L[224][1] = LargeX[224][0]>0 ? 1 : 0;
 	satisfiable[224][1]=1; 
-	for(int i=0;i<92;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8068,7 +8068,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[225][0]
 	L[225][0] = LargeX[225][1]>0 ? 1 : 0;
 	satisfiable[225][0]=1; 
-	for(int i=0;i<100;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8086,7 +8086,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[225][1]
 	L[225][1] = LargeX[225][0]>0 ? 1 : 0;
 	satisfiable[225][1]=1; 
-	for(int i=0;i<121;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8104,7 +8104,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[226][0]
 	L[226][0] = LargeX[226][1]>0 ? 1 : 0;
 	satisfiable[226][0]=1; 
-	for(int i=0;i<121;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8122,7 +8122,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[226][1]
 	L[226][1] = LargeX[226][0]>0 ? 1 : 0;
 	satisfiable[226][1]=1; 
-	for(int i=0;i<60;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8140,7 +8140,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[227][0]
 	L[227][0] = LargeX[227][1]>0 ? 1 : 0;
 	satisfiable[227][0]=1; 
-	for(int i=0;i<76;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8158,7 +8158,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[227][1]
 	L[227][1] = LargeX[227][0]>0 ? 1 : 0;
 	satisfiable[227][1]=1; 
-	for(int i=0;i<79;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8176,7 +8176,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[228][0]
 	L[228][0] = LargeX[228][1]>0 ? 1 : 0;
 	satisfiable[228][0]=1; 
-	for(int i=0;i<90;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8194,7 +8194,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[228][1]
 	L[228][1] = LargeX[228][0]>0 ? 1 : 0;
 	satisfiable[228][1]=1; 
-	for(int i=0;i<166;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8212,7 +8212,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[229][0]
 	L[229][0] = LargeX[229][1]>0 ? 1 : 0;
 	satisfiable[229][0]=1; 
-	for(int i=0;i<91;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8230,7 +8230,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[229][1]
 	L[229][1] = LargeX[229][0]>0 ? 1 : 0;
 	satisfiable[229][1]=1; 
-	for(int i=0;i<95;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8248,7 +8248,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[230][0]
 	L[230][0] = LargeX[230][1]>0 ? 1 : 0;
 	satisfiable[230][0]=1; 
-	for(int i=0;i<103;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8266,7 +8266,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[230][1]
 	L[230][1] = LargeX[230][0]>0 ? 1 : 0;
 	satisfiable[230][1]=1; 
-	for(int i=0;i<120;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8284,7 +8284,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[231][0]
 	L[231][0] = LargeX[231][1]>0 ? 1 : 0;
 	satisfiable[231][0]=1; 
-	for(int i=0;i<91;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8302,7 +8302,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[231][1]
 	L[231][1] = LargeX[231][0]>0 ? 1 : 0;
 	satisfiable[231][1]=1; 
-	for(int i=0;i<59;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8320,7 +8320,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[232][0]
 	L[232][0] = LargeX[232][1]>0 ? 1 : 0;
 	satisfiable[232][0]=1; 
-	for(int i=0;i<115;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8338,7 +8338,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[232][1]
 	L[232][1] = LargeX[232][0]>0 ? 1 : 0;
 	satisfiable[232][1]=1; 
-	for(int i=0;i<94;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8356,7 +8356,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[233][0]
 	L[233][0] = LargeX[233][1]>0 ? 1 : 0;
 	satisfiable[233][0]=1; 
-	for(int i=0;i<96;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8374,7 +8374,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[233][1]
 	L[233][1] = LargeX[233][0]>0 ? 1 : 0;
 	satisfiable[233][1]=1; 
-	for(int i=0;i<107;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8392,7 +8392,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[234][0]
 	L[234][0] = LargeX[234][1]>0 ? 1 : 0;
 	satisfiable[234][0]=1; 
-	for(int i=0;i<93;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8410,7 +8410,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[234][1]
 	L[234][1] = LargeX[234][0]>0 ? 1 : 0;
 	satisfiable[234][1]=1; 
-	for(int i=0;i<78;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8428,7 +8428,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[235][0]
 	L[235][0] = LargeX[235][1]>0 ? 1 : 0;
 	satisfiable[235][0]=1; 
-	for(int i=0;i<52;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8446,7 +8446,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[235][1]
 	L[235][1] = LargeX[235][0]>0 ? 1 : 0;
 	satisfiable[235][1]=1; 
-	for(int i=0;i<119;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8464,7 +8464,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[236][0]
 	L[236][0] = LargeX[236][1]>0 ? 1 : 0;
 	satisfiable[236][0]=1; 
-	for(int i=0;i<116;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8482,7 +8482,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[236][1]
 	L[236][1] = LargeX[236][0]>0 ? 1 : 0;
 	satisfiable[236][1]=1; 
-	for(int i=0;i<111;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8500,7 +8500,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[237][0]
 	L[237][0] = LargeX[237][1]>0 ? 1 : 0;
 	satisfiable[237][0]=1; 
-	for(int i=0;i<68;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8518,7 +8518,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[237][1]
 	L[237][1] = LargeX[237][0]>0 ? 1 : 0;
 	satisfiable[237][1]=1; 
-	for(int i=0;i<89;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8536,7 +8536,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[238][0]
 	L[238][0] = LargeX[238][1]>0 ? 1 : 0;
 	satisfiable[238][0]=1; 
-	for(int i=0;i<27;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8554,7 +8554,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[238][1]
 	L[238][1] = LargeX[238][0]>0 ? 1 : 0;
 	satisfiable[238][1]=1; 
-	for(int i=0;i<53;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8572,7 +8572,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[239][0]
 	L[239][0] = LargeX[239][1]>0 ? 1 : 0;
 	satisfiable[239][0]=1; 
-	for(int i=0;i<117;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8590,7 +8590,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[239][1]
 	L[239][1] = LargeX[239][0]>0 ? 1 : 0;
 	satisfiable[239][1]=1; 
-	for(int i=0;i<120;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8608,7 +8608,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[240][0]
 	L[240][0] = LargeX[240][1]>0 ? 1 : 0;
 	satisfiable[240][0]=1; 
-	for(int i=0;i<74;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8626,7 +8626,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[240][1]
 	L[240][1] = LargeX[240][0]>0 ? 1 : 0;
 	satisfiable[240][1]=1; 
-	for(int i=0;i<89;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8644,7 +8644,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[241][0]
 	L[241][0] = LargeX[241][1]>0 ? 1 : 0;
 	satisfiable[241][0]=1; 
-	for(int i=0;i<53;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8662,7 +8662,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[241][1]
 	L[241][1] = LargeX[241][0]>0 ? 1 : 0;
 	satisfiable[241][1]=1; 
-	for(int i=0;i<73;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8680,7 +8680,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[242][0]
 	L[242][0] = LargeX[242][1]>0 ? 1 : 0;
 	satisfiable[242][0]=1; 
-	for(int i=0;i<93;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8698,7 +8698,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[242][1]
 	L[242][1] = LargeX[242][0]>0 ? 1 : 0;
 	satisfiable[242][1]=1; 
-	for(int i=0;i<117;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8716,7 +8716,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[243][0]
 	L[243][0] = LargeX[243][1]>0 ? 1 : 0;
 	satisfiable[243][0]=1; 
-	for(int i=0;i<44;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8734,7 +8734,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[243][1]
 	L[243][1] = LargeX[243][0]>0 ? 1 : 0;
 	satisfiable[243][1]=1; 
-	for(int i=0;i<127;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8752,7 +8752,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[244][0]
 	L[244][0] = LargeX[244][1]>0 ? 1 : 0;
 	satisfiable[244][0]=1; 
-	for(int i=0;i<159;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8770,7 +8770,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[244][1]
 	L[244][1] = LargeX[244][0]>0 ? 1 : 0;
 	satisfiable[244][1]=1; 
-	for(int i=0;i<80;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8788,7 +8788,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[245][0]
 	L[245][0] = LargeX[245][1]>0 ? 1 : 0;
 	satisfiable[245][0]=1; 
-	for(int i=0;i<39;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8806,7 +8806,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[245][1]
 	L[245][1] = LargeX[245][0]>0 ? 1 : 0;
 	satisfiable[245][1]=1; 
-	for(int i=0;i<118;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8824,7 +8824,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[246][0]
 	L[246][0] = LargeX[246][1]>0 ? 1 : 0;
 	satisfiable[246][0]=1; 
-	for(int i=0;i<115;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8842,7 +8842,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[246][1]
 	L[246][1] = LargeX[246][0]>0 ? 1 : 0;
 	satisfiable[246][1]=1; 
-	for(int i=0;i<76;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8860,7 +8860,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[247][0]
 	L[247][0] = LargeX[247][1]>0 ? 1 : 0;
 	satisfiable[247][0]=1; 
-	for(int i=0;i<96;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8878,7 +8878,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[247][1]
 	L[247][1] = LargeX[247][0]>0 ? 1 : 0;
 	satisfiable[247][1]=1; 
-	for(int i=0;i<83;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8896,7 +8896,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[248][0]
 	L[248][0] = LargeX[248][1]>0 ? 1 : 0;
 	satisfiable[248][0]=1; 
-	for(int i=0;i<51;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8914,7 +8914,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[248][1]
 	L[248][1] = LargeX[248][0]>0 ? 1 : 0;
 	satisfiable[248][1]=1; 
-	for(int i=0;i<133;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8932,7 +8932,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[249][0]
 	L[249][0] = LargeX[249][1]>0 ? 1 : 0;
 	satisfiable[249][0]=1; 
-	for(int i=0;i<146;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8950,7 +8950,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[249][1]
 	L[249][1] = LargeX[249][0]>0 ? 1 : 0;
 	satisfiable[249][1]=1; 
-	for(int i=0;i<102;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8968,7 +8968,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[250][0]
 	L[250][0] = LargeX[250][1]>0 ? 1 : 0;
 	satisfiable[250][0]=1; 
-	for(int i=0;i<91;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -8986,7 +8986,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[250][1]
 	L[250][1] = LargeX[250][0]>0 ? 1 : 0;
 	satisfiable[250][1]=1; 
-	for(int i=0;i<114;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9004,7 +9004,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[251][0]
 	L[251][0] = LargeX[251][1]>0 ? 1 : 0;
 	satisfiable[251][0]=1; 
-	for(int i=0;i<58;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9022,7 +9022,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[251][1]
 	L[251][1] = LargeX[251][0]>0 ? 1 : 0;
 	satisfiable[251][1]=1; 
-	for(int i=0;i<82;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9040,7 +9040,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[252][0]
 	L[252][0] = LargeX[252][1]>0 ? 1 : 0;
 	satisfiable[252][0]=1; 
-	for(int i=0;i<158;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9058,7 +9058,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[252][1]
 	L[252][1] = LargeX[252][0]>0 ? 1 : 0;
 	satisfiable[252][1]=1; 
-	for(int i=0;i<174;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9076,7 +9076,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[253][0]
 	L[253][0] = LargeX[253][1]>0 ? 1 : 0;
 	satisfiable[253][0]=1; 
-	for(int i=0;i<90;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9094,7 +9094,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[253][1]
 	L[253][1] = LargeX[253][0]>0 ? 1 : 0;
 	satisfiable[253][1]=1; 
-	for(int i=0;i<72;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9112,7 +9112,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[254][0]
 	L[254][0] = LargeX[254][1]>0 ? 1 : 0;
 	satisfiable[254][0]=1; 
-	for(int i=0;i<100;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9130,7 +9130,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[254][1]
 	L[254][1] = LargeX[254][0]>0 ? 1 : 0;
 	satisfiable[254][1]=1; 
-	for(int i=0;i<85;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9148,7 +9148,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[255][0]
 	L[255][0] = LargeX[255][1]>0 ? 1 : 0;
 	satisfiable[255][0]=1; 
-	for(int i=0;i<40;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9166,7 +9166,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[255][1]
 	L[255][1] = LargeX[255][0]>0 ? 1 : 0;
 	satisfiable[255][1]=1; 
-	for(int i=0;i<121;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9184,7 +9184,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[256][0]
 	L[256][0] = LargeX[256][1]>0 ? 1 : 0;
 	satisfiable[256][0]=1; 
-	for(int i=0;i<61;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9202,7 +9202,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[256][1]
 	L[256][1] = LargeX[256][0]>0 ? 1 : 0;
 	satisfiable[256][1]=1; 
-	for(int i=0;i<135;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9220,7 +9220,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[257][0]
 	L[257][0] = LargeX[257][1]>0 ? 1 : 0;
 	satisfiable[257][0]=1; 
-	for(int i=0;i<78;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9238,7 +9238,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[257][1]
 	L[257][1] = LargeX[257][0]>0 ? 1 : 0;
 	satisfiable[257][1]=1; 
-	for(int i=0;i<60;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9256,7 +9256,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[258][0]
 	L[258][0] = LargeX[258][1]>0 ? 1 : 0;
 	satisfiable[258][0]=1; 
-	for(int i=0;i<12;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9274,7 +9274,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[258][1]
 	L[258][1] = LargeX[258][0]>0 ? 1 : 0;
 	satisfiable[258][1]=1; 
-	for(int i=0;i<138;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9292,7 +9292,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[259][0]
 	L[259][0] = LargeX[259][1]>0 ? 1 : 0;
 	satisfiable[259][0]=1; 
-	for(int i=0;i<68;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9310,7 +9310,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[259][1]
 	L[259][1] = LargeX[259][0]>0 ? 1 : 0;
 	satisfiable[259][1]=1; 
-	for(int i=0;i<90;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9328,7 +9328,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[260][0]
 	L[260][0] = LargeX[260][1]>0 ? 1 : 0;
 	satisfiable[260][0]=1; 
-	for(int i=0;i<58;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9346,7 +9346,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[260][1]
 	L[260][1] = LargeX[260][0]>0 ? 1 : 0;
 	satisfiable[260][1]=1; 
-	for(int i=0;i<65;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9364,7 +9364,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[261][0]
 	L[261][0] = LargeX[261][1]>0 ? 1 : 0;
 	satisfiable[261][0]=1; 
-	for(int i=0;i<70;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9382,7 +9382,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[261][1]
 	L[261][1] = LargeX[261][0]>0 ? 1 : 0;
 	satisfiable[261][1]=1; 
-	for(int i=0;i<90;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9400,7 +9400,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[262][0]
 	L[262][0] = LargeX[262][1]>0 ? 1 : 0;
 	satisfiable[262][0]=1; 
-	for(int i=0;i<88;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9418,7 +9418,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[262][1]
 	L[262][1] = LargeX[262][0]>0 ? 1 : 0;
 	satisfiable[262][1]=1; 
-	for(int i=0;i<120;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9436,7 +9436,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[263][0]
 	L[263][0] = LargeX[263][1]>0 ? 1 : 0;
 	satisfiable[263][0]=1; 
-	for(int i=0;i<90;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9454,7 +9454,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[263][1]
 	L[263][1] = LargeX[263][0]>0 ? 1 : 0;
 	satisfiable[263][1]=1; 
-	for(int i=0;i<68;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9472,7 +9472,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[264][0]
 	L[264][0] = LargeX[264][1]>0 ? 1 : 0;
 	satisfiable[264][0]=1; 
-	for(int i=0;i<91;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9490,7 +9490,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[264][1]
 	L[264][1] = LargeX[264][0]>0 ? 1 : 0;
 	satisfiable[264][1]=1; 
-	for(int i=0;i<29;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9508,7 +9508,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[265][0]
 	L[265][0] = LargeX[265][1]>0 ? 1 : 0;
 	satisfiable[265][0]=1; 
-	for(int i=0;i<42;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9526,7 +9526,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[265][1]
 	L[265][1] = LargeX[265][0]>0 ? 1 : 0;
 	satisfiable[265][1]=1; 
-	for(int i=0;i<30;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9544,7 +9544,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[266][0]
 	L[266][0] = LargeX[266][1]>0 ? 1 : 0;
 	satisfiable[266][0]=1; 
-	for(int i=0;i<85;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9562,7 +9562,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[266][1]
 	L[266][1] = LargeX[266][0]>0 ? 1 : 0;
 	satisfiable[266][1]=1; 
-	for(int i=0;i<49;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9580,7 +9580,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[267][0]
 	L[267][0] = LargeX[267][1]>0 ? 1 : 0;
 	satisfiable[267][0]=1; 
-	for(int i=0;i<39;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9598,7 +9598,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[267][1]
 	L[267][1] = LargeX[267][0]>0 ? 1 : 0;
 	satisfiable[267][1]=1; 
-	for(int i=0;i<116;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9616,7 +9616,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[268][0]
 	L[268][0] = LargeX[268][1]>0 ? 1 : 0;
 	satisfiable[268][0]=1; 
-	for(int i=0;i<39;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9634,7 +9634,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[268][1]
 	L[268][1] = LargeX[268][0]>0 ? 1 : 0;
 	satisfiable[268][1]=1; 
-	for(int i=0;i<67;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9652,7 +9652,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[269][0]
 	L[269][0] = LargeX[269][1]>0 ? 1 : 0;
 	satisfiable[269][0]=1; 
-	for(int i=0;i<90;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9670,7 +9670,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[269][1]
 	L[269][1] = LargeX[269][0]>0 ? 1 : 0;
 	satisfiable[269][1]=1; 
-	for(int i=0;i<59;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9688,7 +9688,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[270][0]
 	L[270][0] = LargeX[270][1]>0 ? 1 : 0;
 	satisfiable[270][0]=1; 
-	for(int i=0;i<59;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9706,7 +9706,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[270][1]
 	L[270][1] = LargeX[270][0]>0 ? 1 : 0;
 	satisfiable[270][1]=1; 
-	for(int i=0;i<76;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9724,7 +9724,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[271][0]
 	L[271][0] = LargeX[271][1]>0 ? 1 : 0;
 	satisfiable[271][0]=1; 
-	for(int i=0;i<93;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9742,7 +9742,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[271][1]
 	L[271][1] = LargeX[271][0]>0 ? 1 : 0;
 	satisfiable[271][1]=1; 
-	for(int i=0;i<135;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9760,7 +9760,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[272][0]
 	L[272][0] = LargeX[272][1]>0 ? 1 : 0;
 	satisfiable[272][0]=1; 
-	for(int i=0;i<91;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9778,7 +9778,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[272][1]
 	L[272][1] = LargeX[272][0]>0 ? 1 : 0;
 	satisfiable[272][1]=1; 
-	for(int i=0;i<28;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9796,7 +9796,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[273][0]
 	L[273][0] = LargeX[273][1]>0 ? 1 : 0;
 	satisfiable[273][0]=1; 
-	for(int i=0;i<62;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9814,7 +9814,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[273][1]
 	L[273][1] = LargeX[273][0]>0 ? 1 : 0;
 	satisfiable[273][1]=1; 
-	for(int i=0;i<108;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9832,7 +9832,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[274][0]
 	L[274][0] = LargeX[274][1]>0 ? 1 : 0;
 	satisfiable[274][0]=1; 
-	for(int i=0;i<117;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9850,7 +9850,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[274][1]
 	L[274][1] = LargeX[274][0]>0 ? 1 : 0;
 	satisfiable[274][1]=1; 
-	for(int i=0;i<138;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9868,7 +9868,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[275][0]
 	L[275][0] = LargeX[275][1]>0 ? 1 : 0;
 	satisfiable[275][0]=1; 
-	for(int i=0;i<60;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9886,7 +9886,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[275][1]
 	L[275][1] = LargeX[275][0]>0 ? 1 : 0;
 	satisfiable[275][1]=1; 
-	for(int i=0;i<49;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9904,7 +9904,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[276][0]
 	L[276][0] = LargeX[276][1]>0 ? 1 : 0;
 	satisfiable[276][0]=1; 
-	for(int i=0;i<91;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9922,7 +9922,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[276][1]
 	L[276][1] = LargeX[276][0]>0 ? 1 : 0;
 	satisfiable[276][1]=1; 
-	for(int i=0;i<92;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9940,7 +9940,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[277][0]
 	L[277][0] = LargeX[277][1]>0 ? 1 : 0;
 	satisfiable[277][0]=1; 
-	for(int i=0;i<68;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9958,7 +9958,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[277][1]
 	L[277][1] = LargeX[277][0]>0 ? 1 : 0;
 	satisfiable[277][1]=1; 
-	for(int i=0;i<101;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9976,7 +9976,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[278][0]
 	L[278][0] = LargeX[278][1]>0 ? 1 : 0;
 	satisfiable[278][0]=1; 
-	for(int i=0;i<95;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -9994,7 +9994,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[278][1]
 	L[278][1] = LargeX[278][0]>0 ? 1 : 0;
 	satisfiable[278][1]=1; 
-	for(int i=0;i<93;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10012,7 +10012,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[279][0]
 	L[279][0] = LargeX[279][1]>0 ? 1 : 0;
 	satisfiable[279][0]=1; 
-	for(int i=0;i<29;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10030,7 +10030,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[279][1]
 	L[279][1] = LargeX[279][0]>0 ? 1 : 0;
 	satisfiable[279][1]=1; 
-	for(int i=0;i<133;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10048,7 +10048,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[280][0]
 	L[280][0] = LargeX[280][1]>0 ? 1 : 0;
 	satisfiable[280][0]=1; 
-	for(int i=0;i<151;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10066,7 +10066,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[280][1]
 	L[280][1] = LargeX[280][0]>0 ? 1 : 0;
 	satisfiable[280][1]=1; 
-	for(int i=0;i<91;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10084,7 +10084,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[281][0]
 	L[281][0] = LargeX[281][1]>0 ? 1 : 0;
 	satisfiable[281][0]=1; 
-	for(int i=0;i<89;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10102,7 +10102,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[281][1]
 	L[281][1] = LargeX[281][0]>0 ? 1 : 0;
 	satisfiable[281][1]=1; 
-	for(int i=0;i<93;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10120,7 +10120,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[282][0]
 	L[282][0] = LargeX[282][1]>0 ? 1 : 0;
 	satisfiable[282][0]=1; 
-	for(int i=0;i<53;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10138,7 +10138,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[282][1]
 	L[282][1] = LargeX[282][0]>0 ? 1 : 0;
 	satisfiable[282][1]=1; 
-	for(int i=0;i<35;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10156,7 +10156,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[283][0]
 	L[283][0] = LargeX[283][1]>0 ? 1 : 0;
 	satisfiable[283][0]=1; 
-	for(int i=0;i<100;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10174,7 +10174,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[283][1]
 	L[283][1] = LargeX[283][0]>0 ? 1 : 0;
 	satisfiable[283][1]=1; 
-	for(int i=0;i<70;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10192,7 +10192,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[284][0]
 	L[284][0] = LargeX[284][1]>0 ? 1 : 0;
 	satisfiable[284][0]=1; 
-	for(int i=0;i<60;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10210,7 +10210,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[284][1]
 	L[284][1] = LargeX[284][0]>0 ? 1 : 0;
 	satisfiable[284][1]=1; 
-	for(int i=0;i<113;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10228,7 +10228,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[285][0]
 	L[285][0] = LargeX[285][1]>0 ? 1 : 0;
 	satisfiable[285][0]=1; 
-	for(int i=0;i<111;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10246,7 +10246,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[285][1]
 	L[285][1] = LargeX[285][0]>0 ? 1 : 0;
 	satisfiable[285][1]=1; 
-	for(int i=0;i<120;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10264,7 +10264,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[286][0]
 	L[286][0] = LargeX[286][1]>0 ? 1 : 0;
 	satisfiable[286][0]=1; 
-	for(int i=0;i<146;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10282,7 +10282,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[286][1]
 	L[286][1] = LargeX[286][0]>0 ? 1 : 0;
 	satisfiable[286][1]=1; 
-	for(int i=0;i<80;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10300,7 +10300,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[287][0]
 	L[287][0] = LargeX[287][1]>0 ? 1 : 0;
 	satisfiable[287][0]=1; 
-	for(int i=0;i<58;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10318,7 +10318,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[287][1]
 	L[287][1] = LargeX[287][0]>0 ? 1 : 0;
 	satisfiable[287][1]=1; 
-	for(int i=0;i<81;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10336,7 +10336,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[288][0]
 	L[288][0] = LargeX[288][1]>0 ? 1 : 0;
 	satisfiable[288][0]=1; 
-	for(int i=0;i<125;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10354,7 +10354,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[288][1]
 	L[288][1] = LargeX[288][0]>0 ? 1 : 0;
 	satisfiable[288][1]=1; 
-	for(int i=0;i<86;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10372,7 +10372,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[289][0]
 	L[289][0] = LargeX[289][1]>0 ? 1 : 0;
 	satisfiable[289][0]=1; 
-	for(int i=0;i<54;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10390,7 +10390,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[289][1]
 	L[289][1] = LargeX[289][0]>0 ? 1 : 0;
 	satisfiable[289][1]=1; 
-	for(int i=0;i<125;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10408,7 +10408,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[290][0]
 	L[290][0] = LargeX[290][1]>0 ? 1 : 0;
 	satisfiable[290][0]=1; 
-	for(int i=0;i<77;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10426,7 +10426,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[290][1]
 	L[290][1] = LargeX[290][0]>0 ? 1 : 0;
 	satisfiable[290][1]=1; 
-	for(int i=0;i<14;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10444,7 +10444,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[291][0]
 	L[291][0] = LargeX[291][1]>0 ? 1 : 0;
 	satisfiable[291][0]=1; 
-	for(int i=0;i<17;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10462,7 +10462,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[291][1]
 	L[291][1] = LargeX[291][0]>0 ? 1 : 0;
 	satisfiable[291][1]=1; 
-	for(int i=0;i<110;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10480,7 +10480,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[292][0]
 	L[292][0] = LargeX[292][1]>0 ? 1 : 0;
 	satisfiable[292][0]=1; 
-	for(int i=0;i<69;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10498,7 +10498,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[292][1]
 	L[292][1] = LargeX[292][0]>0 ? 1 : 0;
 	satisfiable[292][1]=1; 
-	for(int i=0;i<95;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10516,7 +10516,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[293][0]
 	L[293][0] = LargeX[293][1]>0 ? 1 : 0;
 	satisfiable[293][0]=1; 
-	for(int i=0;i<123;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10552,7 +10552,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[294][0]
 	L[294][0] = LargeX[294][1]>0 ? 1 : 0;
 	satisfiable[294][0]=1; 
-	for(int i=0;i<33;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10570,7 +10570,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[294][1]
 	L[294][1] = LargeX[294][0]>0 ? 1 : 0;
 	satisfiable[294][1]=1; 
-	for(int i=0;i<113;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10588,7 +10588,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[295][0]
 	L[295][0] = LargeX[295][1]>0 ? 1 : 0;
 	satisfiable[295][0]=1; 
-	for(int i=0;i<53;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10606,7 +10606,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[295][1]
 	L[295][1] = LargeX[295][0]>0 ? 1 : 0;
 	satisfiable[295][1]=1; 
-	for(int i=0;i<79;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10624,7 +10624,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[296][0]
 	L[296][0] = LargeX[296][1]>0 ? 1 : 0;
 	satisfiable[296][0]=1; 
-	for(int i=0;i<54;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10642,7 +10642,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[296][1]
 	L[296][1] = LargeX[296][0]>0 ? 1 : 0;
 	satisfiable[296][1]=1; 
-	for(int i=0;i<116;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10660,7 +10660,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[297][0]
 	L[297][0] = LargeX[297][1]>0 ? 1 : 0;
 	satisfiable[297][0]=1; 
-	for(int i=0;i<78;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10678,7 +10678,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[297][1]
 	L[297][1] = LargeX[297][0]>0 ? 1 : 0;
 	satisfiable[297][1]=1; 
-	for(int i=0;i<91;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10696,7 +10696,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[298][0]
 	L[298][0] = LargeX[298][1]>0 ? 1 : 0;
 	satisfiable[298][0]=1; 
-	for(int i=0;i<54;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10714,7 +10714,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[298][1]
 	L[298][1] = LargeX[298][0]>0 ? 1 : 0;
 	satisfiable[298][1]=1; 
-	for(int i=0;i<155;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10732,7 +10732,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[299][0]
 	L[299][0] = LargeX[299][1]>0 ? 1 : 0;
 	satisfiable[299][0]=1; 
-	for(int i=0;i<32;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10750,7 +10750,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[299][1]
 	L[299][1] = LargeX[299][0]>0 ? 1 : 0;
 	satisfiable[299][1]=1; 
-	for(int i=0;i<28;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10768,7 +10768,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[300][0]
 	L[300][0] = LargeX[300][1]>0 ? 1 : 0;
 	satisfiable[300][0]=1; 
-	for(int i=0;i<108;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10786,7 +10786,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[300][1]
 	L[300][1] = LargeX[300][0]>0 ? 1 : 0;
 	satisfiable[300][1]=1; 
-	for(int i=0;i<85;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10804,7 +10804,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[301][0]
 	L[301][0] = LargeX[301][1]>0 ? 1 : 0;
 	satisfiable[301][0]=1; 
-	for(int i=0;i<97;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10822,7 +10822,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[301][1]
 	L[301][1] = LargeX[301][0]>0 ? 1 : 0;
 	satisfiable[301][1]=1; 
-	for(int i=0;i<82;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10840,7 +10840,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[302][0]
 	L[302][0] = LargeX[302][1]>0 ? 1 : 0;
 	satisfiable[302][0]=1; 
-	for(int i=0;i<66;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10858,7 +10858,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[302][1]
 	L[302][1] = LargeX[302][0]>0 ? 1 : 0;
 	satisfiable[302][1]=1; 
-	for(int i=0;i<34;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10876,7 +10876,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[303][0]
 	L[303][0] = LargeX[303][1]>0 ? 1 : 0;
 	satisfiable[303][0]=1; 
-	for(int i=0;i<84;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10894,7 +10894,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[303][1]
 	L[303][1] = LargeX[303][0]>0 ? 1 : 0;
 	satisfiable[303][1]=1; 
-	for(int i=0;i<106;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10912,7 +10912,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[304][0]
 	L[304][0] = LargeX[304][1]>0 ? 1 : 0;
 	satisfiable[304][0]=1; 
-	for(int i=0;i<41;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10930,7 +10930,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[304][1]
 	L[304][1] = LargeX[304][0]>0 ? 1 : 0;
 	satisfiable[304][1]=1; 
-	for(int i=0;i<106;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10948,7 +10948,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[305][0]
 	L[305][0] = LargeX[305][1]>0 ? 1 : 0;
 	satisfiable[305][0]=1; 
-	for(int i=0;i<34;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10966,7 +10966,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[305][1]
 	L[305][1] = LargeX[305][0]>0 ? 1 : 0;
 	satisfiable[305][1]=1; 
-	for(int i=0;i<90;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -10984,7 +10984,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[306][0]
 	L[306][0] = LargeX[306][1]>0 ? 1 : 0;
 	satisfiable[306][0]=1; 
-	for(int i=0;i<92;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11002,7 +11002,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[306][1]
 	L[306][1] = LargeX[306][0]>0 ? 1 : 0;
 	satisfiable[306][1]=1; 
-	for(int i=0;i<55;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11020,7 +11020,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[307][0]
 	L[307][0] = LargeX[307][1]>0 ? 1 : 0;
 	satisfiable[307][0]=1; 
-	for(int i=0;i<53;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11038,7 +11038,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[307][1]
 	L[307][1] = LargeX[307][0]>0 ? 1 : 0;
 	satisfiable[307][1]=1; 
-	for(int i=0;i<77;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11056,7 +11056,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[308][0]
 	L[308][0] = LargeX[308][1]>0 ? 1 : 0;
 	satisfiable[308][0]=1; 
-	for(int i=0;i<91;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11074,7 +11074,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[308][1]
 	L[308][1] = LargeX[308][0]>0 ? 1 : 0;
 	satisfiable[308][1]=1; 
-	for(int i=0;i<131;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11092,7 +11092,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[309][0]
 	L[309][0] = LargeX[309][1]>0 ? 1 : 0;
 	satisfiable[309][0]=1; 
-	for(int i=0;i<107;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11110,7 +11110,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[309][1]
 	L[309][1] = LargeX[309][0]>0 ? 1 : 0;
 	satisfiable[309][1]=1; 
-	for(int i=0;i<137;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11128,7 +11128,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[310][0]
 	L[310][0] = LargeX[310][1]>0 ? 1 : 0;
 	satisfiable[310][0]=1; 
-	for(int i=0;i<55;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11146,7 +11146,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[310][1]
 	L[310][1] = LargeX[310][0]>0 ? 1 : 0;
 	satisfiable[310][1]=1; 
-	for(int i=0;i<81;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11164,7 +11164,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[311][0]
 	L[311][0] = LargeX[311][1]>0 ? 1 : 0;
 	satisfiable[311][0]=1; 
-	for(int i=0;i<80;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11182,7 +11182,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[311][1]
 	L[311][1] = LargeX[311][0]>0 ? 1 : 0;
 	satisfiable[311][1]=1; 
-	for(int i=0;i<97;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11200,7 +11200,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[312][0]
 	L[312][0] = LargeX[312][1]>0 ? 1 : 0;
 	satisfiable[312][0]=1; 
-	for(int i=0;i<35;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11218,7 +11218,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[312][1]
 	L[312][1] = LargeX[312][0]>0 ? 1 : 0;
 	satisfiable[312][1]=1; 
-	for(int i=0;i<118;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11236,7 +11236,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[313][0]
 	L[313][0] = LargeX[313][1]>0 ? 1 : 0;
 	satisfiable[313][0]=1; 
-	for(int i=0;i<127;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11254,7 +11254,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[313][1]
 	L[313][1] = LargeX[313][0]>0 ? 1 : 0;
 	satisfiable[313][1]=1; 
-	for(int i=0;i<78;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11272,7 +11272,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[314][0]
 	L[314][0] = LargeX[314][1]>0 ? 1 : 0;
 	satisfiable[314][0]=1; 
-	for(int i=0;i<44;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11290,7 +11290,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[314][1]
 	L[314][1] = LargeX[314][0]>0 ? 1 : 0;
 	satisfiable[314][1]=1; 
-	for(int i=0;i<117;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11308,7 +11308,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[315][0]
 	L[315][0] = LargeX[315][1]>0 ? 1 : 0;
 	satisfiable[315][0]=1; 
-	for(int i=0;i<105;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11326,7 +11326,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[315][1]
 	L[315][1] = LargeX[315][0]>0 ? 1 : 0;
 	satisfiable[315][1]=1; 
-	for(int i=0;i<166;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11344,7 +11344,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[316][0]
 	L[316][0] = LargeX[316][1]>0 ? 1 : 0;
 	satisfiable[316][0]=1; 
-	for(int i=0;i<107;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11362,7 +11362,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[316][1]
 	L[316][1] = LargeX[316][0]>0 ? 1 : 0;
 	satisfiable[316][1]=1; 
-	for(int i=0;i<43;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11380,7 +11380,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[317][0]
 	L[317][0] = LargeX[317][1]>0 ? 1 : 0;
 	satisfiable[317][0]=1; 
-	for(int i=0;i<139;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11398,7 +11398,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[317][1]
 	L[317][1] = LargeX[317][0]>0 ? 1 : 0;
 	satisfiable[317][1]=1; 
-	for(int i=0;i<149;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11416,7 +11416,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[318][0]
 	L[318][0] = LargeX[318][1]>0 ? 1 : 0;
 	satisfiable[318][0]=1; 
-	for(int i=0;i<103;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11434,7 +11434,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[318][1]
 	L[318][1] = LargeX[318][0]>0 ? 1 : 0;
 	satisfiable[318][1]=1; 
-	for(int i=0;i<90;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11452,7 +11452,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[319][0]
 	L[319][0] = LargeX[319][1]>0 ? 1 : 0;
 	satisfiable[319][0]=1; 
-	for(int i=0;i<64;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11470,7 +11470,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[319][1]
 	L[319][1] = LargeX[319][0]>0 ? 1 : 0;
 	satisfiable[319][1]=1; 
-	for(int i=0;i<36;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11488,7 +11488,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[320][0]
 	L[320][0] = LargeX[320][1]>0 ? 1 : 0;
 	satisfiable[320][0]=1; 
-	for(int i=0;i<61;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11506,7 +11506,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[320][1]
 	L[320][1] = LargeX[320][0]>0 ? 1 : 0;
 	satisfiable[320][1]=1; 
-	for(int i=0;i<74;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11524,7 +11524,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[321][0]
 	L[321][0] = LargeX[321][1]>0 ? 1 : 0;
 	satisfiable[321][0]=1; 
-	for(int i=0;i<71;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11542,7 +11542,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[321][1]
 	L[321][1] = LargeX[321][0]>0 ? 1 : 0;
 	satisfiable[321][1]=1; 
-	for(int i=0;i<74;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11560,7 +11560,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[322][0]
 	L[322][0] = LargeX[322][1]>0 ? 1 : 0;
 	satisfiable[322][0]=1; 
-	for(int i=0;i<67;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11578,7 +11578,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[322][1]
 	L[322][1] = LargeX[322][0]>0 ? 1 : 0;
 	satisfiable[322][1]=1; 
-	for(int i=0;i<66;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11596,7 +11596,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[323][0]
 	L[323][0] = LargeX[323][1]>0 ? 1 : 0;
 	satisfiable[323][0]=1; 
-	for(int i=0;i<101;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11614,7 +11614,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[323][1]
 	L[323][1] = LargeX[323][0]>0 ? 1 : 0;
 	satisfiable[323][1]=1; 
-	for(int i=0;i<79;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11632,7 +11632,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[324][0]
 	L[324][0] = LargeX[324][1]>0 ? 1 : 0;
 	satisfiable[324][0]=1; 
-	for(int i=0;i<129;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11650,7 +11650,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[324][1]
 	L[324][1] = LargeX[324][0]>0 ? 1 : 0;
 	satisfiable[324][1]=1; 
-	for(int i=0;i<70;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11668,7 +11668,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[325][0]
 	L[325][0] = LargeX[325][1]>0 ? 1 : 0;
 	satisfiable[325][0]=1; 
-	for(int i=0;i<91;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11686,7 +11686,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[325][1]
 	L[325][1] = LargeX[325][0]>0 ? 1 : 0;
 	satisfiable[325][1]=1; 
-	for(int i=0;i<56;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11704,7 +11704,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[326][0]
 	L[326][0] = LargeX[326][1]>0 ? 1 : 0;
 	satisfiable[326][0]=1; 
-	for(int i=0;i<41;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11722,7 +11722,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[326][1]
 	L[326][1] = LargeX[326][0]>0 ? 1 : 0;
 	satisfiable[326][1]=1; 
-	for(int i=0;i<68;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11740,7 +11740,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[327][0]
 	L[327][0] = LargeX[327][1]>0 ? 1 : 0;
 	satisfiable[327][0]=1; 
-	for(int i=0;i<110;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11758,7 +11758,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[327][1]
 	L[327][1] = LargeX[327][0]>0 ? 1 : 0;
 	satisfiable[327][1]=1; 
-	for(int i=0;i<48;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11776,7 +11776,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[328][0]
 	L[328][0] = LargeX[328][1]>0 ? 1 : 0;
 	satisfiable[328][0]=1; 
-	for(int i=0;i<41;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11794,7 +11794,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[328][1]
 	L[328][1] = LargeX[328][0]>0 ? 1 : 0;
 	satisfiable[328][1]=1; 
-	for(int i=0;i<77;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11812,7 +11812,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[329][0]
 	L[329][0] = LargeX[329][1]>0 ? 1 : 0;
 	satisfiable[329][0]=1; 
-	for(int i=0;i<46;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11830,7 +11830,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[329][1]
 	L[329][1] = LargeX[329][0]>0 ? 1 : 0;
 	satisfiable[329][1]=1; 
-	for(int i=0;i<92;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11848,7 +11848,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[330][0]
 	L[330][0] = LargeX[330][1]>0 ? 1 : 0;
 	satisfiable[330][0]=1; 
-	for(int i=0;i<145;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11866,7 +11866,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[330][1]
 	L[330][1] = LargeX[330][0]>0 ? 1 : 0;
 	satisfiable[330][1]=1; 
-	for(int i=0;i<96;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11884,7 +11884,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[331][0]
 	L[331][0] = LargeX[331][1]>0 ? 1 : 0;
 	satisfiable[331][0]=1; 
-	for(int i=0;i<171;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11902,7 +11902,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[331][1]
 	L[331][1] = LargeX[331][0]>0 ? 1 : 0;
 	satisfiable[331][1]=1; 
-	for(int i=0;i<144;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11920,7 +11920,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[332][0]
 	L[332][0] = LargeX[332][1]>0 ? 1 : 0;
 	satisfiable[332][0]=1; 
-	for(int i=0;i<121;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11938,7 +11938,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[332][1]
 	L[332][1] = LargeX[332][0]>0 ? 1 : 0;
 	satisfiable[332][1]=1; 
-	for(int i=0;i<62;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11956,7 +11956,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[333][0]
 	L[333][0] = LargeX[333][1]>0 ? 1 : 0;
 	satisfiable[333][0]=1; 
-	for(int i=0;i<105;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11974,7 +11974,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[333][1]
 	L[333][1] = LargeX[333][0]>0 ? 1 : 0;
 	satisfiable[333][1]=1; 
-	for(int i=0;i<85;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -11992,7 +11992,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[334][0]
 	L[334][0] = LargeX[334][1]>0 ? 1 : 0;
 	satisfiable[334][0]=1; 
-	for(int i=0;i<82;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12010,7 +12010,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[334][1]
 	L[334][1] = LargeX[334][0]>0 ? 1 : 0;
 	satisfiable[334][1]=1; 
-	for(int i=0;i<136;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12028,7 +12028,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[335][0]
 	L[335][0] = LargeX[335][1]>0 ? 1 : 0;
 	satisfiable[335][0]=1; 
-	for(int i=0;i<73;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12046,7 +12046,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[335][1]
 	L[335][1] = LargeX[335][0]>0 ? 1 : 0;
 	satisfiable[335][1]=1; 
-	for(int i=0;i<113;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12064,7 +12064,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[336][0]
 	L[336][0] = LargeX[336][1]>0 ? 1 : 0;
 	satisfiable[336][0]=1; 
-	for(int i=0;i<17;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12082,7 +12082,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[336][1]
 	L[336][1] = LargeX[336][0]>0 ? 1 : 0;
 	satisfiable[336][1]=1; 
-	for(int i=0;i<136;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12100,7 +12100,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[337][0]
 	L[337][0] = LargeX[337][1]>0 ? 1 : 0;
 	satisfiable[337][0]=1; 
-	for(int i=0;i<124;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12118,7 +12118,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[337][1]
 	L[337][1] = LargeX[337][0]>0 ? 1 : 0;
 	satisfiable[337][1]=1; 
-	for(int i=0;i<136;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12136,7 +12136,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[338][0]
 	L[338][0] = LargeX[338][1]>0 ? 1 : 0;
 	satisfiable[338][0]=1; 
-	for(int i=0;i<90;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12154,7 +12154,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[338][1]
 	L[338][1] = LargeX[338][0]>0 ? 1 : 0;
 	satisfiable[338][1]=1; 
-	for(int i=0;i<92;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12172,7 +12172,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[339][0]
 	L[339][0] = LargeX[339][1]>0 ? 1 : 0;
 	satisfiable[339][0]=1; 
-	for(int i=0;i<60;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12190,7 +12190,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[339][1]
 	L[339][1] = LargeX[339][0]>0 ? 1 : 0;
 	satisfiable[339][1]=1; 
-	for(int i=0;i<56;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12208,7 +12208,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[340][0]
 	L[340][0] = LargeX[340][1]>0 ? 1 : 0;
 	satisfiable[340][0]=1; 
-	for(int i=0;i<15;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12226,7 +12226,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[340][1]
 	L[340][1] = LargeX[340][0]>0 ? 1 : 0;
 	satisfiable[340][1]=1; 
-	for(int i=0;i<29;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12244,7 +12244,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[341][0]
 	L[341][0] = LargeX[341][1]>0 ? 1 : 0;
 	satisfiable[341][0]=1; 
-	for(int i=0;i<58;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12262,7 +12262,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[341][1]
 	L[341][1] = LargeX[341][0]>0 ? 1 : 0;
 	satisfiable[341][1]=1; 
-	for(int i=0;i<67;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12280,7 +12280,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[342][0]
 	L[342][0] = LargeX[342][1]>0 ? 1 : 0;
 	satisfiable[342][0]=1; 
-	for(int i=0;i<128;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12298,7 +12298,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[342][1]
 	L[342][1] = LargeX[342][0]>0 ? 1 : 0;
 	satisfiable[342][1]=1; 
-	for(int i=0;i<77;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12316,7 +12316,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[343][0]
 	L[343][0] = LargeX[343][1]>0 ? 1 : 0;
 	satisfiable[343][0]=1; 
-	for(int i=0;i<93;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12334,7 +12334,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[343][1]
 	L[343][1] = LargeX[343][0]>0 ? 1 : 0;
 	satisfiable[343][1]=1; 
-	for(int i=0;i<52;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12352,7 +12352,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[344][0]
 	L[344][0] = LargeX[344][1]>0 ? 1 : 0;
 	satisfiable[344][0]=1; 
-	for(int i=0;i<130;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12370,7 +12370,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[344][1]
 	L[344][1] = LargeX[344][0]>0 ? 1 : 0;
 	satisfiable[344][1]=1; 
-	for(int i=0;i<96;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12388,7 +12388,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[345][0]
 	L[345][0] = LargeX[345][1]>0 ? 1 : 0;
 	satisfiable[345][0]=1; 
-	for(int i=0;i<136;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12406,7 +12406,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[345][1]
 	L[345][1] = LargeX[345][0]>0 ? 1 : 0;
 	satisfiable[345][1]=1; 
-	for(int i=0;i<60;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12424,7 +12424,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[346][0]
 	L[346][0] = LargeX[346][1]>0 ? 1 : 0;
 	satisfiable[346][0]=1; 
-	for(int i=0;i<122;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12442,7 +12442,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[346][1]
 	L[346][1] = LargeX[346][0]>0 ? 1 : 0;
 	satisfiable[346][1]=1; 
-	for(int i=0;i<123;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12460,7 +12460,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[347][0]
 	L[347][0] = LargeX[347][1]>0 ? 1 : 0;
 	satisfiable[347][0]=1; 
-	for(int i=0;i<102;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12478,7 +12478,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[347][1]
 	L[347][1] = LargeX[347][0]>0 ? 1 : 0;
 	satisfiable[347][1]=1; 
-	for(int i=0;i<60;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12496,7 +12496,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[348][0]
 	L[348][0] = LargeX[348][1]>0 ? 1 : 0;
 	satisfiable[348][0]=1; 
-	for(int i=0;i<129;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12514,7 +12514,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[348][1]
 	L[348][1] = LargeX[348][0]>0 ? 1 : 0;
 	satisfiable[348][1]=1; 
-	for(int i=0;i<157;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12532,7 +12532,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[349][0]
 	L[349][0] = LargeX[349][1]>0 ? 1 : 0;
 	satisfiable[349][0]=1; 
-	for(int i=0;i<84;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12550,7 +12550,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[349][1]
 	L[349][1] = LargeX[349][0]>0 ? 1 : 0;
 	satisfiable[349][1]=1; 
-	for(int i=0;i<75;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12568,7 +12568,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[350][0]
 	L[350][0] = LargeX[350][1]>0 ? 1 : 0;
 	satisfiable[350][0]=1; 
-	for(int i=0;i<119;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12586,7 +12586,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[350][1]
 	L[350][1] = LargeX[350][0]>0 ? 1 : 0;
 	satisfiable[350][1]=1; 
-	for(int i=0;i<41;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12604,7 +12604,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[351][0]
 	L[351][0] = LargeX[351][1]>0 ? 1 : 0;
 	satisfiable[351][0]=1; 
-	for(int i=0;i<56;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12622,7 +12622,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[351][1]
 	L[351][1] = LargeX[351][0]>0 ? 1 : 0;
 	satisfiable[351][1]=1; 
-	for(int i=0;i<78;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12640,7 +12640,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[352][0]
 	L[352][0] = LargeX[352][1]>0 ? 1 : 0;
 	satisfiable[352][0]=1; 
-	for(int i=0;i<78;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12658,7 +12658,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[352][1]
 	L[352][1] = LargeX[352][0]>0 ? 1 : 0;
 	satisfiable[352][1]=1; 
-	for(int i=0;i<63;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12676,7 +12676,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[353][0]
 	L[353][0] = LargeX[353][1]>0 ? 1 : 0;
 	satisfiable[353][0]=1; 
-	for(int i=0;i<50;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12694,7 +12694,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[353][1]
 	L[353][1] = LargeX[353][0]>0 ? 1 : 0;
 	satisfiable[353][1]=1; 
-	for(int i=0;i<80;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12712,7 +12712,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[354][0]
 	L[354][0] = LargeX[354][1]>0 ? 1 : 0;
 	satisfiable[354][0]=1; 
-	for(int i=0;i<98;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12730,7 +12730,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[354][1]
 	L[354][1] = LargeX[354][0]>0 ? 1 : 0;
 	satisfiable[354][1]=1; 
-	for(int i=0;i<132;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12748,7 +12748,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[355][0]
 	L[355][0] = LargeX[355][1]>0 ? 1 : 0;
 	satisfiable[355][0]=1; 
-	for(int i=0;i<70;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12766,7 +12766,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[355][1]
 	L[355][1] = LargeX[355][0]>0 ? 1 : 0;
 	satisfiable[355][1]=1; 
-	for(int i=0;i<43;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12784,7 +12784,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[356][0]
 	L[356][0] = LargeX[356][1]>0 ? 1 : 0;
 	satisfiable[356][0]=1; 
-	for(int i=0;i<57;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12802,7 +12802,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[356][1]
 	L[356][1] = LargeX[356][0]>0 ? 1 : 0;
 	satisfiable[356][1]=1; 
-	for(int i=0;i<61;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12820,7 +12820,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[357][0]
 	L[357][0] = LargeX[357][1]>0 ? 1 : 0;
 	satisfiable[357][0]=1; 
-	for(int i=0;i<109;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12838,7 +12838,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[357][1]
 	L[357][1] = LargeX[357][0]>0 ? 1 : 0;
 	satisfiable[357][1]=1; 
-	for(int i=0;i<57;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12856,7 +12856,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[358][0]
 	L[358][0] = LargeX[358][1]>0 ? 1 : 0;
 	satisfiable[358][0]=1; 
-	for(int i=0;i<82;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12874,7 +12874,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[358][1]
 	L[358][1] = LargeX[358][0]>0 ? 1 : 0;
 	satisfiable[358][1]=1; 
-	for(int i=0;i<112;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12892,7 +12892,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[359][0]
 	L[359][0] = LargeX[359][1]>0 ? 1 : 0;
 	satisfiable[359][0]=1; 
-	for(int i=0;i<72;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12910,7 +12910,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[359][1]
 	L[359][1] = LargeX[359][0]>0 ? 1 : 0;
 	satisfiable[359][1]=1; 
-	for(int i=0;i<23;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12928,7 +12928,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[360][0]
 	L[360][0] = LargeX[360][1]>0 ? 1 : 0;
 	satisfiable[360][0]=1; 
-	for(int i=0;i<127;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12946,7 +12946,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[360][1]
 	L[360][1] = LargeX[360][0]>0 ? 1 : 0;
 	satisfiable[360][1]=1; 
-	for(int i=0;i<156;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12964,7 +12964,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[361][0]
 	L[361][0] = LargeX[361][1]>0 ? 1 : 0;
 	satisfiable[361][0]=1; 
-	for(int i=0;i<73;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -12982,7 +12982,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[361][1]
 	L[361][1] = LargeX[361][0]>0 ? 1 : 0;
 	satisfiable[361][1]=1; 
-	for(int i=0;i<94;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13000,7 +13000,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[362][0]
 	L[362][0] = LargeX[362][1]>0 ? 1 : 0;
 	satisfiable[362][0]=1; 
-	for(int i=0;i<58;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13018,7 +13018,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[362][1]
 	L[362][1] = LargeX[362][0]>0 ? 1 : 0;
 	satisfiable[362][1]=1; 
-	for(int i=0;i<78;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13036,7 +13036,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[363][0]
 	L[363][0] = LargeX[363][1]>0 ? 1 : 0;
 	satisfiable[363][0]=1; 
-	for(int i=0;i<91;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13054,7 +13054,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[363][1]
 	L[363][1] = LargeX[363][0]>0 ? 1 : 0;
 	satisfiable[363][1]=1; 
-	for(int i=0;i<49;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13072,7 +13072,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[364][0]
 	L[364][0] = LargeX[364][1]>0 ? 1 : 0;
 	satisfiable[364][0]=1; 
-	for(int i=0;i<47;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13090,7 +13090,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[364][1]
 	L[364][1] = LargeX[364][0]>0 ? 1 : 0;
 	satisfiable[364][1]=1; 
-	for(int i=0;i<76;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13108,7 +13108,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[365][0]
 	L[365][0] = LargeX[365][1]>0 ? 1 : 0;
 	satisfiable[365][0]=1; 
-	for(int i=0;i<77;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13126,7 +13126,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[365][1]
 	L[365][1] = LargeX[365][0]>0 ? 1 : 0;
 	satisfiable[365][1]=1; 
-	for(int i=0;i<133;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13144,7 +13144,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[366][0]
 	L[366][0] = LargeX[366][1]>0 ? 1 : 0;
 	satisfiable[366][0]=1; 
-	for(int i=0;i<83;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13162,7 +13162,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[366][1]
 	L[366][1] = LargeX[366][0]>0 ? 1 : 0;
 	satisfiable[366][1]=1; 
-	for(int i=0;i<110;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13180,7 +13180,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[367][0]
 	L[367][0] = LargeX[367][1]>0 ? 1 : 0;
 	satisfiable[367][0]=1; 
-	for(int i=0;i<78;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13198,7 +13198,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[367][1]
 	L[367][1] = LargeX[367][0]>0 ? 1 : 0;
 	satisfiable[367][1]=1; 
-	for(int i=0;i<85;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13216,7 +13216,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[368][0]
 	L[368][0] = LargeX[368][1]>0 ? 1 : 0;
 	satisfiable[368][0]=1; 
-	for(int i=0;i<61;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13234,7 +13234,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[368][1]
 	L[368][1] = LargeX[368][0]>0 ? 1 : 0;
 	satisfiable[368][1]=1; 
-	for(int i=0;i<74;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13252,7 +13252,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[369][0]
 	L[369][0] = LargeX[369][1]>0 ? 1 : 0;
 	satisfiable[369][0]=1; 
-	for(int i=0;i<105;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13270,7 +13270,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[369][1]
 	L[369][1] = LargeX[369][0]>0 ? 1 : 0;
 	satisfiable[369][1]=1; 
-	for(int i=0;i<125;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13288,7 +13288,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[370][0]
 	L[370][0] = LargeX[370][1]>0 ? 1 : 0;
 	satisfiable[370][0]=1; 
-	for(int i=0;i<51;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13306,7 +13306,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[370][1]
 	L[370][1] = LargeX[370][0]>0 ? 1 : 0;
 	satisfiable[370][1]=1; 
-	for(int i=0;i<48;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13324,7 +13324,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[371][0]
 	L[371][0] = LargeX[371][1]>0 ? 1 : 0;
 	satisfiable[371][0]=1; 
-	for(int i=0;i<98;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13342,7 +13342,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[371][1]
 	L[371][1] = LargeX[371][0]>0 ? 1 : 0;
 	satisfiable[371][1]=1; 
-	for(int i=0;i<79;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13360,7 +13360,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[372][0]
 	L[372][0] = LargeX[372][1]>0 ? 1 : 0;
 	satisfiable[372][0]=1; 
-	for(int i=0;i<72;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13378,7 +13378,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[372][1]
 	L[372][1] = LargeX[372][0]>0 ? 1 : 0;
 	satisfiable[372][1]=1; 
-	for(int i=0;i<133;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13396,7 +13396,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[373][0]
 	L[373][0] = LargeX[373][1]>0 ? 1 : 0;
 	satisfiable[373][0]=1; 
-	for(int i=0;i<95;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13414,7 +13414,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[373][1]
 	L[373][1] = LargeX[373][0]>0 ? 1 : 0;
 	satisfiable[373][1]=1; 
-	for(int i=0;i<93;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13432,7 +13432,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[374][0]
 	L[374][0] = LargeX[374][1]>0 ? 1 : 0;
 	satisfiable[374][0]=1; 
-	for(int i=0;i<62;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13450,7 +13450,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[374][1]
 	L[374][1] = LargeX[374][0]>0 ? 1 : 0;
 	satisfiable[374][1]=1; 
-	for(int i=0;i<142;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13468,7 +13468,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[375][0]
 	L[375][0] = LargeX[375][1]>0 ? 1 : 0;
 	satisfiable[375][0]=1; 
-	for(int i=0;i<92;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13486,7 +13486,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[375][1]
 	L[375][1] = LargeX[375][0]>0 ? 1 : 0;
 	satisfiable[375][1]=1; 
-	for(int i=0;i<107;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13504,7 +13504,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[376][0]
 	L[376][0] = LargeX[376][1]>0 ? 1 : 0;
 	satisfiable[376][0]=1; 
-	for(int i=0;i<75;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13522,7 +13522,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[376][1]
 	L[376][1] = LargeX[376][0]>0 ? 1 : 0;
 	satisfiable[376][1]=1; 
-	for(int i=0;i<82;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13540,7 +13540,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[377][0]
 	L[377][0] = LargeX[377][1]>0 ? 1 : 0;
 	satisfiable[377][0]=1; 
-	for(int i=0;i<151;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13558,7 +13558,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[377][1]
 	L[377][1] = LargeX[377][0]>0 ? 1 : 0;
 	satisfiable[377][1]=1; 
-	for(int i=0;i<36;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13576,7 +13576,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[378][0]
 	L[378][0] = LargeX[378][1]>0 ? 1 : 0;
 	satisfiable[378][0]=1; 
-	for(int i=0;i<119;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13594,7 +13594,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[378][1]
 	L[378][1] = LargeX[378][0]>0 ? 1 : 0;
 	satisfiable[378][1]=1; 
-	for(int i=0;i<105;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13612,7 +13612,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[379][0]
 	L[379][0] = LargeX[379][1]>0 ? 1 : 0;
 	satisfiable[379][0]=1; 
-	for(int i=0;i<99;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13630,7 +13630,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[379][1]
 	L[379][1] = LargeX[379][0]>0 ? 1 : 0;
 	satisfiable[379][1]=1; 
-	for(int i=0;i<86;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13648,7 +13648,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[380][0]
 	L[380][0] = LargeX[380][1]>0 ? 1 : 0;
 	satisfiable[380][0]=1; 
-	for(int i=0;i<45;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13666,7 +13666,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[380][1]
 	L[380][1] = LargeX[380][0]>0 ? 1 : 0;
 	satisfiable[380][1]=1; 
-	for(int i=0;i<132;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13684,7 +13684,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[381][0]
 	L[381][0] = LargeX[381][1]>0 ? 1 : 0;
 	satisfiable[381][0]=1; 
-	for(int i=0;i<110;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13702,7 +13702,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[381][1]
 	L[381][1] = LargeX[381][0]>0 ? 1 : 0;
 	satisfiable[381][1]=1; 
-	for(int i=0;i<50;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13720,7 +13720,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[382][0]
 	L[382][0] = LargeX[382][1]>0 ? 1 : 0;
 	satisfiable[382][0]=1; 
-	for(int i=0;i<40;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13738,7 +13738,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[382][1]
 	L[382][1] = LargeX[382][0]>0 ? 1 : 0;
 	satisfiable[382][1]=1; 
-	for(int i=0;i<74;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13756,7 +13756,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[383][0]
 	L[383][0] = LargeX[383][1]>0 ? 1 : 0;
 	satisfiable[383][0]=1; 
-	for(int i=0;i<66;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13774,7 +13774,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[383][1]
 	L[383][1] = LargeX[383][0]>0 ? 1 : 0;
 	satisfiable[383][1]=1; 
-	for(int i=0;i<100;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13792,7 +13792,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[384][0]
 	L[384][0] = LargeX[384][1]>0 ? 1 : 0;
 	satisfiable[384][0]=1; 
-	for(int i=0;i<53;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13810,7 +13810,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[384][1]
 	L[384][1] = LargeX[384][0]>0 ? 1 : 0;
 	satisfiable[384][1]=1; 
-	for(int i=0;i<56;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13828,7 +13828,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[385][0]
 	L[385][0] = LargeX[385][1]>0 ? 1 : 0;
 	satisfiable[385][0]=1; 
-	for(int i=0;i<107;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13846,7 +13846,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[385][1]
 	L[385][1] = LargeX[385][0]>0 ? 1 : 0;
 	satisfiable[385][1]=1; 
-	for(int i=0;i<97;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13864,7 +13864,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[386][0]
 	L[386][0] = LargeX[386][1]>0 ? 1 : 0;
 	satisfiable[386][0]=1; 
-	for(int i=0;i<71;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13882,7 +13882,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[386][1]
 	L[386][1] = LargeX[386][0]>0 ? 1 : 0;
 	satisfiable[386][1]=1; 
-	for(int i=0;i<67;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13900,7 +13900,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[387][0]
 	L[387][0] = LargeX[387][1]>0 ? 1 : 0;
 	satisfiable[387][0]=1; 
-	for(int i=0;i<70;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13918,7 +13918,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[387][1]
 	L[387][1] = LargeX[387][0]>0 ? 1 : 0;
 	satisfiable[387][1]=1; 
-	for(int i=0;i<99;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13936,7 +13936,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[388][0]
 	L[388][0] = LargeX[388][1]>0 ? 1 : 0;
 	satisfiable[388][0]=1; 
-	for(int i=0;i<72;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13954,7 +13954,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[388][1]
 	L[388][1] = LargeX[388][0]>0 ? 1 : 0;
 	satisfiable[388][1]=1; 
-	for(int i=0;i<75;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13972,7 +13972,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[389][0]
 	L[389][0] = LargeX[389][1]>0 ? 1 : 0;
 	satisfiable[389][0]=1; 
-	for(int i=0;i<82;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -13990,7 +13990,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[389][1]
 	L[389][1] = LargeX[389][0]>0 ? 1 : 0;
 	satisfiable[389][1]=1; 
-	for(int i=0;i<91;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14008,7 +14008,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[390][0]
 	L[390][0] = LargeX[390][1]>0 ? 1 : 0;
 	satisfiable[390][0]=1; 
-	for(int i=0;i<201;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14026,7 +14026,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[390][1]
 	L[390][1] = LargeX[390][0]>0 ? 1 : 0;
 	satisfiable[390][1]=1; 
-	for(int i=0;i<43;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14044,7 +14044,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[391][0]
 	L[391][0] = LargeX[391][1]>0 ? 1 : 0;
 	satisfiable[391][0]=1; 
-	for(int i=0;i<137;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14062,7 +14062,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[391][1]
 	L[391][1] = LargeX[391][0]>0 ? 1 : 0;
 	satisfiable[391][1]=1; 
-	for(int i=0;i<81;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14080,7 +14080,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[392][0]
 	L[392][0] = LargeX[392][1]>0 ? 1 : 0;
 	satisfiable[392][0]=1; 
-	for(int i=0;i<85;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14098,7 +14098,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[392][1]
 	L[392][1] = LargeX[392][0]>0 ? 1 : 0;
 	satisfiable[392][1]=1; 
-	for(int i=0;i<76;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14116,7 +14116,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[393][0]
 	L[393][0] = LargeX[393][1]>0 ? 1 : 0;
 	satisfiable[393][0]=1; 
-	for(int i=0;i<89;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14134,7 +14134,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[393][1]
 	L[393][1] = LargeX[393][0]>0 ? 1 : 0;
 	satisfiable[393][1]=1; 
-	for(int i=0;i<91;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14152,7 +14152,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[394][0]
 	L[394][0] = LargeX[394][1]>0 ? 1 : 0;
 	satisfiable[394][0]=1; 
-	for(int i=0;i<52;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14170,7 +14170,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[394][1]
 	L[394][1] = LargeX[394][0]>0 ? 1 : 0;
 	satisfiable[394][1]=1; 
-	for(int i=0;i<52;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14188,7 +14188,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[395][0]
 	L[395][0] = LargeX[395][1]>0 ? 1 : 0;
 	satisfiable[395][0]=1; 
-	for(int i=0;i<102;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14206,7 +14206,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[395][1]
 	L[395][1] = LargeX[395][0]>0 ? 1 : 0;
 	satisfiable[395][1]=1; 
-	for(int i=0;i<89;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14224,7 +14224,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[396][0]
 	L[396][0] = LargeX[396][1]>0 ? 1 : 0;
 	satisfiable[396][0]=1; 
-	for(int i=0;i<72;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14242,7 +14242,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[396][1]
 	L[396][1] = LargeX[396][0]>0 ? 1 : 0;
 	satisfiable[396][1]=1; 
-	for(int i=0;i<60;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14260,7 +14260,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[397][0]
 	L[397][0] = LargeX[397][1]>0 ? 1 : 0;
 	satisfiable[397][0]=1; 
-	for(int i=0;i<121;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14278,7 +14278,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[397][1]
 	L[397][1] = LargeX[397][0]>0 ? 1 : 0;
 	satisfiable[397][1]=1; 
-	for(int i=0;i<51;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14296,7 +14296,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[398][0]
 	L[398][0] = LargeX[398][1]>0 ? 1 : 0;
 	satisfiable[398][0]=1; 
-	for(int i=0;i<53;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14314,7 +14314,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[398][1]
 	L[398][1] = LargeX[398][0]>0 ? 1 : 0;
 	satisfiable[398][1]=1; 
-	for(int i=0;i<84;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14332,7 +14332,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[399][0]
 	L[399][0] = LargeX[399][1]>0 ? 1 : 0;
 	satisfiable[399][0]=1; 
-	for(int i=0;i<154;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14350,7 +14350,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[399][1]
 	L[399][1] = LargeX[399][0]>0 ? 1 : 0;
 	satisfiable[399][1]=1; 
-	for(int i=0;i<72;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14368,7 +14368,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[400][0]
 	L[400][0] = LargeX[400][1]>0 ? 1 : 0;
 	satisfiable[400][0]=1; 
-	for(int i=0;i<9;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14386,7 +14386,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[400][1]
 	L[400][1] = LargeX[400][0]>0 ? 1 : 0;
 	satisfiable[400][1]=1; 
-	for(int i=0;i<105;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14404,7 +14404,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[401][0]
 	L[401][0] = LargeX[401][1]>0 ? 1 : 0;
 	satisfiable[401][0]=1; 
-	for(int i=0;i<95;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14422,7 +14422,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[401][1]
 	L[401][1] = LargeX[401][0]>0 ? 1 : 0;
 	satisfiable[401][1]=1; 
-	for(int i=0;i<56;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14440,7 +14440,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[402][0]
 	L[402][0] = LargeX[402][1]>0 ? 1 : 0;
 	satisfiable[402][0]=1; 
-	for(int i=0;i<132;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14458,7 +14458,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[402][1]
 	L[402][1] = LargeX[402][0]>0 ? 1 : 0;
 	satisfiable[402][1]=1; 
-	for(int i=0;i<51;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14476,7 +14476,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[403][0]
 	L[403][0] = LargeX[403][1]>0 ? 1 : 0;
 	satisfiable[403][0]=1; 
-	for(int i=0;i<86;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14494,7 +14494,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[403][1]
 	L[403][1] = LargeX[403][0]>0 ? 1 : 0;
 	satisfiable[403][1]=1; 
-	for(int i=0;i<89;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14512,7 +14512,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[404][0]
 	L[404][0] = LargeX[404][1]>0 ? 1 : 0;
 	satisfiable[404][0]=1; 
-	for(int i=0;i<119;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14530,7 +14530,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[404][1]
 	L[404][1] = LargeX[404][0]>0 ? 1 : 0;
 	satisfiable[404][1]=1; 
-	for(int i=0;i<106;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14548,7 +14548,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[405][0]
 	L[405][0] = LargeX[405][1]>0 ? 1 : 0;
 	satisfiable[405][0]=1; 
-	for(int i=0;i<126;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14566,7 +14566,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[405][1]
 	L[405][1] = LargeX[405][0]>0 ? 1 : 0;
 	satisfiable[405][1]=1; 
-	for(int i=0;i<44;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14584,7 +14584,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[406][0]
 	L[406][0] = LargeX[406][1]>0 ? 1 : 0;
 	satisfiable[406][0]=1; 
-	for(int i=0;i<34;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14602,7 +14602,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[406][1]
 	L[406][1] = LargeX[406][0]>0 ? 1 : 0;
 	satisfiable[406][1]=1; 
-	for(int i=0;i<42;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14620,7 +14620,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[407][0]
 	L[407][0] = LargeX[407][1]>0 ? 1 : 0;
 	satisfiable[407][0]=1; 
-	for(int i=0;i<115;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14638,7 +14638,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[407][1]
 	L[407][1] = LargeX[407][0]>0 ? 1 : 0;
 	satisfiable[407][1]=1; 
-	for(int i=0;i<12;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14656,7 +14656,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[408][0]
 	L[408][0] = LargeX[408][1]>0 ? 1 : 0;
 	satisfiable[408][0]=1; 
-	for(int i=0;i<47;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14674,7 +14674,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[408][1]
 	L[408][1] = LargeX[408][0]>0 ? 1 : 0;
 	satisfiable[408][1]=1; 
-	for(int i=0;i<115;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14692,7 +14692,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[409][0]
 	L[409][0] = LargeX[409][1]>0 ? 1 : 0;
 	satisfiable[409][0]=1; 
-	for(int i=0;i<71;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14710,7 +14710,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[409][1]
 	L[409][1] = LargeX[409][0]>0 ? 1 : 0;
 	satisfiable[409][1]=1; 
-	for(int i=0;i<26;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14728,7 +14728,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[410][0]
 	L[410][0] = LargeX[410][1]>0 ? 1 : 0;
 	satisfiable[410][0]=1; 
-	for(int i=0;i<11;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14746,7 +14746,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[410][1]
 	L[410][1] = LargeX[410][0]>0 ? 1 : 0;
 	satisfiable[410][1]=1; 
-	for(int i=0;i<29;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14764,7 +14764,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[411][0]
 	L[411][0] = LargeX[411][1]>0 ? 1 : 0;
 	satisfiable[411][0]=1; 
-	for(int i=0;i<70;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14782,7 +14782,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[411][1]
 	L[411][1] = LargeX[411][0]>0 ? 1 : 0;
 	satisfiable[411][1]=1; 
-	for(int i=0;i<125;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14800,7 +14800,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[412][0]
 	L[412][0] = LargeX[412][1]>0 ? 1 : 0;
 	satisfiable[412][0]=1; 
-	for(int i=0;i<155;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14818,7 +14818,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[412][1]
 	L[412][1] = LargeX[412][0]>0 ? 1 : 0;
 	satisfiable[412][1]=1; 
-	for(int i=0;i<95;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14836,7 +14836,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[413][0]
 	L[413][0] = LargeX[413][1]>0 ? 1 : 0;
 	satisfiable[413][0]=1; 
-	for(int i=0;i<124;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14854,7 +14854,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[413][1]
 	L[413][1] = LargeX[413][0]>0 ? 1 : 0;
 	satisfiable[413][1]=1; 
-	for(int i=0;i<60;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14872,7 +14872,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[414][0]
 	L[414][0] = LargeX[414][1]>0 ? 1 : 0;
 	satisfiable[414][0]=1; 
-	for(int i=0;i<43;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14890,7 +14890,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[414][1]
 	L[414][1] = LargeX[414][0]>0 ? 1 : 0;
 	satisfiable[414][1]=1; 
-	for(int i=0;i<116;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14908,7 +14908,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[415][0]
 	L[415][0] = LargeX[415][1]>0 ? 1 : 0;
 	satisfiable[415][0]=1; 
-	for(int i=0;i<71;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14926,7 +14926,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[415][1]
 	L[415][1] = LargeX[415][0]>0 ? 1 : 0;
 	satisfiable[415][1]=1; 
-	for(int i=0;i<98;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14944,7 +14944,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[416][0]
 	L[416][0] = LargeX[416][1]>0 ? 1 : 0;
 	satisfiable[416][0]=1; 
-	for(int i=0;i<77;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14962,7 +14962,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[416][1]
 	L[416][1] = LargeX[416][0]>0 ? 1 : 0;
 	satisfiable[416][1]=1; 
-	for(int i=0;i<57;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14980,7 +14980,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[417][0]
 	L[417][0] = LargeX[417][1]>0 ? 1 : 0;
 	satisfiable[417][0]=1; 
-	for(int i=0;i<85;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -14998,7 +14998,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[417][1]
 	L[417][1] = LargeX[417][0]>0 ? 1 : 0;
 	satisfiable[417][1]=1; 
-	for(int i=0;i<66;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15016,7 +15016,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[418][0]
 	L[418][0] = LargeX[418][1]>0 ? 1 : 0;
 	satisfiable[418][0]=1; 
-	for(int i=0;i<103;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15034,7 +15034,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[418][1]
 	L[418][1] = LargeX[418][0]>0 ? 1 : 0;
 	satisfiable[418][1]=1; 
-	for(int i=0;i<113;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15052,7 +15052,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[419][0]
 	L[419][0] = LargeX[419][1]>0 ? 1 : 0;
 	satisfiable[419][0]=1; 
-	for(int i=0;i<98;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15070,7 +15070,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[419][1]
 	L[419][1] = LargeX[419][0]>0 ? 1 : 0;
 	satisfiable[419][1]=1; 
-	for(int i=0;i<87;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15088,7 +15088,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[420][0]
 	L[420][0] = LargeX[420][1]>0 ? 1 : 0;
 	satisfiable[420][0]=1; 
-	for(int i=0;i<70;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15106,7 +15106,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[420][1]
 	L[420][1] = LargeX[420][0]>0 ? 1 : 0;
 	satisfiable[420][1]=1; 
-	for(int i=0;i<137;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15124,7 +15124,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[421][0]
 	L[421][0] = LargeX[421][1]>0 ? 1 : 0;
 	satisfiable[421][0]=1; 
-	for(int i=0;i<82;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15142,7 +15142,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[421][1]
 	L[421][1] = LargeX[421][0]>0 ? 1 : 0;
 	satisfiable[421][1]=1; 
-	for(int i=0;i<125;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15160,7 +15160,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[422][0]
 	L[422][0] = LargeX[422][1]>0 ? 1 : 0;
 	satisfiable[422][0]=1; 
-	for(int i=0;i<96;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15178,7 +15178,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[422][1]
 	L[422][1] = LargeX[422][0]>0 ? 1 : 0;
 	satisfiable[422][1]=1; 
-	for(int i=0;i<64;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15196,7 +15196,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[423][0]
 	L[423][0] = LargeX[423][1]>0 ? 1 : 0;
 	satisfiable[423][0]=1; 
-	for(int i=0;i<42;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15214,7 +15214,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[423][1]
 	L[423][1] = LargeX[423][0]>0 ? 1 : 0;
 	satisfiable[423][1]=1; 
-	for(int i=0;i<67;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15232,7 +15232,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[424][0]
 	L[424][0] = LargeX[424][1]>0 ? 1 : 0;
 	satisfiable[424][0]=1; 
-	for(int i=0;i<101;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15250,7 +15250,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[424][1]
 	L[424][1] = LargeX[424][0]>0 ? 1 : 0;
 	satisfiable[424][1]=1; 
-	for(int i=0;i<66;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15268,7 +15268,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[425][0]
 	L[425][0] = LargeX[425][1]>0 ? 1 : 0;
 	satisfiable[425][0]=1; 
-	for(int i=0;i<34;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15286,7 +15286,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[425][1]
 	L[425][1] = LargeX[425][0]>0 ? 1 : 0;
 	satisfiable[425][1]=1; 
-	for(int i=0;i<64;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15304,7 +15304,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[426][0]
 	L[426][0] = LargeX[426][1]>0 ? 1 : 0;
 	satisfiable[426][0]=1; 
-	for(int i=0;i<137;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15322,7 +15322,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[426][1]
 	L[426][1] = LargeX[426][0]>0 ? 1 : 0;
 	satisfiable[426][1]=1; 
-	for(int i=0;i<79;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15340,7 +15340,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[427][0]
 	L[427][0] = LargeX[427][1]>0 ? 1 : 0;
 	satisfiable[427][0]=1; 
-	for(int i=0;i<58;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15358,7 +15358,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[427][1]
 	L[427][1] = LargeX[427][0]>0 ? 1 : 0;
 	satisfiable[427][1]=1; 
-	for(int i=0;i<97;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15376,7 +15376,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[428][0]
 	L[428][0] = LargeX[428][1]>0 ? 1 : 0;
 	satisfiable[428][0]=1; 
-	for(int i=0;i<92;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15394,7 +15394,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[428][1]
 	L[428][1] = LargeX[428][0]>0 ? 1 : 0;
 	satisfiable[428][1]=1; 
-	for(int i=0;i<137;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15412,7 +15412,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[429][0]
 	L[429][0] = LargeX[429][1]>0 ? 1 : 0;
 	satisfiable[429][0]=1; 
-	for(int i=0;i<84;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15430,7 +15430,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[429][1]
 	L[429][1] = LargeX[429][0]>0 ? 1 : 0;
 	satisfiable[429][1]=1; 
-	for(int i=0;i<106;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15448,7 +15448,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[430][0]
 	L[430][0] = LargeX[430][1]>0 ? 1 : 0;
 	satisfiable[430][0]=1; 
-	for(int i=0;i<95;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15466,7 +15466,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[430][1]
 	L[430][1] = LargeX[430][0]>0 ? 1 : 0;
 	satisfiable[430][1]=1; 
-	for(int i=0;i<63;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15484,7 +15484,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[431][0]
 	L[431][0] = LargeX[431][1]>0 ? 1 : 0;
 	satisfiable[431][0]=1; 
-	for(int i=0;i<98;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15502,7 +15502,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[431][1]
 	L[431][1] = LargeX[431][0]>0 ? 1 : 0;
 	satisfiable[431][1]=1; 
-	for(int i=0;i<106;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15520,7 +15520,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[432][0]
 	L[432][0] = LargeX[432][1]>0 ? 1 : 0;
 	satisfiable[432][0]=1; 
-	for(int i=0;i<159;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15538,7 +15538,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[432][1]
 	L[432][1] = LargeX[432][0]>0 ? 1 : 0;
 	satisfiable[432][1]=1; 
-	for(int i=0;i<124;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15556,7 +15556,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[433][0]
 	L[433][0] = LargeX[433][1]>0 ? 1 : 0;
 	satisfiable[433][0]=1; 
-	for(int i=0;i<116;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15574,7 +15574,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[433][1]
 	L[433][1] = LargeX[433][0]>0 ? 1 : 0;
 	satisfiable[433][1]=1; 
-	for(int i=0;i<58;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15592,7 +15592,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[434][0]
 	L[434][0] = LargeX[434][1]>0 ? 1 : 0;
 	satisfiable[434][0]=1; 
-	for(int i=0;i<57;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15610,7 +15610,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[434][1]
 	L[434][1] = LargeX[434][0]>0 ? 1 : 0;
 	satisfiable[434][1]=1; 
-	for(int i=0;i<53;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15628,7 +15628,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[435][0]
 	L[435][0] = LargeX[435][1]>0 ? 1 : 0;
 	satisfiable[435][0]=1; 
-	for(int i=0;i<89;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15646,7 +15646,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[435][1]
 	L[435][1] = LargeX[435][0]>0 ? 1 : 0;
 	satisfiable[435][1]=1; 
-	for(int i=0;i<35;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15664,7 +15664,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[436][0]
 	L[436][0] = LargeX[436][1]>0 ? 1 : 0;
 	satisfiable[436][0]=1; 
-	for(int i=0;i<38;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15682,7 +15682,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[436][1]
 	L[436][1] = LargeX[436][0]>0 ? 1 : 0;
 	satisfiable[436][1]=1; 
-	for(int i=0;i<113;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15700,7 +15700,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[437][0]
 	L[437][0] = LargeX[437][1]>0 ? 1 : 0;
 	satisfiable[437][0]=1; 
-	for(int i=0;i<149;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15718,7 +15718,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[437][1]
 	L[437][1] = LargeX[437][0]>0 ? 1 : 0;
 	satisfiable[437][1]=1; 
-	for(int i=0;i<45;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15736,7 +15736,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[438][0]
 	L[438][0] = LargeX[438][1]>0 ? 1 : 0;
 	satisfiable[438][0]=1; 
-	for(int i=0;i<103;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15754,7 +15754,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[438][1]
 	L[438][1] = LargeX[438][0]>0 ? 1 : 0;
 	satisfiable[438][1]=1; 
-	for(int i=0;i<131;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15772,7 +15772,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[439][0]
 	L[439][0] = LargeX[439][1]>0 ? 1 : 0;
 	satisfiable[439][0]=1; 
-	for(int i=0;i<60;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15790,7 +15790,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[439][1]
 	L[439][1] = LargeX[439][0]>0 ? 1 : 0;
 	satisfiable[439][1]=1; 
-	for(int i=0;i<139;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15808,7 +15808,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[440][0]
 	L[440][0] = LargeX[440][1]>0 ? 1 : 0;
 	satisfiable[440][0]=1; 
-	for(int i=0;i<91;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15826,7 +15826,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[440][1]
 	L[440][1] = LargeX[440][0]>0 ? 1 : 0;
 	satisfiable[440][1]=1; 
-	for(int i=0;i<66;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15844,7 +15844,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[441][0]
 	L[441][0] = LargeX[441][1]>0 ? 1 : 0;
 	satisfiable[441][0]=1; 
-	for(int i=0;i<121;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15862,7 +15862,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[441][1]
 	L[441][1] = LargeX[441][0]>0 ? 1 : 0;
 	satisfiable[441][1]=1; 
-	for(int i=0;i<104;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15880,7 +15880,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[442][0]
 	L[442][0] = LargeX[442][1]>0 ? 1 : 0;
 	satisfiable[442][0]=1; 
-	for(int i=0;i<90;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15898,7 +15898,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[442][1]
 	L[442][1] = LargeX[442][0]>0 ? 1 : 0;
 	satisfiable[442][1]=1; 
-	for(int i=0;i<105;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15916,7 +15916,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[443][0]
 	L[443][0] = LargeX[443][1]>0 ? 1 : 0;
 	satisfiable[443][0]=1; 
-	for(int i=0;i<89;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15934,7 +15934,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[443][1]
 	L[443][1] = LargeX[443][0]>0 ? 1 : 0;
 	satisfiable[443][1]=1; 
-	for(int i=0;i<75;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15952,7 +15952,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[444][0]
 	L[444][0] = LargeX[444][1]>0 ? 1 : 0;
 	satisfiable[444][0]=1; 
-	for(int i=0;i<68;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15970,7 +15970,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[444][1]
 	L[444][1] = LargeX[444][0]>0 ? 1 : 0;
 	satisfiable[444][1]=1; 
-	for(int i=0;i<90;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -15988,7 +15988,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[445][0]
 	L[445][0] = LargeX[445][1]>0 ? 1 : 0;
 	satisfiable[445][0]=1; 
-	for(int i=0;i<84;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16006,7 +16006,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[445][1]
 	L[445][1] = LargeX[445][0]>0 ? 1 : 0;
 	satisfiable[445][1]=1; 
-	for(int i=0;i<87;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16024,7 +16024,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[446][0]
 	L[446][0] = LargeX[446][1]>0 ? 1 : 0;
 	satisfiable[446][0]=1; 
-	for(int i=0;i<93;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16042,7 +16042,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[446][1]
 	L[446][1] = LargeX[446][0]>0 ? 1 : 0;
 	satisfiable[446][1]=1; 
-	for(int i=0;i<53;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16060,7 +16060,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[447][0]
 	L[447][0] = LargeX[447][1]>0 ? 1 : 0;
 	satisfiable[447][0]=1; 
-	for(int i=0;i<47;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16078,7 +16078,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[447][1]
 	L[447][1] = LargeX[447][0]>0 ? 1 : 0;
 	satisfiable[447][1]=1; 
-	for(int i=0;i<70;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16096,7 +16096,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[448][0]
 	L[448][0] = LargeX[448][1]>0 ? 1 : 0;
 	satisfiable[448][0]=1; 
-	for(int i=0;i<176;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16114,7 +16114,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[448][1]
 	L[448][1] = LargeX[448][0]>0 ? 1 : 0;
 	satisfiable[448][1]=1; 
-	for(int i=0;i<39;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16132,7 +16132,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[449][0]
 	L[449][0] = LargeX[449][1]>0 ? 1 : 0;
 	satisfiable[449][0]=1; 
-	for(int i=0;i<117;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16150,7 +16150,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[449][1]
 	L[449][1] = LargeX[449][0]>0 ? 1 : 0;
 	satisfiable[449][1]=1; 
-	for(int i=0;i<113;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16168,7 +16168,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[450][0]
 	L[450][0] = LargeX[450][1]>0 ? 1 : 0;
 	satisfiable[450][0]=1; 
-	for(int i=0;i<124;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16186,7 +16186,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[450][1]
 	L[450][1] = LargeX[450][0]>0 ? 1 : 0;
 	satisfiable[450][1]=1; 
-	for(int i=0;i<84;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16204,7 +16204,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[451][0]
 	L[451][0] = LargeX[451][1]>0 ? 1 : 0;
 	satisfiable[451][0]=1; 
-	for(int i=0;i<78;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16222,7 +16222,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[451][1]
 	L[451][1] = LargeX[451][0]>0 ? 1 : 0;
 	satisfiable[451][1]=1; 
-	for(int i=0;i<124;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16240,7 +16240,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[452][0]
 	L[452][0] = LargeX[452][1]>0 ? 1 : 0;
 	satisfiable[452][0]=1; 
-	for(int i=0;i<27;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16258,7 +16258,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[452][1]
 	L[452][1] = LargeX[452][0]>0 ? 1 : 0;
 	satisfiable[452][1]=1; 
-	for(int i=0;i<154;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16276,7 +16276,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[453][0]
 	L[453][0] = LargeX[453][1]>0 ? 1 : 0;
 	satisfiable[453][0]=1; 
-	for(int i=0;i<43;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16294,7 +16294,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[453][1]
 	L[453][1] = LargeX[453][0]>0 ? 1 : 0;
 	satisfiable[453][1]=1; 
-	for(int i=0;i<48;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16312,7 +16312,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[454][0]
 	L[454][0] = LargeX[454][1]>0 ? 1 : 0;
 	satisfiable[454][0]=1; 
-	for(int i=0;i<85;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16330,7 +16330,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[454][1]
 	L[454][1] = LargeX[454][0]>0 ? 1 : 0;
 	satisfiable[454][1]=1; 
-	for(int i=0;i<33;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16348,7 +16348,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[455][0]
 	L[455][0] = LargeX[455][1]>0 ? 1 : 0;
 	satisfiable[455][0]=1; 
-	for(int i=0;i<116;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16366,7 +16366,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[455][1]
 	L[455][1] = LargeX[455][0]>0 ? 1 : 0;
 	satisfiable[455][1]=1; 
-	for(int i=0;i<103;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16384,7 +16384,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[456][0]
 	L[456][0] = LargeX[456][1]>0 ? 1 : 0;
 	satisfiable[456][0]=1; 
-	for(int i=0;i<48;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16402,7 +16402,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[456][1]
 	L[456][1] = LargeX[456][0]>0 ? 1 : 0;
 	satisfiable[456][1]=1; 
-	for(int i=0;i<53;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16420,7 +16420,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[457][0]
 	L[457][0] = LargeX[457][1]>0 ? 1 : 0;
 	satisfiable[457][0]=1; 
-	for(int i=0;i<136;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16438,7 +16438,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[457][1]
 	L[457][1] = LargeX[457][0]>0 ? 1 : 0;
 	satisfiable[457][1]=1; 
-	for(int i=0;i<49;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16456,7 +16456,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[458][0]
 	L[458][0] = LargeX[458][1]>0 ? 1 : 0;
 	satisfiable[458][0]=1; 
-	for(int i=0;i<39;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16474,7 +16474,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[458][1]
 	L[458][1] = LargeX[458][0]>0 ? 1 : 0;
 	satisfiable[458][1]=1; 
-	for(int i=0;i<91;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16492,7 +16492,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[459][0]
 	L[459][0] = LargeX[459][1]>0 ? 1 : 0;
 	satisfiable[459][0]=1; 
-	for(int i=0;i<131;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16510,7 +16510,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[459][1]
 	L[459][1] = LargeX[459][0]>0 ? 1 : 0;
 	satisfiable[459][1]=1; 
-	for(int i=0;i<78;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16528,7 +16528,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[460][0]
 	L[460][0] = LargeX[460][1]>0 ? 1 : 0;
 	satisfiable[460][0]=1; 
-	for(int i=0;i<104;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16546,7 +16546,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[460][1]
 	L[460][1] = LargeX[460][0]>0 ? 1 : 0;
 	satisfiable[460][1]=1; 
-	for(int i=0;i<134;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16564,7 +16564,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[461][0]
 	L[461][0] = LargeX[461][1]>0 ? 1 : 0;
 	satisfiable[461][0]=1; 
-	for(int i=0;i<80;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16582,7 +16582,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[461][1]
 	L[461][1] = LargeX[461][0]>0 ? 1 : 0;
 	satisfiable[461][1]=1; 
-	for(int i=0;i<127;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16600,7 +16600,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[462][0]
 	L[462][0] = LargeX[462][1]>0 ? 1 : 0;
 	satisfiable[462][0]=1; 
-	for(int i=0;i<106;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16618,7 +16618,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[462][1]
 	L[462][1] = LargeX[462][0]>0 ? 1 : 0;
 	satisfiable[462][1]=1; 
-	for(int i=0;i<133;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16636,7 +16636,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[463][0]
 	L[463][0] = LargeX[463][1]>0 ? 1 : 0;
 	satisfiable[463][0]=1; 
-	for(int i=0;i<41;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16654,7 +16654,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[463][1]
 	L[463][1] = LargeX[463][0]>0 ? 1 : 0;
 	satisfiable[463][1]=1; 
-	for(int i=0;i<123;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16672,7 +16672,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[464][0]
 	L[464][0] = LargeX[464][1]>0 ? 1 : 0;
 	satisfiable[464][0]=1; 
-	for(int i=0;i<68;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16690,7 +16690,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[464][1]
 	L[464][1] = LargeX[464][0]>0 ? 1 : 0;
 	satisfiable[464][1]=1; 
-	for(int i=0;i<86;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16708,7 +16708,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[465][0]
 	L[465][0] = LargeX[465][1]>0 ? 1 : 0;
 	satisfiable[465][0]=1; 
-	for(int i=0;i<180;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16726,7 +16726,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[465][1]
 	L[465][1] = LargeX[465][0]>0 ? 1 : 0;
 	satisfiable[465][1]=1; 
-	for(int i=0;i<63;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16744,7 +16744,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[466][0]
 	L[466][0] = LargeX[466][1]>0 ? 1 : 0;
 	satisfiable[466][0]=1; 
-	for(int i=0;i<104;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16762,7 +16762,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[466][1]
 	L[466][1] = LargeX[466][0]>0 ? 1 : 0;
 	satisfiable[466][1]=1; 
-	for(int i=0;i<71;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16780,7 +16780,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[467][0]
 	L[467][0] = LargeX[467][1]>0 ? 1 : 0;
 	satisfiable[467][0]=1; 
-	for(int i=0;i<28;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16798,7 +16798,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[467][1]
 	L[467][1] = LargeX[467][0]>0 ? 1 : 0;
 	satisfiable[467][1]=1; 
-	for(int i=0;i<151;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16816,7 +16816,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[468][0]
 	L[468][0] = LargeX[468][1]>0 ? 1 : 0;
 	satisfiable[468][0]=1; 
-	for(int i=0;i<103;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16834,7 +16834,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[468][1]
 	L[468][1] = LargeX[468][0]>0 ? 1 : 0;
 	satisfiable[468][1]=1; 
-	for(int i=0;i<116;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16852,7 +16852,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[469][0]
 	L[469][0] = LargeX[469][1]>0 ? 1 : 0;
 	satisfiable[469][0]=1; 
-	for(int i=0;i<83;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16870,7 +16870,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[469][1]
 	L[469][1] = LargeX[469][0]>0 ? 1 : 0;
 	satisfiable[469][1]=1; 
-	for(int i=0;i<167;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16888,7 +16888,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[470][0]
 	L[470][0] = LargeX[470][1]>0 ? 1 : 0;
 	satisfiable[470][0]=1; 
-	for(int i=0;i<43;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16906,7 +16906,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[470][1]
 	L[470][1] = LargeX[470][0]>0 ? 1 : 0;
 	satisfiable[470][1]=1; 
-	for(int i=0;i<111;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16924,7 +16924,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[471][0]
 	L[471][0] = LargeX[471][1]>0 ? 1 : 0;
 	satisfiable[471][0]=1; 
-	for(int i=0;i<99;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16942,7 +16942,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[471][1]
 	L[471][1] = LargeX[471][0]>0 ? 1 : 0;
 	satisfiable[471][1]=1; 
-	for(int i=0;i<71;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16960,7 +16960,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[472][0]
 	L[472][0] = LargeX[472][1]>0 ? 1 : 0;
 	satisfiable[472][0]=1; 
-	for(int i=0;i<18;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16978,7 +16978,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[472][1]
 	L[472][1] = LargeX[472][0]>0 ? 1 : 0;
 	satisfiable[472][1]=1; 
-	for(int i=0;i<78;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -16996,7 +16996,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[473][0]
 	L[473][0] = LargeX[473][1]>0 ? 1 : 0;
 	satisfiable[473][0]=1; 
-	for(int i=0;i<109;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17014,7 +17014,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[473][1]
 	L[473][1] = LargeX[473][0]>0 ? 1 : 0;
 	satisfiable[473][1]=1; 
-	for(int i=0;i<103;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17032,7 +17032,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[474][0]
 	L[474][0] = LargeX[474][1]>0 ? 1 : 0;
 	satisfiable[474][0]=1; 
-	for(int i=0;i<72;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17050,7 +17050,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[474][1]
 	L[474][1] = LargeX[474][0]>0 ? 1 : 0;
 	satisfiable[474][1]=1; 
-	for(int i=0;i<79;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17068,7 +17068,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[475][0]
 	L[475][0] = LargeX[475][1]>0 ? 1 : 0;
 	satisfiable[475][0]=1; 
-	for(int i=0;i<77;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17086,7 +17086,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[475][1]
 	L[475][1] = LargeX[475][0]>0 ? 1 : 0;
 	satisfiable[475][1]=1; 
-	for(int i=0;i<67;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17104,7 +17104,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[476][0]
 	L[476][0] = LargeX[476][1]>0 ? 1 : 0;
 	satisfiable[476][0]=1; 
-	for(int i=0;i<45;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17122,7 +17122,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[476][1]
 	L[476][1] = LargeX[476][0]>0 ? 1 : 0;
 	satisfiable[476][1]=1; 
-	for(int i=0;i<95;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17140,7 +17140,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[477][0]
 	L[477][0] = LargeX[477][1]>0 ? 1 : 0;
 	satisfiable[477][0]=1; 
-	for(int i=0;i<95;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17158,7 +17158,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[477][1]
 	L[477][1] = LargeX[477][0]>0 ? 1 : 0;
 	satisfiable[477][1]=1; 
-	for(int i=0;i<219;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17176,7 +17176,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[478][0]
 	L[478][0] = LargeX[478][1]>0 ? 1 : 0;
 	satisfiable[478][0]=1; 
-	for(int i=0;i<95;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17194,7 +17194,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[478][1]
 	L[478][1] = LargeX[478][0]>0 ? 1 : 0;
 	satisfiable[478][1]=1; 
-	for(int i=0;i<25;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17212,7 +17212,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[479][0]
 	L[479][0] = LargeX[479][1]>0 ? 1 : 0;
 	satisfiable[479][0]=1; 
-	for(int i=0;i<77;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17230,7 +17230,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[479][1]
 	L[479][1] = LargeX[479][0]>0 ? 1 : 0;
 	satisfiable[479][1]=1; 
-	for(int i=0;i<126;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17248,7 +17248,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[480][0]
 	L[480][0] = LargeX[480][1]>0 ? 1 : 0;
 	satisfiable[480][0]=1; 
-	for(int i=0;i<155;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17266,7 +17266,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[480][1]
 	L[480][1] = LargeX[480][0]>0 ? 1 : 0;
 	satisfiable[480][1]=1; 
-	for(int i=0;i<53;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17284,7 +17284,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[481][0]
 	L[481][0] = LargeX[481][1]>0 ? 1 : 0;
 	satisfiable[481][0]=1; 
-	for(int i=0;i<91;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17302,7 +17302,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[481][1]
 	L[481][1] = LargeX[481][0]>0 ? 1 : 0;
 	satisfiable[481][1]=1; 
-	for(int i=0;i<105;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17320,7 +17320,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[482][0]
 	L[482][0] = LargeX[482][1]>0 ? 1 : 0;
 	satisfiable[482][0]=1; 
-	for(int i=0;i<85;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17338,7 +17338,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[482][1]
 	L[482][1] = LargeX[482][0]>0 ? 1 : 0;
 	satisfiable[482][1]=1; 
-	for(int i=0;i<101;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17356,7 +17356,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[483][0]
 	L[483][0] = LargeX[483][1]>0 ? 1 : 0;
 	satisfiable[483][0]=1; 
-	for(int i=0;i<77;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17374,7 +17374,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[483][1]
 	L[483][1] = LargeX[483][0]>0 ? 1 : 0;
 	satisfiable[483][1]=1; 
-	for(int i=0;i<115;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17392,7 +17392,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[484][0]
 	L[484][0] = LargeX[484][1]>0 ? 1 : 0;
 	satisfiable[484][0]=1; 
-	for(int i=0;i<9;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17410,7 +17410,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[484][1]
 	L[484][1] = LargeX[484][0]>0 ? 1 : 0;
 	satisfiable[484][1]=1; 
-	for(int i=0;i<34;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17428,7 +17428,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[485][0]
 	L[485][0] = LargeX[485][1]>0 ? 1 : 0;
 	satisfiable[485][0]=1; 
-	for(int i=0;i<118;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17446,7 +17446,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[485][1]
 	L[485][1] = LargeX[485][0]>0 ? 1 : 0;
 	satisfiable[485][1]=1; 
-	for(int i=0;i<43;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17464,7 +17464,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[486][0]
 	L[486][0] = LargeX[486][1]>0 ? 1 : 0;
 	satisfiable[486][0]=1; 
-	for(int i=0;i<102;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17482,7 +17482,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[486][1]
 	L[486][1] = LargeX[486][0]>0 ? 1 : 0;
 	satisfiable[486][1]=1; 
-	for(int i=0;i<47;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17500,7 +17500,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[487][0]
 	L[487][0] = LargeX[487][1]>0 ? 1 : 0;
 	satisfiable[487][0]=1; 
-	for(int i=0;i<44;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17518,7 +17518,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[487][1]
 	L[487][1] = LargeX[487][0]>0 ? 1 : 0;
 	satisfiable[487][1]=1; 
-	for(int i=0;i<43;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17536,7 +17536,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[488][0]
 	L[488][0] = LargeX[488][1]>0 ? 1 : 0;
 	satisfiable[488][0]=1; 
-	for(int i=0;i<9;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17554,7 +17554,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[488][1]
 	L[488][1] = LargeX[488][0]>0 ? 1 : 0;
 	satisfiable[488][1]=1; 
-	for(int i=0;i<48;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17572,7 +17572,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[489][0]
 	L[489][0] = LargeX[489][1]>0 ? 1 : 0;
 	satisfiable[489][0]=1; 
-	for(int i=0;i<102;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17590,7 +17590,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[489][1]
 	L[489][1] = LargeX[489][0]>0 ? 1 : 0;
 	satisfiable[489][1]=1; 
-	for(int i=0;i<58;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17608,7 +17608,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[490][0]
 	L[490][0] = LargeX[490][1]>0 ? 1 : 0;
 	satisfiable[490][0]=1; 
-	for(int i=0;i<79;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17626,7 +17626,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[490][1]
 	L[490][1] = LargeX[490][0]>0 ? 1 : 0;
 	satisfiable[490][1]=1; 
-	for(int i=0;i<38;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17644,7 +17644,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[491][0]
 	L[491][0] = LargeX[491][1]>0 ? 1 : 0;
 	satisfiable[491][0]=1; 
-	for(int i=0;i<144;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17662,7 +17662,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[491][1]
 	L[491][1] = LargeX[491][0]>0 ? 1 : 0;
 	satisfiable[491][1]=1; 
-	for(int i=0;i<65;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17680,7 +17680,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[492][0]
 	L[492][0] = LargeX[492][1]>0 ? 1 : 0;
 	satisfiable[492][0]=1; 
-	for(int i=0;i<145;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17698,7 +17698,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[492][1]
 	L[492][1] = LargeX[492][0]>0 ? 1 : 0;
 	satisfiable[492][1]=1; 
-	for(int i=0;i<101;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17716,7 +17716,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[493][0]
 	L[493][0] = LargeX[493][1]>0 ? 1 : 0;
 	satisfiable[493][0]=1; 
-	for(int i=0;i<96;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17734,7 +17734,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[493][1]
 	L[493][1] = LargeX[493][0]>0 ? 1 : 0;
 	satisfiable[493][1]=1; 
-	for(int i=0;i<98;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17752,7 +17752,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[494][0]
 	L[494][0] = LargeX[494][1]>0 ? 1 : 0;
 	satisfiable[494][0]=1; 
-	for(int i=0;i<104;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17770,7 +17770,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[494][1]
 	L[494][1] = LargeX[494][0]>0 ? 1 : 0;
 	satisfiable[494][1]=1; 
-	for(int i=0;i<102;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17788,7 +17788,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[495][0]
 	L[495][0] = LargeX[495][1]>0 ? 1 : 0;
 	satisfiable[495][0]=1; 
-	for(int i=0;i<73;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17806,7 +17806,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[495][1]
 	L[495][1] = LargeX[495][0]>0 ? 1 : 0;
 	satisfiable[495][1]=1; 
-	for(int i=0;i<123;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17824,7 +17824,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[496][0]
 	L[496][0] = LargeX[496][1]>0 ? 1 : 0;
 	satisfiable[496][0]=1; 
-	for(int i=0;i<34;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17842,7 +17842,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[496][1]
 	L[496][1] = LargeX[496][0]>0 ? 1 : 0;
 	satisfiable[496][1]=1; 
-	for(int i=0;i<63;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17860,7 +17860,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[497][0]
 	L[497][0] = LargeX[497][1]>0 ? 1 : 0;
 	satisfiable[497][0]=1; 
-	for(int i=0;i<120;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17878,7 +17878,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[497][1]
 	L[497][1] = LargeX[497][0]>0 ? 1 : 0;
 	satisfiable[497][1]=1; 
-	for(int i=0;i<157;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17896,7 +17896,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[498][0]
 	L[498][0] = LargeX[498][1]>0 ? 1 : 0;
 	satisfiable[498][0]=1; 
-	for(int i=0;i<157;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17914,7 +17914,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[498][1]
 	L[498][1] = LargeX[498][0]>0 ? 1 : 0;
 	satisfiable[498][1]=1; 
-	for(int i=0;i<117;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17932,7 +17932,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[499][0]
 	L[499][0] = LargeX[499][1]>0 ? 1 : 0;
 	satisfiable[499][0]=1; 
-	for(int i=0;i<83;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17950,7 +17950,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[499][1]
 	L[499][1] = LargeX[499][0]>0 ? 1 : 0;
 	satisfiable[499][1]=1; 
-	for(int i=0;i<58;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17968,7 +17968,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[500][0]
 	L[500][0] = LargeX[500][1]>0 ? 1 : 0;
 	satisfiable[500][0]=1; 
-	for(int i=0;i<82;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -17986,7 +17986,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[500][1]
 	L[500][1] = LargeX[500][0]>0 ? 1 : 0;
 	satisfiable[500][1]=1; 
-	for(int i=0;i<88;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18004,7 +18004,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[501][0]
 	L[501][0] = LargeX[501][1]>0 ? 1 : 0;
 	satisfiable[501][0]=1; 
-	for(int i=0;i<118;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18022,7 +18022,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[501][1]
 	L[501][1] = LargeX[501][0]>0 ? 1 : 0;
 	satisfiable[501][1]=1; 
-	for(int i=0;i<61;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18040,7 +18040,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[502][0]
 	L[502][0] = LargeX[502][1]>0 ? 1 : 0;
 	satisfiable[502][0]=1; 
-	for(int i=0;i<64;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18058,7 +18058,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[502][1]
 	L[502][1] = LargeX[502][0]>0 ? 1 : 0;
 	satisfiable[502][1]=1; 
-	for(int i=0;i<82;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18076,7 +18076,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[503][0]
 	L[503][0] = LargeX[503][1]>0 ? 1 : 0;
 	satisfiable[503][0]=1; 
-	for(int i=0;i<20;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18094,7 +18094,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[503][1]
 	L[503][1] = LargeX[503][0]>0 ? 1 : 0;
 	satisfiable[503][1]=1; 
-	for(int i=0;i<118;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18130,7 +18130,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[504][1]
 	L[504][1] = LargeX[504][0]>0 ? 1 : 0;
 	satisfiable[504][1]=1; 
-	for(int i=0;i<89;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18148,7 +18148,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[505][0]
 	L[505][0] = LargeX[505][1]>0 ? 1 : 0;
 	satisfiable[505][0]=1; 
-	for(int i=0;i<100;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18166,7 +18166,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[505][1]
 	L[505][1] = LargeX[505][0]>0 ? 1 : 0;
 	satisfiable[505][1]=1; 
-	for(int i=0;i<73;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18184,7 +18184,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[506][0]
 	L[506][0] = LargeX[506][1]>0 ? 1 : 0;
 	satisfiable[506][0]=1; 
-	for(int i=0;i<126;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18202,7 +18202,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[506][1]
 	L[506][1] = LargeX[506][0]>0 ? 1 : 0;
 	satisfiable[506][1]=1; 
-	for(int i=0;i<121;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18220,7 +18220,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[507][0]
 	L[507][0] = LargeX[507][1]>0 ? 1 : 0;
 	satisfiable[507][0]=1; 
-	for(int i=0;i<60;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18238,7 +18238,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[507][1]
 	L[507][1] = LargeX[507][0]>0 ? 1 : 0;
 	satisfiable[507][1]=1; 
-	for(int i=0;i<162;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18256,7 +18256,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[508][0]
 	L[508][0] = LargeX[508][1]>0 ? 1 : 0;
 	satisfiable[508][0]=1; 
-	for(int i=0;i<135;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18274,7 +18274,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[508][1]
 	L[508][1] = LargeX[508][0]>0 ? 1 : 0;
 	satisfiable[508][1]=1; 
-	for(int i=0;i<42;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18292,7 +18292,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[509][0]
 	L[509][0] = LargeX[509][1]>0 ? 1 : 0;
 	satisfiable[509][0]=1; 
-	for(int i=0;i<101;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18310,7 +18310,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[509][1]
 	L[509][1] = LargeX[509][0]>0 ? 1 : 0;
 	satisfiable[509][1]=1; 
-	for(int i=0;i<108;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18328,7 +18328,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[510][0]
 	L[510][0] = LargeX[510][1]>0 ? 1 : 0;
 	satisfiable[510][0]=1; 
-	for(int i=0;i<90;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18346,7 +18346,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[510][1]
 	L[510][1] = LargeX[510][0]>0 ? 1 : 0;
 	satisfiable[510][1]=1; 
-	for(int i=0;i<122;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18364,7 +18364,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[511][0]
 	L[511][0] = LargeX[511][1]>0 ? 1 : 0;
 	satisfiable[511][0]=1; 
-	for(int i=0;i<35;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18382,7 +18382,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[511][1]
 	L[511][1] = LargeX[511][0]>0 ? 1 : 0;
 	satisfiable[511][1]=1; 
-	for(int i=0;i<137;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18400,7 +18400,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[512][0]
 	L[512][0] = LargeX[512][1]>0 ? 1 : 0;
 	satisfiable[512][0]=1; 
-	for(int i=0;i<34;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18418,7 +18418,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[512][1]
 	L[512][1] = LargeX[512][0]>0 ? 1 : 0;
 	satisfiable[512][1]=1; 
-	for(int i=0;i<72;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18436,7 +18436,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[513][0]
 	L[513][0] = LargeX[513][1]>0 ? 1 : 0;
 	satisfiable[513][0]=1; 
-	for(int i=0;i<77;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18454,7 +18454,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[513][1]
 	L[513][1] = LargeX[513][0]>0 ? 1 : 0;
 	satisfiable[513][1]=1; 
-	for(int i=0;i<140;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18472,7 +18472,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[514][0]
 	L[514][0] = LargeX[514][1]>0 ? 1 : 0;
 	satisfiable[514][0]=1; 
-	for(int i=0;i<48;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18490,7 +18490,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[514][1]
 	L[514][1] = LargeX[514][0]>0 ? 1 : 0;
 	satisfiable[514][1]=1; 
-	for(int i=0;i<77;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18508,7 +18508,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[515][0]
 	L[515][0] = LargeX[515][1]>0 ? 1 : 0;
 	satisfiable[515][0]=1; 
-	for(int i=0;i<56;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18526,7 +18526,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[515][1]
 	L[515][1] = LargeX[515][0]>0 ? 1 : 0;
 	satisfiable[515][1]=1; 
-	for(int i=0;i<107;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18544,7 +18544,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[516][0]
 	L[516][0] = LargeX[516][1]>0 ? 1 : 0;
 	satisfiable[516][0]=1; 
-	for(int i=0;i<23;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18562,7 +18562,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[516][1]
 	L[516][1] = LargeX[516][0]>0 ? 1 : 0;
 	satisfiable[516][1]=1; 
-	for(int i=0;i<97;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18580,7 +18580,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[517][0]
 	L[517][0] = LargeX[517][1]>0 ? 1 : 0;
 	satisfiable[517][0]=1; 
-	for(int i=0;i<72;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18598,7 +18598,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[517][1]
 	L[517][1] = LargeX[517][0]>0 ? 1 : 0;
 	satisfiable[517][1]=1; 
-	for(int i=0;i<133;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18616,7 +18616,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[518][0]
 	L[518][0] = LargeX[518][1]>0 ? 1 : 0;
 	satisfiable[518][0]=1; 
-	for(int i=0;i<28;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18634,7 +18634,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[518][1]
 	L[518][1] = LargeX[518][0]>0 ? 1 : 0;
 	satisfiable[518][1]=1; 
-	for(int i=0;i<80;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18652,7 +18652,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[519][0]
 	L[519][0] = LargeX[519][1]>0 ? 1 : 0;
 	satisfiable[519][0]=1; 
-	for(int i=0;i<60;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18670,7 +18670,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[519][1]
 	L[519][1] = LargeX[519][0]>0 ? 1 : 0;
 	satisfiable[519][1]=1; 
-	for(int i=0;i<115;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18688,7 +18688,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[520][0]
 	L[520][0] = LargeX[520][1]>0 ? 1 : 0;
 	satisfiable[520][0]=1; 
-	for(int i=0;i<145;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18706,7 +18706,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[520][1]
 	L[520][1] = LargeX[520][0]>0 ? 1 : 0;
 	satisfiable[520][1]=1; 
-	for(int i=0;i<51;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18724,7 +18724,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[521][0]
 	L[521][0] = LargeX[521][1]>0 ? 1 : 0;
 	satisfiable[521][0]=1; 
-	for(int i=0;i<45;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18742,7 +18742,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[521][1]
 	L[521][1] = LargeX[521][0]>0 ? 1 : 0;
 	satisfiable[521][1]=1; 
-	for(int i=0;i<65;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18760,7 +18760,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[522][0]
 	L[522][0] = LargeX[522][1]>0 ? 1 : 0;
 	satisfiable[522][0]=1; 
-	for(int i=0;i<124;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18778,7 +18778,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[522][1]
 	L[522][1] = LargeX[522][0]>0 ? 1 : 0;
 	satisfiable[522][1]=1; 
-	for(int i=0;i<68;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18796,7 +18796,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[523][0]
 	L[523][0] = LargeX[523][1]>0 ? 1 : 0;
 	satisfiable[523][0]=1; 
-	for(int i=0;i<113;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18814,7 +18814,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[523][1]
 	L[523][1] = LargeX[523][0]>0 ? 1 : 0;
 	satisfiable[523][1]=1; 
-	for(int i=0;i<163;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18832,7 +18832,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[524][0]
 	L[524][0] = LargeX[524][1]>0 ? 1 : 0;
 	satisfiable[524][0]=1; 
-	for(int i=0;i<47;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18850,7 +18850,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[524][1]
 	L[524][1] = LargeX[524][0]>0 ? 1 : 0;
 	satisfiable[524][1]=1; 
-	for(int i=0;i<101;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18868,7 +18868,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[525][0]
 	L[525][0] = LargeX[525][1]>0 ? 1 : 0;
 	satisfiable[525][0]=1; 
-	for(int i=0;i<131;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18886,7 +18886,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[525][1]
 	L[525][1] = LargeX[525][0]>0 ? 1 : 0;
 	satisfiable[525][1]=1; 
-	for(int i=0;i<64;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18904,7 +18904,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[526][0]
 	L[526][0] = LargeX[526][1]>0 ? 1 : 0;
 	satisfiable[526][0]=1; 
-	for(int i=0;i<93;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18922,7 +18922,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[526][1]
 	L[526][1] = LargeX[526][0]>0 ? 1 : 0;
 	satisfiable[526][1]=1; 
-	for(int i=0;i<77;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18940,7 +18940,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[527][0]
 	L[527][0] = LargeX[527][1]>0 ? 1 : 0;
 	satisfiable[527][0]=1; 
-	for(int i=0;i<69;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18958,7 +18958,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[527][1]
 	L[527][1] = LargeX[527][0]>0 ? 1 : 0;
 	satisfiable[527][1]=1; 
-	for(int i=0;i<121;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18976,7 +18976,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[528][0]
 	L[528][0] = LargeX[528][1]>0 ? 1 : 0;
 	satisfiable[528][0]=1; 
-	for(int i=0;i<151;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -18994,7 +18994,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[528][1]
 	L[528][1] = LargeX[528][0]>0 ? 1 : 0;
 	satisfiable[528][1]=1; 
-	for(int i=0;i<48;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19012,7 +19012,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[529][0]
 	L[529][0] = LargeX[529][1]>0 ? 1 : 0;
 	satisfiable[529][0]=1; 
-	for(int i=0;i<38;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19030,7 +19030,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[529][1]
 	L[529][1] = LargeX[529][0]>0 ? 1 : 0;
 	satisfiable[529][1]=1; 
-	for(int i=0;i<154;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19048,7 +19048,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[530][0]
 	L[530][0] = LargeX[530][1]>0 ? 1 : 0;
 	satisfiable[530][0]=1; 
-	for(int i=0;i<67;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19066,7 +19066,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[530][1]
 	L[530][1] = LargeX[530][0]>0 ? 1 : 0;
 	satisfiable[530][1]=1; 
-	for(int i=0;i<66;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19084,7 +19084,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[531][0]
 	L[531][0] = LargeX[531][1]>0 ? 1 : 0;
 	satisfiable[531][0]=1; 
-	for(int i=0;i<96;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19102,7 +19102,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[531][1]
 	L[531][1] = LargeX[531][0]>0 ? 1 : 0;
 	satisfiable[531][1]=1; 
-	for(int i=0;i<94;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19120,7 +19120,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[532][0]
 	L[532][0] = LargeX[532][1]>0 ? 1 : 0;
 	satisfiable[532][0]=1; 
-	for(int i=0;i<102;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19138,7 +19138,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[532][1]
 	L[532][1] = LargeX[532][0]>0 ? 1 : 0;
 	satisfiable[532][1]=1; 
-	for(int i=0;i<48;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19156,7 +19156,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[533][0]
 	L[533][0] = LargeX[533][1]>0 ? 1 : 0;
 	satisfiable[533][0]=1; 
-	for(int i=0;i<109;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19174,7 +19174,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[533][1]
 	L[533][1] = LargeX[533][0]>0 ? 1 : 0;
 	satisfiable[533][1]=1; 
-	for(int i=0;i<95;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19192,7 +19192,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[534][0]
 	L[534][0] = LargeX[534][1]>0 ? 1 : 0;
 	satisfiable[534][0]=1; 
-	for(int i=0;i<115;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19210,7 +19210,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[534][1]
 	L[534][1] = LargeX[534][0]>0 ? 1 : 0;
 	satisfiable[534][1]=1; 
-	for(int i=0;i<147;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19228,7 +19228,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[535][0]
 	L[535][0] = LargeX[535][1]>0 ? 1 : 0;
 	satisfiable[535][0]=1; 
-	for(int i=0;i<102;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19246,7 +19246,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[535][1]
 	L[535][1] = LargeX[535][0]>0 ? 1 : 0;
 	satisfiable[535][1]=1; 
-	for(int i=0;i<77;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19264,7 +19264,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[536][0]
 	L[536][0] = LargeX[536][1]>0 ? 1 : 0;
 	satisfiable[536][0]=1; 
-	for(int i=0;i<58;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19282,7 +19282,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[536][1]
 	L[536][1] = LargeX[536][0]>0 ? 1 : 0;
 	satisfiable[536][1]=1; 
-	for(int i=0;i<105;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19300,7 +19300,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[537][0]
 	L[537][0] = LargeX[537][1]>0 ? 1 : 0;
 	satisfiable[537][0]=1; 
-	for(int i=0;i<104;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19318,7 +19318,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[537][1]
 	L[537][1] = LargeX[537][0]>0 ? 1 : 0;
 	satisfiable[537][1]=1; 
-	for(int i=0;i<88;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19336,7 +19336,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[538][0]
 	L[538][0] = LargeX[538][1]>0 ? 1 : 0;
 	satisfiable[538][0]=1; 
-	for(int i=0;i<85;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19354,7 +19354,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[538][1]
 	L[538][1] = LargeX[538][0]>0 ? 1 : 0;
 	satisfiable[538][1]=1; 
-	for(int i=0;i<104;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19372,7 +19372,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[539][0]
 	L[539][0] = LargeX[539][1]>0 ? 1 : 0;
 	satisfiable[539][0]=1; 
-	for(int i=0;i<86;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19390,7 +19390,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[539][1]
 	L[539][1] = LargeX[539][0]>0 ? 1 : 0;
 	satisfiable[539][1]=1; 
-	for(int i=0;i<104;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19408,7 +19408,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[540][0]
 	L[540][0] = LargeX[540][1]>0 ? 1 : 0;
 	satisfiable[540][0]=1; 
-	for(int i=0;i<94;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19426,7 +19426,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[540][1]
 	L[540][1] = LargeX[540][0]>0 ? 1 : 0;
 	satisfiable[540][1]=1; 
-	for(int i=0;i<38;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19444,7 +19444,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[541][0]
 	L[541][0] = LargeX[541][1]>0 ? 1 : 0;
 	satisfiable[541][0]=1; 
-	for(int i=0;i<95;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19462,7 +19462,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[541][1]
 	L[541][1] = LargeX[541][0]>0 ? 1 : 0;
 	satisfiable[541][1]=1; 
-	for(int i=0;i<137;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19480,7 +19480,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[542][0]
 	L[542][0] = LargeX[542][1]>0 ? 1 : 0;
 	satisfiable[542][0]=1; 
-	for(int i=0;i<107;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19498,7 +19498,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[542][1]
 	L[542][1] = LargeX[542][0]>0 ? 1 : 0;
 	satisfiable[542][1]=1; 
-	for(int i=0;i<69;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19516,7 +19516,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[543][0]
 	L[543][0] = LargeX[543][1]>0 ? 1 : 0;
 	satisfiable[543][0]=1; 
-	for(int i=0;i<125;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19534,7 +19534,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[543][1]
 	L[543][1] = LargeX[543][0]>0 ? 1 : 0;
 	satisfiable[543][1]=1; 
-	for(int i=0;i<99;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19552,7 +19552,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[544][0]
 	L[544][0] = LargeX[544][1]>0 ? 1 : 0;
 	satisfiable[544][0]=1; 
-	for(int i=0;i<77;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19570,7 +19570,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[544][1]
 	L[544][1] = LargeX[544][0]>0 ? 1 : 0;
 	satisfiable[544][1]=1; 
-	for(int i=0;i<95;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19588,7 +19588,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[545][0]
 	L[545][0] = LargeX[545][1]>0 ? 1 : 0;
 	satisfiable[545][0]=1; 
-	for(int i=0;i<144;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19606,7 +19606,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[545][1]
 	L[545][1] = LargeX[545][0]>0 ? 1 : 0;
 	satisfiable[545][1]=1; 
-	for(int i=0;i<32;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19624,7 +19624,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[546][0]
 	L[546][0] = LargeX[546][1]>0 ? 1 : 0;
 	satisfiable[546][0]=1; 
-	for(int i=0;i<115;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19642,7 +19642,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[546][1]
 	L[546][1] = LargeX[546][0]>0 ? 1 : 0;
 	satisfiable[546][1]=1; 
-	for(int i=0;i<83;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19660,7 +19660,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[547][0]
 	L[547][0] = LargeX[547][1]>0 ? 1 : 0;
 	satisfiable[547][0]=1; 
-	for(int i=0;i<105;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19678,7 +19678,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[547][1]
 	L[547][1] = LargeX[547][0]>0 ? 1 : 0;
 	satisfiable[547][1]=1; 
-	for(int i=0;i<98;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19696,7 +19696,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[548][0]
 	L[548][0] = LargeX[548][1]>0 ? 1 : 0;
 	satisfiable[548][0]=1; 
-	for(int i=0;i<115;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19714,7 +19714,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[548][1]
 	L[548][1] = LargeX[548][0]>0 ? 1 : 0;
 	satisfiable[548][1]=1; 
-	for(int i=0;i<33;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19732,7 +19732,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[549][0]
 	L[549][0] = LargeX[549][1]>0 ? 1 : 0;
 	satisfiable[549][0]=1; 
-	for(int i=0;i<88;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19750,7 +19750,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[549][1]
 	L[549][1] = LargeX[549][0]>0 ? 1 : 0;
 	satisfiable[549][1]=1; 
-	for(int i=0;i<120;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19768,7 +19768,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[550][0]
 	L[550][0] = LargeX[550][1]>0 ? 1 : 0;
 	satisfiable[550][0]=1; 
-	for(int i=0;i<51;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19786,7 +19786,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[550][1]
 	L[550][1] = LargeX[550][0]>0 ? 1 : 0;
 	satisfiable[550][1]=1; 
-	for(int i=0;i<85;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19804,7 +19804,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[551][0]
 	L[551][0] = LargeX[551][1]>0 ? 1 : 0;
 	satisfiable[551][0]=1; 
-	for(int i=0;i<102;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19822,7 +19822,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[551][1]
 	L[551][1] = LargeX[551][0]>0 ? 1 : 0;
 	satisfiable[551][1]=1; 
-	for(int i=0;i<78;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19840,7 +19840,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[552][0]
 	L[552][0] = LargeX[552][1]>0 ? 1 : 0;
 	satisfiable[552][0]=1; 
-	for(int i=0;i<36;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19858,7 +19858,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[552][1]
 	L[552][1] = LargeX[552][0]>0 ? 1 : 0;
 	satisfiable[552][1]=1; 
-	for(int i=0;i<72;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19876,7 +19876,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[553][0]
 	L[553][0] = LargeX[553][1]>0 ? 1 : 0;
 	satisfiable[553][0]=1; 
-	for(int i=0;i<79;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19894,7 +19894,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[553][1]
 	L[553][1] = LargeX[553][0]>0 ? 1 : 0;
 	satisfiable[553][1]=1; 
-	for(int i=0;i<122;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19912,7 +19912,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[554][0]
 	L[554][0] = LargeX[554][1]>0 ? 1 : 0;
 	satisfiable[554][0]=1; 
-	for(int i=0;i<58;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19930,7 +19930,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[554][1]
 	L[554][1] = LargeX[554][0]>0 ? 1 : 0;
 	satisfiable[554][1]=1; 
-	for(int i=0;i<110;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19948,7 +19948,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[555][0]
 	L[555][0] = LargeX[555][1]>0 ? 1 : 0;
 	satisfiable[555][0]=1; 
-	for(int i=0;i<90;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19966,7 +19966,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[555][1]
 	L[555][1] = LargeX[555][0]>0 ? 1 : 0;
 	satisfiable[555][1]=1; 
-	for(int i=0;i<67;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -19984,7 +19984,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[556][0]
 	L[556][0] = LargeX[556][1]>0 ? 1 : 0;
 	satisfiable[556][0]=1; 
-	for(int i=0;i<128;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20002,7 +20002,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[556][1]
 	L[556][1] = LargeX[556][0]>0 ? 1 : 0;
 	satisfiable[556][1]=1; 
-	for(int i=0;i<140;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20020,7 +20020,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[557][0]
 	L[557][0] = LargeX[557][1]>0 ? 1 : 0;
 	satisfiable[557][0]=1; 
-	for(int i=0;i<94;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20038,7 +20038,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[557][1]
 	L[557][1] = LargeX[557][0]>0 ? 1 : 0;
 	satisfiable[557][1]=1; 
-	for(int i=0;i<67;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20056,7 +20056,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[558][0]
 	L[558][0] = LargeX[558][1]>0 ? 1 : 0;
 	satisfiable[558][0]=1; 
-	for(int i=0;i<35;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20074,7 +20074,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[558][1]
 	L[558][1] = LargeX[558][0]>0 ? 1 : 0;
 	satisfiable[558][1]=1; 
-	for(int i=0;i<132;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20092,7 +20092,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[559][0]
 	L[559][0] = LargeX[559][1]>0 ? 1 : 0;
 	satisfiable[559][0]=1; 
-	for(int i=0;i<31;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20110,7 +20110,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[559][1]
 	L[559][1] = LargeX[559][0]>0 ? 1 : 0;
 	satisfiable[559][1]=1; 
-	for(int i=0;i<103;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20128,7 +20128,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[560][0]
 	L[560][0] = LargeX[560][1]>0 ? 1 : 0;
 	satisfiable[560][0]=1; 
-	for(int i=0;i<91;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20146,7 +20146,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[560][1]
 	L[560][1] = LargeX[560][0]>0 ? 1 : 0;
 	satisfiable[560][1]=1; 
-	for(int i=0;i<16;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20164,7 +20164,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[561][0]
 	L[561][0] = LargeX[561][1]>0 ? 1 : 0;
 	satisfiable[561][0]=1; 
-	for(int i=0;i<135;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20182,7 +20182,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[561][1]
 	L[561][1] = LargeX[561][0]>0 ? 1 : 0;
 	satisfiable[561][1]=1; 
-	for(int i=0;i<122;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20200,7 +20200,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[562][0]
 	L[562][0] = LargeX[562][1]>0 ? 1 : 0;
 	satisfiable[562][0]=1; 
-	for(int i=0;i<159;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20218,7 +20218,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[562][1]
 	L[562][1] = LargeX[562][0]>0 ? 1 : 0;
 	satisfiable[562][1]=1; 
-	for(int i=0;i<32;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20236,7 +20236,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[563][0]
 	L[563][0] = LargeX[563][1]>0 ? 1 : 0;
 	satisfiable[563][0]=1; 
-	for(int i=0;i<121;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20254,7 +20254,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[563][1]
 	L[563][1] = LargeX[563][0]>0 ? 1 : 0;
 	satisfiable[563][1]=1; 
-	for(int i=0;i<116;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20272,7 +20272,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[564][0]
 	L[564][0] = LargeX[564][1]>0 ? 1 : 0;
 	satisfiable[564][0]=1; 
-	for(int i=0;i<107;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20290,7 +20290,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[564][1]
 	L[564][1] = LargeX[564][0]>0 ? 1 : 0;
 	satisfiable[564][1]=1; 
-	for(int i=0;i<51;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20308,7 +20308,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[565][0]
 	L[565][0] = LargeX[565][1]>0 ? 1 : 0;
 	satisfiable[565][0]=1; 
-	for(int i=0;i<94;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20326,7 +20326,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[565][1]
 	L[565][1] = LargeX[565][0]>0 ? 1 : 0;
 	satisfiable[565][1]=1; 
-	for(int i=0;i<146;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20344,7 +20344,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[566][0]
 	L[566][0] = LargeX[566][1]>0 ? 1 : 0;
 	satisfiable[566][0]=1; 
-	for(int i=0;i<78;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20362,7 +20362,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[566][1]
 	L[566][1] = LargeX[566][0]>0 ? 1 : 0;
 	satisfiable[566][1]=1; 
-	for(int i=0;i<51;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20380,7 +20380,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[567][0]
 	L[567][0] = LargeX[567][1]>0 ? 1 : 0;
 	satisfiable[567][0]=1; 
-	for(int i=0;i<110;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20398,7 +20398,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[567][1]
 	L[567][1] = LargeX[567][0]>0 ? 1 : 0;
 	satisfiable[567][1]=1; 
-	for(int i=0;i<68;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20416,7 +20416,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[568][0]
 	L[568][0] = LargeX[568][1]>0 ? 1 : 0;
 	satisfiable[568][0]=1; 
-	for(int i=0;i<136;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20434,7 +20434,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[568][1]
 	L[568][1] = LargeX[568][0]>0 ? 1 : 0;
 	satisfiable[568][1]=1; 
-	for(int i=0;i<91;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20452,7 +20452,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[569][0]
 	L[569][0] = LargeX[569][1]>0 ? 1 : 0;
 	satisfiable[569][0]=1; 
-	for(int i=0;i<117;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20470,7 +20470,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[569][1]
 	L[569][1] = LargeX[569][0]>0 ? 1 : 0;
 	satisfiable[569][1]=1; 
-	for(int i=0;i<73;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20488,7 +20488,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[570][0]
 	L[570][0] = LargeX[570][1]>0 ? 1 : 0;
 	satisfiable[570][0]=1; 
-	for(int i=0;i<48;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20506,7 +20506,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[570][1]
 	L[570][1] = LargeX[570][0]>0 ? 1 : 0;
 	satisfiable[570][1]=1; 
-	for(int i=0;i<67;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20524,7 +20524,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[571][0]
 	L[571][0] = LargeX[571][1]>0 ? 1 : 0;
 	satisfiable[571][0]=1; 
-	for(int i=0;i<40;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20542,7 +20542,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[571][1]
 	L[571][1] = LargeX[571][0]>0 ? 1 : 0;
 	satisfiable[571][1]=1; 
-	for(int i=0;i<82;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20560,7 +20560,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[572][0]
 	L[572][0] = LargeX[572][1]>0 ? 1 : 0;
 	satisfiable[572][0]=1; 
-	for(int i=0;i<51;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20578,7 +20578,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[572][1]
 	L[572][1] = LargeX[572][0]>0 ? 1 : 0;
 	satisfiable[572][1]=1; 
-	for(int i=0;i<88;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20596,7 +20596,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[573][0]
 	L[573][0] = LargeX[573][1]>0 ? 1 : 0;
 	satisfiable[573][0]=1; 
-	for(int i=0;i<69;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20614,7 +20614,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[573][1]
 	L[573][1] = LargeX[573][0]>0 ? 1 : 0;
 	satisfiable[573][1]=1; 
-	for(int i=0;i<105;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20632,7 +20632,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[574][0]
 	L[574][0] = LargeX[574][1]>0 ? 1 : 0;
 	satisfiable[574][0]=1; 
-	for(int i=0;i<75;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20650,7 +20650,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[574][1]
 	L[574][1] = LargeX[574][0]>0 ? 1 : 0;
 	satisfiable[574][1]=1; 
-	for(int i=0;i<65;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20668,7 +20668,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[575][0]
 	L[575][0] = LargeX[575][1]>0 ? 1 : 0;
 	satisfiable[575][0]=1; 
-	for(int i=0;i<99;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20686,7 +20686,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[575][1]
 	L[575][1] = LargeX[575][0]>0 ? 1 : 0;
 	satisfiable[575][1]=1; 
-	for(int i=0;i<53;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20704,7 +20704,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[576][0]
 	L[576][0] = LargeX[576][1]>0 ? 1 : 0;
 	satisfiable[576][0]=1; 
-	for(int i=0;i<43;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20722,7 +20722,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[576][1]
 	L[576][1] = LargeX[576][0]>0 ? 1 : 0;
 	satisfiable[576][1]=1; 
-	for(int i=0;i<42;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20740,7 +20740,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[577][0]
 	L[577][0] = LargeX[577][1]>0 ? 1 : 0;
 	satisfiable[577][0]=1; 
-	for(int i=0;i<110;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20758,7 +20758,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[577][1]
 	L[577][1] = LargeX[577][0]>0 ? 1 : 0;
 	satisfiable[577][1]=1; 
-	for(int i=0;i<99;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20776,7 +20776,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[578][0]
 	L[578][0] = LargeX[578][1]>0 ? 1 : 0;
 	satisfiable[578][0]=1; 
-	for(int i=0;i<153;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20794,7 +20794,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[578][1]
 	L[578][1] = LargeX[578][0]>0 ? 1 : 0;
 	satisfiable[578][1]=1; 
-	for(int i=0;i<147;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20812,7 +20812,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[579][0]
 	L[579][0] = LargeX[579][1]>0 ? 1 : 0;
 	satisfiable[579][0]=1; 
-	for(int i=0;i<60;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20830,7 +20830,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[579][1]
 	L[579][1] = LargeX[579][0]>0 ? 1 : 0;
 	satisfiable[579][1]=1; 
-	for(int i=0;i<61;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20848,7 +20848,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[580][0]
 	L[580][0] = LargeX[580][1]>0 ? 1 : 0;
 	satisfiable[580][0]=1; 
-	for(int i=0;i<74;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20866,7 +20866,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[580][1]
 	L[580][1] = LargeX[580][0]>0 ? 1 : 0;
 	satisfiable[580][1]=1; 
-	for(int i=0;i<110;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20884,7 +20884,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[581][0]
 	L[581][0] = LargeX[581][1]>0 ? 1 : 0;
 	satisfiable[581][0]=1; 
-	for(int i=0;i<105;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20902,7 +20902,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[581][1]
 	L[581][1] = LargeX[581][0]>0 ? 1 : 0;
 	satisfiable[581][1]=1; 
-	for(int i=0;i<51;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20920,7 +20920,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[582][0]
 	L[582][0] = LargeX[582][1]>0 ? 1 : 0;
 	satisfiable[582][0]=1; 
-	for(int i=0;i<87;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20938,7 +20938,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[582][1]
 	L[582][1] = LargeX[582][0]>0 ? 1 : 0;
 	satisfiable[582][1]=1; 
-	for(int i=0;i<99;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20956,7 +20956,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[583][0]
 	L[583][0] = LargeX[583][1]>0 ? 1 : 0;
 	satisfiable[583][0]=1; 
-	for(int i=0;i<125;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20974,7 +20974,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[583][1]
 	L[583][1] = LargeX[583][0]>0 ? 1 : 0;
 	satisfiable[583][1]=1; 
-	for(int i=0;i<171;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -20992,7 +20992,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[584][0]
 	L[584][0] = LargeX[584][1]>0 ? 1 : 0;
 	satisfiable[584][0]=1; 
-	for(int i=0;i<50;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -21010,7 +21010,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[584][1]
 	L[584][1] = LargeX[584][0]>0 ? 1 : 0;
 	satisfiable[584][1]=1; 
-	for(int i=0;i<14;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -21028,7 +21028,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[585][0]
 	L[585][0] = LargeX[585][1]>0 ? 1 : 0;
 	satisfiable[585][0]=1; 
-	for(int i=0;i<67;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -21046,7 +21046,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[585][1]
 	L[585][1] = LargeX[585][0]>0 ? 1 : 0;
 	satisfiable[585][1]=1; 
-	for(int i=0;i<99;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -21064,7 +21064,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[586][0]
 	L[586][0] = LargeX[586][1]>0 ? 1 : 0;
 	satisfiable[586][0]=1; 
-	for(int i=0;i<60;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -21082,7 +21082,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[586][1]
 	L[586][1] = LargeX[586][0]>0 ? 1 : 0;
 	satisfiable[586][1]=1; 
-	for(int i=0;i<79;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -21100,7 +21100,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[587][0]
 	L[587][0] = LargeX[587][1]>0 ? 1 : 0;
 	satisfiable[587][0]=1; 
-	for(int i=0;i<157;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -21118,7 +21118,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[587][1]
 	L[587][1] = LargeX[587][0]>0 ? 1 : 0;
 	satisfiable[587][1]=1; 
-	for(int i=0;i<70;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -21136,7 +21136,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[588][0]
 	L[588][0] = LargeX[588][1]>0 ? 1 : 0;
 	satisfiable[588][0]=1; 
-	for(int i=0;i<89;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -21154,7 +21154,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[588][1]
 	L[588][1] = LargeX[588][0]>0 ? 1 : 0;
 	satisfiable[588][1]=1; 
-	for(int i=0;i<91;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -21172,7 +21172,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[589][0]
 	L[589][0] = LargeX[589][1]>0 ? 1 : 0;
 	satisfiable[589][0]=1; 
-	for(int i=0;i<111;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -21190,7 +21190,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[589][1]
 	L[589][1] = LargeX[589][0]>0 ? 1 : 0;
 	satisfiable[589][1]=1; 
-	for(int i=0;i<54;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -21208,7 +21208,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[590][0]
 	L[590][0] = LargeX[590][1]>0 ? 1 : 0;
 	satisfiable[590][0]=1; 
-	for(int i=0;i<90;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -21226,7 +21226,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[590][1]
 	L[590][1] = LargeX[590][0]>0 ? 1 : 0;
 	satisfiable[590][1]=1; 
-	for(int i=0;i<132;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -21244,7 +21244,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[591][0]
 	L[591][0] = LargeX[591][1]>0 ? 1 : 0;
 	satisfiable[591][0]=1; 
-	for(int i=0;i<116;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -21262,7 +21262,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[591][1]
 	L[591][1] = LargeX[591][0]>0 ? 1 : 0;
 	satisfiable[591][1]=1; 
-	for(int i=0;i<113;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -21280,7 +21280,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[592][0]
 	L[592][0] = LargeX[592][1]>0 ? 1 : 0;
 	satisfiable[592][0]=1; 
-	for(int i=0;i<191;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -21298,7 +21298,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[592][1]
 	L[592][1] = LargeX[592][0]>0 ? 1 : 0;
 	satisfiable[592][1]=1; 
-	for(int i=0;i<95;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -21316,7 +21316,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[593][0]
 	L[593][0] = LargeX[593][1]>0 ? 1 : 0;
 	satisfiable[593][0]=1; 
-	for(int i=0;i<58;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -21334,7 +21334,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[593][1]
 	L[593][1] = LargeX[593][0]>0 ? 1 : 0;
 	satisfiable[593][1]=1; 
-	for(int i=0;i<134;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -21352,7 +21352,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[594][0]
 	L[594][0] = LargeX[594][1]>0 ? 1 : 0;
 	satisfiable[594][0]=1; 
-	for(int i=0;i<39;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -21370,7 +21370,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[594][1]
 	L[594][1] = LargeX[594][0]>0 ? 1 : 0;
 	satisfiable[594][1]=1; 
-	for(int i=0;i<64;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -21388,7 +21388,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[595][0]
 	L[595][0] = LargeX[595][1]>0 ? 1 : 0;
 	satisfiable[595][0]=1; 
-	for(int i=0;i<85;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -21406,7 +21406,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[595][1]
 	L[595][1] = LargeX[595][0]>0 ? 1 : 0;
 	satisfiable[595][1]=1; 
-	for(int i=0;i<54;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -21424,7 +21424,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[596][0]
 	L[596][0] = LargeX[596][1]>0 ? 1 : 0;
 	satisfiable[596][0]=1; 
-	for(int i=0;i<142;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -21442,7 +21442,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[596][1]
 	L[596][1] = LargeX[596][0]>0 ? 1 : 0;
 	satisfiable[596][1]=1; 
-	for(int i=0;i<163;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -21460,7 +21460,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[597][0]
 	L[597][0] = LargeX[597][1]>0 ? 1 : 0;
 	satisfiable[597][0]=1; 
-	for(int i=0;i<146;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -21478,7 +21478,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[597][1]
 	L[597][1] = LargeX[597][0]>0 ? 1 : 0;
 	satisfiable[597][1]=1; 
-	for(int i=0;i<81;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -21496,7 +21496,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[598][0]
 	L[598][0] = LargeX[598][1]>0 ? 1 : 0;
 	satisfiable[598][0]=1; 
-	for(int i=0;i<145;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -21514,7 +21514,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[598][1]
 	L[598][1] = LargeX[598][0]>0 ? 1 : 0;
 	satisfiable[598][1]=1; 
-	for(int i=0;i<66;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -21532,7 +21532,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[599][0]
 	L[599][0] = LargeX[599][1]>0 ? 1 : 0;
 	satisfiable[599][0]=1; 
-	for(int i=0;i<56;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -21550,7 +21550,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[599][1]
 	L[599][1] = LargeX[599][0]>0 ? 1 : 0;
 	satisfiable[599][1]=1; 
-	for(int i=0;i<65;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -21568,7 +21568,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[600][0]
 	L[600][0] = LargeX[600][1]>0 ? 1 : 0;
 	satisfiable[600][0]=1; 
-	for(int i=0;i<39;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;
@@ -21586,7 +21586,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 	//Check all rules of unit[600][1]
 	L[600][1] = LargeX[600][0]>0 ? 1 : 0;
 	satisfiable[600][1]=1; 
-	for(int i=0;i<93;i++){
+	for(int i=0;i<0;i++){
 		one_bit_t X_contra01;
 		one_bit_t X_contra23;
 		one_bit_t X_contra45;

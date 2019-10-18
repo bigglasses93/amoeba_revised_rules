@@ -2,10 +2,10 @@
 //#include<stdlib.h>
 #include<string.h>
 #include<time.h>
-#define N_VARIABLE 486
-#define N_CLAUSE 504 //9
+#define N_VARIABLE 212
+#define N_CLAUSE 478 //9
 #define N_LITERAL 3
-const int MAX_N_STEP = 15000000;
+const int MAX_N_STEP = 50000;
 const int EPSILON = 687194767; //429496730;//536870912;
 #define MAX_CONTRA 150000
 
@@ -46,11 +46,11 @@ FILE *fp3; //contra
 FILE *fp4; //local rules
 
 int main() {
-    char filename[128]="test33_6_9_6_out.cnf";
-    char logfile[128];
+    char filename[128]="test33_5_6_6_out.cnf";
+    char logfile[128]= "test33_5_6_6_log.txt";
 
-    strncpy(logfile,filename,strlen(filename)-4);
-    strcat(logfile,"-log.txt");
+    //strncpy(logfile,filename,strlen(filename)-4);
+    //strcat(logfile,"-log.txt");
 
     char s[N_VARIABLE+100]; //output solution
     fp1 = fopen(logfile,"w+");
@@ -137,9 +137,8 @@ int amoebasat(char s[N_VARIABLE+100]){
     int NStep;
     for(NStep=1;NStep<MAX_N_STEP;NStep++){
         update_L_intra();
-
-        //update_L_contra(size_contra, contra_new);
         update_L_inter(inter);
+        update_L_contra(size_contra, contra_new);
         int i,j;
         update_Z();//printf("\n");
         //update_Y();
@@ -349,6 +348,11 @@ void generate_inter(){
         if(i!=(2*N_VARIABLE))fprintf(fp2, "0,");
         else fprintf(fp2,"0};");
     }
+    fprintf(fp2, "\none_bit_t x[N_VARIABLE+1]={");
+    for(i=0;i<=N_VARIABLE;i++){
+        if(i!=N_VARIABLE)fprintf(fp2, "0,");
+        else fprintf(fp2,"0};");
+    }
     //fprintf(fp2, "\};");
     printf("size inter = %d\n", size_inter);
     fclose(fp2);
@@ -482,7 +486,7 @@ void update_L_intra(){
 void update_L_inter(int inter[3*N_CLAUSE][6]){
     int i;
     for(i=0;i<3*N_CLAUSE;i++){
-        //if(inter[i][0]==0 && inter[i][2]==0) continue;
+        if(inter[i][0]==0 && inter[i][2]==0) continue;
         int id1 = inter[i][0];
         int id2 = inter[i][2];
         int inter1;
@@ -498,7 +502,7 @@ void update_L_inter(int inter[3*N_CLAUSE][6]){
         //INTER
         L[ inter[i][4] ][ inter[i][5] ] = L[ inter[i][4] ][ inter[i][5] ] | inter1;
         //COLLAPSE
-        //L[ inter[i][4] ][ 1-inter[i][5] ] = L[ inter[i][4] ][ 1-inter[i][5] ] & (!inter1);
+        L[ inter[i][4] ][ 1-inter[i][5] ] = L[ inter[i][4] ][ 1-inter[i][5] ] & (!inter1);
         //printf("ok %d ", L[ inter[i][0]-1 ][ inter[i][1] ]);
 
 
@@ -544,7 +548,7 @@ void update_L_contra(int size_contra, int contra[size_contra][8]){
         }
 
         //CONTRA - Light on CONTRA units - not good with CONFLICT only
-        if(contra1){
+        /*(if(contra1){
             L[ contra[i][0] ][ contra[i][1] ] = 1;
             L[ contra[i][2] ][ contra[i][3] ] = 1;
             L[ contra[i][4] ][ contra[i][5] ] = 1;
@@ -577,7 +581,7 @@ void update_L_contra(int size_contra, int contra[size_contra][8]){
         }*/
 
         //HyperCONTRA - set LargeX of contradicted units directly to -1
-        /*if(contra1){
+        if(contra1){
             LargeX[ contra[i][0] ][ contra[i][1] ] = -1;
             LargeX[ contra[i][2] ][ contra[i][3] ] = -1;
             LargeX[ contra[i][4] ][ contra[i][5] ] = -1;

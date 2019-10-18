@@ -24,12 +24,17 @@
 	<string.h>
 	<time.h>
 
-1570966253 source:e:\amoeba_revised_rules\test_revised_rules3.c
+1571406360 source:e:\amoeba_revised_rules\test_revised_rules3.c
 	<stdio.h>
 	<string.h>
 	<time.h>
 
-1568614948 source:e:\amoeba_revised_rules\test_revised_rules2.c
+1571394582 source:e:\amoeba_revised_rules\test_revised_rules2.c
+	<stdio.h>
+	<string.h>
+	<time.h>
+
+1571401495 source:e:\amoeba_revised_rules\test_inter_rules.c
 	<stdio.h>
 	<string.h>
 	<time.h>

@@ -2,8 +2,8 @@
 //#include<stdlib.h>
 #include<string.h>
 #include<time.h>
-#define N_VARIABLE 600
-#define N_CLAUSE 2550 //9
+#define N_VARIABLE 212
+#define N_CLAUSE 478 //9
 #define N_LITERAL 3
 const int MAX_N_STEP = 5000000;
 const int EPSILON = 687194767; //429496730;//536870912;
@@ -44,7 +44,7 @@ FILE *fp3; //contra
 FILE *fp4; //local rules
 
 int main() {
-    char filename[128]="benchmarks/f/f600.cnf";
+    char filename[128]="test33_5_6_6_out.cnf";
     char logfile[128];
 
     strncpy(logfile,filename,strlen(filename)-4);
@@ -63,8 +63,8 @@ int main() {
     generate_inter();
     size_contra = survey_size_contra();
     int contra[size_contra][8];
-    generate_contra(size_contra, contra, contra_new);
-    create_local_rules(inter,contra_new);
+    //generate_contra(size_contra, contra, contra_new);
+    //create_local_rules(inter,contra_new);
     srand(time(NULL));
     for(i=0;i<100;i++){
         state[0] = rand();
@@ -128,7 +128,7 @@ int amoebasat(char s[N_VARIABLE+100]){
     for(NStep=1;NStep<MAX_N_STEP;NStep++){
         update_L_intra();
 
-        update_L_contra(size_contra, contra_new);
+        //update_L_contra(size_contra, contra_new);
         update_L_inter(inter);
         int i,j;
         update_Z();//printf("\n");
