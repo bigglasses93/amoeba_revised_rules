@@ -2,8 +2,8 @@
 //#include<stdlib.h>
 #include<string.h>
 #include<time.h>
-#define N_VARIABLE 50
-#define N_CLAUSE 218 //9
+#define N_VARIABLE 212
+#define N_CLAUSE 478 //9
 #define N_LITERAL 3
 const int MAX_N_STEP = 5000000;
 const int EPSILON = 687194767; //429496730;//536870912;
@@ -44,7 +44,7 @@ FILE *fp3; //contra
 FILE *fp4; //local rules
 
 int main() {
-    char filename[128]="uf50-0100.cnf";
+    char filename[128]="test33_5_6_6_out.cnf";
     char logfile[128];
 
     strncpy(logfile,filename,strlen(filename)-4);
@@ -217,7 +217,7 @@ void update_Y(){
             }
             else if(L[i][j]==0){
                 int sub = 2147483647 - EPSILON - Z[i][j] + 1;
-                Y[i][j] = (sub>0);
+                Y[i][j] = sign_x(-sub);
             }
             //printf("Y[%d][%d]=%d\t ",i,j,Y[i][j]);
         }
@@ -264,9 +264,9 @@ int update_f(){
         id1 = f[clause_id][0];
         id2 = f[clause_id][1];
         id3 = f[clause_id][2];
-        c1 = (id1<0) ^ x[abs(id1)-1];
-        c2 = (id2<0) ^ x[abs(id2)-1];
-        c3 = (id3<0) ^ x[abs(id3)-1];
+        c1 = sign_x(id1) ^ x[abs(id1)-1];
+        c2 = sign_x(id2) ^ x[abs(id2)-1];
+        c3 = sign_x(id3) ^ x[abs(id3)-1];
 
         f_val = f_val && (c1 || c2 || c3);
         if (f_val==0) return f_val;
@@ -458,7 +458,7 @@ void update_L_inter(int inter[3*N_CLAUSE][6]){
         //INTER
         L[ inter[i][4]-1 ][ inter[i][5] ] = L[ inter[i][4]-1 ][ inter[i][5] ] | inter1;
         //COLLAPSE
-        L[ inter[i][4]-1 ][ 1-inter[i][5] ] = L[ inter[i][4]-1 ][ 1-inter[i][5] ] & (!inter1);
+        //L[ inter[i][4]-1 ][ 1-inter[i][5] ] = L[ inter[i][4]-1 ][ 1-inter[i][5] ] & (!inter1);
         //printf("ok %d ", L[ inter[i][0]-1 ][ inter[i][1] ]);
     }
 }
@@ -472,12 +472,12 @@ void update_L_contra(int size_contra, int contra[size_contra][8]){
                 (LargeX[ contra[i][6]-1 ][ contra[i][7] ]>0);
 
         //CONTRA - Light on CONTRA units - not good with CONFLICT only
-        if(contra1){
+        /*if(contra1){
             L[ contra[i][0]-1 ][ contra[i][1] ] = 1;
             L[ contra[i][2]-1 ][ contra[i][3] ] = 1;
             L[ contra[i][4]-1 ][ contra[i][5] ] = 1;
             L[ contra[i][6]-1 ][ contra[i][7] ] = 1;
-        }
+        }*/
         //loosen representation of CONTRA - should combine with CONFLICT, not good with hypercontra
         /*L[ contra[i][0]-1 ][ contra[i][1] ] = L[ contra[i][0]-1 ][ contra[i][1] ] |
                 ((LargeX[ contra[i][2]-1 ][ contra[i][3] ]>0) &
