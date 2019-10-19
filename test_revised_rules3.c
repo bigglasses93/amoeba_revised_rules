@@ -6,7 +6,7 @@
 #define N_CLAUSE 478 //9
 #define N_LITERAL 3
 const int MAX_N_STEP = 50000;
-const int EPSILON = 687194767; //429496730;//536870912;
+const int EPSILON = 536870912; //687194767; //429496730;//536870912;
 #define MAX_CONTRA 150000
 
 int LargeX[N_VARIABLE+1][2];
@@ -61,19 +61,18 @@ int main() {
     if (!loadformula(filename)) {
         return 1;
     }
-
+    srand(time(NULL));
     generate_inter();
     size_contra = survey_size_contra();
     int contra[size_contra][8];
     generate_contra(size_contra, contra, contra_new);
     create_local_rules(inter,contra_new);
-    srand(time(NULL));
     for(i=0;i<100;i++){
         state[0] = rand();
-        init();
-
         printf("\nRun %d: seed = %d",i+1,state[0]);
         fprintf(fp1,"\nRun #%d: seed = %d ",i+1,state[0]);
+
+        init();
         NStep=amoebasat(s);
         fprintf(fp1,s);
         NStep_avg+=NStep;
@@ -121,7 +120,8 @@ int loadformula(char *filename) {
                         int xi_sign = sign_x(f[clause_id][0]);
                         x[xi] = 1-xi_sign;
                         x_fixed[xi]=1;
-                        printf("x[%d] = %d; x_fixed[%d] = %d; satisfiable[%d][0]=1; satisfiable[%d][1]=1;\n", xi, x[xi], xi, x[xi], xi, xi);
+                        //printf("x[%d] = %d; x_fixed[%d] = %d; satisfiable[%d][0]=1; satisfiable[%d][1]=1;\n", xi, x[xi], xi, x[xi], xi, xi);
+                        printf("x_tmp[%d] = %d; \n", xi, x[xi]);
                     }
                 }
                 //printf("\nClause%d:\t%d\t%d\t%d",clause_id,f[clause_id][0],f[clause_id][1],f[clause_id][2]);
@@ -135,10 +135,11 @@ int loadformula(char *filename) {
 int amoebasat(char s[N_VARIABLE+100]){
     char tmp[N_VARIABLE+100];
     int NStep;
+    LargeX[0][0]=1; x[0]=0;
     for(NStep=1;NStep<MAX_N_STEP;NStep++){
         update_L_intra();
         update_L_inter(inter);
-        update_L_contra(size_contra, contra_new);
+        //update_L_contra(size_contra, contra_new);
         int i,j;
         update_Z();//printf("\n");
         //update_Y();
@@ -172,9 +173,8 @@ unsigned xorshift32(unsigned state[1])
 }
 void init(){
     int i, j;
-    LargeX[0][0]=1;
     for(i=1;i<=N_VARIABLE;i++){
-        //x[i]=0;
+        x[i]=i%2;
         for(j=0;j<2;j++){
             LargeX[i][j]=0;
             L[i][j]=0;
@@ -269,12 +269,13 @@ int update_f(){
         id1 = f[clause_id][0];
         id2 = f[clause_id][1];
         id3 = f[clause_id][2];
-        c1 = sign_x(id1) ^ x[abs(id1)];
-        c2 = sign_x(id2) ^ x[abs(id2)];
+        if(id2==0) continue;
+        c1 = (id1<0) ^ x[abs(id1)];
+        c2 = (id2<0) ^ x[abs(id2)];
         if(id3==0){
             c3 = 0;
         }else{
-            c3 = sign_x(id3) ^ x[abs(id3)];
+            c3 = (id3<0) ^ x[abs(id3)];
         }
 
 /*        if(id3==0){
@@ -486,7 +487,6 @@ void update_L_intra(){
 void update_L_inter(int inter[3*N_CLAUSE][6]){
     int i;
     for(i=0;i<3*N_CLAUSE;i++){
-        if(inter[i][0]==0 && inter[i][2]==0) continue;
         int id1 = inter[i][0];
         int id2 = inter[i][2];
         int inter1;
@@ -548,7 +548,7 @@ void update_L_contra(int size_contra, int contra[size_contra][8]){
         }
 
         //CONTRA - Light on CONTRA units - not good with CONFLICT only
-        /*(if(contra1){
+        if(contra1){
             L[ contra[i][0] ][ contra[i][1] ] = 1;
             L[ contra[i][2] ][ contra[i][3] ] = 1;
             L[ contra[i][4] ][ contra[i][5] ] = 1;
@@ -581,7 +581,7 @@ void update_L_contra(int size_contra, int contra[size_contra][8]){
         }*/
 
         //HyperCONTRA - set LargeX of contradicted units directly to -1
-        if(contra1){
+        /*if(contra1){
             LargeX[ contra[i][0] ][ contra[i][1] ] = -1;
             LargeX[ contra[i][2] ][ contra[i][3] ] = -1;
             LargeX[ contra[i][4] ][ contra[i][5] ] = -1;
@@ -769,21 +769,31 @@ void create_local_rules(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8])
     //version plain
     fp4 = fopen("rules_update.c", "w+");
     fprintf(fp4,"#include \n");
-    fprintf(fp4,"void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], one_bit_t satisfiable[N_CLAUSE]){\n");
+    fprintf(fp4,"void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2]){\n");
+    fprintf(fp4,"\t//Check INTRA rules of all units\n");
+    fprintf(fp4,"\tfor(int i=1;i<=N_VARIABLE;i++){\n");
+    fprintf(fp4,"\t\tL[i][0]=LargeX[i][1]>0;L[i][1]=LargeX[i][0]>0;\n\t}\n");
     fprintf(fp4,"\t//Check INTER rules of all units\n");
-//    fprintf(fp4,"#include \"amoeba_local_rules.h\"\n");
     for(i=0;i<N_CLAUSE;i++){
+        if(f[i][1]==0)continue;
         strcpy(s,"");
         if(inter[3*i][2]==0){
-            sprintf(s1,"\tone_bit_t inter%d_0=LargeX[%d][%d]>0;\n",i,inter[3*i][4],inter[3*i][5]); strcat(s,s1);
+            /*sprintf(s1,"\tone_bit_t inter%d_0=LargeX[%d][%d]>0;\n",i,inter[3*i][4],inter[3*i][5]); strcat(s,s1);
             sprintf(s1,"\tone_bit_t inter%d_2=LargeX[%d][%d]>0;\n",i,inter[3*i][0],inter[3*i][1]); strcat(s,s1);
             sprintf(s1,"\tL[%d][%d] = L[%d][%d] | inter%d_0;\n",inter[3*i][0],inter[3*i][1],inter[3*i][0],inter[3*i][1],i); strcat(s,s1);
             sprintf(s1,"\tL[%d][%d] = L[%d][%d] | inter%d_2;\n",inter[3*i][4],inter[3*i][5],inter[3*i][4],inter[3*i][5],i); strcat(s,s1);
             //COLLAPSE
             sprintf(s1,"\tL[%d][%d] = L[%d][%d] & (!inter%d_0);\n",inter[3*i][0],1-inter[3*i][1],inter[3*i][0],1-inter[3*i][1],i); strcat(s,s1);
-            sprintf(s1,"\tL[%d][%d] = L[%d][%d] & (!inter%d_2);\n",inter[3*i][4],1-inter[3*i][5],inter[3*i][4],1-inter[3*i][5],i); strcat(s,s1);
+            sprintf(s1,"\tL[%d][%d] = L[%d][%d] & (!inter%d_2);\n",inter[3*i][4],1-inter[3*i][5],inter[3*i][4],1-inter[3*i][5],i); strcat(s,s1);*/
+
+            //direct representation
+            sprintf(s1,"\tL[%d][%d] = L[%d][%d] | (LargeX[%d][%d]>0);\n",inter[3*i][0],inter[3*i][1],inter[3*i][0],inter[3*i][1],inter[3*i][4],inter[3*i][5]); strcat(s,s1);
+            sprintf(s1,"\tL[%d][%d] = L[%d][%d] | (LargeX[%d][%d]>0);\n",inter[3*i][4],inter[3*i][5],inter[3*i][4],inter[3*i][5],inter[3*i][0],inter[3*i][1]); strcat(s,s1);
+            //COLLAPSE
+            sprintf(s1,"\tL[%d][%d] = L[%d][%d] & (!(LargeX[%d][%d]>0));\n",inter[3*i][0],1-inter[3*i][1],inter[3*i][0],1-inter[3*i][1],inter[3*i][4],inter[3*i][5]); strcat(s,s1);
+            sprintf(s1,"\tL[%d][%d] = L[%d][%d] & (!(LargeX[%d][%d]>0));\n",inter[3*i][4],1-inter[3*i][5],inter[3*i][4],1-inter[3*i][5],inter[3*i][0],inter[3*i][1]); strcat(s,s1);
         }else{
-            sprintf(s1,"\tone_bit_t inter%d_0 = (LargeX[%d][%d]>0)&(LargeX[%d][%d]>0);\n",i,inter[3*i][2],inter[3*i][3],inter[3*i][4],inter[3*i][5]); strcat(s,s1);
+            /*sprintf(s1,"\tone_bit_t inter%d_0 = (LargeX[%d][%d]>0)&(LargeX[%d][%d]>0);\n",i,inter[3*i][2],inter[3*i][3],inter[3*i][4],inter[3*i][5]); strcat(s,s1);
             sprintf(s1,"\tone_bit_t inter%d_1 = (LargeX[%d][%d]>0)&(LargeX[%d][%d]>0);\n",i,inter[3*i][0],inter[3*i][1],inter[3*i][4],inter[3*i][5]); strcat(s,s1);
             sprintf(s1,"\tone_bit_t inter%d_2 = (LargeX[%d][%d]>0)&(LargeX[%d][%d]>0);\n",i,inter[3*i][0],inter[3*i][1],inter[3*i][2],inter[3*i][3]); strcat(s,s1);
             sprintf(s1,"\tL[%d][%d] = L[%d][%d] | inter%d_0;\n",inter[3*i][0],inter[3*i][1],inter[3*i][0],inter[3*i][1],i); strcat(s,s1);
@@ -792,12 +802,42 @@ void create_local_rules(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8])
             //COLLAPSE
             sprintf(s1,"\tL[%d][%d] = L[%d][%d] & (!inter%d_0);\n",inter[3*i][0],1-inter[3*i][1],inter[3*i][0],1-inter[3*i][1],i); strcat(s,s1);
             sprintf(s1,"\tL[%d][%d] = L[%d][%d] & (!inter%d_1);\n",inter[3*i][2],1-inter[3*i][3],inter[3*i][2],1-inter[3*i][3],i); strcat(s,s1);
-            sprintf(s1,"\tL[%d][%d] = L[%d][%d] & (!inter%d_2);\n",inter[3*i][4],1-inter[3*i][5],inter[3*i][4],1-inter[3*i][5],i); strcat(s,s1);
-        }
+            sprintf(s1,"\tL[%d][%d] = L[%d][%d] & (!inter%d_2);\n",inter[3*i][4],1-inter[3*i][5],inter[3*i][4],1-inter[3*i][5],i); strcat(s,s1);*/
 
+            //direct representation
+            sprintf(s1,"\tL[%d][%d] = L[%d][%d] | ((LargeX[%d][%d]>0)&(LargeX[%d][%d]>0));\n",inter[3*i][0],inter[3*i][1],inter[3*i][0],inter[3*i][1],inter[3*i][2],inter[3*i][3],inter[3*i][4],inter[3*i][5]); strcat(s,s1);
+            sprintf(s1,"\tL[%d][%d] = L[%d][%d] | ((LargeX[%d][%d]>0)&(LargeX[%d][%d]>0));\n",inter[3*i][2],inter[3*i][3],inter[3*i][2],inter[3*i][3],inter[3*i][0],inter[3*i][1],inter[3*i][4],inter[3*i][5]); strcat(s,s1);
+            sprintf(s1,"\tL[%d][%d] = L[%d][%d] | ((LargeX[%d][%d]>0)&(LargeX[%d][%d]>0));\n",inter[3*i][4],inter[3*i][5],inter[3*i][4],inter[3*i][5],inter[3*i][0],inter[3*i][1],inter[3*i][2],inter[3*i][3]); strcat(s,s1);
+            //COLLAPSE
+            sprintf(s1,"\tL[%d][%d] = L[%d][%d] | (!((LargeX[%d][%d]>0)&(LargeX[%d][%d]>0)));\n",inter[3*i][0],1-inter[3*i][1],inter[3*i][0],1-inter[3*i][1],inter[3*i][2],inter[3*i][3],inter[3*i][4],inter[3*i][5]); strcat(s,s1);
+            sprintf(s1,"\tL[%d][%d] = L[%d][%d] | (!((LargeX[%d][%d]>0)&(LargeX[%d][%d]>0)));\n",inter[3*i][2],1-inter[3*i][3],inter[3*i][2],1-inter[3*i][3],inter[3*i][0],inter[3*i][1],inter[3*i][4],inter[3*i][5]); strcat(s,s1);
+            sprintf(s1,"\tL[%d][%d] = L[%d][%d] | (!((LargeX[%d][%d]>0)&(LargeX[%d][%d]>0)));\n",inter[3*i][4],1-inter[3*i][5],inter[3*i][4],1-inter[3*i][5],inter[3*i][0],inter[3*i][1],inter[3*i][2],inter[3*i][3]); strcat(s,s1);
+        }
         fprintf(fp4,s);
     }
-
+    //Write check CONTRA
+    fprintf(fp4,"\t//Check CONTRA rules of all units\n");
+    for(i=0;i<size_contra;i++){
+        strcpy(s,"");
+        if(contra_new[i][6]==0){
+            sprintf(s1,"\tL[%d][%d] = L[%d][%d] | ((LargeX[%d][%d]>0)&(LargeX[%d][%d]>0));\n",contra_new[i][0],contra_new[i][1],contra_new[i][0],contra_new[i][1],contra_new[i][2],contra_new[i][3],contra_new[i][4],contra_new[i][5]);
+            strcat(s,s1);
+            sprintf(s1,"\tL[%d][%d] = L[%d][%d] | ((LargeX[%d][%d]>0)&(LargeX[%d][%d]>0));\n",contra_new[i][2],contra_new[i][3],contra_new[i][2],contra_new[i][3],contra_new[i][0],contra_new[i][1],contra_new[i][4],contra_new[i][5]);
+            strcat(s,s1);
+            sprintf(s1,"\tL[%d][%d] = L[%d][%d] | ((LargeX[%d][%d]>0)&(LargeX[%d][%d]>0));\n",contra_new[i][4],contra_new[i][5],contra_new[i][4],contra_new[i][5],contra_new[i][0],contra_new[i][1],contra_new[i][2],contra_new[i][3]);
+            strcat(s,s1);
+        }else{
+            sprintf(s1,"\tL[%d][%d] = L[%d][%d] | ((LargeX[%d][%d]>0)&(LargeX[%d][%d]>0)&(LargeX[%d][%d]>0));\n",contra_new[i][0],contra_new[i][1],contra_new[i][0],contra_new[i][1],contra_new[i][2],contra_new[i][3],contra_new[i][4],contra_new[i][5],contra_new[i][6],contra_new[i][7]);
+            strcat(s,s1);
+            sprintf(s1,"\tL[%d][%d] = L[%d][%d] | ((LargeX[%d][%d]>0)&(LargeX[%d][%d]>0)&(LargeX[%d][%d]>0));\n",contra_new[i][2],contra_new[i][3],contra_new[i][2],contra_new[i][3],contra_new[i][0],contra_new[i][1],contra_new[i][4],contra_new[i][5],contra_new[i][6],contra_new[i][7]);
+            strcat(s,s1);
+            sprintf(s1,"\tL[%d][%d] = L[%d][%d] | ((LargeX[%d][%d]>0)&(LargeX[%d][%d]>0)&(LargeX[%d][%d]>0));\n",contra_new[i][4],contra_new[i][5],contra_new[i][4],contra_new[i][5],contra_new[i][0],contra_new[i][1],contra_new[i][2],contra_new[i][3],contra_new[i][6],contra_new[i][7]);
+            strcat(s,s1);
+            sprintf(s1,"\tL[%d][%d] = L[%d][%d] | ((LargeX[%d][%d]>0)&(LargeX[%d][%d]>0)&(LargeX[%d][%d]>0));\n",contra_new[i][6],contra_new[i][7],contra_new[i][6],contra_new[i][7],contra_new[i][0],contra_new[i][1],contra_new[i][2],contra_new[i][3],contra_new[i][4],contra_new[i][5]);
+            strcat(s,s1);
+        }
+        fprintf(fp4,s);
+    }
     fprintf(fp4,"}");
     fclose(fp4);
     printf("created update rules L.\n");
