@@ -5,7 +5,7 @@
 #define N_VARIABLE 212
 #define N_CLAUSE 478 //9
 #define N_LITERAL 3
-const int MAX_N_STEP = 50000;
+const int MAX_N_STEP = 500;
 const int EPSILON = 536870912; //687194767; //429496730;//536870912;
 #define MAX_CONTRA 150000
 
@@ -121,7 +121,7 @@ int loadformula(char *filename) {
                         x[xi] = 1-xi_sign;
                         x_fixed[xi]=1;
                         //printf("x[%d] = %d; x_fixed[%d] = %d; satisfiable[%d][0]=1; satisfiable[%d][1]=1;\n", xi, x[xi], xi, x[xi], xi, xi);
-                        printf("x_tmp[%d] = %d; \n", xi, x[xi]);
+                        printf("x_tmp[%d] = %d; x_fixed[%d] = 1;\n", xi, x[xi], xi);
                     }
                 }
                 //printf("\nClause%d:\t%d\t%d\t%d",clause_id,f[clause_id][0],f[clause_id][1],f[clause_id][2]);
@@ -139,7 +139,7 @@ int amoebasat(char s[N_VARIABLE+100]){
     for(NStep=1;NStep<MAX_N_STEP;NStep++){
         update_L_intra();
         update_L_inter(inter);
-        //update_L_contra(size_contra, contra_new);
+        update_L_contra(size_contra, contra_new);
         int i,j;
         update_Z();//printf("\n");
         //update_Y();
@@ -174,7 +174,7 @@ unsigned xorshift32(unsigned state[1])
 void init(){
     int i, j;
     for(i=1;i<=N_VARIABLE;i++){
-        x[i]=i%2;
+        if(x_fixed[i]==0) x[i] = 0;
         for(j=0;j<2;j++){
             LargeX[i][j]=0;
             L[i][j]=0;
@@ -210,9 +210,9 @@ void update_Z(){
 void update_x(){
     int i;
     for(i=1; i<=N_VARIABLE; i++){
-        if(x_fixed[i]<1 && LargeX[i][0]==1 && LargeX[i][1]<=0){
+        if(x_fixed[i]==0 && LargeX[i][0]==1 && LargeX[i][1]<=0){
             x[i] = 0;
-        }else if(x_fixed[i]<1 && LargeX[i][1]==1 && LargeX[i][0]<=0){
+        }else if(x_fixed[i]==0 && LargeX[i][1]==1 && LargeX[i][0]<=0){
             x[i] = 1;
         }
         //printf("x[%d]=%d \t", i, x[i]);
@@ -298,29 +298,32 @@ void generate_inter(){
     fp4 = fopen("f_tmp.txt", "w+");
     //fprintf(fp2, "int interP2[%d][2] = {\n", 3*N_CLAUSE);
 
-    fprintf(fp2,"six_bit_t inter[N_CLAUSE][3]={\n");
+    fprintf(fp2,"f_t inter[N_CLAUSE][3]={\n");
     fprintf(fp3,"one_bit_t inter_sign[N_CLAUSE][3]={\n");
     size_inter=0;
     for(i=0; i<N_CLAUSE; i++){
         //-------- generate inter set size 3x
         int interQ, interQ_abs, interP1, interP1_abs, interP2, interP2_abs;
-        if(f[i][1]==0) continue;
+        if(f[i][1]==0) {
+			//printf("\nClause%d:\t%d\t%d\t%d",i,f[i][0],f[i][1],f[i][2]);
+			continue;
+		}
 
         interQ = abs(f[i][0]); interQ_abs = sign_x(f[i][0]);
         interP1= abs(f[i][1]); interP1_abs = sign_x(f[i][1]);
         interP2 = abs(f[i][2]); interP2_abs = sign_x(f[i][2]);
 
-        inter[3*i][0] = interP1; inter[3*i][1] = interP1_abs;
-        inter[3*i][2] = interP2; inter[3*i][3] = interP2_abs;
-        inter[3*i][4] = interQ; inter[3*i][5] = interQ_abs;
+        inter[3*size_inter][0] = interP1; inter[3*size_inter][1] = interP1_abs;
+        inter[3*size_inter][2] = interP2; inter[3*size_inter][3] = interP2_abs;
+        inter[3*size_inter][4] = interQ; inter[3*size_inter][5] = interQ_abs;
 
-        inter[3*i+1][0] = interQ; inter[3*i+1][1] = interQ_abs;
-        inter[3*i+1][2] = interP2; inter[3*i+1][3] = interP2_abs;
-        inter[3*i+1][4] = interP1; inter[3*i+1][5] = interP1_abs;
+        inter[3*size_inter+1][0] = interQ; inter[3*size_inter+1][1] = interQ_abs;
+        inter[3*size_inter+1][2] = interP2; inter[3*size_inter+1][3] = interP2_abs;
+        inter[3*size_inter+1][4] = interP1; inter[3*size_inter+1][5] = interP1_abs;
 
-        inter[3*i+2][0] = interQ; inter[3*i+2][1] = interQ_abs;
-        inter[3*i+2][2] = interP1; inter[3*i+2][3] = interP1_abs;
-        inter[3*i+2][4] = interP2; inter[3*i+2][5] = interP2_abs;
+        inter[3*size_inter+2][0] = interQ; inter[3*size_inter+2][1] = interQ_abs;
+        inter[3*size_inter+2][2] = interP1; inter[3*size_inter+2][3] = interP1_abs;
+        inter[3*size_inter+2][4] = interP2; inter[3*size_inter+2][5] = interP2_abs;
 
         size_inter++;
         //--------- generate inter set size 1x
@@ -334,7 +337,7 @@ void generate_inter(){
         fprintf(fp4, "%d %d %d %d %d %d\n", interQ, interQ_abs, interP1, interP1_abs, interP2, interP2_abs);
     }
     //print init values
-    fprintf(fp2, "\none_bit_t Y[N_VARIABLE+1][2]={");
+    /*fprintf(fp2, "\none_bit_t Y[N_VARIABLE+1][2]={");
     for(i=0;i<2*(N_VARIABLE+1);i++){
         if(i!=(2*N_VARIABLE+1))fprintf(fp2, "0,");
         else fprintf(fp2,"0};");
@@ -353,7 +356,7 @@ void generate_inter(){
     for(i=0;i<=N_VARIABLE;i++){
         if(i!=N_VARIABLE)fprintf(fp2, "0,");
         else fprintf(fp2,"0};");
-    }
+    }*/
     //fprintf(fp2, "\};");
     printf("size inter = %d\n", size_inter);
     fclose(fp2);
@@ -461,7 +464,7 @@ void generate_contra(int size_contra, int contra[size_contra][8], int contra_new
 
     fp2 = fopen("contra.h", "w+");
     fp3 = fopen("contra_sign.h", "w+");
-    fprintf(fp2, "six_bit_t contra[%d][4] = {\n", size_contra);
+    fprintf(fp2, "f_t contra[%d][4] = {\n", size_contra);
     fprintf(fp3, "one_bit_t contra_sign[%d][4] = {\n", size_contra);
     for(i=0;i<counter_new;i++){
         //fprintf(fp3, "%d %d %d %d %d %d %d %d\n", contra_new[i][0], contra_new[i][1], contra_new[i][2], contra_new[i][3], contra_new[i][4], contra_new[i][5], contra_new[i][6], contra_new[i][7]);
@@ -486,7 +489,8 @@ void update_L_intra(){
 }
 void update_L_inter(int inter[3*N_CLAUSE][6]){
     int i;
-    for(i=0;i<3*N_CLAUSE;i++){
+    for(i=0;i<3*size_inter;i++){
+        //printf("\nClause%d:\t%d\t%d\t%d",i,f[i][0],f[i][1],f[i][2]);
         int id1 = inter[i][0];
         int id2 = inter[i][2];
         int inter1;
@@ -502,7 +506,7 @@ void update_L_inter(int inter[3*N_CLAUSE][6]){
         //INTER
         L[ inter[i][4] ][ inter[i][5] ] = L[ inter[i][4] ][ inter[i][5] ] | inter1;
         //COLLAPSE
-        L[ inter[i][4] ][ 1-inter[i][5] ] = L[ inter[i][4] ][ 1-inter[i][5] ] & (!inter1);
+        //L[ inter[i][4] ][ 1-inter[i][5] ] = L[ inter[i][4] ][ 1-inter[i][5] ] & (!inter1);
         //printf("ok %d ", L[ inter[i][0]-1 ][ inter[i][1] ]);
 
 
