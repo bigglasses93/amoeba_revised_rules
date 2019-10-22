@@ -2,11 +2,11 @@
 //#include<stdlib.h>
 #include<string.h>
 #include<time.h>
-#define N_VARIABLE 212
-#define N_CLAUSE 478 //9
+#define N_VARIABLE 225
+#define N_CLAUSE 960 //9
 #define N_LITERAL 3
-const int MAX_N_STEP = 500;
-const int EPSILON = 536870912; //687194767; //429496730;//536870912;
+const int MAX_N_STEP = 1000;
+const int EPSILON = 687194767; //687194767; //429496730;//536870912;
 #define MAX_CONTRA 150000
 
 int LargeX[N_VARIABLE+1][2];
@@ -19,6 +19,7 @@ char x_fixed[N_VARIABLE+1];
 int inter[3*N_CLAUSE][6];
 int size_inter;
 int size_contra;
+int size_contra_new;
 int contra_new[MAX_CONTRA][8];
 
 unsigned state[1];
@@ -46,8 +47,8 @@ FILE *fp3; //contra
 FILE *fp4; //local rules
 
 int main() {
-    char filename[128]="test33_5_6_6_out.cnf";
-    char logfile[128]= "test33_5_6_6_log.txt";
+    char filename[128]="uf225-028.cnf";
+    char logfile[128]= "uf225-028.txt";
 
     //strncpy(logfile,filename,strlen(filename)-4);
     //strcat(logfile,"-log.txt");
@@ -328,11 +329,11 @@ void generate_inter(){
         size_inter++;
         //--------- generate inter set size 1x
         //fprintf(fp2, "%d %d %d %d %d %d\n", inter[3*i][0], inter[3*i][1], inter[3*i][2], inter[3*i][3], inter[3*i][4], inter[3*i][5]);
-        if(i==(N_CLAUSE-1)) fprintf(fp2, "%d, %d, %d};", inter[3*i][0], inter[3*i][2], inter[3*i][4]);
-        else fprintf(fp2, "%d, %d, %d,\n", inter[3*i][0], inter[3*i][2], inter[3*i][4]);
+        if(i==(N_CLAUSE-1)) fprintf(fp2, "%d, %d, %d};", interP1, interP2, interQ);
+        else fprintf(fp2, "%d, %d, %d,\n", interP1, interP2, interQ);
 
-        if(i==(N_CLAUSE-1)) fprintf(fp3, "%d, %d, %d};", inter[3*i][1], inter[3*i][3], inter[3*i][5]);
-        else fprintf(fp3, "%d, %d, %d,\n", inter[3*i][1], inter[3*i][3], inter[3*i][5]);
+        if(i==(N_CLAUSE-1)) fprintf(fp3, "%d, %d, %d};", interP1_abs, interP2_abs, interQ_abs);
+        else fprintf(fp3, "%d, %d, %d,\n", interP1_abs, interP2_abs, interQ_abs);
 
         fprintf(fp4, "%d %d %d %d %d %d\n", interQ, interQ_abs, interP1, interP1_abs, interP2, interP2_abs);
     }
@@ -479,6 +480,7 @@ void generate_contra(int size_contra, int contra[size_contra][8], int contra_new
     }
     fclose(fp2);
     fclose(fp3);
+    size_contra_new=size_contra;
 }
 void update_L_intra(){
     int i,j;
@@ -506,7 +508,7 @@ void update_L_inter(int inter[3*N_CLAUSE][6]){
         //INTER
         L[ inter[i][4] ][ inter[i][5] ] = L[ inter[i][4] ][ inter[i][5] ] | inter1;
         //COLLAPSE
-        //L[ inter[i][4] ][ 1-inter[i][5] ] = L[ inter[i][4] ][ 1-inter[i][5] ] & (!inter1);
+        L[ inter[i][4] ][ 1-inter[i][5] ] = L[ inter[i][4] ][ 1-inter[i][5] ] & (!inter1);
         //printf("ok %d ", L[ inter[i][0]-1 ][ inter[i][1] ]);
 
 
@@ -778,8 +780,7 @@ void create_local_rules(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8])
     fprintf(fp4,"\tfor(int i=1;i<=N_VARIABLE;i++){\n");
     fprintf(fp4,"\t\tL[i][0]=LargeX[i][1]>0;L[i][1]=LargeX[i][0]>0;\n\t}\n");
     fprintf(fp4,"\t//Check INTER rules of all units\n");
-    for(i=0;i<N_CLAUSE;i++){
-        if(f[i][1]==0)continue;
+    for(i=0;i<size_inter;i++){
         strcpy(s,"");
         if(inter[3*i][2]==0){
             /*sprintf(s1,"\tone_bit_t inter%d_0=LargeX[%d][%d]>0;\n",i,inter[3*i][4],inter[3*i][5]); strcat(s,s1);
@@ -794,8 +795,8 @@ void create_local_rules(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8])
             sprintf(s1,"\tL[%d][%d] = L[%d][%d] | (LargeX[%d][%d]>0);\n",inter[3*i][0],inter[3*i][1],inter[3*i][0],inter[3*i][1],inter[3*i][4],inter[3*i][5]); strcat(s,s1);
             sprintf(s1,"\tL[%d][%d] = L[%d][%d] | (LargeX[%d][%d]>0);\n",inter[3*i][4],inter[3*i][5],inter[3*i][4],inter[3*i][5],inter[3*i][0],inter[3*i][1]); strcat(s,s1);
             //COLLAPSE
-            sprintf(s1,"\tL[%d][%d] = L[%d][%d] & (!(LargeX[%d][%d]>0));\n",inter[3*i][0],1-inter[3*i][1],inter[3*i][0],1-inter[3*i][1],inter[3*i][4],inter[3*i][5]); strcat(s,s1);
-            sprintf(s1,"\tL[%d][%d] = L[%d][%d] & (!(LargeX[%d][%d]>0));\n",inter[3*i][4],1-inter[3*i][5],inter[3*i][4],1-inter[3*i][5],inter[3*i][0],inter[3*i][1]); strcat(s,s1);
+            //sprintf(s1,"\tL[%d][%d] = L[%d][%d] & (!(LargeX[%d][%d]>0));\n",inter[3*i][0],1-inter[3*i][1],inter[3*i][0],1-inter[3*i][1],inter[3*i][4],inter[3*i][5]); strcat(s,s1);
+            //sprintf(s1,"\tL[%d][%d] = L[%d][%d] & (!(LargeX[%d][%d]>0));\n",inter[3*i][4],1-inter[3*i][5],inter[3*i][4],1-inter[3*i][5],inter[3*i][0],inter[3*i][1]); strcat(s,s1);
         }else{
             /*sprintf(s1,"\tone_bit_t inter%d_0 = (LargeX[%d][%d]>0)&(LargeX[%d][%d]>0);\n",i,inter[3*i][2],inter[3*i][3],inter[3*i][4],inter[3*i][5]); strcat(s,s1);
             sprintf(s1,"\tone_bit_t inter%d_1 = (LargeX[%d][%d]>0)&(LargeX[%d][%d]>0);\n",i,inter[3*i][0],inter[3*i][1],inter[3*i][4],inter[3*i][5]); strcat(s,s1);
@@ -813,33 +814,40 @@ void create_local_rules(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8])
             sprintf(s1,"\tL[%d][%d] = L[%d][%d] | ((LargeX[%d][%d]>0)&(LargeX[%d][%d]>0));\n",inter[3*i][2],inter[3*i][3],inter[3*i][2],inter[3*i][3],inter[3*i][0],inter[3*i][1],inter[3*i][4],inter[3*i][5]); strcat(s,s1);
             sprintf(s1,"\tL[%d][%d] = L[%d][%d] | ((LargeX[%d][%d]>0)&(LargeX[%d][%d]>0));\n",inter[3*i][4],inter[3*i][5],inter[3*i][4],inter[3*i][5],inter[3*i][0],inter[3*i][1],inter[3*i][2],inter[3*i][3]); strcat(s,s1);
             //COLLAPSE
-            sprintf(s1,"\tL[%d][%d] = L[%d][%d] | (!((LargeX[%d][%d]>0)&(LargeX[%d][%d]>0)));\n",inter[3*i][0],1-inter[3*i][1],inter[3*i][0],1-inter[3*i][1],inter[3*i][2],inter[3*i][3],inter[3*i][4],inter[3*i][5]); strcat(s,s1);
-            sprintf(s1,"\tL[%d][%d] = L[%d][%d] | (!((LargeX[%d][%d]>0)&(LargeX[%d][%d]>0)));\n",inter[3*i][2],1-inter[3*i][3],inter[3*i][2],1-inter[3*i][3],inter[3*i][0],inter[3*i][1],inter[3*i][4],inter[3*i][5]); strcat(s,s1);
-            sprintf(s1,"\tL[%d][%d] = L[%d][%d] | (!((LargeX[%d][%d]>0)&(LargeX[%d][%d]>0)));\n",inter[3*i][4],1-inter[3*i][5],inter[3*i][4],1-inter[3*i][5],inter[3*i][0],inter[3*i][1],inter[3*i][2],inter[3*i][3]); strcat(s,s1);
+            //sprintf(s1,"\tL[%d][%d] = L[%d][%d] | (!((LargeX[%d][%d]>0)&(LargeX[%d][%d]>0)));\n",inter[3*i][0],1-inter[3*i][1],inter[3*i][0],1-inter[3*i][1],inter[3*i][2],inter[3*i][3],inter[3*i][4],inter[3*i][5]); strcat(s,s1);
+            //sprintf(s1,"\tL[%d][%d] = L[%d][%d] | (!((LargeX[%d][%d]>0)&(LargeX[%d][%d]>0)));\n",inter[3*i][2],1-inter[3*i][3],inter[3*i][2],1-inter[3*i][3],inter[3*i][0],inter[3*i][1],inter[3*i][4],inter[3*i][5]); strcat(s,s1);
+            //sprintf(s1,"\tL[%d][%d] = L[%d][%d] | (!((LargeX[%d][%d]>0)&(LargeX[%d][%d]>0)));\n",inter[3*i][4],1-inter[3*i][5],inter[3*i][4],1-inter[3*i][5],inter[3*i][0],inter[3*i][1],inter[3*i][2],inter[3*i][3]); strcat(s,s1);
         }
         fprintf(fp4,s);
     }
     //Write check CONTRA
     fprintf(fp4,"\t//Check CONTRA rules of all units\n");
-    for(i=0;i<size_contra;i++){
+    for(i=0;i<size_contra_new;i++){
         strcpy(s,"");
         if(contra_new[i][6]==0){
-            sprintf(s1,"\tL[%d][%d] = L[%d][%d] | ((LargeX[%d][%d]>0)&(LargeX[%d][%d]>0));\n",contra_new[i][0],contra_new[i][1],contra_new[i][0],contra_new[i][1],contra_new[i][2],contra_new[i][3],contra_new[i][4],contra_new[i][5]);
+            sprintf(s1,"\tone_bit_t contra%d = (LargeX[%d][%d]>0)&(LargeX[%d][%d]>0)&(LargeX[%d][%d]>0);\n",i,contra_new[i][0],contra_new[i][1],contra_new[i][2],contra_new[i][3],contra_new[i][4],contra_new[i][5]);
+            strcat(s,s1);
+            /*sprintf(s1,"\tL[%d][%d] = L[%d][%d] | ((LargeX[%d][%d]>0)&(LargeX[%d][%d]>0));\n",contra_new[i][0],contra_new[i][1],contra_new[i][0],contra_new[i][1],contra_new[i][2],contra_new[i][3],contra_new[i][4],contra_new[i][5]);
             strcat(s,s1);
             sprintf(s1,"\tL[%d][%d] = L[%d][%d] | ((LargeX[%d][%d]>0)&(LargeX[%d][%d]>0));\n",contra_new[i][2],contra_new[i][3],contra_new[i][2],contra_new[i][3],contra_new[i][0],contra_new[i][1],contra_new[i][4],contra_new[i][5]);
             strcat(s,s1);
             sprintf(s1,"\tL[%d][%d] = L[%d][%d] | ((LargeX[%d][%d]>0)&(LargeX[%d][%d]>0));\n",contra_new[i][4],contra_new[i][5],contra_new[i][4],contra_new[i][5],contra_new[i][0],contra_new[i][1],contra_new[i][2],contra_new[i][3]);
-            strcat(s,s1);
+            strcat(s,s1);*/
         }else{
-            sprintf(s1,"\tL[%d][%d] = L[%d][%d] | ((LargeX[%d][%d]>0)&(LargeX[%d][%d]>0)&(LargeX[%d][%d]>0));\n",contra_new[i][0],contra_new[i][1],contra_new[i][0],contra_new[i][1],contra_new[i][2],contra_new[i][3],contra_new[i][4],contra_new[i][5],contra_new[i][6],contra_new[i][7]);
+            sprintf(s1,"\tone_bit_t contra%d = (LargeX[%d][%d]>0)&(LargeX[%d][%d]>0)&",i,contra_new[i][0],contra_new[i][1],contra_new[i][2],contra_new[i][3]);
             strcat(s,s1);
-            sprintf(s1,"\tL[%d][%d] = L[%d][%d] | ((LargeX[%d][%d]>0)&(LargeX[%d][%d]>0)&(LargeX[%d][%d]>0));\n",contra_new[i][2],contra_new[i][3],contra_new[i][2],contra_new[i][3],contra_new[i][0],contra_new[i][1],contra_new[i][4],contra_new[i][5],contra_new[i][6],contra_new[i][7]);
+            sprintf(s1,"(LargeX[%d][%d]>0)&(LargeX[%d][%d]>0);\n",contra_new[i][4],contra_new[i][5],contra_new[i][6],contra_new[i][7]);
             strcat(s,s1);
-            sprintf(s1,"\tL[%d][%d] = L[%d][%d] | ((LargeX[%d][%d]>0)&(LargeX[%d][%d]>0)&(LargeX[%d][%d]>0));\n",contra_new[i][4],contra_new[i][5],contra_new[i][4],contra_new[i][5],contra_new[i][0],contra_new[i][1],contra_new[i][2],contra_new[i][3],contra_new[i][6],contra_new[i][7]);
-            strcat(s,s1);
-            sprintf(s1,"\tL[%d][%d] = L[%d][%d] | ((LargeX[%d][%d]>0)&(LargeX[%d][%d]>0)&(LargeX[%d][%d]>0));\n",contra_new[i][6],contra_new[i][7],contra_new[i][6],contra_new[i][7],contra_new[i][0],contra_new[i][1],contra_new[i][2],contra_new[i][3],contra_new[i][4],contra_new[i][5]);
+            sprintf(s1,"\tL[%d][%d] = L[%d][%d] | contra%d;\n",contra_new[i][6],contra_new[i][7],contra_new[i][6],contra_new[i][7],i);
             strcat(s,s1);
         }
+        sprintf(s1,"\tL[%d][%d] = L[%d][%d] | contra%d;\n",contra_new[i][0],contra_new[i][1],contra_new[i][0],contra_new[i][1],i);
+        strcat(s,s1);
+        sprintf(s1,"\tL[%d][%d] = L[%d][%d] | contra%d;\n",contra_new[i][2],contra_new[i][3],contra_new[i][2],contra_new[i][3],i);
+        strcat(s,s1);
+        sprintf(s1,"\tL[%d][%d] = L[%d][%d] | contra%d;\n",contra_new[i][4],contra_new[i][5],contra_new[i][4],contra_new[i][5],i);
+        strcat(s,s1);
+
         fprintf(fp4,s);
     }
     fprintf(fp4,"}");
