@@ -2,10 +2,10 @@
 //#include<stdlib.h>
 #include<string.h>
 #include<time.h>
-#define N_VARIABLE 225
-#define N_CLAUSE 960 //9
+#define N_VARIABLE 180
+#define N_CLAUSE 320 //9
 #define N_LITERAL 3
-const int MAX_N_STEP = 1000;
+const int MAX_N_STEP = 15000000;
 const int EPSILON = 687194767; //687194767; //429496730;//536870912;
 #define MAX_CONTRA 150000
 
@@ -47,8 +47,8 @@ FILE *fp3; //contra
 FILE *fp4; //local rules
 
 int main() {
-    char filename[128]="uf225-028.cnf";
-    char logfile[128]= "uf225-028.txt";
+    char filename[128]="benchmarks/sgen1-sat-100-100_out2.cnf";
+    char logfile[128]= "sgen1-sat-100-100-log2.txt";
 
     //strncpy(logfile,filename,strlen(filename)-4);
     //strcat(logfile,"-log.txt");
@@ -139,8 +139,8 @@ int amoebasat(char s[N_VARIABLE+100]){
     LargeX[0][0]=1; x[0]=0;
     for(NStep=1;NStep<MAX_N_STEP;NStep++){
         update_L_intra();
-        update_L_inter(inter);
         update_L_contra(size_contra, contra_new);
+        update_L_inter(inter);
         int i,j;
         update_Z();//printf("\n");
         //update_Y();
@@ -672,7 +672,7 @@ void create_local_rules(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8])
     }
     fclose(fp4);
 
-/*    fp4 = fopen("local_rules_update.c", "w+");
+    fp4 = fopen("local_rules_update.cpp", "w+");
     fprintf(fp4,"#include \"amoeba_local_rules.h\"\n");
     fprintf(fp4,"#include \"local_rules_%d.h\"\n",N_VARIABLE);
     fprintf(fp4,"void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], one_bit_t x[N_VARIABLE+1], one_bit_t satisfiable[N_VARIABLE+1][2]){\n");
@@ -725,7 +725,7 @@ void create_local_rules(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8])
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //version added hypercontra
-/*    for(i=1;i<=N_VARIABLE;i++){
+    for(i=1;i<=N_VARIABLE;i++){
         if(x_fixed[i]==1) continue;
         for(j=0;j<=1;j++){
             strcpy(s,"");
@@ -769,11 +769,11 @@ void create_local_rules(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8])
     }
     fprintf(fp4,"}");
     fclose(fp4);
-    printf("created local rules\n");*/
+    printf("created local rules\n");
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //version plain
-    fp4 = fopen("rules_update.c", "w+");
+/*    fp4 = fopen("rules_update.c", "w+");
     fprintf(fp4,"#include \n");
     fprintf(fp4,"void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2]){\n");
     fprintf(fp4,"\t//Check INTRA rules of all units\n");
@@ -783,13 +783,6 @@ void create_local_rules(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8])
     for(i=0;i<size_inter;i++){
         strcpy(s,"");
         if(inter[3*i][2]==0){
-            /*sprintf(s1,"\tone_bit_t inter%d_0=LargeX[%d][%d]>0;\n",i,inter[3*i][4],inter[3*i][5]); strcat(s,s1);
-            sprintf(s1,"\tone_bit_t inter%d_2=LargeX[%d][%d]>0;\n",i,inter[3*i][0],inter[3*i][1]); strcat(s,s1);
-            sprintf(s1,"\tL[%d][%d] = L[%d][%d] | inter%d_0;\n",inter[3*i][0],inter[3*i][1],inter[3*i][0],inter[3*i][1],i); strcat(s,s1);
-            sprintf(s1,"\tL[%d][%d] = L[%d][%d] | inter%d_2;\n",inter[3*i][4],inter[3*i][5],inter[3*i][4],inter[3*i][5],i); strcat(s,s1);
-            //COLLAPSE
-            sprintf(s1,"\tL[%d][%d] = L[%d][%d] & (!inter%d_0);\n",inter[3*i][0],1-inter[3*i][1],inter[3*i][0],1-inter[3*i][1],i); strcat(s,s1);
-            sprintf(s1,"\tL[%d][%d] = L[%d][%d] & (!inter%d_2);\n",inter[3*i][4],1-inter[3*i][5],inter[3*i][4],1-inter[3*i][5],i); strcat(s,s1);*/
 
             //direct representation
             sprintf(s1,"\tL[%d][%d] = L[%d][%d] | (LargeX[%d][%d]>0);\n",inter[3*i][0],inter[3*i][1],inter[3*i][0],inter[3*i][1],inter[3*i][4],inter[3*i][5]); strcat(s,s1);
@@ -798,16 +791,6 @@ void create_local_rules(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8])
             //sprintf(s1,"\tL[%d][%d] = L[%d][%d] & (!(LargeX[%d][%d]>0));\n",inter[3*i][0],1-inter[3*i][1],inter[3*i][0],1-inter[3*i][1],inter[3*i][4],inter[3*i][5]); strcat(s,s1);
             //sprintf(s1,"\tL[%d][%d] = L[%d][%d] & (!(LargeX[%d][%d]>0));\n",inter[3*i][4],1-inter[3*i][5],inter[3*i][4],1-inter[3*i][5],inter[3*i][0],inter[3*i][1]); strcat(s,s1);
         }else{
-            /*sprintf(s1,"\tone_bit_t inter%d_0 = (LargeX[%d][%d]>0)&(LargeX[%d][%d]>0);\n",i,inter[3*i][2],inter[3*i][3],inter[3*i][4],inter[3*i][5]); strcat(s,s1);
-            sprintf(s1,"\tone_bit_t inter%d_1 = (LargeX[%d][%d]>0)&(LargeX[%d][%d]>0);\n",i,inter[3*i][0],inter[3*i][1],inter[3*i][4],inter[3*i][5]); strcat(s,s1);
-            sprintf(s1,"\tone_bit_t inter%d_2 = (LargeX[%d][%d]>0)&(LargeX[%d][%d]>0);\n",i,inter[3*i][0],inter[3*i][1],inter[3*i][2],inter[3*i][3]); strcat(s,s1);
-            sprintf(s1,"\tL[%d][%d] = L[%d][%d] | inter%d_0;\n",inter[3*i][0],inter[3*i][1],inter[3*i][0],inter[3*i][1],i); strcat(s,s1);
-            sprintf(s1,"\tL[%d][%d] = L[%d][%d] | inter%d_1;\n",inter[3*i][2],inter[3*i][3],inter[3*i][2],inter[3*i][3],i); strcat(s,s1);
-            sprintf(s1,"\tL[%d][%d] = L[%d][%d] | inter%d_2;\n",inter[3*i][4],inter[3*i][5],inter[3*i][4],inter[3*i][5],i); strcat(s,s1);
-            //COLLAPSE
-            sprintf(s1,"\tL[%d][%d] = L[%d][%d] & (!inter%d_0);\n",inter[3*i][0],1-inter[3*i][1],inter[3*i][0],1-inter[3*i][1],i); strcat(s,s1);
-            sprintf(s1,"\tL[%d][%d] = L[%d][%d] & (!inter%d_1);\n",inter[3*i][2],1-inter[3*i][3],inter[3*i][2],1-inter[3*i][3],i); strcat(s,s1);
-            sprintf(s1,"\tL[%d][%d] = L[%d][%d] & (!inter%d_2);\n",inter[3*i][4],1-inter[3*i][5],inter[3*i][4],1-inter[3*i][5],i); strcat(s,s1);*/
 
             //direct representation
             sprintf(s1,"\tL[%d][%d] = L[%d][%d] | ((LargeX[%d][%d]>0)&(LargeX[%d][%d]>0));\n",inter[3*i][0],inter[3*i][1],inter[3*i][0],inter[3*i][1],inter[3*i][2],inter[3*i][3],inter[3*i][4],inter[3*i][5]); strcat(s,s1);
@@ -827,12 +810,7 @@ void create_local_rules(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8])
         if(contra_new[i][6]==0){
             sprintf(s1,"\tone_bit_t contra%d = (LargeX[%d][%d]>0)&(LargeX[%d][%d]>0)&(LargeX[%d][%d]>0);\n",i,contra_new[i][0],contra_new[i][1],contra_new[i][2],contra_new[i][3],contra_new[i][4],contra_new[i][5]);
             strcat(s,s1);
-            /*sprintf(s1,"\tL[%d][%d] = L[%d][%d] | ((LargeX[%d][%d]>0)&(LargeX[%d][%d]>0));\n",contra_new[i][0],contra_new[i][1],contra_new[i][0],contra_new[i][1],contra_new[i][2],contra_new[i][3],contra_new[i][4],contra_new[i][5]);
-            strcat(s,s1);
-            sprintf(s1,"\tL[%d][%d] = L[%d][%d] | ((LargeX[%d][%d]>0)&(LargeX[%d][%d]>0));\n",contra_new[i][2],contra_new[i][3],contra_new[i][2],contra_new[i][3],contra_new[i][0],contra_new[i][1],contra_new[i][4],contra_new[i][5]);
-            strcat(s,s1);
-            sprintf(s1,"\tL[%d][%d] = L[%d][%d] | ((LargeX[%d][%d]>0)&(LargeX[%d][%d]>0));\n",contra_new[i][4],contra_new[i][5],contra_new[i][4],contra_new[i][5],contra_new[i][0],contra_new[i][1],contra_new[i][2],contra_new[i][3]);
-            strcat(s,s1);*/
+
         }else{
             sprintf(s1,"\tone_bit_t contra%d = (LargeX[%d][%d]>0)&(LargeX[%d][%d]>0)&",i,contra_new[i][0],contra_new[i][1],contra_new[i][2],contra_new[i][3]);
             strcat(s,s1);
@@ -850,10 +828,11 @@ void create_local_rules(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8])
 
         fprintf(fp4,s);
     }
+
     fprintf(fp4,"}");
     fclose(fp4);
     printf("created update rules L.\n");
-
+    */
 }
 
 
