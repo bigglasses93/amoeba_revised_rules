@@ -24,7 +24,7 @@
 	<string.h>
 	<time.h>
 
-1571474125 source:e:\amoeba_revised_rules\test_revised_rules3.c
+1581999348 source:e:\amoeba_revised_rules\test_revised_rules3.c
 	<stdio.h>
 	<string.h>
 	<time.h>
@@ -50,6 +50,11 @@
 	<time.h>
 
 1579225660 source:e:\amoeba_revised_rules\preprocess.c
+	<stdio.h>
+	<string.h>
+	<time.h>
+
+1582008585 source:e:\amoeba_revised_rules\test_revised_rules_multi_epsilon.c
 	<stdio.h>
 	<string.h>
 	<time.h>
