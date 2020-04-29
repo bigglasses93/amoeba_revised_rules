@@ -19,7 +19,7 @@ $newv = $N*$F*$H+1
 $link = Array.new()
 
 outfile = File.open("#{ARGV[0]}/#{ARGV[0]}_out.cnf.txt", "w")
-
+#outfile = File.open("#{gn}_out.cnf", "w")
 def neg2(x)
 	x =~ /\-(.+)/
 	e = $+

@@ -2,10 +2,10 @@
 //#include<stdlib.h>
 #include<string.h>
 #include<time.h>
-#define N_VARIABLE 180
-#define N_CLAUSE 320 //9
+#define N_VARIABLE 1238
+#define N_CLAUSE 2857 //9
 #define N_LITERAL 3
-const int MAX_N_STEP = 15000000;
+const int MAX_N_STEP = 150000;
 const int EPSILON = 687194767; //687194767; //429496730;//536870912;
 #define MAX_CONTRA 150000
 
@@ -47,11 +47,11 @@ FILE *fp3; //contra
 FILE *fp4; //local rules
 
 int main() {
-    char filename[128]="benchmarks/sgen1-sat-100-100_out2.cnf";
-    char logfile[128]= "sgen1-sat-100-100-log2.txt";
+    char filename[128]="benchmarks/cnfvehicle/test24_6_9_6.cnf.txt_out.cnf";
+    char logfile[128];//= "test30100_6_15_6_out-log.txt";
 
-    //strncpy(logfile,filename,strlen(filename)-4);
-    //strcat(logfile,"-log.txt");
+    strncpy(logfile,filename,strlen(filename)-4);
+    strcat(logfile,"-log.txt");
 
     char s[N_VARIABLE+100]; //output solution
     fp1 = fopen(logfile,"w+");

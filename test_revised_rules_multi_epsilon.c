@@ -1,13 +1,12 @@
 #include<stdio.h>
-//#include<stdlib.h>
 #include<string.h>
 #include<time.h>
-#define N_VARIABLE 529
-#define N_CLAUSE 1508//9
+#define N_VARIABLE 2873
+#define N_CLAUSE 6160//9
 #define N_LITERAL 3
-const int MAX_N_STEP = 1000000;
-const int EPSILON1 = 687194767; //687194767; //429496730;//536870912;
-const int EPSILON2 = 536870912;
+const int MAX_N_STEP = 100000;
+const int EPSILON1 = 687194767; //~0.32
+const int EPSILON2 = 536870912; //
 #define MAX_CONTRA 150000
 
 int conn[N_VARIABLE+1][2]; //connections# of all variables
@@ -49,8 +48,8 @@ FILE *fp3; //contra
 FILE *fp4; //local rules
 
 int main() {
-    char filename[128]="test44_10_4_4_out.cnf";
-    char logfile[128]= "flat75-10-log.txt";
+    char filename[128]="benchmarks/cnfvehicle/test30100_6_15_6/test30100_6_15_6_out.cnf";
+    char logfile[128]= "test30100_6_15_6_out-log.txt";
 
     //strncpy(logfile,filename,strlen(filename)-4);
     //strcat(logfile,"-log.txt");
@@ -282,12 +281,6 @@ int update_f(){
         }else{
             c3 = (id3<0) ^ x[abs(id3)];
         }
-
-/*        if(id3==0){
-            f_val = f_val && (c1 || c2);
-        }else{
-            f_val = f_val && (c1 || c2 || c3);
-        }*/
         f_val = f_val && (c1 || c2 || c3);
         if (f_val==0) {
             //printf("unsat clause id = %d: %d %d %d \n",clause_id, id1, id2, id3);
@@ -515,23 +508,6 @@ void update_L_inter(int inter[3*N_CLAUSE][6]){
         L[ inter[i][4] ][ 1-inter[i][5] ] = L[ inter[i][4] ][ 1-inter[i][5] ] & (!inter1);
 
 
-/*        int id0 = inter[i][0];
-    	int id1 = inter[i][1];
-    	int id2 = inter[i][2];
-    	int inter1;
-    	if(id1>0){
-    		inter1 = (LargeX[ inter[i][0] ][ inter[i][1] ] >0) & (LargeX[ inter[i][2] ][ inter[i][3] ] >0) & (LargeX[ inter[i][4] ][ inter[i][5] ] >0);
-    	}else{
-    		inter1 = (LargeX[ inter[i][0] ][ inter[i][1] ] >0)& (LargeX[ inter[i][4] ][ inter[i][5] ] >0);
-    	}
-    	//cout << "X[" << inter[i][0]-1 << "]["<< inter[i][1] <<"]="<<X_inter01 << "\n";
-
-       L[ inter[i][0] ][ inter[i][1] ] = L[ inter[i][0] ][ inter[i][1] ] | inter1;
-       //cout << "L[" <<inter[i][0]-1 <<"]["<< inter[i][1] <<"]="<<L[ inter[i][0]-1 ][ inter[i][1] ] << "\n";
-       L[ inter[i][2] ][ inter[i][3] ] = L[ inter[i][2] ][ inter[i][3] ] | inter1;
-       L[ inter[i][4] ][ inter[i][5] ] = L[ inter[i][4] ][ inter[i][5] ] | inter1;*/
-
-
     }
 }
 void update_L_contra(int size_contra, int contra[size_contra][8]){
@@ -693,7 +669,7 @@ void create_local_rules(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8])
             }
             //print out connections# of unit[i][j]
             //printf("unit(%d,%d) %d\n",i,j,conn[i][j]);
-            printf("%d\n",connection_count);
+            //printf("%d\n",connection_count);
             //write rules into file
             fprintf(fp4, "int unit%d_%d[%d][6]={\n", i, j,count_rules[i][j]);
             fprintf(fp4,s);
