@@ -1,4 +1,0 @@
-
-Run #1: seed = 5082  
-Run #2: seed = 11076  
-Run #3: seed = 4386 
