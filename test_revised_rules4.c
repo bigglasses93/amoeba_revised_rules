@@ -2,8 +2,13 @@
 //#include<stdlib.h>
 #include<string.h>
 #include<time.h>
+<<<<<<< HEAD
 #define N_VARIABLE 100
 #define N_CLAUSE 430 //9
+=======
+#define N_VARIABLE 180
+#define N_CLAUSE 320 //9
+>>>>>>> 67563b8fc30b27bd921d4953446abe0cd5981fbd
 #define N_LITERAL 3
 const int MAX_N_STEP = 15000000;
 const int EPSILON = 687194767; //429496730;//536870912;
@@ -45,8 +50,13 @@ FILE *fp3; //contra
 FILE *fp4; //local rules
 
 int main() {
+<<<<<<< HEAD
     //char filename[128]="benchmarks/sgen1-sat-100-100_out2.cnf";
     char filename[128]="uf100-0285.cnf";
+=======
+    char filename[128]="benchmarks/sgen1-sat-100-100_out2.cnf";
+    //char filename[128]="uf225-028.cnf";
+>>>>>>> 67563b8fc30b27bd921d4953446abe0cd5981fbd
     char logfile[128];
     strncpy(logfile,filename,strlen(filename)-4);
     strcat(logfile,"-log.txt");

@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 
 Run #1: seed = 5082  
 Run #2: seed = 11076  
+=======
+
+Run #1: seed = 5082  
+Run #2: seed = 11076  
+>>>>>>> 67563b8fc30b27bd921d4953446abe0cd5981fbd
 Run #3: seed = 4386 

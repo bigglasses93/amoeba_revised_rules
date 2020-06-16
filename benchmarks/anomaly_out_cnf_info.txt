@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 N_VARIABLE: 39
 N_CLAUSE: 263
+=======
+N_VARIABLE: 39
+N_CLAUSE: 263
+>>>>>>> 67563b8fc30b27bd921d4953446abe0cd5981fbd

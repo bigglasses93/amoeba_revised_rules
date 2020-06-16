@@ -4,10 +4,17 @@
 #include<time.h>
 #define N_VARIABLE 1235
 #define N_CLAUSE 2836 //9
+<<<<<<< HEAD
 #define N_LITERAL 3
 #define CONN_THRES 10
 const int MAX_N_STEP = 1000000;
 const int EPSILON1 = 687194767; //fixed = 0.32
+=======
+#define N_LITERAL 3
+#define CONN_THRES 10
+const int MAX_N_STEP = 1000000;
+const int EPSILON1 = 687194767; //fixed = 0.32
+>>>>>>> 67563b8fc30b27bd921d4953446abe0cd5981fbd
 const int EPSILON2 = 515396076; //varied
 #define MAX_CONTRA 2000000
 
@@ -18,10 +25,17 @@ int Z[N_VARIABLE+1][2];
 int f[N_CLAUSE][N_LITERAL];
 char x[N_VARIABLE+1];
 char x_fixed[N_VARIABLE+1];
+<<<<<<< HEAD
 int inter[3*N_CLAUSE][6];
 int size_inter;
 int size_contra;
 int contra_new[MAX_CONTRA][8];
+=======
+int inter[3*N_CLAUSE][6];
+int size_inter;
+int size_contra;
+int contra_new[MAX_CONTRA][8];
+>>>>>>> 67563b8fc30b27bd921d4953446abe0cd5981fbd
 int conn[N_VARIABLE+1][2]; //connections# of all variables
 
 unsigned state[1];
@@ -41,10 +55,17 @@ void update_L_intra();
 void update_L_inter(int inter[3*N_CLAUSE][6]);
 void update_L_contra(int size_contra, int contra[size_contra][8]);
 int amoebasat(char s[N_VARIABLE+100]);
+<<<<<<< HEAD
 void count_connection(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8]);
 
 FILE *fp1;
 FILE *fp2; //write down connections#
+=======
+void count_connection(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8]);
+
+FILE *fp1;
+FILE *fp2; //write down connections#
+>>>>>>> 67563b8fc30b27bd921d4953446abe0cd5981fbd
 
 int main(int argc, char* argv[]) {
     char filename[128]="./benchmarks/cnfvehicle/test33_6_9_6/test33_6_9_6_out.cnf";
@@ -69,7 +90,11 @@ int main(int argc, char* argv[]) {
 	for (i=0;i<size_contra;i++) {
 		contra[i] = malloc(sizeof(int) * 8);
 	}
+<<<<<<< HEAD
     generate_contra(size_contra, contra, contra_new);
+=======
+    generate_contra(size_contra, contra, contra_new);
+>>>>>>> 67563b8fc30b27bd921d4953446abe0cd5981fbd
     count_connection(inter,contra_new);
     srand(time(NULL));
     for(i=0;i<20;i++){
@@ -226,6 +251,7 @@ void update_x(){
         //printf("x[%d]=%d \t", i, x[i]);
     }
 }
+<<<<<<< HEAD
 void update_Y(){
     int i, j;
     for(i=1;i<=N_VARIABLE;i++){
@@ -237,6 +263,19 @@ void update_Y(){
             //printf("Y[%d][%d]=%d\t ",i,j,Y[i][j]);
         }
     }
+=======
+void update_Y(){
+    int i, j;
+    for(i=1;i<=N_VARIABLE;i++){
+        for(j=0; j<2; j++){
+			int sub;
+			if(conn[i][j]>CONN_THRES) sub = 2147483647 - EPSILON1 - Z[i][j] +1;
+			else sub = 2147483647 - EPSILON2 - Z[i][j] +1;
+			Y[i][j] = (!L[i][j]) & (sub>0);
+            //printf("Y[%d][%d]=%d\t ",i,j,Y[i][j]);
+        }
+    }
+>>>>>>> 67563b8fc30b27bd921d4953446abe0cd5981fbd
 }
 void update_LargeX(){
     int i,j;
@@ -245,8 +284,13 @@ void update_LargeX(){
         for(j=0;j<=1;j++){
             if(L[i][j]==1 && LargeX[i][j]>-1) LargeX[i][j]--;
             else if(L[i][j]==0){
+<<<<<<< HEAD
                 int sub;
                 if(conn[i][j]>CONN_THRES) sub = 2147483647 - EPSILON1 - Z[i][j] +1;
+=======
+                int sub;
+                if(conn[i][j]>CONN_THRES) sub = 2147483647 - EPSILON1 - Z[i][j] +1;
+>>>>>>> 67563b8fc30b27bd921d4953446abe0cd5981fbd
                 else sub = 2147483647 - EPSILON2 - Z[i][j] +1;
                 //if Z > 1- epsilon, X expands; otherwise shrink
                 if(sub>0 && LargeX[i][j]<1){
@@ -280,7 +324,11 @@ int update_f(){
         int c1, c2, c3;
         id1 = f[clause_id][0];
         id2 = f[clause_id][1];
+<<<<<<< HEAD
         id3 = f[clause_id][2];
+=======
+        id3 = f[clause_id][2];
+>>>>>>> 67563b8fc30b27bd921d4953446abe0cd5981fbd
         if(id2==0) continue;
         c1 = sign_x(id1) ^ x[abs(id1)];
         c2 = sign_x(id2) ^ x[abs(id2)];
@@ -295,15 +343,26 @@ int update_f(){
     return f_val;
 }
 void generate_inter(){
+<<<<<<< HEAD
     int i;
+=======
+    int i;
+>>>>>>> 67563b8fc30b27bd921d4953446abe0cd5981fbd
     size_inter=0;
     for(i=0; i<N_CLAUSE; i++){
         //-------- generate inter set size 3x
         int interQ, interQ_abs, interP1, interP1_abs, interP2, interP2_abs;
+<<<<<<< HEAD
         if(f[i][1]==0) {
 			//printf("\nClause%d:\t%d\t%d\t%d",i,f[i][0],f[i][1],f[i][2]);
 			continue;
 		}
+=======
+        if(f[i][1]==0) {
+			//printf("\nClause%d:\t%d\t%d\t%d",i,f[i][0],f[i][1],f[i][2]);
+			continue;
+		}
+>>>>>>> 67563b8fc30b27bd921d4953446abe0cd5981fbd
 		size_inter++;
         interQ = abs(f[i][0]); interQ_abs = sign_x(f[i][0]);
         interP1= abs(f[i][1]); interP1_abs = sign_x(f[i][1]);
@@ -320,7 +379,11 @@ void generate_inter(){
         inter[3*i+2][0] = interQ; inter[3*i+2][1] = interQ_abs;
         inter[3*i+2][2] = interP1; inter[3*i+2][3] = interP1_abs;
         inter[3*i+2][4] = interP2; inter[3*i+2][5] = interP2_abs;
+<<<<<<< HEAD
     }
+=======
+    }
+>>>>>>> 67563b8fc30b27bd921d4953446abe0cd5981fbd
     printf("\nSize inter = %d ", size_inter);
 }
 int survey_size_contra(){
@@ -421,6 +484,7 @@ void update_L_intra(){
     	L[i][1] = (LargeX[i][0]>0);
     }
 }
+<<<<<<< HEAD
 void update_L_inter(int inter[3*N_CLAUSE][6]){
     int i;
     for(i=0;i<3*size_inter;i++){
@@ -577,6 +641,164 @@ void count_connection(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8]){
     fclose(fp2);
 }
 
+=======
+void update_L_inter(int inter[3*N_CLAUSE][6]){
+    int i;
+    for(i=0;i<3*size_inter;i++){
+        //printf("\nClause%d:\t%d\t%d\t%d",i,f[i][0],f[i][1],f[i][2]);
+        int id1 = inter[i][0];
+        int id2 = inter[i][2];
+        int inter1;
+        if(id1>0 && id2>0){
+            inter1 = (LargeX[ inter[i][2] ][ inter[i][3] ] >0) & (LargeX[ inter[i][0] ][ inter[i][1] ] >0);
+        }else if(id1==0){
+            inter1 = (LargeX[ inter[i][2] ][ inter[i][3] ] >0);
+        }else if(id2==0){
+            inter1 = (LargeX[ inter[i][0] ][ inter[i][1] ] >0);
+        }else if(id1==0 && id2==0){
+            inter1 = 0;
+        }
+        //INTER
+        L[ inter[i][4] ][ inter[i][5] ] = L[ inter[i][4] ][ inter[i][5] ] | inter1;
+        //COLLAPSE
+        L[ inter[i][4] ][ 1-inter[i][5] ] = L[ inter[i][4] ][ 1-inter[i][5] ] & (!inter1);
+    }
+}
+void update_L_contra(int size_contra, int contra[size_contra][8]){
+    int i, j;
+    for(i=0;i<size_contra;i++){
+        int contra1;
+        //int id1 = contra[i][0];
+        int id2 = contra[i][2];
+        //int id3 = contra[i][4];
+        int id4 = contra[i][6];
+        if(id2==0 && id4==0){
+            contra1 = (LargeX[ contra[i][0] ][ contra[i][1] ]>0) & (LargeX[ contra[i][4] ][ contra[i][5] ]>0);
+        }else if(id2==0){
+            contra1 = (LargeX[ contra[i][0] ][ contra[i][1] ]>0) & (LargeX[ contra[i][4] ][ contra[i][5] ]>0) & (LargeX[ contra[i][6] ][ contra[i][7] ]>0);
+        }else if(id4==0){
+            contra1 = (LargeX[ contra[i][0] ][ contra[i][1] ]>0) & (LargeX[ contra[i][2] ][ contra[i][3] ]>0) & (LargeX[ contra[i][4] ][ contra[i][5] ]>0);
+        }else{
+            contra1 = (LargeX[ contra[i][0] ][ contra[i][1] ]>0) &
+                (LargeX[ contra[i][2] ][ contra[i][3] ]>0) &
+                (LargeX[ contra[i][4] ][ contra[i][5] ]>0) &
+                (LargeX[ contra[i][6] ][ contra[i][7] ]>0);
+        }
+
+        //CONTRA - Light on CONTRA units - not good with CONFLICT only
+        if(contra1){
+            L[ contra[i][0] ][ contra[i][1] ] = 1;
+            L[ contra[i][2] ][ contra[i][3] ] = 1;
+            L[ contra[i][4] ][ contra[i][5] ] = 1;
+            L[ contra[i][6] ][ contra[i][7] ] = 1;
+        }
+        //loosen representation of CONTRA - should combine with CONFLICT, not good with hypercontra
+        /*L[ contra[i][0]-1 ][ contra[i][1] ] = L[ contra[i][0]-1 ][ contra[i][1] ] |
+                ((LargeX[ contra[i][2]-1 ][ contra[i][3] ]>0) &
+                (LargeX[ contra[i][4]-1 ][ contra[i][5] ]>0) &
+                (LargeX[ contra[i][6]-1 ][ contra[i][7] ]>0));
+        L[ contra[i][2]-1 ][ contra[i][3] ] = L[ contra[i][2]-1 ][ contra[i][3] ] |
+                ((LargeX[ contra[i][0]-1 ][ contra[i][1] ]>0) &
+                (LargeX[ contra[i][4]-1 ][ contra[i][5] ]>0) &
+                (LargeX[ contra[i][6]-1 ][ contra[i][7] ]>0));
+        L[ contra[i][4]-1 ][ contra[i][5] ] = L[ contra[i][4]-1 ][ contra[i][5] ] |
+                ((LargeX[ contra[i][0]-1 ][ contra[i][1] ]>0) &
+                (LargeX[ contra[i][2]-1 ][ contra[i][3] ]>0) &
+                (LargeX[ contra[i][6]-1 ][ contra[i][7] ]>0));
+        L[ contra[i][6]-1 ][ contra[i][7] ] = L[ contra[i][6]-1 ][ contra[i][7] ] |
+                ((LargeX[ contra[i][0]-1 ][ contra[i][1] ]>0) &
+                (LargeX[ contra[i][2]-1 ][ contra[i][3] ]>0) &
+                (LargeX[ contra[i][4]-1 ][ contra[i][5] ]>0));*/
+
+        //CONFLICT - Light off counterparts of CONTRA units
+        /*if(contra1){
+            L[ contra[i][0]-1 ][ 1-contra[i][1] ] = 0;
+            L[ contra[i][2]-1 ][ 1-contra[i][3] ] = 0;
+            L[ contra[i][4]-1 ][ 1-contra[i][5] ] = 0;
+            L[ contra[i][6]-1 ][ 1-contra[i][7] ] = 0;
+        }*/
+
+        //HyperCONTRA - set LargeX of contradicted units directly to -1
+        /*if(contra1){
+            LargeX[ contra[i][0] ][ contra[i][1] ] = -1;
+            LargeX[ contra[i][2] ][ contra[i][3] ] = -1;
+            LargeX[ contra[i][4] ][ contra[i][5] ] = -1;
+            LargeX[ contra[i][6] ][ contra[i][7] ] = -1;
+        }
+
+        /*if(contra1){
+            L[ contra[i][0]-1 ][ contra[i][1] ] = 2;
+            L[ contra[i][2]-1 ][ contra[i][3] ] = 2;
+            L[ contra[i][4]-1 ][ contra[i][5] ] = 2;
+            L[ contra[i][6]-1 ][ contra[i][7] ] = 2;
+        }*/
+    }
+}
+void count_connection(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8]){
+    int i, j; //unit index
+    int k, l, m, n;
+    fp2=fopen("conn.txt","w+");
+    //write all rules for unit X[1][0]
+    for(i=1;i<=N_VARIABLE;i++){
+        if(x_fixed[i]==1) continue;
+        for(j=0;j<=1;j++){
+            //initialize connections# of unit[i][j]
+            int connections[N_VARIABLE+1][2]; //connections# of only unit[i][j], each element represent wire (0 or 1) between unit [i][j] and another unit
+            int connection_count=0;
+            for (k=0;k<N_VARIABLE;k++){
+                connections[k][0]=0;
+                connections[k][1]=0;
+            }
+
+            //Count connections (rules) from inter
+            for(k=0;k<N_CLAUSE;k++){
+                if(inter[3*k][0]==i && inter[3*k][1]==j){
+                    //write to connections
+                    connections[ inter[3*k][2] ][ inter[3*k][3] ] = 1;
+                    connections[ inter[3*k][4] ][ inter[3*k][5] ] = 1;
+                }
+                if(inter[3*k][2]==i && inter[3*k][3]==j){
+                    //write to connections
+                    connections[ inter[3*k][0] ][ inter[3*k][1] ] = 1;
+                    connections[ inter[3*k][4] ][ inter[3*k][5] ] = 1;
+                }
+                if(inter[3*k][4]==i && inter[3*k][5]==j){
+                    //write to connections
+                    connections[ inter[3*k][0] ][ inter[3*k][1] ] = 1;
+                    connections[ inter[3*k][2] ][ inter[3*k][3] ] = 1;
+                }
+            }
+            //Count connections (rules) from contra
+            for(k=0;k<size_contra;k++){
+                for(l=0;l<8;l=l+2){
+                    if(contra_new[k][l]==i && contra_new[k][l+1]==j){
+                        //int ok=1;
+                        for(m=0;m<8;m=m+2){
+                            if(m==l) continue;
+                            if(contra_new[k][m]==i && contra_new[k][m+1]==j){
+                                continue;
+                            }
+                            //write to connections
+                            connections[ contra_new[k][m] ][ contra_new[k][m+1] ] = 1;
+                        }
+                        break;
+                    }
+                }
+            }
+            //Count connections#
+            for(k=1;k<=N_VARIABLE;k++){
+                connection_count+=connections[k][0] + connections[k][1];
+                conn[i][j] = connection_count;
+            }
+            //print out connections# of unit[i][j]
+            //printf("unit(%d,%d)'connections= %d\n",i,j,conn[i][j]);
+            fprintf(fp2,"%d\n",connection_count);
+        }
+    }
+    fclose(fp2);
+}
+
+>>>>>>> 67563b8fc30b27bd921d4953446abe0cd5981fbd
 
 
 
