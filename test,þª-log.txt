@@ -1,0 +1,202 @@
+
+Run #1: seed = 17498 
+Found: 61 iterations 1111
+Run #2: seed = 11902 
+Found: 2 iterations 1111
+Run #3: seed = 20618 
+Found: 9 iterations 1111
+Run #4: seed = 29871 
+Found: 11 iterations 1111
+Run #5: seed = 9810 
+Found: 11 iterations 1111
+Run #6: seed = 16486 
+Found: 6 iterations 1111
+Run #7: seed = 2464 
+Found: 10 iterations 1111
+Run #8: seed = 14915 
+Found: 3 iterations 1111
+Run #9: seed = 19286 
+Found: 5 iterations 1111
+Run #10: seed = 5976 
+Found: 3 iterations 1111
+Run #11: seed = 15632 
+Found: 5 iterations 1111
+Run #12: seed = 22620 
+Found: 20 iterations 1111
+Run #13: seed = 9230 
+Found: 26 iterations 1111
+Run #14: seed = 24428 
+Found: 31 iterations 1111
+Run #15: seed = 11366 
+Found: 9 iterations 1111
+Run #16: seed = 30954 
+Found: 24 iterations 1111
+Run #17: seed = 9975 
+Found: 6 iterations 1111
+Run #18: seed = 6200 
+Found: 23 iterations 1111
+Run #19: seed = 28587 
+Found: 53 iterations 1111
+Run #20: seed = 20320 
+Found: 6 iterations 1111
+Run #21: seed = 1800 
+Found: 11 iterations 1111
+Run #22: seed = 233 
+Found: 4 iterations 1111
+Run #23: seed = 299 
+Found: 7 iterations 1111
+Run #24: seed = 1384 
+Found: 4 iterations 1111
+Run #25: seed = 15766 
+Found: 14 iterations 1111
+Run #26: seed = 2706 
+Found: 7 iterations 1111
+Run #27: seed = 13948 
+Found: 13 iterations 1111
+Run #28: seed = 24532 
+Found: 7 iterations 1111
+Run #29: seed = 27509 
+Found: 8 iterations 1111
+Run #30: seed = 17603 
+Found: 7 iterations 1111
+Run #31: seed = 19131 
+Found: 4 iterations 1111
+Run #32: seed = 12248 
+Found: 15 iterations 1111
+Run #33: seed = 21856 
+Found: 5 iterations 1111
+Run #34: seed = 30814 
+Found: 11 iterations 1111
+Run #35: seed = 24089 
+Found: 6 iterations 1111
+Run #36: seed = 25719 
+Found: 11 iterations 1111
+Run #37: seed = 32666 
+Found: 4 iterations 1111
+Run #38: seed = 25766 
+Found: 9 iterations 1111
+Run #39: seed = 3734 
+Found: 10 iterations 1111
+Run #40: seed = 20540 
+Found: 7 iterations 1111
+Run #41: seed = 11478 
+Found: 9 iterations 1111
+Run #42: seed = 21145 
+Found: 10 iterations 1111
+Run #43: seed = 3597 
+Found: 15 iterations 1111
+Run #44: seed = 30506 
+Found: 6 iterations 1111
+Run #45: seed = 17493 
+Found: 20 iterations 1111
+Run #46: seed = 29312 
+Found: 3 iterations 1111
+Run #47: seed = 22897 
+Found: 3 iterations 1111
+Run #48: seed = 30965 
+Found: 19 iterations 1111
+Run #49: seed = 25422 
+Found: 3 iterations 1111
+Run #50: seed = 14276 
+Found: 10 iterations 1111
+Run #51: seed = 30038 
+Found: 5 iterations 1111
+Run #52: seed = 27507 
+Found: 4 iterations 1111
+Run #53: seed = 7570 
+Found: 3 iterations 1111
+Run #54: seed = 9987 
+Found: 7 iterations 1111
+Run #55: seed = 21427 
+Found: 18 iterations 1111
+Run #56: seed = 14669 
+Found: 7 iterations 1111
+Run #57: seed = 12656 
+Found: 16 iterations 1111
+Run #58: seed = 19043 
+Found: 13 iterations 1111
+Run #59: seed = 18150 
+Found: 2 iterations 1111
+Run #60: seed = 22778 
+Found: 17 iterations 1111
+Run #61: seed = 13014 
+Found: 5 iterations 1111
+Run #62: seed = 16422 
+Found: 3 iterations 1111
+Run #63: seed = 9720 
+Found: 9 iterations 1111
+Run #64: seed = 28654 
+Found: 9 iterations 1111
+Run #65: seed = 29114 
+Found: 10 iterations 1111
+Run #66: seed = 6015 
+Found: 7 iterations 1111
+Run #67: seed = 1571 
+Found: 20 iterations 1111
+Run #68: seed = 13838 
+Found: 8 iterations 1111
+Run #69: seed = 8120 
+Found: 7 iterations 1111
+Run #70: seed = 28580 
+Found: 9 iterations 1111
+Run #71: seed = 11665 
+Found: 24 iterations 1111
+Run #72: seed = 11624 
+Found: 3 iterations 1111
+Run #73: seed = 30973 
+Found: 49 iterations 1111
+Run #74: seed = 3365 
+Found: 57 iterations 1111
+Run #75: seed = 9063 
+Found: 60 iterations 1111
+Run #76: seed = 545 
+Found: 5 iterations 1111
+Run #77: seed = 29795 
+Found: 11 iterations 1111
+Run #78: seed = 22908 
+Found: 4 iterations 1111
+Run #79: seed = 258 
+Found: 3 iterations 1111
+Run #80: seed = 9902 
+Found: 14 iterations 1111
+Run #81: seed = 16093 
+Found: 26 iterations 1111
+Run #82: seed = 229 
+Found: 22 iterations 1111
+Run #83: seed = 26752 
+Found: 15 iterations 1111
+Run #84: seed = 71 
+Found: 7 iterations 1111
+Run #85: seed = 1558 
+Found: 3 iterations 1111
+Run #86: seed = 8816 
+Found: 18 iterations 1111
+Run #87: seed = 17539 
+Found: 8 iterations 1111
+Run #88: seed = 14233 
+Found: 9 iterations 1111
+Run #89: seed = 22101 
+Found: 5 iterations 1111
+Run #90: seed = 18004 
+Found: 3 iterations 1111
+Run #91: seed = 13617 
+Found: 13 iterations 1111
+Run #92: seed = 444 
+Found: 10 iterations 1111
+Run #93: seed = 4004 
+Found: 30 iterations 1111
+Run #94: seed = 3718 
+Found: 5 iterations 1111
+Run #95: seed = 20096 
+Found: 6 iterations 1111
+Run #96: seed = 30052 
+Found: 3 iterations 1111
+Run #97: seed = 13873 
+Found: 3 iterations 1111
+Run #98: seed = 21898 
+Found: 3 iterations 1111
+Run #99: seed = 2992 
+Found: 15 iterations 1111
+Run #100: seed = 16475 
+Found: 49 iterations 1111
+Average #iterations = 12
