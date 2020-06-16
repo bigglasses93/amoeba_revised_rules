@@ -45,7 +45,11 @@ FILE *fp3; //contra
 FILE *fp4; //local rules
 
 int main() {
+<<<<<<< HEAD
     char filename[128]="benchmarks/sgen1-sat-100-100_out2.cnf";
+=======
+    char filename[128]="benchmarks/sgen1-sat-100-100_out2.cnf";
+>>>>>>> hotfix
     //char filename[128]="uf225-028.cnf";
     char logfile[128];
     strncpy(logfile,filename,strlen(filename)-4);

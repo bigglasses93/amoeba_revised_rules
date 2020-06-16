@@ -2,12 +2,12 @@
 //#include<stdlib.h>
 #include<string.h>
 #include<time.h>
-#define N_VARIABLE 50
-#define N_CLAUSE 218 //9
+#define N_VARIABLE 100
+#define N_CLAUSE 430 //9
 #define N_LITERAL 3
 const int MAX_N_STEP = 5000000;
 const int EPSILON = 687194767; //429496730;//536870912;
-#define MAX_CONTRA 10000
+#define MAX_CONTRA 20000
 
 int LargeX[N_VARIABLE][2];
 int Y[N_VARIABLE][2];
@@ -277,11 +277,12 @@ void generate_inter(){
     int i;
     fp2 = fopen("inter.h", "w+");
     fp3 = fopen("inter_sign.h", "w+");
-    fp4 = fopen("f_tmp.txt", "w+");
+    fp4 = fopen("inter_tmp.txt", "w+");
     //fprintf(fp2, "int interP2[%d][2] = {\n", 3*N_CLAUSE);
 
     fprintf(fp2,"six_bit_t inter[N_CLAUSE][3]={\n");
     fprintf(fp3,"one_bit_t inter_sign[N_CLAUSE][3]={\n");
+    fprintf(fp2,"int inter[N_CLAUSE][6]={\n");
     for(i=0; i<N_CLAUSE; i++){
         //-------- generate inter set size 3x
         int interQ, interQ_abs, interP1, interP1_abs, interP2, interP2_abs;
@@ -310,7 +311,7 @@ void generate_inter(){
         if(i==(N_CLAUSE-1)) fprintf(fp3, "%d, %d, %d};", inter[3*i][1], inter[3*i][3], inter[3*i][5]);
         else fprintf(fp3, "%d, %d, %d,\n", inter[3*i][1], inter[3*i][3], inter[3*i][5]);
 
-        fprintf(fp4, "%d %d %d %d %d %d\n", interQ, interQ_abs, interP1, interP1_abs, interP2, interP2_abs);
+        fprintf(fp4, "%d, %d, %d, %d, %d, %d,\n", interQ, interQ_abs, interP1, interP1_abs, interP2, interP2_abs);
     }
     //fprintf(fp2, "\};");
     fclose(fp2);
@@ -418,17 +419,21 @@ void generate_contra(int size_contra, int contra[size_contra][8], int contra_new
 
     fp2 = fopen("contra.h", "w+");
     fp3 = fopen("contra_sign.h", "w+");
+    fp4 = fopen("contra_tmp.h","w+");
     fprintf(fp2, "six_bit_t contra[%d][4] = {\n", size_contra);
     fprintf(fp3, "one_bit_t contra_sign[%d][4] = {\n", size_contra);
+    fprintf(fp4, "int contra[%d][8] = {\n", size_contra);
     for(i=0;i<counter_new;i++){
         //fprintf(fp3, "%d %d %d %d %d %d %d %d\n", contra_new[i][0], contra_new[i][1], contra_new[i][2], contra_new[i][3], contra_new[i][4], contra_new[i][5], contra_new[i][6], contra_new[i][7]);
         if(i!=(counter_new-1)){
             fprintf(fp2, "%d, %d, %d, %d,\n", contra_new[i][0], contra_new[i][2], contra_new[i][4], contra_new[i][6]);
             fprintf(fp3, "%d, %d, %d, %d,\n", contra_new[i][1], contra_new[i][3], contra_new[i][5], contra_new[i][7]);
+            fprintf(fp4, "%d, %d, %d, %d, %d, %d, %d, %d,\n", contra_new[i][0], contra_new[i][1], contra_new[i][2], contra_new[i][3], contra_new[i][4], contra_new[i][5], contra_new[i][6], contra_new[i][7]);
         }
         else {
             fprintf(fp2, "%d, %d, %d, %d};", contra_new[i][0], contra_new[i][2], contra_new[i][4], contra_new[i][6]);
             fprintf(fp3, "%d, %d, %d, %d};", contra_new[i][1], contra_new[i][3], contra_new[i][5], contra_new[i][7]);
+            fprintf(fp4, "%d, %d, %d, %d, %d, %d, %d, %d};", contra_new[i][0], contra_new[i][1], contra_new[i][2], contra_new[i][3], contra_new[i][4], contra_new[i][5], contra_new[i][6], contra_new[i][7]);
         }
     }
     fclose(fp2);
@@ -445,22 +450,13 @@ void update_L_inter(int inter[3*N_CLAUSE][6]){
     int i;
     for(i=0;i<3*N_CLAUSE;i++){
         int inter1 = (LargeX[ inter[i][2]-1 ][ inter[i][3] ] >0) & (LargeX[ inter[i][0]-1 ][ inter[i][1] ] >0);
-        //L[ inter[i][4]-1 ][ inter[i][5] ] = L[ inter[i][4]-1 ][ inter[i][5] ] | inter1;
-        /*if(inter1){
-            //INTER
-            L[ inter[i][4]-1 ][ inter[i][5] ] = 1;
-            //COLLAPSE - Light off counterparts of INTER
-            L[ inter[i][4]-1 ][ 1-inter[i][5] ] = 0;
-
-            //Hyper INTER -> not good
-            //LargeX[ inter[i][4]-1 ][ inter[i][5] ]=-1;
-        }*/
         //INTER
         L[ inter[i][4]-1 ][ inter[i][5] ] = L[ inter[i][4]-1 ][ inter[i][5] ] | inter1;
         //COLLAPSE
         L[ inter[i][4]-1 ][ 1-inter[i][5] ] = L[ inter[i][4]-1 ][ 1-inter[i][5] ] & (!inter1);
         //printf("ok %d ", L[ inter[i][0]-1 ][ inter[i][1] ]);
     }
+
 }
 void update_L_contra(int size_contra, int contra[size_contra][8]){
     int i, j;
@@ -505,19 +501,19 @@ void update_L_contra(int size_contra, int contra[size_contra][8]){
         }*/
 
         //HyperCONTRA - set LargeX of contradicted units directly to -1
-        /*if(contra1){
+        if(contra1){
             LargeX[ contra[i][0]-1 ][ contra[i][1] ] = -1;
             LargeX[ contra[i][2]-1 ][ contra[i][3] ] = -1;
             LargeX[ contra[i][4]-1 ][ contra[i][5] ] = -1;
             LargeX[ contra[i][6]-1 ][ contra[i][7] ] = -1;
-        }*/
+        }
 
-        if(contra1){
+        /*if(contra1){
             L[ contra[i][0]-1 ][ contra[i][1] ] = 2;
             L[ contra[i][2]-1 ][ contra[i][3] ] = 2;
             L[ contra[i][4]-1 ][ contra[i][5] ] = 2;
             L[ contra[i][6]-1 ][ contra[i][7] ] = 2;
-        }
+        }*/
     }
 }
 //create local rules and local modules

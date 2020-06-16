@@ -1,4 +1,5 @@
 #include "amoeba_local_rules.h"
+<<<<<<< HEAD
 #include "local_rules_600.h"
 void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], one_bit_t x[N_VARIABLE+1], one_bit_t satisfiable[N_VARIABLE+1][2]){
 	//Check all rules of unit[1][0]
@@ -19,6 +20,28 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 			}
 		if(X_contra>0) L[1][0]=2;
 		}
+=======
+#include "local_rules_100.h"
+void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], one_bit_t x[N_VARIABLE+1], one_bit_t satisfiable[N_VARIABLE+1][2]){
+	//Check all rules of unit[1][0]
+	L[1][0] = LargeX[1][1]>0 ? 1 : 0;
+	satisfiable[1][0]=1; 
+	if(!L[1][0]){
+		for(int i=0;i<87;i++){
+//#pragma HLS PIPELINE
+			one_bit_t X_contra01;
+			one_bit_t X_contra23;
+			one_bit_t X_contra45;
+			X_contra01 = ( LargeX[ unit1_0[i][0] ][ unit1_0[i][1] ] >0) ? 1 : 0;
+			X_contra23 = ( LargeX[ unit1_0[i][2] ][ unit1_0[i][3] ] >0) ? 1 : 0;
+			X_contra45 = ( LargeX[ unit1_0[i][4] ][ unit1_0[i][5] ] >0) ? 1 : 0;
+			L[1][0] = L[1][0] | (X_contra01 & X_contra23 & X_contra45);
+			if(unit1_0[i][4]==0){
+				satisfiable[1][0]=satisfiable[1][0] & ((x[1] ^ 0) | (x[ unit1_0[i][0] ] ^ unit1_0[i][1]) |(x[ unit1_0[i][2] ] ^ unit1_0[i][3]));
+			}
+		}
+	}
+>>>>>>> hotfix
 	//Check all rules of unit[1][1]
 	L[1][1] = LargeX[1][0]>0 ? 1 : 0;
 	satisfiable[1][1]=1; 
@@ -12349,6 +12372,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 			}
 		if(X_contra>0) L[343][1]=2;
 		}
+<<<<<<< HEAD
 	//Check all rules of unit[344][0]
 	L[344][0] = LargeX[344][1]>0 ? 1 : 0;
 	satisfiable[344][0]=1; 
@@ -21601,4 +21625,7 @@ void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], on
 			}
 		if(X_contra>0) L[600][1]=2;
 		}
+=======
+	}
+>>>>>>> hotfix
 }

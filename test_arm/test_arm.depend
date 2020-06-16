@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1564390495 source:c:\users\mic\documents\ds-5 workspace\amoebasat\src\amoebasat.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"f.h"
+	"f_sign.h"
+
+1564390101 c:\users\mic\documents\ds-5 workspace\amoebasat\src\f.h
+
+1564390095 c:\users\mic\documents\ds-5 workspace\amoebasat\src\f_sign.h
+
+1564398838 source:c:\users\mic\documents\ds-5 workspace\test_arm\amoebasat.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"f.h"
+	"f_sign.h"
+
+1564399366 c:\users\mic\documents\ds-5 workspace\test_arm\f.h
+
+1564399409 c:\users\mic\documents\ds-5 workspace\test_arm\f_sign.h
+

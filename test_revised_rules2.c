@@ -2,8 +2,13 @@
 //#include<stdlib.h>
 #include<string.h>
 #include<time.h>
+<<<<<<< HEAD
 #define N_VARIABLE 250
 #define N_CLAUSE 1065 //9
+=======
+#define N_VARIABLE 225
+#define N_CLAUSE 960
+>>>>>>> hotfix
 #define N_LITERAL 3
 const int MAX_N_STEP = 5000000;
 const int EPSILON = 687194767; //429496730;//536870912;
@@ -18,6 +23,9 @@ char x[N_VARIABLE];
 int inter[3*N_CLAUSE][6];
 int size_contra;
 int contra_new[MAX_CONTRA][8];
+int total_flips;
+int Nflip;
+unsigned max_flip[1];
 
 unsigned state[1];
 
@@ -26,7 +34,7 @@ void update_Y();
 void update_Z();
 int update_f();
 void update_LargeX();
-void update_x();
+void update_x(unsigned max_flip[1]);
 int sign_x(int x);
 int loadformula(char *filename);
 void generate_inter();
@@ -42,9 +50,14 @@ FILE *fp1; //z
 FILE *fp2; //inter
 FILE *fp3; //contra
 FILE *fp4; //local rules
+FILE *fp5;
 
 int main() {
+<<<<<<< HEAD
     char filename[128]="uf250-0100.cnf";
+=======
+    char filename[128]="uf225-028.cnf";
+>>>>>>> hotfix
     char logfile[128];
 
     strncpy(logfile,filename,strlen(filename)-4);
@@ -55,6 +68,9 @@ int main() {
     int NStep = 0;
     int NStep_avg = 0;
     int i;
+    int flips_avg=0;
+    max_flip[0] = 0;
+    Nflip = 0;
 
     if (!loadformula(filename)) {
         return 1;
@@ -66,18 +82,26 @@ int main() {
     generate_contra(size_contra, contra, contra_new);
     create_local_rules(inter,contra_new);
     srand(time(NULL));
+<<<<<<< HEAD
     for(i=0;i<500;i++){
+=======
+    for(i=0;i<1;i++){
+>>>>>>> hotfix
         state[0] = rand();
         init();
-
         printf("\nRun %d: seed = %d",i+1,state[0]);
         fprintf(fp1,"\nRun #%d: seed = %d ",i+1,state[0]);
         NStep=amoebasat(s);
         fprintf(fp1,s);
         NStep_avg+=NStep;
+        flips_avg+=total_flips;
     }
     printf("\nAverage #iterations = %d", NStep_avg/i);
     fprintf(fp1,"\nAverage #iterations = %d", NStep_avg/i);
+    printf("\nAverage #flips = %d", flips_avg/i);
+    fprintf(fp1,"\nAverage #flips = %d", flips_avg/i);
+    printf("\nMax flips in 1 iteration = %d", max_flip[0]);
+    fprintf(fp1,"\nMax flips in 1 iteration = %d", max_flip[0]);
     fclose(fp1);
     return 0;
 }
@@ -125,6 +149,9 @@ int loadformula(char *filename) {
 int amoebasat(char s[N_VARIABLE+100]){
     char tmp[N_VARIABLE+100];
     int NStep;
+    total_flips=0;
+    FILE *flips_count;
+    flips_count = fopen("flips.txt","w+");
     for(NStep=1;NStep<MAX_N_STEP;NStep++){
         update_L_intra();
 
@@ -134,8 +161,8 @@ int amoebasat(char s[N_VARIABLE+100]){
         update_Z();//printf("\n");
         //update_Y();
         update_LargeX();
-        update_x();
-
+        update_x(max_flip);
+        fprintf(flips_count,"%d\n",Nflip);
         if(update_f()){
             sprintf(s,"\nFound: %d iterations ", NStep);
             //for(i=0;i<N_VARIABLE;i++) printf("%d",x[i]);
@@ -143,11 +170,13 @@ int amoebasat(char s[N_VARIABLE+100]){
                 sprintf(tmp,"%d",x[i]);
                 strcat(s,tmp);
             }
+            printf("\nTotal flips#=%d",total_flips);
             printf("%s",s);
             return NStep;
         }
     }
     printf("\nNot found.");
+    fclose(flips_count);
 
     return NStep;
 }
@@ -197,16 +226,23 @@ void update_Z(){
         }
     }
 }
-void update_x(){
+void update_x(unsigned max_flip[1]){
     int i;
+    int x_old, flips;
+    flips = 0;
     for(i=0; i<N_VARIABLE; i++){
+        x_old = x[i];
         if(LargeX[i][0]==1 && LargeX[i][1]<=0){
             x[i] = 0;
         }else if(LargeX[i][1]==1 && LargeX[i][0]<=0){
             x[i] = 1;
         }
-        //printf("x[%d]=%d \t", i, x[i]);
+        if(x_old!=x[i]) flips++;
     }
+    total_flips+=flips;
+    Nflip = flips;
+    if(flips>max_flip[0]) max_flip[0] = flips;
+
 }
 void update_Y(){
     int i, j;
@@ -277,11 +313,14 @@ void generate_inter(){
     int i;
     fp2 = fopen("inter.h", "w+");
     fp3 = fopen("inter_sign.h", "w+");
-    fp4 = fopen("f_tmp.txt", "w+");
+    fp4 = fopen("f.h", "w+");
+    fp5 = fopen("f_sign.h", "w+");
     //fprintf(fp2, "int interP2[%d][2] = {\n", 3*N_CLAUSE);
 
     fprintf(fp2,"f_t inter[N_CLAUSE][3]={\n");
     fprintf(fp3,"one_bit_t inter_sign[N_CLAUSE][3]={\n");
+    fprintf(fp4,"int f[N_CLAUSE][3]={\n");
+    fprintf(fp4,"int f_sign[N_CLAUSE][3]={\n");
     for(i=0; i<N_CLAUSE; i++){
         //-------- generate inter set size 3x
         int interQ, interQ_abs, interP1, interP1_abs, interP2, interP2_abs;
@@ -310,12 +349,17 @@ void generate_inter(){
         if(i==(N_CLAUSE-1)) fprintf(fp3, "%d, %d, %d};", inter[3*i][1], inter[3*i][3], inter[3*i][5]);
         else fprintf(fp3, "%d, %d, %d,\n", inter[3*i][1], inter[3*i][3], inter[3*i][5]);
 
-        fprintf(fp4, "%d %d %d %d %d %d\n", interQ, interQ_abs, interP1, interP1_abs, interP2, interP2_abs);
+        if(i==(N_CLAUSE-1)) fprintf(fp4, "%d, %d, %d};", interQ, interP1, interP2);
+        else fprintf(fp4, "%d, %d, %d,\n", interQ, interP1, interP2);
+
+        if(i==(N_CLAUSE-1)) fprintf(fp5, "%d, %d, %d};", interQ_abs, interP1_abs, interP2_abs);
+        else fprintf(fp5, "%d, %d, %d,\n", interQ_abs, interP1_abs, interP2_abs);
     }
     //fprintf(fp2, "\};");
     fclose(fp2);
     fclose(fp3);
     fclose(fp4);
+    fclose(fp5);
 }
 int survey_size_contra(){
     //Survey size of contra
@@ -472,12 +516,12 @@ void update_L_contra(int size_contra, int contra[size_contra][8]){
                 (LargeX[ contra[i][6]-1 ][ contra[i][7] ]>0);
 
         //CONTRA - Light on CONTRA units - not good with CONFLICT only
-        if(contra1){
+        /*if(contra1){
             L[ contra[i][0]-1 ][ contra[i][1] ] = 1;
             L[ contra[i][2]-1 ][ contra[i][3] ] = 1;
             L[ contra[i][4]-1 ][ contra[i][5] ] = 1;
             L[ contra[i][6]-1 ][ contra[i][7] ] = 1;
-        }
+        }*/
         //loosen representation of CONTRA - should combine with CONFLICT, not good with hypercontra
         /*L[ contra[i][0]-1 ][ contra[i][1] ] = L[ contra[i][0]-1 ][ contra[i][1] ] |
                 ((LargeX[ contra[i][2]-1 ][ contra[i][3] ]>0) &
@@ -505,7 +549,7 @@ void update_L_contra(int size_contra, int contra[size_contra][8]){
         }*/
 
         //HyperCONTRA - set LargeX of contradicted units directly to -1
-        /*if(contra1){
+        if(contra1){
             LargeX[ contra[i][0]-1 ][ contra[i][1] ] = -1;
             LargeX[ contra[i][2]-1 ][ contra[i][3] ] = -1;
             LargeX[ contra[i][4]-1 ][ contra[i][5] ] = -1;
@@ -592,7 +636,7 @@ void create_local_rules(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8])
     fp4 = fopen("local_rules_update.cpp", "w+");
     fprintf(fp4,"#include \"amoeba_local_rules.h\"\n");
     fprintf(fp4,"#include \"local_rules_%d.h\"\n",N_VARIABLE);
-    fprintf(fp4,"void update_L(two_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], one_bit_t x[N_VARIABLE+1], one_bit_t satisfiable[N_VARIABLE+1][2]){\n");
+    fprintf(fp4,"void update_L(one_bit_t L[N_VARIABLE+1][2], largeX_t LargeX[N_VARIABLE+1][2], one_bit_t x[N_VARIABLE+1], one_bit_t satisfiable[N_VARIABLE+1][2]){\n");
     //fprintf(fp4,"\tone_bit_t light_on = 0; //if light_on=1, L[i][j]=1, skip other rules check\n");
     //fprintf(fp4,"\tint i;\n");
 /*
@@ -603,7 +647,7 @@ void create_local_rules(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8])
 
             sprintf(s1,"\tL[%d][%d] = LargeX[%d][%d]>0 ? 1 : 0;\n",i,j,i,1-j); strcat(s,s1);
             sprintf(s1,"\tsatisfiable[%d][%d]=1; \n",i,j);strcat(s,s1);
-            sprintf(s1,"\tif(!L[%d][%d]){\n",i,j); strcat(s,s1); // first if
+            //sprintf(s1,"\tif(!L[%d][%d]){\n",i,j); strcat(s,s1); // first if
             sprintf(s1,"\t\tfor(int i=0;i<%d;i++){\n",count_rules[i][j]); strcat(s,s1);
             sprintf(s1,"//#pragma HLS PIPELINE\n"); strcat(s,s1);
             sprintf(s1,"\t\t\tone_bit_t X_contra01;\n"); strcat(s,s1);
@@ -622,7 +666,7 @@ void create_local_rules(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8])
             sprintf(s1,"\t\t\tif(unit%d_%d[i][4]==0){\n",i,j);strcat(s,s1);
             //COLLAPSE
             //sprintf(s1,"\t\t\t\t//if((X_contra01 & X_contra23)>0) L[%d][%d]=0;\n",i,1-j);strcat(s,s1);
-            //sprintf(s1,"\t\t\t\tL[%d][%d] = L[%d][%d] & (!(X_contra01 & X_contra23));\n",i,1-j,i,1-j); strcat(s,s1);
+            sprintf(s1,"\t\t\t\tL[%d][%d] = L[%d][%d] & (!(X_contra01 & X_contra23));\n",i,1-j,i,1-j); strcat(s,s1);
             sprintf(s1,"\t\t\t\tsatisfiable[%d][%d]=satisfiable[%d][%d] & ((x[%d] ^ %d) | ",i,j,i,j,i,j);strcat(s,s1);
             sprintf(s1,"(x[ unit%d_%d[i][0] ] ^ unit%d_%d[i][1]) |",i,j,i,j);strcat(s,s1);
             sprintf(s1,"(x[ unit%d_%d[i][2] ] ^ unit%d_%d[i][3]));\n\t\t\t}\n",i,j,i,j);strcat(s,s1);
@@ -631,7 +675,7 @@ void create_local_rules(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8])
             //sprintf(s1,"\t\t\tL[%d][%d]=(X_contra>0) ? 2 : L[%d][%d];\n",i,j,i,j);strcat(s,s1);
 
             sprintf(s1,"\t\t}\n"); strcat(s,s1);
-            sprintf(s1,"\t}\n"); strcat(s,s1);// first if
+            //sprintf(s1,"\t}\n"); strcat(s,s1);// first if
             //sprintf(s1,"\tL[%d][%d] = light_on;\n"); strcat(s,s1);
             fprintf(fp4,s);
         }
@@ -650,7 +694,7 @@ void create_local_rules(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8])
             sprintf(s1,"\tL[%d][%d] = LargeX[%d][%d]>0 ? 1 : 0;\n",i,j,i,1-j); strcat(s,s1);
             //sprintf(s1,"\tsatisfiable[%d][%d]=1; \n",i,j);strcat(s,s1);
             //sprintf(s1,"\thypercontra[%d][%d]=0; \n",i,j);strcat(s,s1);
-            //sprintf(s1,"\tif(!L[%d][%d]){\n",i,j); strcat(s,s1); // first if
+            sprintf(s1,"\tif(!L[%d][%d]){\n",i,j); strcat(s,s1); // first if
             sprintf(s1,"\tfor(int i=0;i<%d;i++){\n",count_rules[i][j]); strcat(s,s1);
             //sprintf(s1,"//#pragma HLS PIPELINE\n"); strcat(s,s1);
             sprintf(s1,"\t\tone_bit_t X_contra01;\n"); strcat(s,s1);
@@ -667,16 +711,26 @@ void create_local_rules(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8])
             //sprintf(s1,"\t\t\tL[%d][%d] = L[%d][%d] & (!(X_contra01 & X_contra23 & X_contra45));\n",i,1-j,i,1-j); strcat(s,s1);
 
             sprintf(s1,"\t\tif(unit%d_%d[i][4]==0){\n",i,j);strcat(s,s1);
+<<<<<<< HEAD
             //INTER
             sprintf(s1,"\t\t\tL[%d][%d] = L[%d][%d] | (X_contra01 & X_contra23);\n",i,j,i,j); strcat(s,s1); sprintf(s1,"\t\t}\n"); strcat(s,s1);
             //sprintf(s1,"\t\t\tsatisfiable[%d][%d]=satisfiable[%d][%d] & ((x[%d] ^ %d) | ",i,j,i,j,i,j);strcat(s,s1);
             //sprintf(s1,"(x[ unit%d_%d[i][0] ] ^ unit%d_%d[i][1]) |",i,j,i,j);strcat(s,s1);
             //sprintf(s1,"(x[ unit%d_%d[i][2] ] ^ unit%d_%d[i][3]));\n\t\t\t}\n",i,j,i,j);strcat(s,s1);
+=======
+            //COLLAPSE
+            sprintf(s1,"\t\t\t\tif((X_contra01 & X_contra23)>0) L[%d][%d]=1;\n",i,j);strcat(s,s1);// INTER
+            //sprintf(s1,"\t\t\tL[%d][%d] = L[%d][%d] | (X_contra01 & X_contra23);\n",i,j,i,j); strcat(s,s1);
+            //sprintf(s1,"\t\t\tL[%d][%d] = L[%d][%d] & (!(X_contra01 & X_contra23));\n",i,1-j,i,1-j); strcat(s,s1);
+            sprintf(s1,"\t\t\tsatisfiable[%d][%d]=satisfiable[%d][%d] & ((x[%d] ^ %d) | ",i,j,i,j,i,j);strcat(s,s1);
+            sprintf(s1,"(x[ unit%d_%d[i][0] ] ^ unit%d_%d[i][1]) |",i,j,i,j);strcat(s,s1);
+            sprintf(s1,"(x[ unit%d_%d[i][2] ] ^ unit%d_%d[i][3]));\n\t\t\t}\n",i,j,i,j);strcat(s,s1);
+>>>>>>> hotfix
 
             sprintf(s1,"\t\tif(X_contra>0) L[%d][%d]=2;\n",i,j);strcat(s,s1);
 
             sprintf(s1,"\t\t}\n"); strcat(s,s1);
-            //sprintf(s1,"\t}\n"); strcat(s,s1);// first if
+            sprintf(s1,"\t}\n"); strcat(s,s1);// first if
             //sprintf(s1,"\tL[%d][%d] = light_on;\n"); strcat(s,s1);
             fprintf(fp4,s);
         }
