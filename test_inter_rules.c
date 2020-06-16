@@ -15,6 +15,12 @@ int L[N_VARIABLE+1][2];
 int Z[N_VARIABLE+1][2];
 int f[N_CLAUSE][N_LITERAL];
 <<<<<<< HEAD
+<<<<<<< HEAD
+char x[N_VARIABLE+1];
+char x_fixed[N_VARIABLE+1];
+int inter[3*N_CLAUSE][6];
+=======
+<<<<<<< HEAD
 char x[N_VARIABLE+1];
 char x_fixed[N_VARIABLE+1];
 int inter[3*N_CLAUSE][6];
@@ -22,7 +28,16 @@ int inter[3*N_CLAUSE][6];
 char x[N_VARIABLE+1];
 char x_fixed[N_VARIABLE+1];
 int inter[3*N_CLAUSE][6];
+>>>>>>> 31afecb2918f4e984f1d28b18a7307f312737425
+=======
+char x[N_VARIABLE+1];
+char x_fixed[N_VARIABLE+1];
+int inter[3*N_CLAUSE][6];
 >>>>>>> hotfix
+<<<<<<< HEAD
+>>>>>>> 31afecb2918f4e984f1d28b18a7307f312737425
+=======
+>>>>>>> 31afecb2918f4e984f1d28b18a7307f312737425
 int size_inter;
 int size_contra;
 int contra_new[MAX_CONTRA][8];
@@ -76,10 +91,21 @@ int main() {
     }
     printf("\nAverage #iterations = %d\n", NStep_avg/i);
 <<<<<<< HEAD
+<<<<<<< HEAD
+    fprintf(fp1,"\nAverage #iterations = %d", NStep_avg/i);
+=======
+<<<<<<< HEAD
     fprintf(fp1,"\nAverage #iterations = %d", NStep_avg/i);
 =======
     fprintf(fp1,"\nAverage #iterations = %d", NStep_avg/i);
 >>>>>>> hotfix
+>>>>>>> 31afecb2918f4e984f1d28b18a7307f312737425
+=======
+    fprintf(fp1,"\nAverage #iterations = %d", NStep_avg/i);
+=======
+    fprintf(fp1,"\nAverage #iterations = %d", NStep_avg/i);
+>>>>>>> hotfix
+>>>>>>> 31afecb2918f4e984f1d28b18a7307f312737425
     //for(i=1;i<=N_VARIABLE;i++) printf("%d", x[i]);
     fclose(fp1);
     return 0;
@@ -116,6 +142,9 @@ int loadformula(char *filename) {
                 for (j = 1; j < N_LITERAL; j++) {
                     token = strtok(NULL, " ,\t\n");
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
                     f[clause_id][j] = atoi(token);      //f[literal][clause_id]
                     if(j==1 && f[clause_id][j]==0){
                         int xi = abs(f[clause_id][0]);
@@ -124,6 +153,8 @@ int loadformula(char *filename) {
                         x_fixed[xi]=1;
                         printf("x[%d] = %d; x_fixed[%d] = %d; satisfiable[%d][0]=1; satisfiable[%d][1]=1;\n", xi, x[xi], xi, x[xi], xi, xi);
 =======
+>>>>>>> 31afecb2918f4e984f1d28b18a7307f312737425
+=======
                     f[clause_id][j] = atoi(token);      //f[literal][clause_id]
                     if(j==1 && f[clause_id][j]==0){
                         int xi = abs(f[clause_id][0]);
@@ -131,7 +162,23 @@ int loadformula(char *filename) {
                         x[xi] = 1-xi_sign;
                         x_fixed[xi]=1;
                         printf("x[%d] = %d; x_fixed[%d] = %d; satisfiable[%d][0]=1; satisfiable[%d][1]=1;\n", xi, x[xi], xi, x[xi], xi, xi);
+=======
+>>>>>>> 31afecb2918f4e984f1d28b18a7307f312737425
+                    f[clause_id][j] = atoi(token);      //f[literal][clause_id]
+                    if(j==1 && f[clause_id][j]==0){
+                        int xi = abs(f[clause_id][0]);
+                        int xi_sign = sign_x(f[clause_id][0]);
+                        x[xi] = 1-xi_sign;
+                        x_fixed[xi]=1;
+                        printf("x[%d] = %d; x_fixed[%d] = %d; satisfiable[%d][0]=1; satisfiable[%d][1]=1;\n", xi, x[xi], xi, x[xi], xi, xi);
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 >>>>>>> hotfix
+>>>>>>> 31afecb2918f4e984f1d28b18a7307f312737425
+=======
+>>>>>>> hotfix
+>>>>>>> 31afecb2918f4e984f1d28b18a7307f312737425
                     }
                 }
                 printf("\nClause%d:\t%d\t%d\t%d",clause_id,f[clause_id][0],f[clause_id][1],f[clause_id][2]);
@@ -181,10 +228,21 @@ unsigned xorshift32(unsigned state[1])
 }
 void init(){
 <<<<<<< HEAD
+<<<<<<< HEAD
+    int i, j;
+=======
+<<<<<<< HEAD
     int i, j;
 =======
     int i, j;
 >>>>>>> hotfix
+>>>>>>> 31afecb2918f4e984f1d28b18a7307f312737425
+=======
+    int i, j;
+=======
+    int i, j;
+>>>>>>> hotfix
+>>>>>>> 31afecb2918f4e984f1d28b18a7307f312737425
     LargeX[0][0]=1;
     for(i=1;i<=N_VARIABLE;i++){
         //x[i]=0;
@@ -236,10 +294,21 @@ void update_Y(){
     for(i=1;i<=N_VARIABLE;i++){
         for(j=0; j<2; j++){
 <<<<<<< HEAD
+<<<<<<< HEAD
+			int sub = 2147483647 - EPSILON - Z[i][j] +1;
+=======
+<<<<<<< HEAD
 			int sub = 2147483647 - EPSILON - Z[i][j] +1;
 =======
 			int sub = 2147483647 - EPSILON - Z[i][j] +1;
 >>>>>>> hotfix
+>>>>>>> 31afecb2918f4e984f1d28b18a7307f312737425
+=======
+			int sub = 2147483647 - EPSILON - Z[i][j] +1;
+=======
+			int sub = 2147483647 - EPSILON - Z[i][j] +1;
+>>>>>>> hotfix
+>>>>>>> 31afecb2918f4e984f1d28b18a7307f312737425
 			Y[i][j] = (!L[i][j]) & (sub>0);
             //printf("Y[%d][%d]=%d\t ",i,j,Y[i][j]);
         }
@@ -289,6 +358,9 @@ int update_f(){
         c1 = sign_x(id1) ^ x[abs(id1)];
         c2 = sign_x(id2) ^ x[abs(id2)];
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
         if(id3==0){
             c3 = 0;
         }else{
@@ -305,6 +377,8 @@ int update_f(){
             //printf("unsat clause id = %d: %d %d %d \n",clause_id, id1, id2, id3);
             return f_val;
 =======
+>>>>>>> 31afecb2918f4e984f1d28b18a7307f312737425
+=======
         if(id3==0){
             c3 = 0;
         }else{
@@ -320,12 +394,39 @@ int update_f(){
         if (f_val==0) {
             //printf("unsat clause id = %d: %d %d %d \n",clause_id, id1, id2, id3);
             return f_val;
+=======
+>>>>>>> 31afecb2918f4e984f1d28b18a7307f312737425
+        if(id3==0){
+            c3 = 0;
+        }else{
+            c3 = sign_x(id3) ^ x[abs(id3)];
+        }
+
+/*        if(id3==0){
+            f_val = f_val && (c1 || c2);
+        }else{
+            f_val = f_val && (c1 || c2 || c3);
+        }*/
+        f_val = f_val && (c1 || c2 || c3);
+        if (f_val==0) {
+            //printf("unsat clause id = %d: %d %d %d \n",clause_id, id1, id2, id3);
+            return f_val;
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 >>>>>>> hotfix
+>>>>>>> 31afecb2918f4e984f1d28b18a7307f312737425
+=======
+>>>>>>> hotfix
+>>>>>>> 31afecb2918f4e984f1d28b18a7307f312737425
         }
     }
     return f_val;
 }
 void generate_inter(){
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
     int i;
     size_inter=0;
@@ -333,12 +434,28 @@ void generate_inter(){
         //-------- generate inter set size 3x
         int interQ, interQ_abs, interP1, interP1_abs, interP2, interP2_abs;
 =======
+>>>>>>> 31afecb2918f4e984f1d28b18a7307f312737425
+=======
     int i;
     size_inter=0;
     for(i=0; i<N_CLAUSE; i++){
         //-------- generate inter set size 3x
         int interQ, interQ_abs, interP1, interP1_abs, interP2, interP2_abs;
+=======
+>>>>>>> 31afecb2918f4e984f1d28b18a7307f312737425
+    int i;
+    size_inter=0;
+    for(i=0; i<N_CLAUSE; i++){
+        //-------- generate inter set size 3x
+        int interQ, interQ_abs, interP1, interP1_abs, interP2, interP2_abs;
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 >>>>>>> hotfix
+>>>>>>> 31afecb2918f4e984f1d28b18a7307f312737425
+=======
+>>>>>>> hotfix
+>>>>>>> 31afecb2918f4e984f1d28b18a7307f312737425
         if(f[i][1]==0) continue;
 
         interQ = abs(f[i][0]); interQ_abs = sign_x(f[i][0]);
@@ -357,10 +474,21 @@ void generate_inter(){
         inter[3*i+2][2] = interP1; inter[3*i+2][3] = interP1_abs;
         inter[3*i+2][4] = interP2; inter[3*i+2][5] = interP2_abs;
 <<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
 
 =======
 
 >>>>>>> hotfix
+>>>>>>> 31afecb2918f4e984f1d28b18a7307f312737425
+=======
+
+=======
+
+>>>>>>> hotfix
+>>>>>>> 31afecb2918f4e984f1d28b18a7307f312737425
         size_inter++;
     }
 }
@@ -374,6 +502,9 @@ void update_L_intra(){
 void update_L_inter(int inter[3*N_CLAUSE][6]){
     int i;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
     for(i=0;i<3*N_CLAUSE;i++){
         //if(inter[i][0]==0 && inter[i][2]==0) continue;
         int id1 = inter[i][0];
@@ -388,6 +519,8 @@ void update_L_inter(int inter[3*N_CLAUSE][6]){
         }else if(id1==0 && id2==0){
             inter1 = 0;
 =======
+>>>>>>> 31afecb2918f4e984f1d28b18a7307f312737425
+=======
     for(i=0;i<3*N_CLAUSE;i++){
         //if(inter[i][0]==0 && inter[i][2]==0) continue;
         int id1 = inter[i][0];
@@ -401,12 +534,37 @@ void update_L_inter(int inter[3*N_CLAUSE][6]){
             inter1 = (LargeX[ inter[i][0] ][ inter[i][1] ] >0);
         }else if(id1==0 && id2==0){
             inter1 = 0;
+=======
+>>>>>>> 31afecb2918f4e984f1d28b18a7307f312737425
+    for(i=0;i<3*N_CLAUSE;i++){
+        //if(inter[i][0]==0 && inter[i][2]==0) continue;
+        int id1 = inter[i][0];
+        int id2 = inter[i][2];
+        int inter1;
+        if(id1>0 && id2>0){
+            inter1 = (LargeX[ inter[i][2] ][ inter[i][3] ] >0) & (LargeX[ inter[i][0] ][ inter[i][1] ] >0);
+        }else if(id1==0){
+            inter1 = (LargeX[ inter[i][2] ][ inter[i][3] ] >0);
+        }else if(id2==0){
+            inter1 = (LargeX[ inter[i][0] ][ inter[i][1] ] >0);
+        }else if(id1==0 && id2==0){
+            inter1 = 0;
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 >>>>>>> hotfix
+>>>>>>> 31afecb2918f4e984f1d28b18a7307f312737425
+=======
+>>>>>>> hotfix
+>>>>>>> 31afecb2918f4e984f1d28b18a7307f312737425
         }
         //INTER
         L[ inter[i][4] ][ inter[i][5] ] = L[ inter[i][4] ][ inter[i][5] ] | inter1;
         //COLLAPSE
         //L[ inter[i][4] ][ 1-inter[i][5] ] = L[ inter[i][4] ][ 1-inter[i][5] ] & (!inter1);
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
         //printf("ok %d ", L[ inter[i][0]-1 ][ inter[i][1] ]);
 
@@ -432,6 +590,8 @@ void update_L_inter(int inter[3*N_CLAUSE][6]){
     }
 }
 =======
+>>>>>>> 31afecb2918f4e984f1d28b18a7307f312737425
+=======
         //printf("ok %d ", L[ inter[i][0]-1 ][ inter[i][1] ]);
 
 
@@ -455,4 +615,36 @@ void update_L_inter(int inter[3*N_CLAUSE][6]){
 
     }
 }
+=======
+>>>>>>> 31afecb2918f4e984f1d28b18a7307f312737425
+        //printf("ok %d ", L[ inter[i][0]-1 ][ inter[i][1] ]);
+
+
+
+/*        int id0 = inter[i][0];
+    	int id1 = inter[i][1];
+    	int id2 = inter[i][2];
+    	int inter1;
+    	if(id1>0){
+    		inter1 = (LargeX[ inter[i][0] ][ inter[i][1] ] >0) & (LargeX[ inter[i][2] ][ inter[i][3] ] >0) & (LargeX[ inter[i][4] ][ inter[i][5] ] >0);
+    	}else{
+    		inter1 = (LargeX[ inter[i][0] ][ inter[i][1] ] >0)& (LargeX[ inter[i][4] ][ inter[i][5] ] >0);
+    	}
+    	//cout << "X[" << inter[i][0]-1 << "]["<< inter[i][1] <<"]="<<X_inter01 << "\n";
+
+       L[ inter[i][0] ][ inter[i][1] ] = L[ inter[i][0] ][ inter[i][1] ] | inter1;
+       //cout << "L[" <<inter[i][0]-1 <<"]["<< inter[i][1] <<"]="<<L[ inter[i][0]-1 ][ inter[i][1] ] << "\n";
+       L[ inter[i][2] ][ inter[i][3] ] = L[ inter[i][2] ][ inter[i][3] ] | inter1;
+       L[ inter[i][4] ][ inter[i][5] ] = L[ inter[i][4] ][ inter[i][5] ] | inter1;*/
+
+
+    }
+}
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 >>>>>>> hotfix
+>>>>>>> 31afecb2918f4e984f1d28b18a7307f312737425
+=======
+>>>>>>> hotfix
+>>>>>>> 31afecb2918f4e984f1d28b18a7307f312737425
