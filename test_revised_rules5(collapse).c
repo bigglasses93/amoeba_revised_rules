@@ -2,12 +2,12 @@
 //#include<stdlib.h>
 #include<string.h>
 #include<time.h>
-#define N_VARIABLE 225
-#define N_CLAUSE 960 //9
+#define N_VARIABLE 512
+#define N_CLAUSE 5343 //9
 #define N_LITERAL 3
-const int MAX_N_STEP = 1500000;
+const int MAX_N_STEP = 150000;
 const int EPSILON = 687194767; //429496730;//536870912;
-#define MAX_CONTRA 20000
+#define MAX_CONTRA 140000
 
 int LargeX[N_VARIABLE+1][2];
 int Y[N_VARIABLE+1][2];
@@ -18,7 +18,7 @@ char x[N_VARIABLE+1];
 char x_fixed[N_VARIABLE+1];
 int inter[3*N_CLAUSE][6];
 int size_contra;
-int contra_new[MAX_CONTRA][8];
+static int contra_new[MAX_CONTRA][8];
 
 unsigned state[1];
 
@@ -47,8 +47,8 @@ FILE *fp3; //contra
 FILE *fp4; //local rules
 
 int main() {
-    //char filename[128]="benchmarks/sgen1-sat-100-100_out2.cnf";
-    char filename[128]="uf225-028.cnf";
+    char filename[128]="benchmarks/SATC/test_32_4_4_out2.cnf";
+    //char filename[128]="uf225-028.cnf";
     char logfile[128];
     strncpy(logfile,filename,strlen(filename)-4);
     strcat(logfile,"-log.txt");
@@ -64,9 +64,11 @@ int main() {
     }
 
     generate_inter();
+    printf("generated inter");
     size_contra = survey_size_contra();
     int contra[size_contra][8];
     generate_contra(size_contra, contra, contra_new);
+    printf("generated contra");
     srand(time(NULL));
     for(i=0;i<100;i++){
         state[0] = rand();
