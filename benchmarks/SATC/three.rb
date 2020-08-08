@@ -18,7 +18,7 @@ $newv = $N*$F*$H+1
 
 $link = Array.new()
 
-outfile = File.open("#{ARGV[0]}/#{ARGV[0]}_out.cnf.txt", "w")
+outfile = File.open("#{ARGV[0]}_out.cnf", "w")
 #outfile = File.open("#{gn}_out.cnf", "w")
 def neg2(x)
 	x =~ /\-(.+)/
@@ -74,19 +74,7 @@ end
 
 $past = Array.new
 
-File.open("#{ARGV[0]}/link_#{$N}_#{$F}_#{$H}.txt", 'r'){|f|
-	i = 0
-	while inline = f.gets
-		tmp = inline.chomp.split(/ /)
-		$link[i] = Array.new()
-		for j in 0..tmp.size-1
-			$link[i][j] = tmp[j].to_i
-		end
-		i += 1
-	end
-}
-
-File.open("#{ARGV[0]}/#{ARGV[0]}.cnf.txt", 'r'){|f|
+File.open("#{ARGV[0]}", 'r'){|f|
 	while inline = f.gets
 		$mem << inline.chomp
 		a = inline.chomp.split(/ /)
@@ -169,16 +157,3 @@ p $newv-1
 #		f.puts "#{k}: #{v[0]}, #{v[1]}"
 #	}
 #}
-
-File.open("#{ARGV[0]}/#{ARGV[0]}_link.txt", "w"){|f|
-	for i in 0..$link.size-1
-		f.print $link[i]
-		f.puts
-		str = Array.new
-		for j in 0..$link[0].size-1
-			str << j+1 if $link[i][j] == 1
-		end
-		f.puts "#{i+1}: #{str.join(", ")}"
-		f.puts "---"
-	end
-}

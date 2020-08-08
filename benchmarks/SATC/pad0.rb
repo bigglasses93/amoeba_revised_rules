@@ -1,8 +1,11 @@
-outfile = File.open("#{ARGV[0]}/#{ARGV[0]}_out.cnf", "w")
-outfile2 = File.open("#{ARGV[0]}/#{ARGV[0]}_cnf_info.txt", "w")
+gn = File.basename(ARGV[0], ".cnf")
+
+outfile = File.open("#{gn}2.cnf", "w")
+outfile2 = File.open("#{gn}_cnf_info.txt", "w")
+
 
 parray = Array.new
-File.open("#{ARGV[0]}/#{ARGV[0]}_out.cnf.txt", 'r'){|f|
+File.open("#{ARGV[0]}", 'r'){|f|
 	while inline = f.gets
 		str = inline.chomp.split(/ /)
 		ps = 4 - str.size
@@ -24,7 +27,7 @@ for i in 0..parray.size-1
 			else
 				y = x.to_i
 			end
-			max_var = y if y > max_var
+			max_var = y.abs if y.abs > max_var
 		}
 	else
 		cnt += 1
