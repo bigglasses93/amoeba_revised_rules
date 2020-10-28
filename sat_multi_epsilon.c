@@ -2,8 +2,8 @@
 #include<stdlib.h>
 #include<string.h>
 #include<time.h>
-#define N_VARIABLE 1016
-#define N_CLAUSE 18936 //9
+#define N_VARIABLE 853
+#define N_CLAUSE 5069 //9
 #define N_LITERAL 3
 #define CONN_THRES 20
 const int MAX_N_STEP = 100000;
@@ -48,7 +48,7 @@ FILE *fp1;
 FILE *fp2; //write down connections#
 
 int main(int argc, char* argv[]) {
-    char filename[128]="benchmarks/SATC/test_8_8_8_out2.cnf";
+    char filename[128]="hanoi4_out2.cnf";
     char logfile[128];
     //strcpy(filename, argv[1]);
     strncpy(logfile,filename,strlen(filename)-4);

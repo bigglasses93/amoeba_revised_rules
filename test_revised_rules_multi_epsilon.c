@@ -1,8 +1,8 @@
 #include<stdio.h>
 #include<string.h>
 #include<time.h>
-#define N_VARIABLE 51
-#define N_CLAUSE 264
+#define N_VARIABLE 853
+#define N_CLAUSE 5069
 #define N_LITERAL 3
 const int MAX_N_STEP = 100000;
 const int EPSILON1 = 687194767; //~0.32
@@ -48,8 +48,8 @@ FILE *fp3; //contra
 FILE *fp4; //local rules
 
 int main() {
-    char filename[128]="anomaly_out2.cnf";
-    char logfile[128]= "anomaly_out2-log.txt";
+    char filename[128]="hanoi4_out2.cnf";
+    char logfile[128]= "hanoi4_out2-log.txt";
 
     //strncpy(logfile,filename,strlen(filename)-4);
     //strcat(logfile,"-log.txt");
@@ -588,6 +588,7 @@ void create_local_rules(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8])
     char s[1000000]; //temporary text
     char s1[100]; //text for 1 line
     fp4 = fopen("local_rules.txt", "w+");
+    fp3 = fopen("conn.txt", "w+");
     //write all rules for unit X[1][0]
     for(i=1;i<=N_VARIABLE;i++){
         if(x_fixed[i]==1) continue;
@@ -669,13 +670,14 @@ void create_local_rules(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8])
             }
             //print out connections# of unit[i][j]
             //printf("unit(%d,%d) %d\n",i,j,conn[i][j]);
-            //printf("%d\n",connection_count);
+            fprintf(fp3, "%d\n",connection_count);
             //write rules into file
             fprintf(fp4, "int unit%d_%d[%d][6]={\n", i, j,count_rules[i][j]);
             fprintf(fp4,s);
         }
     }
     fclose(fp4);
+    fclose(fp3);
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //version plain
