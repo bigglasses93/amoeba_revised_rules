@@ -1,0 +1,35 @@
+c DESCRIPTION: Quasi-random coloring problem
+c CODE SOURCE: Joseph Culberson (joe@cs.ualberta.ca)
+c Specifications: 
+c   Random seed: 462727
+c   Flat graph
+c   Probability: 0.500000
+c   Partitions: 4
+c   Flatness: 0
+c   Degree Information:
+c   Min:1 Avg:3.600000 Max:5 Std:1.113553
+c COLOR VERIFICATION: Using the permuted order
+c under simple greedy yields the specified
+c coloring number
+c Color = 4 specified partitions = 4
+c Creation Date: Sun Dec 20 03:31:20 2020
+p edge 10 18
+c no cheat
+e 4 1
+e 4 2
+e 5 3
+e 5 4
+e 6 1
+e 6 2
+e 6 5
+e 7 3
+e 7 5
+e 8 1
+e 8 2
+e 8 3
+e 8 4
+e 8 7
+e 9 1
+e 10 2
+e 10 3
+e 10 5

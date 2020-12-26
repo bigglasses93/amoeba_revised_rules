@@ -1,0 +1,27 @@
+c DESCRIPTION: Quasi-random coloring problem
+c CODE SOURCE: Joseph Culberson (joe@cs.ualberta.ca)
+c Specifications: 
+c   Random seed: 43216
+c   Flat graph
+c   Probability: 0.200000
+c   Partitions: 10
+c   Flatness: 0
+c   Degree Information:
+c   Min:0 Avg:1.800000 Max:3 Std:0.871780
+c WARNING:  Coloring better than partition
+c	 This means that due to the choice of probability
+c	 and partition there exists better colorings than
+c	 the one specified
+c Color = 3 specified partitions = 10
+c Creation Date: Sun Dec 20 03:02:39 2020
+p edge 10 9
+c no cheat
+e 2 1
+e 4 2
+e 5 1
+e 6 3
+e 6 5
+e 7 4
+e 8 1
+e 9 6
+e 9 8

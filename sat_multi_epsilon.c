@@ -2,14 +2,14 @@
 #include<stdlib.h>
 #include<string.h>
 #include<time.h>
-#define N_VARIABLE 853
-#define N_CLAUSE 5069 //9
+#define N_VARIABLE 546
+#define N_CLAUSE 7141 //9
 #define N_LITERAL 3
-#define CONN_THRES 20
-const int MAX_N_STEP = 100000;
+#define CONN_THRES 14
+const int MAX_N_STEP = 100;
 const int EPSILON1 = 687194767; //1030792151; //fixed = 0.32
-const int EPSILON2 = 515396076;//515396076; //varied
-#define MAX_CONTRA 40000
+const int EPSILON2 = 515396076; //214748365;//515396076; //varied
+#define MAX_CONTRA 100000
 
 int LargeX[N_VARIABLE+1][2];
 int Y[N_VARIABLE+1][2];
@@ -48,7 +48,7 @@ FILE *fp1;
 FILE *fp2; //write down connections#
 
 int main(int argc, char* argv[]) {
-    char filename[128]="hanoi4_out2.cnf";
+    char filename[128]="benchmarks/huge_out2.cnf";
     char logfile[128];
     //strcpy(filename, argv[1]);
     strncpy(logfile,filename,strlen(filename)-4);
@@ -73,7 +73,7 @@ int main(int argc, char* argv[]) {
     generate_contra(size_contra, contra, contra_new);
     count_connection(inter,contra_new);
     srand(time(NULL));
-    for(i=0;i<100;i++){
+    for(i=0;i<5;i++){
         state[0] = rand();
         init();
 
@@ -130,7 +130,7 @@ int loadformula(char *filename) {
                         int xi_sign = sign_x(f[clause_id][0]);
                         x[xi] = 1-xi_sign;
                         x_fixed[xi]=1;
-                        //printf("x%d fixed = %d \n", xi, x[xi]);
+                        printf("x%d fixed = %d \n", xi, x[xi]);
                     }
                 }
                 //printf("\nClause%d:\t%d\t%d\t%d",clause_id,f[clause_id][0],f[clause_id][1],f[clause_id][2]);
@@ -146,9 +146,9 @@ int amoebasat(char s[N_VARIABLE+100]){
     int NStep;
     for(NStep=1;NStep<MAX_N_STEP;NStep++){
         update_L_intra();
-        update_L_inter(inter);
-        update_L_contra(size_contra, contra_new);
-        //update_L_collapse(inter);
+        update_L_inter(inter);     
+        update_L_contra(size_contra, contra_new);   
+        update_L_collapse(inter);
         int i,j;
         update_Z();
         update_Y();
@@ -424,7 +424,7 @@ void update_L_inter(int inter[3*N_CLAUSE][6]){
         //INTER
         L[ inter[i][4] ][ inter[i][5] ] = L[ inter[i][4] ][ inter[i][5] ] | inter1;
         //COLLAPSE
-        L[ inter[i][4] ][ 1-inter[i][5] ] = L[ inter[i][4] ][ 1-inter[i][5] ] & (!inter1);
+        //L[ inter[i][4] ][ 1-inter[i][5] ] = L[ inter[i][4] ][ 1-inter[i][5] ] & (!inter1);
     }
 }
 void update_L_collapse(int inter[3*N_CLAUSE][6]){
@@ -480,12 +480,13 @@ void update_L_contra(int size_contra, int contra[size_contra][8]){
 void count_connection(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8]){
     int i, j; //unit index
     int k, l, m, n;
-    fp2=fopen("conn.txt","w+");
+    fp2=fopen("conn1.txt","w+");
     //write all rules for unit X[1][0]
     for(i=1;i<=N_VARIABLE;i++){
         if(x_fixed[i]==1) continue;
         for(j=0;j<=1;j++){
             //initialize connections# of unit[i][j]
+            //fprintf(fp2,"unit[%d][%d]: ",i,j);
             int connections[N_VARIABLE+1][2]; //connections# of only unit[i][j], each element represent wire (0 or 1) between unit [i][j] and another unit
             int connection_count=0;
             for (k=1;k<=N_VARIABLE;k++){
@@ -538,7 +539,8 @@ void count_connection(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8]){
             fprintf(fp2,"%d\n",connection_count);
         }
     }
-    //fclose(fp2);
+    printf("printed conn1.txt");
+    fclose(fp2);
 }
 void update_L(){
     update_L_intra();

@@ -2,12 +2,12 @@
 //#include<stdlib.h>
 #include<string.h>
 #include<time.h>
-#define N_VARIABLE 135
-#define N_CLAUSE 972
+#define N_VARIABLE 150
+#define N_CLAUSE 545
 #define N_LITERAL 3
-const int MAX_N_STEP = 150000;
-const int EPSILON = 536870912; //1030792151; //687194767; //429496730;//536870912;
-#define MAX_CONTRA 600000
+const int MAX_N_STEP = 1500000;
+const int EPSILON = 687194767; //1030792151; //687194767; //429496730;//536870912;
+#define MAX_CONTRA 60000
 
 int LargeX[N_VARIABLE+1][2];
 int Y[N_VARIABLE+1][2];
@@ -46,7 +46,7 @@ FILE *fp3; //contra
 FILE *fp4; //local rules
 
 int main() {
-    char filename[128]="medium_out2.cnf";
+    char filename[128]="benchmarks/flat50-1.cnf";
     //char filename[128]="uf225-028.cnf";
     char logfile[128];
     strncpy(logfile,filename,strlen(filename)-4);

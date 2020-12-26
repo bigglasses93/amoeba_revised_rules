@@ -1,0 +1,18 @@
+Usage: checkclrs graphfile colorfile
+
+This program checks each of the colors in colorfile to see if it is a correct
+coloring of the graph in graphfile. For example, if using 
+	generator graph
+while generating the evacuation graph type, then the file graph.dcp
+contains the hidden coloring and each of the completed deceptive colorings.
+
+Then 
+	checkclrs graph graph.dcp
+will verify which of the colorings are correct. If the fraction of
+undeleted edges is set to 0.0 then the hidden and all deceptive colorings
+should be legal colorings. If fraction is set to 0.5 then only the 
+hidden coloring should be correct (with high probability).
+
+Smallk, iterated greedy and Culberson's other coloring programs typically
+output colors in a format that can be verified by this program.
+

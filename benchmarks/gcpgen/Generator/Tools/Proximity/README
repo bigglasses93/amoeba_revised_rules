@@ -1,0 +1,55 @@
+For details on what this measure
+does see the paper <a href="http://web.cs.ualberta.ca/~joe/Abstracts/ssrhp.html">
+Hiding Our Color</a> Culberson, Beacham and Papp.
+
+Basically, it measures the similarity between a set of colorings, with larger numbers meaning the
+colorings are more similar. It does not verify correctness of the colorings.
+
+Usage: proximity infile outfile numnodes mode colorlist
+	infile - a set of colorings or partitions
+	numndes - number of vertices; no graph is input
+	mode  - either 1 or 2:
+		1 = compare first coloring element by element to all other colorings
+		2 = pairwise comparisons of all colorings in list(totals only)
+	colorlist - list of colorings to be used
+		if the first is < 1 then all colorings in infile used
+
+Example:
+	after generating a graph on 150 nodes
+	using the evacuation type  with hidden and deceptive colorigns both
+	at 15, running 
+
+	proximity graph.dcp graph.prox 150 2 -1
+
+	produced a file graph.prox with the following contents (best viewed on a wide terminal 120 columns)
+
+	----------------------
+The source coloring [ 2] is flagged by *
+ [ 1] CLRS 15 HIDDEN COLORING
+*[ 2] CLRS 15 DECEPTIVE COLORING(0.000000,0)
+ [ 3] CLRS 15 DECEPTIVE COLORING(0.000000,0)
+ [ 4] CLRS 15 DECEPTIVE COLORING(0.000000,0)
+ [ 5] CLRS 15 DECEPTIVE COLORING(0.000000,0)
+ [ 6] CLRS 15 DECEPTIVE COLORING(0.000000,0)
+ [ 7] CLRS 15 DECEPTIVE COLORING(0.000000,0)
+ [ 8] CLRS 15 DECEPTIVE COLORING(0.000000,0)
+ [ 9] CLRS 15 DECEPTIVE COLORING(0.000000,0)
+ [10] CLRS 15 DECEPTIVE COLORING(0.000000,0)
+ [11] CLRS 15 DECEPTIVE COLORING(0.000000,0)
+ [12] CLRS 15 DECEPTIVE COLORING(0.000000,0)
+
+        [ 1]   [ 2]   [ 3]   [ 4]   [ 5]   [ 6]   [ 7]   [ 8]   [ 9]   [10]   [11]   [12]
+[ 1]     675     39     34     44     37     36     42     32     40     35     34     46
+[ 2]      39    675     41     40     42     37     38     38     60     56     47     41
+[ 3]      34     41    675     32     39     40     35     45     39     28     49     37
+[ 4]      44     40     32    675     40     43     50     31     35     41     37     51
+[ 5]      37     42     39     40    675     45     42     47     42     41     42     42
+[ 6]      36     37     40     43     45    675     32     35     25     60     49     31
+[ 7]      42     38     35     50     42     32    675     28     33     36     48     53
+[ 8]      32     38     45     31     47     35     28    675     48     38     42     46
+[ 9]      40     60     39     35     42     25     33     48    675     44     41     34
+[10]      35     56     28     41     41     60     36     38     44    675     35     43
+[11]      34     47     49     37     42     49     48     42     41     35    675     38
+[12]      46     41     37     51     42     31     53     46     34     43     38    675
+
+------------------------------------------------
