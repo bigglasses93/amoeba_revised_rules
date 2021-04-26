@@ -3,7 +3,9 @@
 #include<string>
 #include<string.h>
 #include<stdlib.h>
+#include<bitset>
 #define N_LITERAL 3
+#define bitwidth 10
 using namespace std;
 
 int N_VARIABLE;
@@ -24,6 +26,8 @@ int sign_x(int x);
 void generate_inter();
 int survey_size_contra();
 void generate_contra();
+void bin(unsigned n);
+void generate_encoded_rules();
 
 //void create_local_rules(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8]);
 
@@ -67,7 +71,7 @@ int main(int argc, char** argv) {
     }
     generate_contra();
     //create_local_rules(inter, contra_new);
-    
+    generate_encoded_rules();
     return 0;
 }
 void getParams(char *filename) {   
@@ -352,4 +356,25 @@ void generate_contra(){
     fclose(fp2);
     fclose(fp3);
     size_contra_new=size_contra;
+}
+//encode indices for bram init
+void generate_encoded_rules(){
+    std::ofstream out("bram.init");
+    //encode inter
+    int i;
+    for(i=0;i<size_inter;i++){
+        out << inter[3*i][1] << bitset<bitwidth-1>(inter[3*i][0]).to_string();
+        out << inter[3*i][3] << bitset<bitwidth-1>(inter[3*i][2]).to_string();// << endl;
+        out << inter[3*i][5] << bitset<bitwidth-1>(inter[3*i][4]).to_string();
+        out << bitset<bitwidth>(0).to_string() << endl; // last index is 0 for inter
+    }
+    //encode contra
+    for(i=0;i<size_contra_new;i++){
+        out << contra_new[i][1] << bitset<bitwidth-1>(contra_new[i][0]).to_string();
+        out << contra_new[i][3] << bitset<bitwidth-1>(contra_new[i][2]).to_string();// << endl;
+        out << contra_new[i][5] << bitset<bitwidth-1>(contra_new[i][4]).to_string();
+        out << contra_new[i][7] << bitset<bitwidth-1>(contra_new[i][6]).to_string();
+        out << endl;
+    }
+    out.close();
 }

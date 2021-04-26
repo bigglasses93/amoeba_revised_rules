@@ -1,8 +1,8 @@
 #include<stdio.h>
 #include<string.h>
 #include<time.h>
-#define N_VARIABLE 853
-#define N_CLAUSE 5069
+#define N_VARIABLE 225
+#define N_CLAUSE 960
 #define N_LITERAL 3
 const int MAX_N_STEP = 100000;
 const int EPSILON1 = 687194767; //~0.32
@@ -48,8 +48,8 @@ FILE *fp3; //contra
 FILE *fp4; //local rules
 
 int main() {
-    char filename[128]="hanoi4_out2.cnf";
-    char logfile[128]= "hanoi4_out2-log.txt";
+    char filename[128]="uf225-028.cnf";
+    char logfile[128]= "log.txt";
 
     //strncpy(logfile,filename,strlen(filename)-4);
     //strcat(logfile,"-log.txt");

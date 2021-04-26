@@ -3,7 +3,7 @@
 #include<string.h>
 #include<time.h>
 #define N_VARIABLE 225
-#define N_CLAUSE 840 //9
+#define N_CLAUSE 960 //9
 #define N_LITERAL 3
 const int MAX_N_STEP = 15000000;
 const int EPSILON = 687194767; //687194767; //429496730;//536870912;
@@ -28,6 +28,7 @@ void update_L_inter(int inter[3*N_CLAUSE][6]);
 void update_L_contra(int size_contra, int contra[size_contra][8]);
 int amoebasat(char s[N_VARIABLE+100]);
 void create_local_rules(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8]);
+void count_var_conn(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8]);
 
 FILE *fp1; //z
 FILE *fp2; //inter
@@ -35,7 +36,7 @@ FILE *fp3; //contra
 FILE *fp4; //local rules
 
 int main() {
-    char filename[128]="benchmarks/flat75-102.cnf";
+    char filename[128]="uf225-028.cnf";
     //char logfile[128]= "sgen1-sat-100-100-log2.txt";
 
 
@@ -50,7 +51,8 @@ int main() {
     size_contra = survey_size_contra();
     int contra[size_contra][8];
     generate_contra(size_contra, contra, contra_new);
-    create_local_rules(inter,contra_new);
+    count_var_conn(inter, contra_new);
+    //create_local_rules(inter,contra_new);
 
     //fclose(fp1);
     return 0;
@@ -297,6 +299,60 @@ void generate_contra(int size_contra, int contra[size_contra][8], int contra_new
     fclose(fp3);
     size_contra_new=size_contra;
 }
+//count connections# per variable
+void count_var_conn(int inter[3*N_CLAUSE][6], int contra[MAX_CONTRA][8]){
+    int i, j; //unit index
+    int conn_x[N_VARIABLE+1]; //store conn# of all variables
+    int conn[N_VARIABLE+1][N_VARIABLE+1]; //store conn between var xi & xj
+    fp4 = fopen("conn_x.txt","w+");
+    //initialize
+    for(i=1;i<=N_VARIABLE;i++){
+        conn_x[i] = 0;
+        for(j=1;j<=N_VARIABLE;j++){
+            conn[i][j] = 0;
+        }
+    }
+    //record conn from inter rules
+    for(int k=0;k<N_CLAUSE;k++){
+        conn[ inter[3*k][0] ][ inter[3*k][2] ]=1;
+        conn[ inter[3*k][0] ][ inter[3*k][4] ]=1;
+
+        conn[ inter[3*k][2] ][ inter[3*k][0] ]=1;
+        conn[ inter[3*k][2] ][ inter[3*k][4] ]=1;
+
+        conn[ inter[3*k][4] ][ inter[3*k][0] ]=1;
+        conn[ inter[3*k][4] ][ inter[3*k][2] ]=1;
+    }
+    //record conn from contra rules
+    for(int k=0;k<size_contra;k++){
+        conn[ contra[k][0] ][ contra[k][2] ]=1;
+        conn[ contra[k][0] ][ contra[k][4] ]=1;
+        conn[ contra[k][0] ][ contra[k][6] ]=1;
+
+        conn[ contra[k][2] ][ contra[k][0] ]=1;
+        conn[ contra[k][2] ][ contra[k][4] ]=1;
+        conn[ contra[k][2] ][ contra[k][6] ]=1;
+                
+        conn[ contra[k][4] ][ contra[k][0] ]=1;
+        conn[ contra[k][4] ][ contra[k][2] ]=1;
+        conn[ contra[k][4] ][ contra[k][6] ]=1;
+
+        conn[ contra[k][6] ][ contra[k][0] ]=1;
+        conn[ contra[k][6] ][ contra[k][2] ]=1;
+        conn[ contra[k][6] ][ contra[k][4] ]=1;
+    }
+
+    //calculate conn# of each var
+    for(i=1;i<=N_VARIABLE;i++){
+        for(j=1;j<=N_VARIABLE;j++){
+            conn_x[i] += conn[i][j];
+        }
+        //print total conn# of var xi
+        fprintf(fp4,"%d\n",conn_x[i]);
+    }
+    
+    fclose(fp4);
+}
 //create local rules and local modules
 void create_local_rules(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8]){
     int i, j; //unit index
@@ -384,7 +440,7 @@ void create_local_rules(int inter[3*N_CLAUSE][6], int contra_new[MAX_CONTRA][8])
             //write rules into file
             fprintf(fp4, "int unit%d_%d[%d][6]={\n", i, j,count_rules[i][j]);
             fprintf(fp4,s);
-            //Count connections#
+            //Count connections# per unit
             for(k=1;k<=N_VARIABLE;k++){
                 connection_count+=connections[k][0] + connections[k][1];
             }
